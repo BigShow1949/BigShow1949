@@ -1,0 +1,21 @@
+//
+//  YFAppStoreDemo.pch
+//  appStoreDemo
+//
+//  Created by WangMengqi on 15/9/1.
+//  Copyright (c) 2015年 BigShowCompany. All rights reserved.
+//
+
+#ifndef appStoreDemo_YFAppStoreDemo_pch
+#define appStoreDemo_YFAppStoreDemo_pch
+
+
+#import "UIView+Extension.h"
+
+#define YFScreen [UIScreen mainScreen].bounds.size
+#define YFColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+#import "BaseTableViewController.h"
+
+#endif

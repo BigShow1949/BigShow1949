@@ -1,0 +1,30 @@
+//
+//  YFBezierViewController.m
+//  appStoreDemo
+//
+//  Created by zhht01 on 16/1/21.
+//  Copyright © 2016年 BigShowCompany. All rights reserved.
+//
+
+#import "YFBezierViewController.h"
+
+@interface YFBezierViewController ()
+
+@end
+
+@implementation YFBezierViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.titles = @[@"动态圆圈",
+                    @"渐变色"];
+    
+    self.classNames = @[@"YFCircleViewController",
+                        @"YFGradientViewController"];
+}
+
+
+
+
+@end

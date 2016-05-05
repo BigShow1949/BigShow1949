@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Stacked PageVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="YFStackedPageVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CKe-lV-S0p"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nxl-Vi-d7z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-U0-uaX" customClass="SSStackedPageView">
+                                <rect key="frame" x="0.0" y="27" width="320" height="541"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="541" id="65E-Kz-5ga"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HUE-U0-uaX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8pP-FN-8mJ"/>
+                            <constraint firstAttribute="trailing" secondItem="HUE-U0-uaX" secondAttribute="trailing" id="kAX-gQ-MoM"/>
+                            <constraint firstItem="HUE-U0-uaX" firstAttribute="top" secondItem="CKe-lV-S0p" secondAttribute="bottom" constant="7" id="lvQ-ST-nki"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="HUE-U0-uaX" id="b3U-19-UZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="343"/>
+        </scene>
+    </scenes>
+</document>

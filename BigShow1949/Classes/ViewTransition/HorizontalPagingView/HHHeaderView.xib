@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HHHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage_YFHorizontalPagingViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="666-0G-Q9x">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.7267527735" green="1" blue="0.85450599439999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="666-0G-Q9x" secondAttribute="trailing" id="Fxc-tV-tfP"/>
+                <constraint firstItem="666-0G-Q9x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pxb-PZ-w7Q"/>
+                <constraint firstItem="666-0G-Q9x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eFo-32-Dgf"/>
+                <constraint firstAttribute="bottom" secondItem="666-0G-Q9x" secondAttribute="bottom" id="mdn-bi-Pml"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerImageView" destination="666-0G-Q9x" id="CSA-sl-TcT"/>
+                <outlet property="headerTopConstraint" destination="eFo-32-Dgf" id="FGR-Db-sp9"/>
+                <outlet property="segmentView" destination="54s-xa-CSi" id="RK2-mE-dy6"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="176"/>
+        </view>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54s-xa-CSi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxe-so-tK9">
+                    <rect key="frame" x="19" y="23" width="74" height="37"/>
+                    <color key="backgroundColor" red="0.72675277350526313" green="1" blue="0.85450599442157904" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="V1C-54-tbS"/>
+                        <constraint firstAttribute="height" constant="37" id="eKQ-fl-p6J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="视图1">
+                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-kd-3SA">
+                    <rect key="frame" x="123" y="23" width="74" height="37"/>
+                    <color key="backgroundColor" red="0.7267527735" green="1" blue="0.85450599439999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="0jB-4A-1k5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="Wf2-vc-P2G"/>
+                        <constraint firstAttribute="width" constant="74" id="ZyX-iZ-evN"/>
+                        <constraint firstAttribute="height" constant="37" id="ckM-X9-qUM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="视图2">
+                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhm-of-n0k">
+                    <rect key="frame" x="227" y="23" width="74" height="37"/>
+                    <color key="backgroundColor" red="0.7267527735" green="1" blue="0.85450599439999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Ntj-VL-TR7"/>
+                        <constraint firstAttribute="width" constant="74" id="SVG-B5-Bi4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="视图3">
+                        <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qhm-of-n0k" firstAttribute="leading" secondItem="LZ2-kd-3SA" secondAttribute="trailing" constant="30" id="8ca-nN-dqW"/>
+                <constraint firstAttribute="bottom" secondItem="LZ2-kd-3SA" secondAttribute="bottom" id="V1p-fL-5UT"/>
+                <constraint firstAttribute="bottom" secondItem="Pxe-so-tK9" secondAttribute="bottom" id="Yuj-X6-hM3"/>
+                <constraint firstAttribute="bottom" secondItem="LZ2-kd-3SA" secondAttribute="bottom" id="d3m-lJ-BJ0"/>
+                <constraint firstAttribute="centerX" secondItem="LZ2-kd-3SA" secondAttribute="centerX" id="rB0-qM-lOh"/>
+                <constraint firstAttribute="height" constant="60" id="uUi-5v-Lv3"/>
+                <constraint firstItem="LZ2-kd-3SA" firstAttribute="leading" secondItem="Pxe-so-tK9" secondAttribute="trailing" constant="30" id="uq5-IE-Ti6"/>
+                <constraint firstAttribute="bottom" secondItem="Qhm-of-n0k" secondAttribute="bottom" id="xlz-o3-iDc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="282" y="376"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="headerImage_YFHorizontalPagingViewController.png" width="428" height="443"/>
+    </resources>
+</document>

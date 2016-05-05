@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Autolayout Tag View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="vXZ-lx-hvc" customClass="YFAutolayoutTagViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7U-Ia-bLd">
+                                <rect key="frame" x="16" y="485" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-2Y-lMM">
+                                <rect key="frame" x="65" y="479" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Uf7-fG-zZF"/>
+                                </constraints>
+                                <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-f3-ZyA">
+                                <rect key="frame" x="16" y="530" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="a9z-2k-Bwd"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAdd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CMN-TA-f6C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io1-TE-I9C">
+                                <rect key="frame" x="270" y="530" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Kq2-EH-d4c"/>
+                                </constraints>
+                                <state key="normal" title="Insert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onInsert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cIP-vB-HTP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgs-nh-fvM">
+                                <rect key="frame" x="520" y="530" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MFl-wp-oDo"/>
+                                </constraints>
+                                <state key="normal" title="Remove">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRemove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ltg-iR-8bw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Q33-2Y-lMM" firstAttribute="leading" secondItem="t7U-Ia-bLd" secondAttribute="trailing" constant="7.5" id="9gj-3P-iRd"/>
+                            <constraint firstItem="t7U-Ia-bLd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ERn-Tq-BK9"/>
+                            <constraint firstItem="hgs-nh-fvM" firstAttribute="centerY" secondItem="Be7-f3-ZyA" secondAttribute="centerY" id="FnR-OR-r5d"/>
+                            <constraint firstItem="io1-TE-I9C" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JdL-Jx-pfR"/>
+                            <constraint firstItem="io1-TE-I9C" firstAttribute="centerY" secondItem="Be7-f3-ZyA" secondAttribute="centerY" id="MTW-Pa-Or1"/>
+                            <constraint firstAttribute="bottom" secondItem="t7U-Ia-bLd" secondAttribute="bottom" constant="97" id="Ma3-M4-z7h"/>
+                            <constraint firstAttribute="trailing" secondItem="hgs-nh-fvM" secondAttribute="trailing" constant="20" id="YAk-WI-95W"/>
+                            <constraint firstItem="t7U-Ia-bLd" firstAttribute="centerY" secondItem="Q33-2Y-lMM" secondAttribute="centerY" id="bwC-CH-e64"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Be7-f3-ZyA" secondAttribute="bottom" constant="40" id="rMS-bS-fsk"/>
+                            <constraint firstItem="Be7-f3-ZyA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="rtJ-Gm-EyR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Q6V-Q8-6rY" appends="YES" id="y1T-eg-j2U"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="index" destination="Q33-2Y-lMM" id="Bjf-T8-zdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Q6V-Q8-6rY" userLabel="Tap Bg">
+                    <connections>
+                        <action selector="onTapBg:" destination="vXZ-lx-hvc" id="ivI-g4-gBG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="652" y="86"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,79 @@
+//
+//  YFHomeViewController.m
+//  appStoreDemo
+//
+//  Created by WangMengqi on 15/9/1.
+//  Copyright (c) 2015年 BigShowCompany. All rights reserved.
+//
+//  更多信息: AppStore
+//  QQ群:
+//  作者博客:
+//
+
+#import "YFHomeViewController.h"
+#import "YFAboutUsViewController.h"
+
+
+@implementation YFHomeViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.titles = @[@"按钮",
+                    @"标签",
+                    @"视图布局",
+                    @"视图切换",
+                    @"视图效果",
+                    @"文字视图",
+                    @"零散知识点",
+                    @"小项目展示",
+                    @"动画集合",
+                    @"UIScrollView",
+                    @"仿主流app功能",
+                    @"设计模式",
+                    @"常用工具类",
+                    @"数据持久化",
+                    @"博客/论坛"];
+    
+    // 框架模式有哪些？
+    //  MVC、MTV、MVP、CBD、ORM等等；
+    
+    
+    self.classNames = @[@"YFButtonViewController",
+                        @"YFLabelViewController",
+                        @"YFViewLayoutViewController",
+                        @"YFViewTransitionViewController",
+                        @"YFViewEffectsViewController",
+                        @"YFTextViewController",
+                        @"YFKnowledgeViewController",
+                        @"YFLittleProjectViewController",
+                        @"YFAnimationsViewController",
+                        @"YFScrollViewController",
+                        @"YFImitateAppViewController",
+                        @"YFDesignPatternViewController",
+                        @"YFToolsViewController",
+                        @"YFDataPersistenceViewController",
+                        @"YFBlogViewController"];
+    
+    [self setupNav];
+
+}
+
+
+
+#pragma mark - private
+- (void)setupNav {
+
+    self.title = @"目 录";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关于我们" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarClick)];
+}
+
+- (void)rightBarClick {
+    
+    YFAboutUsViewController *aboutUs = [[YFAboutUsViewController alloc] init];
+    [self.navigationController pushViewController:aboutUs animated:YES];
+
+}
+
+
+@end

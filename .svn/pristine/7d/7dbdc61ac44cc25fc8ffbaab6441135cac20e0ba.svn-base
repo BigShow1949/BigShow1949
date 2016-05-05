@@ -1,0 +1,27 @@
+//
+//  YFNeteaseViewController.m
+//  appStoreDemo
+//
+//  Created by zhht01 on 16/1/22.
+//  Copyright © 2016年 BigShowCompany. All rights reserved.
+//
+
+#import "YFNeteaseViewController.h"
+
+@interface YFNeteaseViewController ()
+
+@end
+
+@implementation YFNeteaseViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.titles = @[@"顶部滑动标签1"];
+    
+    self.classNames = @[@"YFNeteaseHomeViewController"];
+}
+
+
+
+@end

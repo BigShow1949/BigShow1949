@@ -1,0 +1,31 @@
+//
+//  YFDataPersistenceViewController.m
+//  appStoreDemo
+//
+//  Created by zhht01 on 16/4/5.
+//  Copyright © 2016年 BigShowCompany. All rights reserved.
+//
+
+#import "YFDataPersistenceViewController.h"
+
+@interface YFDataPersistenceViewController ()
+
+@end
+
+@implementation YFDataPersistenceViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.titles = @[@"JKDBModel"];
+    
+    self.classNames = @[@"JKDBViewController_UIStoryboard"];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+@end

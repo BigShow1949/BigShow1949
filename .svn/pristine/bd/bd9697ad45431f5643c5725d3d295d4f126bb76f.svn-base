@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mMN-Rx-iTk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Base Use View Controller-->
+        <scene sceneID="Wgd-IF-JIw">
+            <objects>
+                <viewController id="mMN-Rx-iTk" customClass="FMDBBaseUseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jbb-x5-JEh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Id2-Jx-Ba4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cb2-BW-Zg1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA8-4C-sPC">
+                                <rect key="frame" x="52" y="59" width="119" height="30"/>
+                                <state key="normal" title="01-增加"/>
+                                <connections>
+                                    <action selector="insert:" destination="mMN-Rx-iTk" eventType="touchUpInside" id="avK-rg-zIB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEw-4k-s3b">
+                                <rect key="frame" x="52" y="119" width="119" height="30"/>
+                                <state key="normal" title="02-删除"/>
+                                <connections>
+                                    <action selector="delete_:" destination="mMN-Rx-iTk" eventType="touchUpInside" id="Sll-fV-Y8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-hS-xDq">
+                                <rect key="frame" x="52" y="243" width="119" height="30"/>
+                                <state key="normal" title="04-查询"/>
+                                <connections>
+                                    <action selector="select:" destination="mMN-Rx-iTk" eventType="touchUpInside" id="JyM-TS-Act"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8t0-wB-rpz">
+                                <rect key="frame" x="52" y="177" width="119" height="30"/>
+                                <state key="normal" title="03-修改"/>
+                                <connections>
+                                    <action selector="update:" destination="mMN-Rx-iTk" eventType="touchUpInside" id="ITt-7J-IZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyo-S4-PaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="-276"/>
+        </scene>
+    </scenes>
+</document>

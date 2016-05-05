@@ -1,0 +1,23 @@
+//
+//  YFEmitterViewController.m
+//  appStoreDemo
+//
+//  Created by 杨帆 on 15-9-4.
+//  Copyright (c) 2015年 BigShowCompany. All rights reserved.
+//
+
+#import "YFEmitterViewController.h"
+
+
+@implementation YFEmitterViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.titles = @[@"下雪花"];
+    self.classNames = @[@"YFSnowViewController"];
+    
+}
+
+
+@end

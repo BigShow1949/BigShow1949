@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sonNode</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>小学数学</string>
+				<key>sonNode</key>
+				<dict/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>中学数学</string>
+				<key>sonNode</key>
+				<dict/>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>数学</string>
+	</dict>
+	<dict>
+		<key>sonNode</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>小学英语</string>
+				<key>sonNode</key>
+				<dict/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>中学英语</string>
+				<key>sonNode</key>
+				<dict/>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>英语</string>
+	</dict>
+</array>
+</plist>

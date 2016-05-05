@@ -1,0 +1,378 @@
+//
+//  YFDragRadialMenu.m
+//  BigShow1949
+//
+//  Created by WangMengqi on 15/9/2.
+//  Copyright (c) 2015年 BigShowCompany. All rights reserved.
+//
+
+#import "YFDragRadialMenu.h"
+
+@interface YFDragRadialMenu()
+
+@property (nonatomic, assign) CGFloat maxW;
+@property (nonatomic, strong) NSMutableArray *elementsArray; // 白色的小圆球的容器
+
+@end
+
+@implementation YFDragRadialMenu
+
+-(id)initWithFrame:(CGRect)frame{
+    return [self initFromPoint:CGPointZero withDataSource:nil andDelegate:nil];
+}
+
+-(id)initFromPoint:(CGPoint)centerPoint withDataSource:(id<YFDragRadialMenuDataSource>)dataSource andDelegate:(id<YFDragRadialMenuDelegate>)delegate{
+    self = [super initWithFrame:CGRectMake([[UIScreen mainScreen] applicationFrame].origin.x, [[UIScreen mainScreen] applicationFrame].origin.y, [[UIScreen mainScreen] applicationFrame].size.width, [[UIScreen mainScreen] applicationFrame].size.height)];
+    
+    if(self){
+        centerPoint.y -= [[UIScreen mainScreen] applicationFrame].origin.y;
+        
+        //		//Fix the center point in case it is too near the corners of the screen
+        //		if(CGRectContainsPoint(CGRectMake(0, 0, 70, 70), centerPoint) && !CGPointEqualToPoint(centerPoint, CGPointZero)){
+        //			_centerPoint = CGPointMake(70, 70);
+        //		} else if(CGRectContainsPoint(CGRectMake(0, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
+        //			_centerPoint = CGPointMake(70, [[UIScreen mainScreen] applicationFrame].size.height-70);
+        //		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, 0, 70, 70), centerPoint)){
+        //			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, 70);
+        //		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
+        //			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70);
+        //		} else
+        _centerPoint = CGPointEqualToPoint(centerPoint, CGPointZero) ? self.center : centerPoint;
+        
+        
+        
+        _dataSource = dataSource;
+        _delegate = delegate;
+        
+        self.backgroundColor = [UIColor clearColor];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeRadialMenu:)];
+        [self addGestureRecognizer:tapGesture];
+        tapGesture.delegate = self;
+    }
+    
+    return self;
+}
+
+-(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    BOOL should = YES;
+    if([touch.view isKindOfClass:[UIButton class]]){
+        should = NO;
+    }
+    
+    return should;
+}
+
+
+#pragma mark - closeRadialMenu
+-(void)closeRadialMenu:(UITapGestureRecognizer *)tapGesture{
+    if([tapGesture.view isEqual:self] && !CGRectContainsPoint(self.radialMenuView.frame, [tapGesture locationInView:self])){
+        [self closeMenu];
+    }
+}
+
+-(void)closeMenu {
+    [self closeMenuWithCompletion:nil];
+}
+
+-(void)closeMenuWithCompletion:(void(^)())completion{
+    for(int i = 0; i < [self.elementsArray count]; i++){
+        UIButton *element = [self.elementsArray objectAtIndex:i];
+        double delayInSeconds = 0.025*i;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [UIView animateWithDuration:0.25 animations:^{
+                element.alpha = 0;
+                element.center = CGPointMake(self.radialMenuView.frame.size.width/2.0, self.radialMenuView.frame.size.height/2.0);
+            }];
+        });
+    }
+    
+    double delayInSeconds = 0.25+0.025*[self.elementsArray count];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [UIView animateWithDuration:0.25 animations:^{
+            self.radialMenuView.alpha = 0;
+            self.alpha = 0;
+        } completion:^(BOOL finished) {
+            [self.radialMenuView removeFromSuperview];
+            [self removeFromSuperview];
+            
+            if(completion) completion();
+        }];
+
+    });
+}
+
+
+#pragma mark - showMenu
+-(void) showMenu{
+    [self showMenuWithCompletion:nil];
+}
+
+-(void)showMenuWithCompletion:(void (^)())completion{
+    
+    // 如果这里不懒加载, 黑色view会从左上角飘过来
+    self.centerRadialView;
+    
+    [[[[UIApplication sharedApplication] delegate] window] addSubview:self];
+    [UIView animateWithDuration:0.25 animations:^{
+        self.backgroundColor = self.dimBackgroundColor;
+        
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            if(self.centerRadialView){
+                CGFloat centerViewRadius = 7.0 * self.menuRadius/10.0;
+                self.centerRadialView.layer.cornerRadius = centerViewRadius;
+                self.centerRadialView.layer.masksToBounds = YES;
+                
+                self.centerRadialView.frame = CGRectMake(self.radialMenuView.frame.size.width/2.0 - centerViewRadius, self.radialMenuView.frame.size.height/2.0 - centerViewRadius, centerViewRadius*2.0, centerViewRadius*2.0);
+            }
+         
+        } completion:^(BOOL finished) {
+            [self placeRadialMenuElementsAnimated:YES];
+            if(completion)
+                completion();
+        }];
+    }];
+}
+
+-(void)placeRadialMenuElementsAnimated:(BOOL)animated{
+    CGFloat startingAngle = 0;
+    CGFloat usableAngle = 2.0*M_PI;
+    BOOL fullCircle = YES;
+
+    // 如果那个圆太小, 白色小球会相互挤压, 所以我们需要重新计算半径, 再加个值
+    CGFloat radiusToAdd = 0;
+    
+    //LEFT BORDER
+    if(self.radialMenuView.frame.origin.x < 0){
+        fullCircle = NO;
+        
+        //BEGIN
+        if(self.radialMenuView.frame.origin.y >0){
+            CGFloat d = -(self.radialMenuView.frame.origin.x +self.menuRadius);
+            startingAngle = -acosf((d+5)/(self.menuRadius +radiusToAdd));
+        } else {
+            
+            CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
+            startingAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+        }
+        
+        //END
+        if(CGRectGetMaxY(self.radialMenuView.frame) <= self.frame.size.height){
+            if(self.radialMenuView.frame.origin.y >0){
+                usableAngle = -2*startingAngle;
+            } else {
+                CGFloat d = -(self.radialMenuView.frame.origin.x +self.menuRadius);
+                CGFloat virtualAngle = acosf((d+5)/(self.menuRadius+radiusToAdd));
+                usableAngle = 2*virtualAngle -(virtualAngle+startingAngle);
+            }
+            
+        } else {
+            CGFloat d = (CGRectGetMaxY(self.radialMenuView.frame)-self.frame.size.height -self.menuRadius);
+            CGFloat virtualAngle = -asinf((d+5)/(self.menuRadius+radiusToAdd));
+            usableAngle = -startingAngle+virtualAngle;
+        }
+    }
+    
+    //TOP BORDER
+    if(self.radialMenuView.frame.origin.y < 0 && self.radialMenuView.frame.origin.x > 0 && CGRectGetMaxX(self.radialMenuView.frame) < self.frame.size.width){
+        fullCircle = NO;
+        
+        CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
+        startingAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+        
+        usableAngle = M_PI-2*startingAngle;
+        
+    }
+    
+    //BOTTOM BORDER
+    if(CGRectGetMaxY(self.radialMenuView.frame) > self.frame.size.height && self.radialMenuView.frame.origin.x > 0 && CGRectGetMaxX(self.radialMenuView.frame) < self.frame.size.width){
+        fullCircle = NO;
+        
+        CGFloat d = (CGRectGetMaxY(self.radialMenuView.frame)-self.frame.size.height -self.menuRadius);
+        startingAngle = M_PI+asinf((d+5)/(self.menuRadius+radiusToAdd));
+        usableAngle = 2*M_PI-startingAngle-asinf((d+5)/(self.menuRadius+radiusToAdd));
+        
+    }
+    
+    //RIGHT BORDER
+    if(CGRectGetMaxX(self.radialMenuView.frame) > self.frame.size.width){
+        fullCircle = NO;
+        
+        //BEGIN
+        if(CGRectGetMaxY(self.radialMenuView.frame) < self.frame.size.height){
+            CGFloat d = self.menuRadius-(CGRectGetMaxX(self.radialMenuView.frame)-self.frame.size.width);
+            startingAngle = acosf((d-5)/(self.menuRadius +radiusToAdd));
+        } else {
+            CGFloat d = (CGRectGetMaxY(self.radialMenuView.frame)-self.frame.size.height -self.menuRadius);
+            startingAngle = M_PI+asinf((d+5)/(self.menuRadius+radiusToAdd));
+            
+        }
+        
+        //END
+        if(self.radialMenuView.frame.origin.y > 0){
+            CGFloat d = self.menuRadius-(CGRectGetMaxX(self.radialMenuView.frame)-self.frame.size.width);
+            CGFloat virtualAngle = acosf((d-5)/(self.menuRadius +radiusToAdd));
+            usableAngle = 2*M_PI-virtualAngle-startingAngle;
+        } else {
+            CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
+            CGFloat virtualAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+            
+            usableAngle = M_PI-virtualAngle-startingAngle;
+        }
+    }
+    
+    //Placing the objects
+    for(int i = 0; i < [self.elementsArray count]; i++){
+        UIButton *element = [self.elementsArray objectAtIndex:i];
+        element.center = CGPointMake(self.radialMenuView.frame.size.width/2.0, self.radialMenuView.frame.size.height/2.0);
+        double delayInSeconds = 0.025 * i;
+        
+        void (^elementPositionBlock)(void) = ^{
+            element.alpha = 1;
+            [self.radialMenuView bringSubviewToFront:element];
+            CGPoint endPoint = CGPointMake(self.radialMenuView.frame.size.width/2.0+(self.menuRadius+radiusToAdd)*(cos(startingAngle+usableAngle/(self.numberOfButtons - (fullCircle ? 0 :1))*(float)i)), self.radialMenuView.frame.size.height/2.0 + (self.menuRadius+radiusToAdd) * (sin(startingAngle+usableAngle/(self.numberOfButtons-(fullCircle ? 0 :1)) * (float)i)));
+            element.center = endPoint;
+        };
+        
+        if(animated) {
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [UIView animateWithDuration:0.25 animations:elementPositionBlock];
+            });
+        } else {
+            elementPositionBlock();
+        }
+    }
+}
+
+-(void)moveAround:(UIPanGestureRecognizer *)panGesture{
+    
+    if ((panGesture.state == UIGestureRecognizerStateChanged) || (panGesture.state == UIGestureRecognizerStateEnded)) {
+        CGPoint translation = [panGesture translationInView:self];
+        // move something in myself (I’m a UIView) by translation.x and translation.y
+        // for example, if I were a graph and my origin was set by an @property called origin self.origin = CGPointMake(self.origin.x+translation.x, self.origin.y+translation.y);
+        CGRect radialMenuRect = self.radialMenuView.frame;
+        radialMenuRect.origin.x += translation.x;
+        radialMenuRect.origin.y += translation.y;
+        
+        self.radialMenuView.frame = radialMenuRect;
+        
+        [self placeRadialMenuElementsAnimated:NO];
+        
+        [panGesture setTranslation:CGPointZero inView:self];
+    }
+}
+
+-(void)didTapButton:(UIButton *)sender{
+    [self.delegate radialMenu:self didSelectButton:sender];
+}
+
+
+#pragma mark - 懒加载
+-(UIColor *) dimBackgroundColor{
+    if(!_dimBackgroundColor){
+        _dimBackgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
+    }
+    
+    return _dimBackgroundColor;
+}
+
+
+- (UIView *)radialMenuView {
+
+    if (!_radialMenuView) {
+        _radialMenuView = [[UIView alloc] init];
+        _radialMenuView.frame = CGRectMake(0, 0, self.menuRadius * 2.0 + self.maxW, self.menuRadius * 2.0 + self.maxW);
+        _radialMenuView.center = _centerPoint;
+        _radialMenuView.userInteractionEnabled = YES;
+        [self addSubview:self.radialMenuView];
+        
+        // 添加移动手势
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveAround:)];
+        panGesture.delegate = self;
+        
+        if([self.dataSource respondsToSelector:@selector(canDragRadialMenu:)]){
+            panGesture.enabled = [self.dataSource canDragRadialMenu:self];
+        }
+        [_radialMenuView addGestureRecognizer:panGesture];
+        
+        // 特质一个 RadialMenuView
+        if([self.dataSource respondsToSelector:@selector(radialMenu:customizationForRadialMenuView:)]){
+            [self.dataSource radialMenu:self customizationForRadialMenuView:_radialMenuView];
+        }
+        
+        
+    }
+    return _radialMenuView;
+}
+
+
+- (NSMutableArray *)elementsArray {
+
+    if (!_elementsArray) {
+        _elementsArray = [[NSMutableArray alloc] init];
+        
+        self.maxW = 0;
+        for(int i = 0; i < self.numberOfButtons; i++){
+            UIButton *element = [self.dataSource radialMenu:self elementAtIndex:i];
+            if(self.maxW < element.frame.size.width) self.maxW = element.frame.size.width;
+            element.userInteractionEnabled = YES;
+            element.alpha = 0;
+            element.tag = i;
+            [element addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
+            
+            [_elementsArray addObject:element];
+            
+            [self.radialMenuView addSubview:element];
+        }
+        
+    }
+    return _elementsArray;
+}
+
+- (UIView *)centerRadialView {
+
+    if (!_centerRadialView) {
+        if([self.dataSource respondsToSelector:@selector(viewForCenterOfRadialMenu:)]){
+            _centerRadialView = [self.dataSource viewForCenterOfRadialMenu:self];
+            
+            if(_centerRadialView){
+                _centerRadialView.frame = CGRectZero;
+                _centerRadialView.center = CGPointMake(self.radialMenuView.frame.size.width/2.0, self.radialMenuView.frame.size.height/2.0);
+                
+                [self.radialMenuView addSubview:_centerRadialView];
+            }
+        }
+        
+    }
+    return _centerRadialView;
+}
+
+- (NSInteger)numberOfButtons {
+
+    if (!_numberOfButtons) {
+        _numberOfButtons = [self.dataSource numberOfButtonsForRadialMenu:self];
+    }
+    return _numberOfButtons;
+}
+
+- (CGFloat)menuRadius {
+
+    if (!_menuRadius) {
+        
+        if(self.dataSource && [self.dataSource respondsToSelector:@selector(radiusLenghtForRadialMenu:)]){
+            _menuRadius = [self.dataSource radiusLenghtForRadialMenu:self];
+        }else {
+            _menuRadius = 60;
+        }
+        
+    }
+    return _menuRadius;
+}
+
+
+@end
