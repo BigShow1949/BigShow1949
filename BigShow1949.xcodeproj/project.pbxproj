@@ -136,6 +136,11 @@
 		B80981E61CBE1E430030BF28 /* UIViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = B80981E31CBE1E430030BF28 /* UIViewA.m */; };
 		B80981E71CBE1E430030BF28 /* UIViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = B80981E51CBE1E430030BF28 /* UIViewB.m */; };
 		B80E93931CC8785D00607EF3 /* DataAlterFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80E93921CC8785D00607EF3 /* DataAlterFieldView.m */; };
+		B814BD091CE028CB0024096A /* YFHorizontalScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B814BD081CE028CB0024096A /* YFHorizontalScrollViewController.m */; };
+		B814BD171CE029780024096A /* HWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B814BD131CE029780024096A /* HWCollectionViewCell.m */; };
+		B814BD181CE029780024096A /* HWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B814BD141CE029780024096A /* HWCollectionViewCell.xib */; };
+		B814BD191CE029780024096A /* HWLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B814BD161CE029780024096A /* HWLineLayout.m */; };
+		B814BD1C1CE05C500024096A /* HWCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B814BD1B1CE05C500024096A /* HWCircleLayout.m */; };
 		B82BF6BD1CC9CAC00041F53C /* DataEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B82BF6BC1CC9CAC00041F53C /* DataEditView.m */; };
 		B83336711CD89487003B347A /* MenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = B83336631CD89487003B347A /* MenuData.m */; };
 		B83336721CD89487003B347A /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83336651CD89487003B347A /* MenuItemCell.m */; };
@@ -707,6 +712,15 @@
 		B80981E51CBE1E430030BF28 /* UIViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewB.m; sourceTree = "<group>"; };
 		B80E93911CC8785D00607EF3 /* DataAlterFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAlterFieldView.h; sourceTree = "<group>"; };
 		B80E93921CC8785D00607EF3 /* DataAlterFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAlterFieldView.m; sourceTree = "<group>"; };
+		B814BD071CE028CB0024096A /* YFHorizontalScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHorizontalScrollViewController.h; sourceTree = "<group>"; };
+		B814BD081CE028CB0024096A /* YFHorizontalScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHorizontalScrollViewController.m; sourceTree = "<group>"; };
+		B814BD121CE029780024096A /* HWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCollectionViewCell.h; sourceTree = "<group>"; };
+		B814BD131CE029780024096A /* HWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCollectionViewCell.m; sourceTree = "<group>"; };
+		B814BD141CE029780024096A /* HWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWCollectionViewCell.xib; sourceTree = "<group>"; };
+		B814BD151CE029780024096A /* HWLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWLineLayout.h; sourceTree = "<group>"; };
+		B814BD161CE029780024096A /* HWLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWLineLayout.m; sourceTree = "<group>"; };
+		B814BD1A1CE05C500024096A /* HWCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCircleLayout.h; sourceTree = "<group>"; };
+		B814BD1B1CE05C500024096A /* HWCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCircleLayout.m; sourceTree = "<group>"; };
 		B82BF6BB1CC9CAC00041F53C /* DataEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEditView.h; sourceTree = "<group>"; };
 		B82BF6BC1CC9CAC00041F53C /* DataEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEditView.m; sourceTree = "<group>"; };
 		B83336621CD89487003B347A /* MenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuData.h; sourceTree = "<group>"; };
@@ -2121,6 +2135,22 @@
 			path = ResponderChain;
 			sourceTree = "<group>";
 		};
+		B814BD061CE028AE0024096A /* HorizontalScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B814BD071CE028CB0024096A /* YFHorizontalScrollViewController.h */,
+				B814BD081CE028CB0024096A /* YFHorizontalScrollViewController.m */,
+				B814BD121CE029780024096A /* HWCollectionViewCell.h */,
+				B814BD131CE029780024096A /* HWCollectionViewCell.m */,
+				B814BD141CE029780024096A /* HWCollectionViewCell.xib */,
+				B814BD151CE029780024096A /* HWLineLayout.h */,
+				B814BD161CE029780024096A /* HWLineLayout.m */,
+				B814BD1A1CE05C500024096A /* HWCircleLayout.h */,
+				B814BD1B1CE05C500024096A /* HWCircleLayout.m */,
+			);
+			path = HorizontalScroll;
+			sourceTree = "<group>";
+		};
 		B83336601CD89487003B347A /* MutableMenuTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2880,6 +2910,7 @@
 			children = (
 				B8763CBC1C9805A1007B200B /* YFViewLayoutViewController.h */,
 				B8763CBD1C9805A1007B200B /* YFViewLayoutViewController.m */,
+				B814BD061CE028AE0024096A /* HorizontalScroll */,
 				B864C7AE1C99563300D1E440 /* HalfCircleViewLayout */,
 				B864C7A11C9945C700D1E440 /* StackedPageVC */,
 				B864C7971C993CBD00D1E440 /* NeteaseHomeVC */,
@@ -3686,6 +3717,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B814BD181CE029780024096A /* HWCollectionViewCell.xib in Resources */,
 				B848CC7B1CB34FCC005F5DA0 /* placeholder_fancy@2x.png in Resources */,
 				18C760041B9AB24A0038B2EE /* lxh in Resources */,
 				18C760DF1B9ACC960038B2EE /* TabBar_Discovery_selected_new@2x.png in Resources */,
@@ -3845,7 +3877,9 @@
 				B891DB051CA124AF007F69AF /* YFTagsCloudViewController.m in Sources */,
 				B88A15481CA393F400BFC377 /* Case1ViewController.m in Sources */,
 				18CAD0D71B998F92001066FF /* YFEmitterRainCell.m in Sources */,
+				B814BD191CE029780024096A /* HWLineLayout.m in Sources */,
 				B852D51C1C51D60800454E7F /* CABasicAnimationViewController.m in Sources */,
+				B814BD091CE028CB0024096A /* YFHorizontalScrollViewController.m in Sources */,
 				B87042601CAB7CEB0067653C /* YFResizableView.m in Sources */,
 				B83336721CD89487003B347A /* MenuItemCell.m in Sources */,
 				8BC4AD901B9682B00026B012 /* MJRefreshHeaderView.m in Sources */,
@@ -3931,6 +3965,7 @@
 				B8A57EDE1CC50183003ED5EF /* DataInsertView.m in Sources */,
 				B8D444371C50BFBF00F3A34E /* YFShakeMenuViewController.m in Sources */,
 				18C760D61B9ACC960038B2EE /* SYHallViewController.m in Sources */,
+				B814BD1C1CE05C500024096A /* HWCircleLayout.m in Sources */,
 				B88A15491CA393F400BFC377 /* Case2ViewController.m in Sources */,
 				B85DEC341C4779EB00903255 /* YFScrollViewController.m in Sources */,
 				18CAD0D11B998A93001066FF /* YFEmitterSnowCell.m in Sources */,
@@ -4091,6 +4126,7 @@
 				B87445FC1CAD2240009F274E /* YFToolsViewController.m in Sources */,
 				B891D9E81CA0F7A9007F69AF /* RZBaseSwipeInteractionController.m in Sources */,
 				B887CBD61C9C008A00A2F102 /* YSLCardView.m in Sources */,
+				B814BD171CE029780024096A /* HWCollectionViewCell.m in Sources */,
 				B852D51D1C51D60800454E7F /* CAKeyframeAnimationViewController.m in Sources */,
 				B891DB021CA12472007F69AF /* WWTagsCloudView.m in Sources */,
 				B891D9E71CA0F7A9007F69AF /* RZUniqueTransition.m in Sources */,

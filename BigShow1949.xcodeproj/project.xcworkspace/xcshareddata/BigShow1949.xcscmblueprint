@@ -6,16 +6,23 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "3b4b3023-452c-4a15-8b3c-4a39ced93519++758" : 0
+    "3b4b3023-452c-4a15-8b3c-4a39ced93519++758" : 0,
+    "2263EA54F1A2BE214CF3731A370808945B870674" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "95E317E0-F872-4A64-961A-A7DC9129F90D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "3b4b3023-452c-4a15-8b3c-4a39ced93519++758" : "appStoreDemo\/"
+    "3b4b3023-452c-4a15-8b3c-4a39ced93519++758" : "appStoreDemo\/",
+    "2263EA54F1A2BE214CF3731A370808945B870674" : "BigShow1949\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BigShow1949",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BigShow1949.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BigShow1949\/BigShow1949.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2263EA54F1A2BE214CF3731A370808945B870674"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.100.19.52\/tech",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

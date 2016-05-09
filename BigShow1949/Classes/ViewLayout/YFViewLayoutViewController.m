@@ -17,14 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"瀑布流布局",
+    self.titles = @[@"水平滚动布局",
+                    @"瀑布流布局",
                     @"浏览卡",
                     @"半圆布局",
                     @"滑动标题",
                     @"网易滑动标题",
                     @"抽卡效果"];
     
-    self.classNames = @[@"YFWaterflowViewController",
+    self.classNames = @[@"YFHorizontalScrollViewController",
+                        @"YFWaterflowViewController",
                         @"RGCardLayoutViewController_UIStoryboard",
                         @"YFHalfCircleLayoutViewController_UIStoryboard",
                         @"YFSlideTitlesViewController",

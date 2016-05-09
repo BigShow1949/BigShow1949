@@ -29,6 +29,7 @@
     CGFloat inset  = self.collectionView.bounds.size.width * (6/64.0f);
     inset = floor(inset);
 
+    NSLog(@"bound = %@", NSStringFromCGRect(self.collectionView.bounds));
     self.itemSize = CGSizeMake(self.collectionView.bounds.size.width - (2 *inset), self.collectionView.bounds.size.height * 3/4);
     self.sectionInset = UIEdgeInsetsMake(0,inset, 0,inset);
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
