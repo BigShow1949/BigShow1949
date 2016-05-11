@@ -25,7 +25,8 @@
                     @"LTSlidingTransitions",
                     @"折卡效果",
                     @"卡牌拖动翻页",
-                    @"滚动悬浮视图"];
+                    @"滚动悬浮视图",
+                    @"侧滑形变效果"];
     
     
     self.classNames = @[@"YFBaiduViewTransitionViewController",
@@ -33,7 +34,8 @@
                         @"YFSlidingViewController_UIStoryboard",
                         @"YFFlipPageViewController",
                         @"YFDraggableCardViewController",
-                        @"YFHorizontalPagingViewController"];
+                        @"YFHorizontalPagingViewController",
+                        @"YFITRAirSideViewController"];
 
 }
 

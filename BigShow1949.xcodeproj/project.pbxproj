@@ -171,6 +171,11 @@
 		B84C03251CE2DFE400E62D75 /* YFKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C03241CE2DFE400E62D75 /* YFKeepViewController.m */; };
 		B84C03271CE2DFF200E62D75 /* YFKeepViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84C03261CE2DFF200E62D75 /* YFKeepViewController.storyboard */; };
 		B84C03291CE2E04700E62D75 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B84C03281CE2E04700E62D75 /* 1.mp4 */; };
+		B84C032D1CE317D600E62D75 /* ITRAirSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C032C1CE317D600E62D75 /* ITRAirSideMenu.m */; };
+		B84C03341CE317DE00E62D75 /* ITRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C032F1CE317DE00E62D75 /* ITRFirstViewController.m */; };
+		B84C03351CE317DE00E62D75 /* ITRLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C03311CE317DE00E62D75 /* ITRLeftMenuController.m */; };
+		B84C03361CE317DE00E62D75 /* ITRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C03331CE317DE00E62D75 /* ITRSecondViewController.m */; };
+		B84C03391CE3182600E62D75 /* YFITRAirSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C03381CE3182600E62D75 /* YFITRAirSideViewController.m */; };
 		B852D51B1C51D60800454E7F /* CAAnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D50E1C51D60800454E7F /* CAAnimationGroupViewController.m */; };
 		B852D51C1C51D60800454E7F /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D5101C51D60800454E7F /* CABasicAnimationViewController.m */; };
 		B852D51D1C51D60800454E7F /* CAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D5121C51D60800454E7F /* CAKeyframeAnimationViewController.m */; };
@@ -778,6 +783,16 @@
 		B84C03241CE2DFE400E62D75 /* YFKeepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFKeepViewController.m; sourceTree = "<group>"; };
 		B84C03261CE2DFF200E62D75 /* YFKeepViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFKeepViewController.storyboard; sourceTree = "<group>"; };
 		B84C03281CE2E04700E62D75 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		B84C032B1CE317D600E62D75 /* ITRAirSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRAirSideMenu.h; sourceTree = "<group>"; };
+		B84C032C1CE317D600E62D75 /* ITRAirSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRAirSideMenu.m; sourceTree = "<group>"; };
+		B84C032E1CE317DE00E62D75 /* ITRFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRFirstViewController.h; sourceTree = "<group>"; };
+		B84C032F1CE317DE00E62D75 /* ITRFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRFirstViewController.m; sourceTree = "<group>"; };
+		B84C03301CE317DE00E62D75 /* ITRLeftMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRLeftMenuController.h; sourceTree = "<group>"; };
+		B84C03311CE317DE00E62D75 /* ITRLeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRLeftMenuController.m; sourceTree = "<group>"; };
+		B84C03321CE317DE00E62D75 /* ITRSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRSecondViewController.h; sourceTree = "<group>"; };
+		B84C03331CE317DE00E62D75 /* ITRSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRSecondViewController.m; sourceTree = "<group>"; };
+		B84C03371CE3182600E62D75 /* YFITRAirSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFITRAirSideViewController.h; sourceTree = "<group>"; };
+		B84C03381CE3182600E62D75 /* YFITRAirSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFITRAirSideViewController.m; sourceTree = "<group>"; };
 		B852D50D1C51D60800454E7F /* CAAnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupViewController.h; sourceTree = "<group>"; };
 		B852D50E1C51D60800454E7F /* CAAnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupViewController.m; sourceTree = "<group>"; };
 		B852D50F1C51D60800454E7F /* CABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationViewController.h; sourceTree = "<group>"; };
@@ -2275,6 +2290,23 @@
 			path = Keep;
 			sourceTree = "<group>";
 		};
+		B84C032A1CE317C900E62D75 /* ITRAirSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B84C032B1CE317D600E62D75 /* ITRAirSideMenu.h */,
+				B84C032C1CE317D600E62D75 /* ITRAirSideMenu.m */,
+				B84C032E1CE317DE00E62D75 /* ITRFirstViewController.h */,
+				B84C032F1CE317DE00E62D75 /* ITRFirstViewController.m */,
+				B84C03301CE317DE00E62D75 /* ITRLeftMenuController.h */,
+				B84C03311CE317DE00E62D75 /* ITRLeftMenuController.m */,
+				B84C03321CE317DE00E62D75 /* ITRSecondViewController.h */,
+				B84C03331CE317DE00E62D75 /* ITRSecondViewController.m */,
+				B84C03371CE3182600E62D75 /* YFITRAirSideViewController.h */,
+				B84C03381CE3182600E62D75 /* YFITRAirSideViewController.m */,
+			);
+			path = ITRAirSideMenu;
+			sourceTree = "<group>";
+		};
 		B852D50C1C51D60800454E7F /* 核心动画基础篇 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2765,6 +2797,7 @@
 			children = (
 				B8729E161C9A467500A18AA5 /* YFViewTransitionViewController.h */,
 				B8729E171C9A467500A18AA5 /* YFViewTransitionViewController.m */,
+				B84C032A1CE317C900E62D75 /* ITRAirSideMenu */,
 				B891DAA01CA115A8007F69AF /* FlipPageView */,
 				B891D9A81CA0F7A9007F69AF /* RZTransitions */,
 				B893864B1C9FCDFC00B122B8 /* HorizontalPagingView */,
@@ -3984,9 +4017,11 @@
 				B88A154E1CA393F400BFC377 /* Case5ViewController.m in Sources */,
 				18CAD0841B9977E3001066FF /* YFPopOutMenu.m in Sources */,
 				B870429B1CABCDFE0067653C /* JLSubjectDataController.m in Sources */,
+				B84C03351CE317DE00E62D75 /* ITRLeftMenuController.m in Sources */,
 				B87042AB1CABD86D0067653C /* YFDesignPatternViewController.m in Sources */,
 				8BC4AD8E1B9682B00026B012 /* MJRefreshConst.m in Sources */,
 				18CAD0781B9977E3001066FF /* YFContextMenuTableView.m in Sources */,
+				B84C03341CE317DE00E62D75 /* ITRFirstViewController.m in Sources */,
 				8BC4AD531B9681B70026B012 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B8729E0B1C9A428D00A18AA5 /* YFTextViewController.m in Sources */,
 				B870429D1CABCDFE0067653C /* JLHomePracticeActivityView.m in Sources */,
@@ -4041,6 +4076,7 @@
 				B88A15531CA393F400BFC377 /* Case8DataEntity.m in Sources */,
 				B893865F1C9FCE6300B122B8 /* HHContentScrollView.m in Sources */,
 				B891D9F71CA0F7A9007F69AF /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
+				B84C03361CE317DE00E62D75 /* ITRSecondViewController.m in Sources */,
 				18CAD07A1B9977E3001066FF /* YFItemView.m in Sources */,
 				B83EA95C1CC0C74C00807828 /* FMDatabasePool.m in Sources */,
 				B852D5261C51D61900454E7F /* YFCoreAnimationViewController.m in Sources */,
@@ -4125,6 +4161,7 @@
 				8BC4AD861B9682B00026B012 /* MJMethod.m in Sources */,
 				8BC4AD461B9681B70026B012 /* MKAnnotationView+WebCache.m in Sources */,
 				B864C7AC1C9945FE00D1E440 /* YFStackedPageVC.m in Sources */,
+				B84C03391CE3182600E62D75 /* YFITRAirSideViewController.m in Sources */,
 				B864C7791C99035D00D1E440 /* DeformationButton.m in Sources */,
 				B8729E801C9A54F200A18AA5 /* LTSlidingViewCoverflowTransition.m in Sources */,
 				18CAD0851B9977E3001066FF /* YFAnimationVC06.m in Sources */,
@@ -4229,6 +4266,7 @@
 				B887CBD71C9C008A00A2F102 /* YSLDraggableCardContainer.m in Sources */,
 				B891D9F61CA0F7A9007F69AF /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
 				B8DE44F51CB60349001E022D /* YFLifeCycleViewController.m in Sources */,
+				B84C032D1CE317D600E62D75 /* ITRAirSideMenu.m in Sources */,
 				B87300911C50878900090C9D /* YFOneWaterWaveViewController.m in Sources */,
 				B88A154F1CA393F400BFC377 /* Case6ItemView.m in Sources */,
 				B864C7891C990C0200D1E440 /* YFAllRoundButtonVC.m in Sources */,
