@@ -15,7 +15,7 @@ static const CGFloat kCard_Margin = 7.0f;
 static const CGFloat kDragCompleteCoefficient_width_default = 0.8f;
 static const CGFloat kDragCompleteCoefficient_height_default = 0.6f;
 
-typedef NS_ENUM(NSInteger, MoveSlope) {
+typedef NS_ENUM(NSInteger, MoveSlope) {  // 触摸点是上还是下
     MoveSlopeTop = 1,
     MoveSlopeBottom = -1
 };
@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger, MoveSlope) {
 
 @property (nonatomic, assign) MoveSlope moveSlope;
 @property (nonatomic, assign) CGRect defaultFrame;
-@property (nonatomic, assign) CGFloat cardCenterX;
-@property (nonatomic, assign) CGFloat cardCenterY;
+@property (nonatomic, assign) CGFloat cardCenterX; // 视图中心点X值
+@property (nonatomic, assign) CGFloat cardCenterY; // 视图中心点Y值
 @property (nonatomic, assign) NSInteger loadedIndex;
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, strong) NSMutableArray *currentViews;
@@ -362,14 +362,11 @@ typedef NS_ENUM(NSInteger, MoveSlope) {
 - (void)handlePanGesture:(UIPanGestureRecognizer *)gesture
 {
     if (!_isInitialAnimation) { return; }
-    NSLog(@"gesture.state = %zd", gesture.state);
     if (gesture.state == UIGestureRecognizerStateBegan) {  // 1
         CGPoint touchPoint = [gesture locationInView:self];
-        if (touchPoint.y <= _cardCenterY) {  // Q:往下移动,为什么设置为MoveSlopeTop
-            NSLog(@"movew top, touchPoint.y = %f", touchPoint.y);
+        if (touchPoint.y <= _cardCenterY) {  // 一般往上滑动 手指触动的是下半部分
             _moveSlope = MoveSlopeTop;
         } else {
-            NSLog(@"movew bottom");
             _moveSlope = MoveSlopeBottom;
         }
     }
@@ -440,21 +437,21 @@ typedef NS_ENUM(NSInteger, MoveSlope) {
         }
         
         CGPoint prePoint = [gesture translationInView:self];
-        NSLog(@"前gesture.x = %f, gesture.y = %f", prePoint.x, prePoint.y);
+//        NSLog(@"前gesture.x = %f, gesture.y = %f", prePoint.x, prePoint.y);
         [gesture setTranslation:CGPointZero inView:self];
         CGPoint suffixPoint = [gesture translationInView:self];
 
-        NSLog(@"后gesture.x = %f, gesture.y = %f", suffixPoint.x, suffixPoint.y);
+//        NSLog(@"后gesture.x = %f, gesture.y = %f", suffixPoint.x, suffixPoint.y);
 
     }
     
     if (gesture.state == UIGestureRecognizerStateEnded ||
         gesture.state == UIGestureRecognizerStateCancelled) {  // 3  4
         
-        NSLog(@"gesture.view.center.y = %f, _cardCenterY = %f", gesture.view.center.y , _cardCenterY);
+//        NSLog(@"gesture.view.center.y = %f, _cardCenterY = %f", gesture.view.center.y , _cardCenterY);
         float ratio_w = (gesture.view.center.x - _cardCenterX) / _cardCenterX;
         float ratio_h = (gesture.view.center.y - _cardCenterY) / _cardCenterY;
-        NSLog(@"ratio_w = %f, ratio_h = %f", ratio_w, ratio_h);
+//        NSLog(@"ratio_w = %f, ratio_h = %f", ratio_w, ratio_h);
         
         YSLDraggableDirection direction = YSLDraggableDirectionDefault;
         if (fabs(ratio_h) > fabs(ratio_w)) {

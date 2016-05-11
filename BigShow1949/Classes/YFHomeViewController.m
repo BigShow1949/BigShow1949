@@ -5,14 +5,18 @@
 //  Created by WangMengqi on 15/9/1.
 //  Copyright (c) 2015年 BigShowCompany. All rights reserved.
 //
-//  更多信息: AppStore
-//  QQ群:
-//  作者博客:
 //
 
 #import "YFHomeViewController.h"
 #import "YFAboutUsViewController.h"
 
+
+/*
+    Github: https://github.com/BigShow1949/BigShow1949
+    本人QQ:1029883589 代码有任何问题都可以找我交流
+    QQ群:148279151(高手在民间)
+    博客:http://www.cnblogs.com/bigshow1949/
+ */
 
 @implementation YFHomeViewController
 

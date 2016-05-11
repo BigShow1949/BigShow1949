@@ -168,6 +168,9 @@
 		B848CC7F1CB35008005F5DA0 /* YFEmptyDataSetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B848CC7E1CB35008005F5DA0 /* YFEmptyDataSetViewController.storyboard */; };
 		B848CCC51CB3BA77005F5DA0 /* YFDataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B848CCC41CB3BA77005F5DA0 /* YFDataPersistenceViewController.m */; };
 		B848CCEF1CB3BD1A005F5DA0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */; };
+		B84C03251CE2DFE400E62D75 /* YFKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84C03241CE2DFE400E62D75 /* YFKeepViewController.m */; };
+		B84C03271CE2DFF200E62D75 /* YFKeepViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84C03261CE2DFF200E62D75 /* YFKeepViewController.storyboard */; };
+		B84C03291CE2E04700E62D75 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B84C03281CE2E04700E62D75 /* 1.mp4 */; };
 		B852D51B1C51D60800454E7F /* CAAnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D50E1C51D60800454E7F /* CAAnimationGroupViewController.m */; };
 		B852D51C1C51D60800454E7F /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D5101C51D60800454E7F /* CABasicAnimationViewController.m */; };
 		B852D51D1C51D60800454E7F /* CAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B852D5121C51D60800454E7F /* CAKeyframeAnimationViewController.m */; };
@@ -246,6 +249,9 @@
 		B869D52F1C461D1000233328 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B869D52E1C461D1000233328 /* AMap.bundle */; };
 		B869D5321C462BC500233328 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B869D5311C462BC500233328 /* BaseTableViewController.m */; };
 		B869D5391C46406600233328 /* YFBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B869D5381C46406600233328 /* YFBlogViewController.m */; };
+		B86B4A8D1CE1DBCE00AD54AB /* YFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B4A8C1CE1DBCE00AD54AB /* YFGuideViewController.m */; };
+		B86B4A911CE1DC4F00AD54AB /* ZWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B4A901CE1DC4F00AD54AB /* ZWIntroductionViewController.m */; };
+		B86B4A941CE1DDAB00AD54AB /* YFGradualChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B4A931CE1DDAB00AD54AB /* YFGradualChangeViewController.m */; };
 		B86C98091C488FD50026AB88 /* YFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86C98081C488FD50026AB88 /* YFSearchController.m */; };
 		B86C980C1C488FF50026AB88 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86C980B1C488FF50026AB88 /* SearchResultsViewController.m */; };
 		B86C98251C48DBDC0026AB88 /* YFBottomEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B86C98221C48DBDC0026AB88 /* YFBottomEditView.m */; };
@@ -768,6 +774,10 @@
 		B848CCC31CB3BA77005F5DA0 /* YFDataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDataPersistenceViewController.h; sourceTree = "<group>"; };
 		B848CCC41CB3BA77005F5DA0 /* YFDataPersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDataPersistenceViewController.m; sourceTree = "<group>"; };
 		B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B84C03231CE2DFE400E62D75 /* YFKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFKeepViewController.h; sourceTree = "<group>"; };
+		B84C03241CE2DFE400E62D75 /* YFKeepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFKeepViewController.m; sourceTree = "<group>"; };
+		B84C03261CE2DFF200E62D75 /* YFKeepViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFKeepViewController.storyboard; sourceTree = "<group>"; };
+		B84C03281CE2E04700E62D75 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		B852D50D1C51D60800454E7F /* CAAnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupViewController.h; sourceTree = "<group>"; };
 		B852D50E1C51D60800454E7F /* CAAnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupViewController.m; sourceTree = "<group>"; };
 		B852D50F1C51D60800454E7F /* CABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationViewController.h; sourceTree = "<group>"; };
@@ -894,6 +904,12 @@
 		B869D5311C462BC500233328 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		B869D5371C46406600233328 /* YFBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBlogViewController.h; sourceTree = "<group>"; };
 		B869D5381C46406600233328 /* YFBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBlogViewController.m; sourceTree = "<group>"; };
+		B86B4A8B1CE1DBCE00AD54AB /* YFGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFGuideViewController.h; sourceTree = "<group>"; };
+		B86B4A8C1CE1DBCE00AD54AB /* YFGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFGuideViewController.m; sourceTree = "<group>"; };
+		B86B4A8F1CE1DC4F00AD54AB /* ZWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWIntroductionViewController.h; sourceTree = "<group>"; };
+		B86B4A901CE1DC4F00AD54AB /* ZWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWIntroductionViewController.m; sourceTree = "<group>"; };
+		B86B4A921CE1DDAB00AD54AB /* YFGradualChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFGradualChangeViewController.h; sourceTree = "<group>"; };
+		B86B4A931CE1DDAB00AD54AB /* YFGradualChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFGradualChangeViewController.m; sourceTree = "<group>"; };
 		B86C98071C488FD50026AB88 /* YFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSearchController.h; sourceTree = "<group>"; };
 		B86C98081C488FD50026AB88 /* YFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSearchController.m; sourceTree = "<group>"; };
 		B86C980A1C488FF50026AB88 /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
@@ -1625,6 +1641,7 @@
 			children = (
 				18CAD0301B95FD88001066FF /* YFKnowledgeViewController.h */,
 				18CAD0311B95FD88001066FF /* YFKnowledgeViewController.m */,
+				B86B4A871CE1DAD900AD54AB /* GuideView */,
 				B8E42CC31CBFE299004C7BF6 /* CategoryAttribute */,
 				B80981DE1CBE1D9E0030BF28 /* ResponderChain */,
 				B8DE44F21CB60323001E022D /* LifeCycle */,
@@ -1880,6 +1897,7 @@
 		8B0B9AB21B9572000084590D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B84C03281CE2E04700E62D75 /* 1.mp4 */,
 				18C760021B9AB24A0038B2EE /* lxh */,
 				18C760031B9AB24A0038B2EE /* default */,
 				8B0B9ABF1B9572000084590D /* Images.xcassets */,
@@ -2247,6 +2265,16 @@
 			path = DataPersistence;
 			sourceTree = "<group>";
 		};
+		B84C03221CE2DFC500E62D75 /* Keep */ = {
+			isa = PBXGroup;
+			children = (
+				B84C03231CE2DFE400E62D75 /* YFKeepViewController.h */,
+				B84C03241CE2DFE400E62D75 /* YFKeepViewController.m */,
+				B84C03261CE2DFF200E62D75 /* YFKeepViewController.storyboard */,
+			);
+			path = Keep;
+			sourceTree = "<group>";
+		};
 		B852D50C1C51D60800454E7F /* 核心动画基础篇 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2528,6 +2556,28 @@
 				B869D5381C46406600233328 /* YFBlogViewController.m */,
 			);
 			path = Blog;
+			sourceTree = "<group>";
+		};
+		B86B4A871CE1DAD900AD54AB /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				B86B4A8B1CE1DBCE00AD54AB /* YFGuideViewController.h */,
+				B86B4A8C1CE1DBCE00AD54AB /* YFGuideViewController.m */,
+				B84C03221CE2DFC500E62D75 /* Keep */,
+				B86B4A8E1CE1DC4200AD54AB /* ZWIntroductionViewController */,
+			);
+			path = GuideView;
+			sourceTree = "<group>";
+		};
+		B86B4A8E1CE1DC4200AD54AB /* ZWIntroductionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B86B4A8F1CE1DC4F00AD54AB /* ZWIntroductionViewController.h */,
+				B86B4A901CE1DC4F00AD54AB /* ZWIntroductionViewController.m */,
+				B86B4A921CE1DDAB00AD54AB /* YFGradualChangeViewController.h */,
+				B86B4A931CE1DDAB00AD54AB /* YFGradualChangeViewController.m */,
+			);
+			path = ZWIntroductionViewController;
 			sourceTree = "<group>";
 		};
 		B86C98061C488FB10026AB88 /* 03- UISearchController */ = {
@@ -3724,6 +3774,7 @@
 				B852D5211C51D60800454E7F /* Transition1.jpg in Resources */,
 				B848CC7A1CB34FCC005F5DA0 /* placeholder_fancy.png in Resources */,
 				18CAD0D21B998A93001066FF /* snow.png in Resources */,
+				B84C03271CE2DFF200E62D75 /* YFKeepViewController.storyboard in Resources */,
 				B891DB4F1CA146E5007F69AF /* gift@2x.png in Resources */,
 				B83336771CD89487003B347A /* RootViewController.xib in Resources */,
 				B848CC7F1CB35008005F5DA0 /* YFEmptyDataSetViewController.storyboard in Resources */,
@@ -3749,6 +3800,7 @@
 				B852D5861C52336700454E7F /* bg_shaking.png in Resources */,
 				B864C7BF1C9957C200D1E440 /* iphone_settings_view.xib in Resources */,
 				B8A57EC21CC4C447003ED5EF /* FMDBBaseUseViewController.storyboard in Resources */,
+				B84C03291CE2E04700E62D75 /* 1.mp4 in Resources */,
 				8BC4ADD11B968D590026B012 /* YFRotateButtonViewController.storyboard in Resources */,
 				B8D444231C50AC5A00F3A34E /* background.jpg in Resources */,
 				18C75E411B9AB0C50038B2EE /* lxhEmotionsInfo.plist in Resources */,
@@ -3840,6 +3892,7 @@
 				B87300981C508CFF00090C9D /* LXHTwoWaterWaveView.m in Sources */,
 				B87042631CAB7CEB0067653C /* YFAnswerBox.m in Sources */,
 				B890C4AA1C859ABC008F31F0 /* YFTableViewDelAllCell.m in Sources */,
+				B86B4A911CE1DC4F00AD54AB /* ZWIntroductionViewController.m in Sources */,
 				18C760EF1B9AD4300038B2EE /* YFRecordData.m in Sources */,
 				B852D5371C51F8A600454E7F /* YFPushTransitionViewController.m in Sources */,
 				B891DAF01CA11ABB007F69AF /* View+MASAdditions.m in Sources */,
@@ -4055,6 +4108,7 @@
 				B864C7B11C99566600D1E440 /* YFHalfCircleLayoutViewController.m in Sources */,
 				8BC4AD501B9681B70026B012 /* UIImage+GIF.m in Sources */,
 				B891D9EA1CA0F7A9007F69AF /* RZOverscrollInteractionController.m in Sources */,
+				B86B4A8D1CE1DBCE00AD54AB /* YFGuideViewController.m in Sources */,
 				B891D9F91CA0F7A9007F69AF /* RZSimpleCollectionViewController.m in Sources */,
 				B80127A21CD9F4A400165440 /* YFBubbleMenuButtonViewController.m in Sources */,
 				B891DB171CA12E65007F69AF /* LazyFadeInView.m in Sources */,
@@ -4079,6 +4133,7 @@
 				B8763CE21C980EA8007B200B /* RGCollectionViewCell.m in Sources */,
 				B8729E1F1C9A488A00A18AA5 /* TempViewController.m in Sources */,
 				B8729E181C9A467500A18AA5 /* YFViewTransitionViewController.m in Sources */,
+				B84C03251CE2DFE400E62D75 /* YFKeepViewController.m in Sources */,
 				B891D9E91CA0F7A9007F69AF /* RZHorizontalInteractionController.m in Sources */,
 				B87042A21CABCDFE0067653C /* JLHomePracticeSubjectsCollectionCellViewModel.m in Sources */,
 				B848CC7D1CB34FCC005F5DA0 /* UITableView+Gzw.m in Sources */,
@@ -4091,6 +4146,7 @@
 				B891DAB01CA115A8007F69AF /* SBGradientOverlayLayer.m in Sources */,
 				B891DB521CA147A9007F69AF /* UIImage+Extend.m in Sources */,
 				B891DAC91CA117F2007F69AF /* YFAutolayoutTagViewController.m in Sources */,
+				B86B4A941CE1DDAB00AD54AB /* YFGradualChangeViewController.m in Sources */,
 				B87445ED1CACBD48009F274E /* YiTableViewDelegate.m in Sources */,
 				189242651B99D065008AC1EB /* YFAboutUsViewController.m in Sources */,
 				8BC4AD8F1B9682B00026B012 /* MJRefreshFooterView.m in Sources */,

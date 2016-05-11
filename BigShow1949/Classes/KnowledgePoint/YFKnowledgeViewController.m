@@ -19,14 +19,16 @@
                     @"Masonry基本使用",
                     @"生命周期",
                     @"响应者链条",
-                    @"分类属性"];
+                    @"分类属性",
+                    @"引导页"];
     
     self.classNames = @[@"YFKnowledgeVC02",
                         @"YFSearchController",
                         @"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
                         @"YFResponderChainViewController",
-                        @"YFCategoryAttributeViewController"];
+                        @"YFCategoryAttributeViewController",
+                        @"YFGuideViewController"];
 }
 
 

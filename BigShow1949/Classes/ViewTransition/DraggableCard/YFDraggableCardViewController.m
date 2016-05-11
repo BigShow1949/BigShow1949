@@ -32,6 +32,7 @@
     
     self.view.backgroundColor = RGB(235, 235, 235);
     
+    // 创建 _container
     _container = [[YSLDraggableCardContainer alloc]init];
     _container.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     _container.backgroundColor = [UIColor clearColor];
@@ -40,6 +41,7 @@
     _container.canDraggableDirection = YSLDraggableDirectionLeft | YSLDraggableDirectionRight | YSLDraggableDirectionUp;
     [self.view addSubview:_container];
     
+    // 创建上下左右四个按钮
     for (int i = 0; i < 4; i++) {
         
         UIView *view = [[UIView alloc]init];
@@ -65,8 +67,10 @@
         if (i == 3) { [button setTitle:@"Right" forState:UIControlStateNormal]; }
     }
     
+    // 获取数据
     [self loadData];
     
+    // 给_container赋值
     [_container reloadCardContainer];
 }
 
