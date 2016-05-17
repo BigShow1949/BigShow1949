@@ -41,6 +41,7 @@
                     @"设计模式",
                     @"常用工具类",
                     @"数据持久化",
+                    @"网络请求",
                     @"博客/论坛"];
     
     // 框架模式有哪些？
@@ -61,6 +62,7 @@
                         @"YFDesignPatternViewController",
                         @"YFToolsViewController",
                         @"YFDataPersistenceViewController",
+                        @"YFNetworkRequestViewController",
                         @"YFBlogViewController"];
     
     [self setupNav];
