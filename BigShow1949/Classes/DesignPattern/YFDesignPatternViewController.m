@@ -17,9 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"MVVM_coderyi"];
+    self.titles = @[@"MVVM_coderyi",
+                    @"DataSource分离"];
     
-    self.classNames = @[@"YiTableViewController"];
+    self.classNames = @[@"YiTableViewController",
+                        @"MyDataSourceViewController"];
 
 }
 

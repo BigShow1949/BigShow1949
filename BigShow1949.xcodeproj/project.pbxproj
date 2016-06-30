@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B38211D24FE5E005CD7F1 /* MyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381C1D24FE5E005CD7F1 /* MyDataSource.m */; };
+		184B38221D24FE5E005CD7F1 /* MyDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */; };
+		184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */; };
 		189242651B99D065008AC1EB /* YFAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAboutUsViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -512,6 +515,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184B381B1D24FE5E005CD7F1 /* MyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSource.h; sourceTree = "<group>"; };
+		184B381C1D24FE5E005CD7F1 /* MyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSource.m; sourceTree = "<group>"; };
+		184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSourceViewController.h; sourceTree = "<group>"; };
+		184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSourceViewController.m; sourceTree = "<group>"; };
+		184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
+		184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAboutUsViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAboutUsViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1448,6 +1457,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184B381A1D24FE5E005CD7F1 /* MyDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				184B381B1D24FE5E005CD7F1 /* MyDataSource.h */,
+				184B381C1D24FE5E005CD7F1 /* MyDataSource.m */,
+				184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */,
+				184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */,
+				184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */,
+				184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */,
+			);
+			path = MyDataSource;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -2832,6 +2854,7 @@
 			children = (
 				B87042A91CABD86D0067653C /* YFDesignPatternViewController.h */,
 				B87042AA1CABD86D0067653C /* YFDesignPatternViewController.m */,
+				184B381A1D24FE5E005CD7F1 /* MyDataSource */,
 				B87445D01CACBD48009F274E /* MVVM_coderyi */,
 			);
 			path = DesignPattern;
@@ -4086,6 +4109,7 @@
 				B864C79F1C993CD300D1E440 /* YFHomeLabelButton.m in Sources */,
 				B873008B1C5080BF00090C9D /* YFGradientViewController.m in Sources */,
 				18C760D91B9ACC960038B2EE /* SYTabBarViewController.m in Sources */,
+				184B38221D24FE5E005CD7F1 /* MyDataSourceViewController.m in Sources */,
 				18CAD0771B9977E3001066FF /* UIView+YFConstraints.m in Sources */,
 				B83EA95B1CC0C74C00807828 /* FMDatabaseAdditions.m in Sources */,
 				B86C982F1C48DCB60026AB88 /* UIImageView+YFBlurtImage.m in Sources */,
@@ -4145,6 +4169,7 @@
 				B887CBD11C9C007000A2F102 /* YFDraggableCardViewController.m in Sources */,
 				B864C76A1C98F3E700D1E440 /* UIButton+touch.m in Sources */,
 				B891D9F01CA0F7A9007F69AF /* RZRectZoomAnimationController.m in Sources */,
+				184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */,
 				B8A57EEE1CC50187003ED5EF /* LCCSqliteGCD.m in Sources */,
 				B870429F1CABCDFE0067653C /* JLHomePracticeSubjectsCollectionViewCell.m in Sources */,
 				B8DE44F81CB6038D001E022D /* BViewController.m in Sources */,
@@ -4243,6 +4268,7 @@
 				18CAD0751B9977E3001066FF /* ContextMenuCell.m in Sources */,
 				B85C969A1C4F765B0096E2A1 /* YFWaterWaveViewController.m in Sources */,
 				B870424E1CAB7BAA0067653C /* YFApeExamViewController.m in Sources */,
+				184B38211D24FE5E005CD7F1 /* MyDataSource.m in Sources */,
 				8BC4AD551B9681B70026B012 /* UIView+WebCacheOperation.m in Sources */,
 				B891D9F41CA0F7A9007F69AF /* RZZoomBlurAnimationController.m in Sources */,
 				18CAD0CB1B998A93001066FF /* YFAnimationManager.m in Sources */,
