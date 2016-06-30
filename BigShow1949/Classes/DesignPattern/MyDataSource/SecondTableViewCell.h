@@ -11,5 +11,4 @@
 @interface SecondTableViewCell : UITableViewCell
 
 
-- (void)setDataByModel:(id)data;
 @end

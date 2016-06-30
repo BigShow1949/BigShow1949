@@ -1,14 +1,14 @@
 //
-//  SecondTableViewCell.m
-//  test
+//  OneTableViewCell.m
+//  BigShow1949
 //
-//  Created by 杨帆 on 16/6/29.
+//  Created by 杨帆 on 16/6/30.
 //  Copyright © 2016年 BigShowCompany. All rights reserved.
 //
 
-#import "SecondTableViewCell.h"
-#import "ModelTwo.h"
-@implementation SecondTableViewCell
+#import "OneTableViewCell.h"
+#import "ModelOne.h"
+@implementation OneTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -19,14 +19,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-    NSLog(@"dfasdfasdf");
 }
+
 
 - (void)configCellWithEntity:(id)entity
 {
     if(entity)
     {
-        ModelTwo *model = entity;
+        ModelOne *model = entity;
         self.textLabel.text = model.name;
     }
 }

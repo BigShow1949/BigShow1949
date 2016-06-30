@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184B38211D24FE5E005CD7F1 /* MyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381C1D24FE5E005CD7F1 /* MyDataSource.m */; };
 		184B38221D24FE5E005CD7F1 /* MyDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */; };
 		184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */; };
+		184B38261D250883005CD7F1 /* MyDataSourceViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38251D250883005CD7F1 /* MyDataSourceViewController2.m */; };
+		184B38291D25093C005CD7F1 /* OneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38281D25093C005CD7F1 /* OneTableViewCell.m */; };
+		184B382C1D250C13005CD7F1 /* MyBaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B382B1D250C13005CD7F1 /* MyBaseDataSource.m */; };
+		184B382F1D250C49005CD7F1 /* DataSource1.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B382E1D250C49005CD7F1 /* DataSource1.m */; };
+		184B38321D250C57005CD7F1 /* DataSource2.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38311D250C57005CD7F1 /* DataSource2.m */; };
+		184B384A1D252060005CD7F1 /* UITableViewCell+YFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38491D252060005CD7F1 /* UITableViewCell+YFDataSource.m */; };
+		184B384D1D252175005CD7F1 /* ModelTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B384C1D252175005CD7F1 /* ModelTwo.m */; };
+		184B38531D2521A8005CD7F1 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38521D2521A8005CD7F1 /* ModelOne.m */; };
 		189242651B99D065008AC1EB /* YFAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAboutUsViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -515,12 +522,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		184B381B1D24FE5E005CD7F1 /* MyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSource.h; sourceTree = "<group>"; };
-		184B381C1D24FE5E005CD7F1 /* MyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSource.m; sourceTree = "<group>"; };
 		184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSourceViewController.h; sourceTree = "<group>"; };
 		184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSourceViewController.m; sourceTree = "<group>"; };
 		184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
 		184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		184B38241D250883005CD7F1 /* MyDataSourceViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSourceViewController2.h; sourceTree = "<group>"; };
+		184B38251D250883005CD7F1 /* MyDataSourceViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSourceViewController2.m; sourceTree = "<group>"; };
+		184B38271D25093C005CD7F1 /* OneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTableViewCell.h; sourceTree = "<group>"; };
+		184B38281D25093C005CD7F1 /* OneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTableViewCell.m; sourceTree = "<group>"; };
+		184B382A1D250C13005CD7F1 /* MyBaseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseDataSource.h; sourceTree = "<group>"; };
+		184B382B1D250C13005CD7F1 /* MyBaseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseDataSource.m; sourceTree = "<group>"; };
+		184B382D1D250C49005CD7F1 /* DataSource1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource1.h; sourceTree = "<group>"; };
+		184B382E1D250C49005CD7F1 /* DataSource1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource1.m; sourceTree = "<group>"; };
+		184B38301D250C57005CD7F1 /* DataSource2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource2.h; sourceTree = "<group>"; };
+		184B38311D250C57005CD7F1 /* DataSource2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource2.m; sourceTree = "<group>"; };
+		184B38481D252060005CD7F1 /* UITableViewCell+YFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YFDataSource.h"; sourceTree = "<group>"; };
+		184B38491D252060005CD7F1 /* UITableViewCell+YFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YFDataSource.m"; sourceTree = "<group>"; };
+		184B384B1D252175005CD7F1 /* ModelTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTwo.h; sourceTree = "<group>"; };
+		184B384C1D252175005CD7F1 /* ModelTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTwo.m; sourceTree = "<group>"; };
+		184B38511D2521A8005CD7F1 /* ModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelOne.h; sourceTree = "<group>"; };
+		184B38521D2521A8005CD7F1 /* ModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelOne.m; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAboutUsViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAboutUsViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1460,12 +1481,26 @@
 		184B381A1D24FE5E005CD7F1 /* MyDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				184B381B1D24FE5E005CD7F1 /* MyDataSource.h */,
-				184B381C1D24FE5E005CD7F1 /* MyDataSource.m */,
 				184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */,
 				184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */,
+				184B38241D250883005CD7F1 /* MyDataSourceViewController2.h */,
+				184B38251D250883005CD7F1 /* MyDataSourceViewController2.m */,
 				184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */,
 				184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */,
+				184B38271D25093C005CD7F1 /* OneTableViewCell.h */,
+				184B38281D25093C005CD7F1 /* OneTableViewCell.m */,
+				184B382A1D250C13005CD7F1 /* MyBaseDataSource.h */,
+				184B382B1D250C13005CD7F1 /* MyBaseDataSource.m */,
+				184B382D1D250C49005CD7F1 /* DataSource1.h */,
+				184B382E1D250C49005CD7F1 /* DataSource1.m */,
+				184B38301D250C57005CD7F1 /* DataSource2.h */,
+				184B38311D250C57005CD7F1 /* DataSource2.m */,
+				184B38481D252060005CD7F1 /* UITableViewCell+YFDataSource.h */,
+				184B38491D252060005CD7F1 /* UITableViewCell+YFDataSource.m */,
+				184B384B1D252175005CD7F1 /* ModelTwo.h */,
+				184B384C1D252175005CD7F1 /* ModelTwo.m */,
+				184B38511D2521A8005CD7F1 /* ModelOne.h */,
+				184B38521D2521A8005CD7F1 /* ModelOne.m */,
 			);
 			path = MyDataSource;
 			sourceTree = "<group>";
@@ -4186,6 +4221,7 @@
 				18C75C601B9AA77B0038B2EE /* SYComposeViewController.m in Sources */,
 				B87445E91CACBD48009F274E /* YiRefreshHeader.m in Sources */,
 				B8A57EC01CC4832C003ED5EF /* SQLiteBaseUseViewController.m in Sources */,
+				184B38291D25093C005CD7F1 /* OneTableViewCell.m in Sources */,
 				B891DAEC1CA11ABB007F69AF /* MASViewAttribute.m in Sources */,
 				B864C7A01C993CD300D1E440 /* YFNeteaseHomeViewController.m in Sources */,
 				18C760DB1B9ACC960038B2EE /* SYTabButton.m in Sources */,
@@ -4220,6 +4256,7 @@
 				B86C980C1C488FF50026AB88 /* SearchResultsViewController.m in Sources */,
 				B87445EB1CACBD48009F274E /* YiCustomModel.m in Sources */,
 				B8729E131C9A441500A18AA5 /* ZTypewriteEffectLabel.m in Sources */,
+				184B384A1D252060005CD7F1 /* UITableViewCell+YFDataSource.m in Sources */,
 				18CAD0871B9977E3001066FF /* YFPopMenuViewController.m in Sources */,
 				B891DAEF1CA11ABB007F69AF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				18CAD0821B9977E3001066FF /* YFAnimationVC05.m in Sources */,
@@ -4252,6 +4289,7 @@
 				B864C78F1C990EF900D1E440 /* APRoundedButton.m in Sources */,
 				B891D9F21CA0F7A9007F69AF /* RZShrinkZoomAnimationController.m in Sources */,
 				B852D5721C52315200454E7F /* YFNeteaseViewController.m in Sources */,
+				184B38531D2521A8005CD7F1 /* ModelOne.m in Sources */,
 				B88A15531CA393F400BFC377 /* Case8DataEntity.m in Sources */,
 				B893865F1C9FCE6300B122B8 /* HHContentScrollView.m in Sources */,
 				B891D9F71CA0F7A9007F69AF /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
@@ -4261,6 +4299,7 @@
 				B83EA95C1CC0C74C00807828 /* FMDatabasePool.m in Sources */,
 				B852D5261C51D61900454E7F /* YFCoreAnimationViewController.m in Sources */,
 				B88023001CAE5B2D002C0021 /* UIImage+CJZ.m in Sources */,
+				184B382C1D250C13005CD7F1 /* MyBaseDataSource.m in Sources */,
 				8BC4AD4D1B9681B70026B012 /* SDWebImageManager.m in Sources */,
 				B87445EC1CACBD48009F274E /* YiTableViewDataSource.m in Sources */,
 				B893864E1C9FCE3300B122B8 /* YFHorizontalPagingViewController.m in Sources */,
@@ -4268,7 +4307,6 @@
 				18CAD0751B9977E3001066FF /* ContextMenuCell.m in Sources */,
 				B85C969A1C4F765B0096E2A1 /* YFWaterWaveViewController.m in Sources */,
 				B870424E1CAB7BAA0067653C /* YFApeExamViewController.m in Sources */,
-				184B38211D24FE5E005CD7F1 /* MyDataSource.m in Sources */,
 				8BC4AD551B9681B70026B012 /* UIView+WebCacheOperation.m in Sources */,
 				B891D9F41CA0F7A9007F69AF /* RZZoomBlurAnimationController.m in Sources */,
 				18CAD0CB1B998A93001066FF /* YFAnimationManager.m in Sources */,
@@ -4294,7 +4332,9 @@
 				B8A57EE11CC50183003ED5EF /* LccCell.m in Sources */,
 				B88A15A31CA3E0B000BFC377 /* YFStar.m in Sources */,
 				B887CBDA1C9C009000A2F102 /* CardView.m in Sources */,
+				184B384D1D252175005CD7F1 /* ModelTwo.m in Sources */,
 				B87300831C50742800090C9D /* YFBezierViewController.m in Sources */,
+				184B38261D250883005CD7F1 /* MyDataSourceViewController2.m in Sources */,
 				B891DB331CA13552007F69AF /* YFDynamicLabelViewController.m in Sources */,
 				18C760EE1B9AD4300038B2EE /* YFLabel.m in Sources */,
 				B88A154A1CA393F400BFC377 /* Case3ViewController.m in Sources */,
@@ -4308,6 +4348,7 @@
 				B891DAAE1CA115A8007F69AF /* JCFlipPageView.m in Sources */,
 				18CAD07C1B9977E3001066FF /* YFAnimationVC02.m in Sources */,
 				B87445EE1CACBD48009F274E /* YiCustomTableViewCell.m in Sources */,
+				184B38321D250C57005CD7F1 /* DataSource2.m in Sources */,
 				B8E9F0361CEAF11E00E7E668 /* UIAlertView+AFNetworking.m in Sources */,
 				B8A57EDF1CC50183003ED5EF /* DataListController.m in Sources */,
 				B891DAF11CA11ABB007F69AF /* ViewController+MASAdditions.m in Sources */,
@@ -4465,6 +4506,7 @@
 				B87300911C50878900090C9D /* YFOneWaterWaveViewController.m in Sources */,
 				B8E9F0351CEAF11E00E7E668 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B88A154F1CA393F400BFC377 /* Case6ItemView.m in Sources */,
+				184B382F1D250C49005CD7F1 /* DataSource1.m in Sources */,
 				B864C7891C990C0200D1E440 /* YFAllRoundButtonVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
