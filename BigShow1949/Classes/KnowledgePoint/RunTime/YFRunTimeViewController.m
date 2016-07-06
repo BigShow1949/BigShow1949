@@ -18,10 +18,12 @@
     [super viewDidLoad];
     
     self.titles = @[@"字典转模型",
-                    @"分类属性"];
+                    @"分类属性",
+                    @"多次点击按钮(方法交换)"];
     
     self.classNames = @[@"YFDictToModelViewController",
-                        @"YFCategoryAttributeViewController"];
+                        @"YFCategoryAttributeViewController",
+                        @"YFMultipleClicksViewController"];
     
 
 

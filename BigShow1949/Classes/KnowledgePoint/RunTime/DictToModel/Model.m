@@ -98,6 +98,7 @@
         
     }
     
+    free(ivarList);
     return objc;
     
 }
