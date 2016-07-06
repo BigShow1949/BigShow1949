@@ -17,6 +17,8 @@
 		181F28B01D2CF53C00FC2637 /* YFCategoryAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AA1D2CF53C00FC2637 /* YFCategoryAttributeViewController.m */; };
 		181F28B11D2CF53C00FC2637 /* YFPerson+addproty.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AC1D2CF53C00FC2637 /* YFPerson+addproty.m */; };
 		181F28B21D2CF53C00FC2637 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AE1D2CF53C00FC2637 /* YFPerson.m */; };
+		181F28B61D2CFE0A00FC2637 /* YFExchangeMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28B51D2CFE0A00FC2637 /* YFExchangeMethodVC.m */; };
+		181F28B91D2CFEA000FC2637 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28B81D2CFEA000FC2637 /* UIImage+Image.m */; };
 		184B38221D24FE5E005CD7F1 /* MyDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */; };
 		184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */; };
 		184B38261D250883005CD7F1 /* MyDataSourceViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38251D250883005CD7F1 /* MyDataSourceViewController2.m */; };
@@ -548,6 +550,10 @@
 		181F28AC1D2CF53C00FC2637 /* YFPerson+addproty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YFPerson+addproty.m"; sourceTree = "<group>"; };
 		181F28AD1D2CF53C00FC2637 /* YFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
 		181F28AE1D2CF53C00FC2637 /* YFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
+		181F28B41D2CFE0A00FC2637 /* YFExchangeMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFExchangeMethodVC.h; sourceTree = "<group>"; };
+		181F28B51D2CFE0A00FC2637 /* YFExchangeMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFExchangeMethodVC.m; sourceTree = "<group>"; };
+		181F28B71D2CFEA000FC2637 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		181F28B81D2CFEA000FC2637 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSourceViewController.h; sourceTree = "<group>"; };
 		184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSourceViewController.m; sourceTree = "<group>"; };
 		184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
@@ -1499,6 +1505,7 @@
 		181F28921D2CEE1700FC2637 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				181F28B31D2CFD1700FC2637 /* ExchangeMethod */,
 				181F28A61D2CF53C00FC2637 /* CategoryAttribute */,
 				181F28961D2CEE8A00FC2637 /* DictToModel */,
 				181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */,
@@ -1537,6 +1544,17 @@
 				181F28AE1D2CF53C00FC2637 /* YFPerson.m */,
 			);
 			path = CategoryAttribute;
+			sourceTree = "<group>";
+		};
+		181F28B31D2CFD1700FC2637 /* ExchangeMethod */ = {
+			isa = PBXGroup;
+			children = (
+				181F28B41D2CFE0A00FC2637 /* YFExchangeMethodVC.h */,
+				181F28B51D2CFE0A00FC2637 /* YFExchangeMethodVC.m */,
+				181F28B71D2CFEA000FC2637 /* UIImage+Image.h */,
+				181F28B81D2CFEA000FC2637 /* UIImage+Image.m */,
+			);
+			path = ExchangeMethod;
 			sourceTree = "<group>";
 		};
 		184B381A1D24FE5E005CD7F1 /* MyDataSource */ = {
@@ -4420,9 +4438,11 @@
 				B88A159D1CA3D8A000BFC377 /* YFRatingBarViewController.m in Sources */,
 				B88A15501CA393F400BFC377 /* Case6ViewController.m in Sources */,
 				B83336781CD89487003B347A /* SecondViewController.m in Sources */,
+				181F28B61D2CFE0A00FC2637 /* YFExchangeMethodVC.m in Sources */,
 				B8E9F02B1CEAF11E00E7E668 /* AFHTTPRequestOperation.m in Sources */,
 				B891DAEB1CA11ABB007F69AF /* MASLayoutConstraint.m in Sources */,
 				8BC4AD4B1B9681B70026B012 /* SDWebImageDownloader.m in Sources */,
+				181F28B91D2CFEA000FC2637 /* UIImage+Image.m in Sources */,
 				B864C7B11C99566600D1E440 /* YFHalfCircleLayoutViewController.m in Sources */,
 				8BC4AD501B9681B70026B012 /* UIImage+GIF.m in Sources */,
 				B8E9F02E1CEAF11E00E7E668 /* AFNetworkReachabilityManager.m in Sources */,
