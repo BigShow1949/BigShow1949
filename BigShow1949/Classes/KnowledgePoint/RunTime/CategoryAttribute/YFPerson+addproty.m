@@ -13,10 +13,11 @@
 @implementation YFPerson (addproty)
 
 
-static char *strAddrKey = "strAddrKey";
+static char const *strAddrKey = "strAddrKey";
 - (NSString *)addr
 {
-    return objc_getAssociatedObject(self, &strAddrKey);
+    // 根据关联的key,获取关联的zhi
+    return objc_getAssociatedObject(self, strAddrKey);
 }
 - (void)setAddr:(NSString *)addr
 {
@@ -29,13 +30,16 @@ static char *strAddrKey = "strAddrKey";
      OBJC_ASSOCIATION_COPY;
      */
     /*
-     * id object 给哪个对象的属性赋值
-     const void *key 属性对应的key
-     id value  设置属性值为value
-     objc_AssociationPolicy policy  使用的策略，是一个枚举值，和copy，retain，assign是一样的，手机开发一般都选择NONATOMIC
      objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy);
+     四个参数:
+     1) id object 给哪个对象的属性赋值
+     2) const void *key 属性对应的key
+     3) id value  设置属性值为value
+     4) objc_AssociationPolicy policy  使用的策略，是一个枚举值，和copy，retain，assign是一样的，手机开发一般都选择NONATOMIC
+     
+     
      */
-    objc_setAssociatedObject(self, &strAddrKey, addr, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, strAddrKey, addr, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 -(void)saySex{

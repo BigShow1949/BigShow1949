@@ -22,13 +22,15 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // 例子1
     YFPerson *person = [[YFPerson alloc] init];
     person.name = @"大卫";
     person.addr = @"中关村大厦";
     NSLog(@"成功给分类添加属性 addr = %@", person.addr);
     
+    // 例子2
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    label.flashColor = [UIColor blackColor];
+    label.flashColor = [UIColor blueColor];
     NSLog(@"flashColor = %@", label.flashColor);
     [self.view addSubview:label];
     

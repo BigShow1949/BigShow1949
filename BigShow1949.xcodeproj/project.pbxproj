@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181F28951D2CEE4100FC2637 /* YFRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */; };
+		181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */; };
+		181F28A21D2CEF1600FC2637 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F289B1D2CEF1600FC2637 /* Person.m */; };
+		181F28A31D2CEF1600FC2637 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F289D1D2CEF1600FC2637 /* Classes.m */; };
+		181F28A41D2CEF1600FC2637 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F289F1D2CEF1600FC2637 /* Teacher.m */; };
+		181F28A51D2CEF1600FC2637 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28A11D2CEF1600FC2637 /* Model.m */; };
+		181F28AF1D2CF53C00FC2637 /* UILabel+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28A81D2CF53C00FC2637 /* UILabel+Associate.m */; };
+		181F28B01D2CF53C00FC2637 /* YFCategoryAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AA1D2CF53C00FC2637 /* YFCategoryAttributeViewController.m */; };
+		181F28B11D2CF53C00FC2637 /* YFPerson+addproty.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AC1D2CF53C00FC2637 /* YFPerson+addproty.m */; };
+		181F28B21D2CF53C00FC2637 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28AE1D2CF53C00FC2637 /* YFPerson.m */; };
 		184B38221D24FE5E005CD7F1 /* MyDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */; };
 		184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38201D24FE5E005CD7F1 /* SecondTableViewCell.m */; };
 		184B38261D250883005CD7F1 /* MyDataSourceViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38251D250883005CD7F1 /* MyDataSourceViewController2.m */; };
@@ -161,7 +171,6 @@
 		B83336771CD89487003B347A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B833366D1CD89487003B347A /* RootViewController.xib */; };
 		B83336781CD89487003B347A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B833366F1CD89487003B347A /* SecondViewController.m */; };
 		B83336791CD89487003B347A /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83336701CD89487003B347A /* SecondViewController.xib */; };
-		B83EA94C1CC09C4000807828 /* UILabel+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EA94B1CC09C4000807828 /* UILabel+Associate.m */; };
 		B83EA95A1CC0C74C00807828 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EA9501CC0C74C00807828 /* FMDatabase.m */; };
 		B83EA95B1CC0C74C00807828 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EA9521CC0C74C00807828 /* FMDatabaseAdditions.m */; };
 		B83EA95C1CC0C74C00807828 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EA9541CC0C74C00807828 /* FMDatabasePool.m */; };
@@ -485,9 +494,6 @@
 		B8D444871C50C4C000F3A34E /* markButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D444851C50C4C000F3A34E /* markButton@3x.png */; };
 		B8DE44F51CB60349001E022D /* YFLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DE44F41CB60349001E022D /* YFLifeCycleViewController.m */; };
 		B8DE44F81CB6038D001E022D /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DE44F71CB6038D001E022D /* BViewController.m */; };
-		B8E42CC61CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E42CC51CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.m */; };
-		B8E42CC91CBFE320004C7BF6 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E42CC81CBFE320004C7BF6 /* YFPerson.m */; };
-		B8E42CCC1CBFE3C3004C7BF6 /* YFPerson+addproty.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E42CCB1CBFE3C3004C7BF6 /* YFPerson+addproty.m */; };
 		B8E9EFF91CEAF00C00E7E668 /* YFNetworkRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E9EFF81CEAF00C00E7E668 /* YFNetworkRequestViewController.m */; };
 		B8E9F0011CEAF0A300E7E668 /* MGJRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E9EFFC1CEAF0A300E7E668 /* MGJRequestManager.m */; };
 		B8E9F0021CEAF0A300E7E668 /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E9EFFE1CEAF0A300E7E668 /* DemoListViewController.m */; };
@@ -522,6 +528,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRunTimeViewController.h; sourceTree = "<group>"; };
+		181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRunTimeViewController.m; sourceTree = "<group>"; };
+		181F28971D2CEEA200FC2637 /* YFDictToModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDictToModelViewController.h; sourceTree = "<group>"; };
+		181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDictToModelViewController.m; sourceTree = "<group>"; };
+		181F289A1D2CEF1600FC2637 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		181F289B1D2CEF1600FC2637 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		181F289C1D2CEF1600FC2637 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		181F289D1D2CEF1600FC2637 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		181F289E1D2CEF1600FC2637 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		181F289F1D2CEF1600FC2637 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		181F28A01D2CEF1600FC2637 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		181F28A11D2CEF1600FC2637 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		181F28A71D2CF53C00FC2637 /* UILabel+Associate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Associate.h"; sourceTree = "<group>"; };
+		181F28A81D2CF53C00FC2637 /* UILabel+Associate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Associate.m"; sourceTree = "<group>"; };
+		181F28A91D2CF53C00FC2637 /* YFCategoryAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCategoryAttributeViewController.h; sourceTree = "<group>"; };
+		181F28AA1D2CF53C00FC2637 /* YFCategoryAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCategoryAttributeViewController.m; sourceTree = "<group>"; };
+		181F28AB1D2CF53C00FC2637 /* YFPerson+addproty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YFPerson+addproty.h"; sourceTree = "<group>"; };
+		181F28AC1D2CF53C00FC2637 /* YFPerson+addproty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YFPerson+addproty.m"; sourceTree = "<group>"; };
+		181F28AD1D2CF53C00FC2637 /* YFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
+		181F28AE1D2CF53C00FC2637 /* YFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
 		184B381D1D24FE5E005CD7F1 /* MyDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSourceViewController.h; sourceTree = "<group>"; };
 		184B381E1D24FE5E005CD7F1 /* MyDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSourceViewController.m; sourceTree = "<group>"; };
 		184B381F1D24FE5E005CD7F1 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
@@ -800,8 +826,6 @@
 		B833366E1CD89487003B347A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B833366F1CD89487003B347A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B83336701CD89487003B347A /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		B83EA94A1CC09C4000807828 /* UILabel+Associate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Associate.h"; sourceTree = "<group>"; };
-		B83EA94B1CC09C4000807828 /* UILabel+Associate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Associate.m"; sourceTree = "<group>"; };
 		B83EA94F1CC0C74C00807828 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		B83EA9501CC0C74C00807828 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		B83EA9511CC0C74C00807828 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1391,12 +1415,6 @@
 		B8DE44F41CB60349001E022D /* YFLifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLifeCycleViewController.m; sourceTree = "<group>"; };
 		B8DE44F61CB6038D001E022D /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		B8DE44F71CB6038D001E022D /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
-		B8E42CC41CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCategoryAttributeViewController.h; sourceTree = "<group>"; };
-		B8E42CC51CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCategoryAttributeViewController.m; sourceTree = "<group>"; };
-		B8E42CC71CBFE320004C7BF6 /* YFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
-		B8E42CC81CBFE320004C7BF6 /* YFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
-		B8E42CCA1CBFE3C3004C7BF6 /* YFPerson+addproty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YFPerson+addproty.h"; sourceTree = "<group>"; };
-		B8E42CCB1CBFE3C3004C7BF6 /* YFPerson+addproty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YFPerson+addproty.m"; sourceTree = "<group>"; };
 		B8E9EFF71CEAF00C00E7E668 /* YFNetworkRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNetworkRequestViewController.h; sourceTree = "<group>"; };
 		B8E9EFF81CEAF00C00E7E668 /* YFNetworkRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNetworkRequestViewController.m; sourceTree = "<group>"; };
 		B8E9EFFB1CEAF0A300E7E668 /* MGJRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGJRequestManager.h; sourceTree = "<group>"; };
@@ -1478,6 +1496,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181F28921D2CEE1700FC2637 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				181F28A61D2CF53C00FC2637 /* CategoryAttribute */,
+				181F28961D2CEE8A00FC2637 /* DictToModel */,
+				181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */,
+				181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		181F28961D2CEE8A00FC2637 /* DictToModel */ = {
+			isa = PBXGroup;
+			children = (
+				181F289A1D2CEF1600FC2637 /* Person.h */,
+				181F289B1D2CEF1600FC2637 /* Person.m */,
+				181F289C1D2CEF1600FC2637 /* Classes.h */,
+				181F289D1D2CEF1600FC2637 /* Classes.m */,
+				181F289E1D2CEF1600FC2637 /* Teacher.h */,
+				181F289F1D2CEF1600FC2637 /* Teacher.m */,
+				181F28A01D2CEF1600FC2637 /* Model.h */,
+				181F28A11D2CEF1600FC2637 /* Model.m */,
+				181F28971D2CEEA200FC2637 /* YFDictToModelViewController.h */,
+				181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */,
+			);
+			path = DictToModel;
+			sourceTree = "<group>";
+		};
+		181F28A61D2CF53C00FC2637 /* CategoryAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				181F28A71D2CF53C00FC2637 /* UILabel+Associate.h */,
+				181F28A81D2CF53C00FC2637 /* UILabel+Associate.m */,
+				181F28A91D2CF53C00FC2637 /* YFCategoryAttributeViewController.h */,
+				181F28AA1D2CF53C00FC2637 /* YFCategoryAttributeViewController.m */,
+				181F28AB1D2CF53C00FC2637 /* YFPerson+addproty.h */,
+				181F28AC1D2CF53C00FC2637 /* YFPerson+addproty.m */,
+				181F28AD1D2CF53C00FC2637 /* YFPerson.h */,
+				181F28AE1D2CF53C00FC2637 /* YFPerson.m */,
+			);
+			path = CategoryAttribute;
+			sourceTree = "<group>";
+		};
 		184B381A1D24FE5E005CD7F1 /* MyDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1778,8 +1839,8 @@
 			children = (
 				18CAD0301B95FD88001066FF /* YFKnowledgeViewController.h */,
 				18CAD0311B95FD88001066FF /* YFKnowledgeViewController.m */,
+				181F28921D2CEE1700FC2637 /* RunTime */,
 				B86B4A871CE1DAD900AD54AB /* GuideView */,
-				B8E42CC31CBFE299004C7BF6 /* CategoryAttribute */,
 				B80981DE1CBE1D9E0030BF28 /* ResponderChain */,
 				B8DE44F21CB60323001E022D /* LifeCycle */,
 				B88A15271CA3930A00BFC377 /* MasonryDemo */,
@@ -3828,21 +3889,6 @@
 			path = LifeCycle;
 			sourceTree = "<group>";
 		};
-		B8E42CC31CBFE299004C7BF6 /* CategoryAttribute */ = {
-			isa = PBXGroup;
-			children = (
-				B8E42CC41CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.h */,
-				B8E42CC51CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.m */,
-				B8E42CC71CBFE320004C7BF6 /* YFPerson.h */,
-				B8E42CC81CBFE320004C7BF6 /* YFPerson.m */,
-				B8E42CCA1CBFE3C3004C7BF6 /* YFPerson+addproty.h */,
-				B8E42CCB1CBFE3C3004C7BF6 /* YFPerson+addproty.m */,
-				B83EA94A1CC09C4000807828 /* UILabel+Associate.h */,
-				B83EA94B1CC09C4000807828 /* UILabel+Associate.m */,
-			);
-			path = CategoryAttribute;
-			sourceTree = "<group>";
-		};
 		B8E9EFF61CEAEFBE00E7E668 /* YFNetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -4127,6 +4173,7 @@
 				8B0B9AE81B9579470084590D /* YFAnimationsViewController.m in Sources */,
 				B8729E1C1C9A486300A18AA5 /* YFBaiduViewTransitionViewController.m in Sources */,
 				B864C7B41C99567B00D1E440 /* AWCollectionViewDialLayout.m in Sources */,
+				181F28B01D2CF53C00FC2637 /* YFCategoryAttributeViewController.m in Sources */,
 				B83EA95A1CC0C74C00807828 /* FMDatabase.m in Sources */,
 				B8A57EE31CC50183003ED5EF /* LccButton.m in Sources */,
 				B85DEC491C477D4600903255 /* YFBlurtView.m in Sources */,
@@ -4182,6 +4229,7 @@
 				8BC4AD901B9682B00026B012 /* MJRefreshHeaderView.m in Sources */,
 				B88A15511CA393F400BFC377 /* Case7ViewController.m in Sources */,
 				8BC4AD4C1B9681B70026B012 /* SDWebImageDownloaderOperation.m in Sources */,
+				181F28B11D2CF53C00FC2637 /* YFPerson+addproty.m in Sources */,
 				B891D9F51CA0F7A9007F69AF /* RZZoomPushAnimationController.m in Sources */,
 				B852D51F1C51D60800454E7F /* CoreAnimationViewController.m in Sources */,
 				B864C7671C98F30200D1E440 /* YFMultipleClicksViewController.m in Sources */,
@@ -4194,16 +4242,19 @@
 				B8A57EE01CC50183003ED5EF /* DataUpdateView.m in Sources */,
 				B870426B1CAB7E890067653C /* YFNode.m in Sources */,
 				B891DA231CA0F849007F69AF /* YFWaterflowLayout.m in Sources */,
+				181F28AF1D2CF53C00FC2637 /* UILabel+Associate.m in Sources */,
 				B891DAE91CA11ABB007F69AF /* MASConstraint.m in Sources */,
 				B8763CE01C980EA8007B200B /* RGCardViewLayout.m in Sources */,
 				B891DAE81CA11ABB007F69AF /* MASCompositeConstraint.m in Sources */,
 				B87042A11CABCDFE0067653C /* JLHomePracticeViewController.m in Sources */,
+				181F28A31D2CEF1600FC2637 /* Classes.m in Sources */,
 				B891D9EF1CA0F7A9007F69AF /* RZCirclePushAnimationController.m in Sources */,
 				B83336711CD89487003B347A /* MenuData.m in Sources */,
 				B891DB2C1CA1302C007F69AF /* YFSphereViewController.m in Sources */,
 				B887CBD11C9C007000A2F102 /* YFDraggableCardViewController.m in Sources */,
 				B864C76A1C98F3E700D1E440 /* UIButton+touch.m in Sources */,
 				B891D9F01CA0F7A9007F69AF /* RZRectZoomAnimationController.m in Sources */,
+				181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */,
 				184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */,
 				B8A57EEE1CC50187003ED5EF /* LCCSqliteGCD.m in Sources */,
 				B870429F1CABCDFE0067653C /* JLHomePracticeSubjectsCollectionViewCell.m in Sources */,
@@ -4243,7 +4294,6 @@
 				18CAD07B1B9977E3001066FF /* YFRotateCircleMenuVC.m in Sources */,
 				B864C7A71C9945D500D1E440 /* UIColor+CatColors.m in Sources */,
 				8BC4AD4A1B9681B70026B012 /* SDWebImageDecoder.m in Sources */,
-				B8E42CC61CBFE2D9004C7BF6 /* YFCategoryAttributeViewController.m in Sources */,
 				8BC4AD471B9681B70026B012 /* NSData+ImageContentType.m in Sources */,
 				18C75C781B9AA7D60038B2EE /* YFLittleProjectVC02.m in Sources */,
 				B88A15541CA393F400BFC377 /* Case8ViewController.m in Sources */,
@@ -4259,6 +4309,7 @@
 				184B384A1D252060005CD7F1 /* UITableViewCell+YFDataSource.m in Sources */,
 				18CAD0871B9977E3001066FF /* YFPopMenuViewController.m in Sources */,
 				B891DAEF1CA11ABB007F69AF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				181F28A41D2CEF1600FC2637 /* Teacher.m in Sources */,
 				18CAD0821B9977E3001066FF /* YFAnimationVC05.m in Sources */,
 				8BC4AD8A1B9682B00026B012 /* NSObject+MJKeyValue.m in Sources */,
 				18CAD0791B9977E3001066FF /* YFContextMenuViewController.m in Sources */,
@@ -4332,6 +4383,7 @@
 				B8A57EE11CC50183003ED5EF /* LccCell.m in Sources */,
 				B88A15A31CA3E0B000BFC377 /* YFStar.m in Sources */,
 				B887CBDA1C9C009000A2F102 /* CardView.m in Sources */,
+				181F28A21D2CEF1600FC2637 /* Person.m in Sources */,
 				184B384D1D252175005CD7F1 /* ModelTwo.m in Sources */,
 				B87300831C50742800090C9D /* YFBezierViewController.m in Sources */,
 				184B38261D250883005CD7F1 /* MyDataSourceViewController2.m in Sources */,
@@ -4356,6 +4408,7 @@
 				8B0B9AE31B95735A0084590D /* YFHomeViewController.m in Sources */,
 				B8763CDA1C980E90007B200B /* RGCardLayoutViewController.m in Sources */,
 				B891DAFE1CA12038007F69AF /* YFSphereTagCloud.m in Sources */,
+				181F28B21D2CF53C00FC2637 /* YFPerson.m in Sources */,
 				B8D444321C50B86200F3A34E /* UPStackMenu.m in Sources */,
 				B8E9F0021CEAF0A300E7E668 /* DemoListViewController.m in Sources */,
 				B8729E0F1C9A431D00A18AA5 /* YFPrinterEffectViewController.m in Sources */,
@@ -4420,7 +4473,6 @@
 				B87445ED1CACBD48009F274E /* YiTableViewDelegate.m in Sources */,
 				189242651B99D065008AC1EB /* YFAboutUsViewController.m in Sources */,
 				8BC4AD8F1B9682B00026B012 /* MJRefreshFooterView.m in Sources */,
-				B83EA94C1CC09C4000807828 /* UILabel+Associate.m in Sources */,
 				B88A15A01CA3D90300BFC377 /* YFRatingBar.m in Sources */,
 				18C760D51B9ACC960038B2EE /* SYDiscoverViewController.m in Sources */,
 				B83336751CD89487003B347A /* SecondMenuData.m in Sources */,
@@ -4432,13 +4484,13 @@
 				8BC4AD8B1B9682B00026B012 /* NSObject+MJMember.m in Sources */,
 				B864C7961C99322F00D1E440 /* WSFSlideTitlesView.m in Sources */,
 				B8E9F0331CEAF11E00E7E668 /* AFURLSessionManager.m in Sources */,
-				B8E42CC91CBFE320004C7BF6 /* YFPerson.m in Sources */,
 				B891DB161CA12E65007F69AF /* LazyFadeInLayer.m in Sources */,
 				8B0B9ADE1B9572510084590D /* AppDelegate.m in Sources */,
 				B891D9F11CA0F7A9007F69AF /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
 				B891DB1A1CA12E89007F69AF /* YFLazyInViewController.m in Sources */,
 				B8E9F0011CEAF0A300E7E668 /* MGJRequestManager.m in Sources */,
 				B80127A11CD9F4A400165440 /* DWBubbleMenuButton.m in Sources */,
+				181F28951D2CEE4100FC2637 /* YFRunTimeViewController.m in Sources */,
 				B891D9FB1CA0F7A9007F69AF /* RZSimpleColorViewController.m in Sources */,
 				B891DB301CA13537007F69AF /* CloudView.m in Sources */,
 				B848CC7C1CB34FCC005F5DA0 /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -4478,6 +4530,7 @@
 				B852D55E1C520A8C00454E7F /* HyTransitions.m in Sources */,
 				8BC4AD511B9681B70026B012 /* UIImage+MultiFormat.m in Sources */,
 				B870429C1CABCDFE0067653C /* JLSubject.m in Sources */,
+				181F28A51D2CEF1600FC2637 /* Model.m in Sources */,
 				B870429E1CABCDFE0067653C /* JLHomePracticeBannerView.m in Sources */,
 				B8E9F03B1CEAF11E00E7E668 /* UIWebView+AFNetworking.m in Sources */,
 				B8729E881C9A554600A18AA5 /* YFSlidingViewController.m in Sources */,
@@ -4494,7 +4547,6 @@
 				B87042641CAB7CEB0067653C /* YFDragButton.m in Sources */,
 				B891DA1E1CA0F849007F69AF /* YFShopCell.m in Sources */,
 				8BC4ADCA1B9688750026B012 /* YFImitateAppViewController.m in Sources */,
-				B8E42CCC1CBFE3C3004C7BF6 /* YFPerson+addproty.m in Sources */,
 				B891DB0B1CA12836007F69AF /* YFShineLabelViewController.m in Sources */,
 				8BC4AD4F1B9681B70026B012 /* UIButton+WebCache.m in Sources */,
 				B848CC711CB34F89005F5DA0 /* YFEmptyDataSetViewController.m in Sources */,
