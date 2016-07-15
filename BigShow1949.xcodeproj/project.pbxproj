@@ -106,6 +106,9 @@
 		18CAD0D21B998A93001066FF /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD0C81B998A93001066FF /* snow.png */; };
 		18CAD0D31B998A93001066FF /* YFSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD0CA1B998A93001066FF /* YFSnowViewController.m */; };
 		18CAD0D71B998F92001066FF /* YFEmitterRainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD0D61B998F92001066FF /* YFEmitterRainCell.m */; };
+		18D0A7FD1D38B9890007B184 /* YFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A7FC1D38B9890007B184 /* YFNotification.m */; };
+		18D0A8001D38B9EA0007B184 /* YFNotificationCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A7FF1D38B9EA0007B184 /* YFNotificationCenterVC.m */; };
+		18D0A8031D38BA2E0007B184 /* YFNotificationCenter2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A8021D38BA2E0007B184 /* YFNotificationCenter2VC.m */; };
 		8B0B9AC01B9572000084590D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9ABF1B9572000084590D /* Images.xcassets */; };
 		8B0B9AC31B9572000084590D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9AC11B9572000084590D /* LaunchScreen.xib */; };
 		8B0B9ACF1B9572000084590D /* BigShow1949Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9ACE1B9572000084590D /* BigShow1949Tests.m */; };
@@ -699,6 +702,12 @@
 		18CAD0CA1B998A93001066FF /* YFSnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSnowViewController.m; sourceTree = "<group>"; };
 		18CAD0D51B998F92001066FF /* YFEmitterRainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFEmitterRainCell.h; sourceTree = "<group>"; };
 		18CAD0D61B998F92001066FF /* YFEmitterRainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFEmitterRainCell.m; sourceTree = "<group>"; };
+		18D0A7FB1D38B9890007B184 /* YFNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotification.h; sourceTree = "<group>"; };
+		18D0A7FC1D38B9890007B184 /* YFNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotification.m; sourceTree = "<group>"; };
+		18D0A7FE1D38B9EA0007B184 /* YFNotificationCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotificationCenterVC.h; sourceTree = "<group>"; };
+		18D0A7FF1D38B9EA0007B184 /* YFNotificationCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotificationCenterVC.m; sourceTree = "<group>"; };
+		18D0A8011D38BA2E0007B184 /* YFNotificationCenter2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotificationCenter2VC.h; sourceTree = "<group>"; };
+		18D0A8021D38BA2E0007B184 /* YFNotificationCenter2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotificationCenter2VC.m; sourceTree = "<group>"; };
 		8B0B9AAF1B9572000084590D /* BigShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9AB31B9572000084590D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0B9ABF1B9572000084590D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1857,6 +1866,7 @@
 			children = (
 				18CAD0301B95FD88001066FF /* YFKnowledgeViewController.h */,
 				18CAD0311B95FD88001066FF /* YFKnowledgeViewController.m */,
+				18D0A7F71D38B9000007B184 /* NotificationCenter */,
 				181F28921D2CEE1700FC2637 /* RunTime */,
 				B86B4A871CE1DAD900AD54AB /* GuideView */,
 				B80981DE1CBE1D9E0030BF28 /* ResponderChain */,
@@ -2080,6 +2090,19 @@
 				18CAD0D61B998F92001066FF /* YFEmitterRainCell.m */,
 			);
 			path = RainCell;
+			sourceTree = "<group>";
+		};
+		18D0A7F71D38B9000007B184 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				18D0A7FB1D38B9890007B184 /* YFNotification.h */,
+				18D0A7FC1D38B9890007B184 /* YFNotification.m */,
+				18D0A7FE1D38B9EA0007B184 /* YFNotificationCenterVC.h */,
+				18D0A7FF1D38B9EA0007B184 /* YFNotificationCenterVC.m */,
+				18D0A8011D38BA2E0007B184 /* YFNotificationCenter2VC.h */,
+				18D0A8021D38BA2E0007B184 /* YFNotificationCenter2VC.m */,
+			);
+			path = NotificationCenter;
 			sourceTree = "<group>";
 		};
 		8B0B9AA61B9572000084590D = {
@@ -4227,6 +4250,7 @@
 				B88022FA1CAE279D002C0021 /* UIImage+EXtension.m in Sources */,
 				B82BF6BD1CC9CAC00041F53C /* DataEditView.m in Sources */,
 				18C760D41B9ACC960038B2EE /* SYArenaViewController.m in Sources */,
+				18D0A7FD1D38B9890007B184 /* YFNotification.m in Sources */,
 				B87445E81CACBD48009F274E /* YiRefreshFooter.m in Sources */,
 				18C75C711B9AA77B0038B2EE /* SYEmotionTool.m in Sources */,
 				B80981E61CBE1E430030BF28 /* UIViewA.m in Sources */,
@@ -4419,7 +4443,9 @@
 				18CAD07C1B9977E3001066FF /* YFAnimationVC02.m in Sources */,
 				B87445EE1CACBD48009F274E /* YiCustomTableViewCell.m in Sources */,
 				184B38321D250C57005CD7F1 /* DataSource2.m in Sources */,
+				18D0A8031D38BA2E0007B184 /* YFNotificationCenter2VC.m in Sources */,
 				B8E9F0361CEAF11E00E7E668 /* UIAlertView+AFNetworking.m in Sources */,
+				18D0A8001D38B9EA0007B184 /* YFNotificationCenterVC.m in Sources */,
 				B8A57EDF1CC50183003ED5EF /* DataListController.m in Sources */,
 				B891DAF11CA11ABB007F69AF /* ViewController+MASAdditions.m in Sources */,
 				B891DAEA1CA11ABB007F69AF /* MASConstraintMaker.m in Sources */,

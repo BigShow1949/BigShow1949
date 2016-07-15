@@ -20,7 +20,8 @@
                     @"生命周期",
                     @"响应者链条",
                     @"引导页",
-                    @"运行时"];
+                    @"运行时",
+                    @"通知中心"];
     
     self.classNames = @[@"YFKnowledgeVC02",
                         @"YFSearchController",
@@ -28,7 +29,8 @@
                         @"YFLifeCycleViewController",
                         @"YFResponderChainViewController",
                         @"YFGuideViewController",
-                        @"YFRunTimeViewController"];
+                        @"YFRunTimeViewController",
+                        @"YFNotificationCenterVC"];
 }
 
 
