@@ -27,7 +27,7 @@
     [super viewWillAppear:animated];
     
     UITextView *aboutUs = [[UITextView alloc] init];
-    NSString *viewText = @"     突然想总结点东西, 所以搞了个QQ群, 一起写一个APP, 涵盖主要知识点、动画、小项目,亦可成为开发者手中的速查手册。请加群:148279151(iOS高手在民间), 进群要求:1、需上传自己的个人作品, 可以是关于某个知识点, 或者是自己从网上找的一些不错的例子; 2、尽可能写全注释, 减少其他人阅读代码的时间; 3、为调用大家积极性,丰富app内容,进群作品请发邮箱:1029883589@qq.com";
+    NSString *viewText = @"     突然想总结点东西, 所以搞了个QQ群, 一起写一个APP, 涵盖主要知识点、动画、小项目,亦可成为开发者手中的速查手册。请加群:148279151(iOS高手在民间)";
     aboutUs.editable = NO;
     aboutUs.backgroundColor = [UIColor lightGrayColor];
     aboutUs.frame = CGRectMake(0, 0, 300, 350);
