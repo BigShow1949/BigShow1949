@@ -30,10 +30,31 @@ NS_ASSUME_NONNULL_BEGIN // 在这两个宏之间的代码，所有简单指针�
 
 + (YFNotificationCenter *)defaultCenter;
 
+/**
+ *  注册通知(同一个observer多次注册只算一次)
+ *
+ *  @param observer  监听者
+ *  @param aSelector 调用方法
+ *  @param aName     通知名字
+ *  @param anObject  附带数据
+ */
 - (void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
 
 - (void)postNotificationName:(NSString *)aName object:(nullable id)anObject;
+/**
+ *  通知默认1对多,这个方法可以实现1对1
+ *
+ *  @param observer 消息接收者
+ *  @param aName    通知消息
+ *  @param anObject 附带数据
+ */
+- (void)postNotificationObserver:(id)observer name:(NSString *)aName object:(nullable id)anObject;
 
+/**
+ *  清除observer所有监听的消息
+ *
+ *  @param observer 监听对象
+ */
 - (void)removeObserver:(id)observer;
 - (void)removeObserver:(id)observer name:(nullable NSString *)aName object:(nullable id)anObject;
 

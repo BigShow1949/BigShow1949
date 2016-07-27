@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1816FFFD1D38DD36000CFA74 /* YFNotificationCenter3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */; };
 		181F28951D2CEE4100FC2637 /* YFRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */; };
 		181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */; };
 		181F28A21D2CEF1600FC2637 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F289B1D2CEF1600FC2637 /* Person.m */; };
@@ -533,6 +534,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1816FFFB1D38DD36000CFA74 /* YFNotificationCenter3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotificationCenter3VC.h; sourceTree = "<group>"; };
+		1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotificationCenter3VC.m; sourceTree = "<group>"; };
 		181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRunTimeViewController.h; sourceTree = "<group>"; };
 		181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRunTimeViewController.m; sourceTree = "<group>"; };
 		181F28971D2CEEA200FC2637 /* YFDictToModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDictToModelViewController.h; sourceTree = "<group>"; };
@@ -2101,6 +2104,8 @@
 				18D0A7FF1D38B9EA0007B184 /* YFNotificationCenterVC.m */,
 				18D0A8011D38BA2E0007B184 /* YFNotificationCenter2VC.h */,
 				18D0A8021D38BA2E0007B184 /* YFNotificationCenter2VC.m */,
+				1816FFFB1D38DD36000CFA74 /* YFNotificationCenter3VC.h */,
+				1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */,
 			);
 			path = NotificationCenter;
 			sourceTree = "<group>";
@@ -4438,6 +4443,7 @@
 				18CAD0D01B998A93001066FF /* YFPublicParticleCell.m in Sources */,
 				B852D5801C5232C700454E7F /* YFWeChatViewController.m in Sources */,
 				B891D9EB1CA0F7A9007F69AF /* RZPinchInteractionController.m in Sources */,
+				1816FFFD1D38DD36000CFA74 /* YFNotificationCenter3VC.m in Sources */,
 				B852D55C1C520A8C00454E7F /* SpinerLayer.m in Sources */,
 				B891DAAE1CA115A8007F69AF /* JCFlipPageView.m in Sources */,
 				18CAD07C1B9977E3001066FF /* YFAnimationVC02.m in Sources */,

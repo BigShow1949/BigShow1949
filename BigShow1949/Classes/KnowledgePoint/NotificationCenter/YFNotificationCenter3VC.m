@@ -1,18 +1,19 @@
 //
-//  YFNotificationCenter2VC.m
+//  YFNotificationCenter3VC.m
 //  BigShow1949
 //
 //  Created by 杨帆 on 16/7/15.
 //  Copyright © 2016年 BigShowCompany. All rights reserved.
 //
 
-#import "YFNotificationCenter2VC.h"
+#import "YFNotificationCenter3VC.h"
 #import "YFNotification.h"
 
-@implementation YFNotificationCenter2VC
+@implementation YFNotificationCenter3VC
+
 
 - (void)viewDidLoad {
-
+    
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor redColor];
@@ -25,8 +26,8 @@
 
 
 - (void)redButtonClick:(UIButton *)btn {
-
-    [[YFNotificationCenter defaultCenter] postNotificationName:@"vc2" object:nil];
+    
+    [[YFNotificationCenter defaultCenter] postNotificationName:@"vc3" object:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
