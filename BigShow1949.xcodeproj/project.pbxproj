@@ -30,6 +30,10 @@
 		184B384A1D252060005CD7F1 /* UITableViewCell+YFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38491D252060005CD7F1 /* UITableViewCell+YFDataSource.m */; };
 		184B384D1D252175005CD7F1 /* ModelTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B384C1D252175005CD7F1 /* ModelTwo.m */; };
 		184B38531D2521A8005CD7F1 /* ModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B38521D2521A8005CD7F1 /* ModelOne.m */; };
+		185C98AC1D67E6EC00955C5F /* UILabel+BezierAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C98A71D67E6EC00955C5F /* UILabel+BezierAnimation.m */; };
+		185C98AD1D67E6EC00955C5F /* WSBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C98A91D67E6EC00955C5F /* WSBezier.m */; };
+		185C98AE1D67E6EC00955C5F /* YFAliNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C98AB1D67E6EC00955C5F /* YFAliNumberViewController.m */; };
+		185C98B21D67E83800955C5F /* YFAliViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C98B11D67E83800955C5F /* YFAliViewController.m */; };
 		189242651B99D065008AC1EB /* YFAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAboutUsViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -580,6 +584,14 @@
 		184B384C1D252175005CD7F1 /* ModelTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTwo.m; sourceTree = "<group>"; };
 		184B38511D2521A8005CD7F1 /* ModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelOne.h; sourceTree = "<group>"; };
 		184B38521D2521A8005CD7F1 /* ModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelOne.m; sourceTree = "<group>"; };
+		185C98A61D67E6EC00955C5F /* UILabel+BezierAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BezierAnimation.h"; sourceTree = "<group>"; };
+		185C98A71D67E6EC00955C5F /* UILabel+BezierAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BezierAnimation.m"; sourceTree = "<group>"; };
+		185C98A81D67E6EC00955C5F /* WSBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBezier.h; sourceTree = "<group>"; };
+		185C98A91D67E6EC00955C5F /* WSBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBezier.m; sourceTree = "<group>"; };
+		185C98AA1D67E6EC00955C5F /* YFAliNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAliNumberViewController.h; sourceTree = "<group>"; };
+		185C98AB1D67E6EC00955C5F /* YFAliNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAliNumberViewController.m; sourceTree = "<group>"; };
+		185C98B01D67E83800955C5F /* YFAliViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAliViewController.h; sourceTree = "<group>"; };
+		185C98B11D67E83800955C5F /* YFAliViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAliViewController.m; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAboutUsViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAboutUsViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1596,6 +1608,28 @@
 			path = MyDataSource;
 			sourceTree = "<group>";
 		};
+		185C98A51D67E6EC00955C5F /* 仿支付宝余额跳动 */ = {
+			isa = PBXGroup;
+			children = (
+				185C98A61D67E6EC00955C5F /* UILabel+BezierAnimation.h */,
+				185C98A71D67E6EC00955C5F /* UILabel+BezierAnimation.m */,
+				185C98A81D67E6EC00955C5F /* WSBezier.h */,
+				185C98A91D67E6EC00955C5F /* WSBezier.m */,
+				185C98AA1D67E6EC00955C5F /* YFAliNumberViewController.h */,
+				185C98AB1D67E6EC00955C5F /* YFAliNumberViewController.m */,
+			);
+			path = "仿支付宝余额跳动";
+			sourceTree = "<group>";
+		};
+		185C98AF1D67E82500955C5F /* 阿里巴巴 */ = {
+			isa = PBXGroup;
+			children = (
+				185C98B01D67E83800955C5F /* YFAliViewController.h */,
+				185C98B11D67E83800955C5F /* YFAliViewController.m */,
+			);
+			path = "阿里巴巴";
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -2358,6 +2392,7 @@
 			children = (
 				8BC4ADC81B9688750026B012 /* YFImitateAppViewController.h */,
 				8BC4ADC91B9688750026B012 /* YFImitateAppViewController.m */,
+				185C98AF1D67E82500955C5F /* 阿里巴巴 */,
 				B870424B1CAB7B370067653C /* 猿题库 */,
 				B852D57D1C52329300454E7F /* 微信 */,
 				B852D5661C5224BC00454E7F /* 网易 */,
@@ -3072,6 +3107,7 @@
 			children = (
 				B87300811C50742800090C9D /* YFBezierViewController.h */,
 				B87300821C50742800090C9D /* YFBezierViewController.m */,
+				185C98A51D67E6EC00955C5F /* 仿支付宝余额跳动 */,
 				B87300881C50807200090C9D /* 02 - 渐变色 */,
 				B87300841C5075BD00090C9D /* 01 - 动态圆圈 */,
 			);
@@ -4275,6 +4311,7 @@
 				B83336721CD89487003B347A /* MenuItemCell.m in Sources */,
 				8BC4AD901B9682B00026B012 /* MJRefreshHeaderView.m in Sources */,
 				B88A15511CA393F400BFC377 /* Case7ViewController.m in Sources */,
+				185C98AC1D67E6EC00955C5F /* UILabel+BezierAnimation.m in Sources */,
 				8BC4AD4C1B9681B70026B012 /* SDWebImageDownloaderOperation.m in Sources */,
 				181F28B11D2CF53C00FC2637 /* YFPerson+addproty.m in Sources */,
 				B891D9F51CA0F7A9007F69AF /* RZZoomPushAnimationController.m in Sources */,
@@ -4325,6 +4362,7 @@
 				18C760DB1B9ACC960038B2EE /* SYTabButton.m in Sources */,
 				B88A15521CA393F400BFC377 /* Case8Cell.m in Sources */,
 				B891DB3C1CA13C46007F69AF /* NSObject+KVC.m in Sources */,
+				185C98AD1D67E6EC00955C5F /* WSBezier.m in Sources */,
 				B891DB291CA1300D007F69AF /* ZYQSphereView.m in Sources */,
 				B88A154E1CA393F400BFC377 /* Case5ViewController.m in Sources */,
 				18CAD0841B9977E3001066FF /* YFPopOutMenu.m in Sources */,
@@ -4392,6 +4430,7 @@
 				B893865F1C9FCE6300B122B8 /* HHContentScrollView.m in Sources */,
 				B891D9F71CA0F7A9007F69AF /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				B8E9EFF91CEAF00C00E7E668 /* YFNetworkRequestViewController.m in Sources */,
+				185C98AE1D67E6EC00955C5F /* YFAliNumberViewController.m in Sources */,
 				B84C03361CE317DE00E62D75 /* ITRSecondViewController.m in Sources */,
 				18CAD07A1B9977E3001066FF /* YFItemView.m in Sources */,
 				B83EA95C1CC0C74C00807828 /* FMDatabasePool.m in Sources */,
@@ -4535,6 +4574,7 @@
 				18CAD07F1B9977E3001066FF /* YFAnimationVC03.m in Sources */,
 				8BC4AD8B1B9682B00026B012 /* NSObject+MJMember.m in Sources */,
 				B864C7961C99322F00D1E440 /* WSFSlideTitlesView.m in Sources */,
+				185C98B21D67E83800955C5F /* YFAliViewController.m in Sources */,
 				B8E9F0331CEAF11E00E7E668 /* AFURLSessionManager.m in Sources */,
 				B891DB161CA12E65007F69AF /* LazyFadeInLayer.m in Sources */,
 				8B0B9ADE1B9572510084590D /* AppDelegate.m in Sources */,
