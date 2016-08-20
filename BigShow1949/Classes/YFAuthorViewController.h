@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YFAboutUsViewController : UIViewController
+@interface YFAuthorViewController : UIViewController
 
 @end

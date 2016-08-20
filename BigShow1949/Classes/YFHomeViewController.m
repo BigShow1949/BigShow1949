@@ -8,7 +8,7 @@
 //
 
 #import "YFHomeViewController.h"
-#import "YFAboutUsViewController.h"
+#import "YFAuthorViewController.h"
 
 
 /*******************************************
@@ -36,7 +36,7 @@
                     @"零散知识点",
                     @"小项目展示",
                     @"动画集合",
-                    @"UIScrollView",
+                    @"UIKit",
                     @"仿主流app功能",
                     @"设计模式",
                     @"常用工具类",
@@ -57,7 +57,7 @@
                         @"YFKnowledgeViewController",
                         @"YFLittleProjectViewController",
                         @"YFAnimationsViewController",
-                        @"YFScrollViewController",
+                        @"YFUIKitViewController",
                         @"YFImitateAppViewController",
                         @"YFDesignPatternViewController",
                         @"YFToolsViewController",
@@ -75,14 +75,13 @@
 - (void)setupNav {
 
     self.title = @"目 录";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关于我们" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarClick)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"作 者" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarClick)];
 }
 
 - (void)rightBarClick {
     
-    YFAboutUsViewController *aboutUs = [[YFAboutUsViewController alloc] init];
+    YFAuthorViewController *aboutUs = [[YFAuthorViewController alloc] init];
     [self.navigationController pushViewController:aboutUs animated:YES];
-
 }
 
 

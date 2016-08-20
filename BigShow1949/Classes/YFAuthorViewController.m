@@ -6,18 +6,18 @@
 //  Copyright (c) 2015年 BigShowCompany. All rights reserved.
 //
 
-#import "YFAboutUsViewController.h"
+#import "YFAuthorViewController.h"
 
-@interface YFAboutUsViewController ()
+@interface YFAuthorViewController ()
 
 @end
 
-@implementation YFAboutUsViewController
+@implementation YFAuthorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"关于我们";
+    self.title = @"作者";
     self.view.backgroundColor = [UIColor whiteColor];
     
 }
@@ -27,7 +27,7 @@
     [super viewWillAppear:animated];
     
     UITextView *aboutUs = [[UITextView alloc] init];
-    NSString *viewText = @"     突然想总结点东西, 所以搞了个QQ群, 一起写一个APP, 涵盖主要知识点、动画、小项目,亦可成为开发者手中的速查手册。请加群:148279151(iOS高手在民间)";
+    NSString *viewText = @"     突然想总结点东西, 把学习工作中用到的知识点记录下, 所以写了一个很大的Demo, 涵盖主要知识点、动画、小项目等等,很多,大家有兴趣的可以一起写。请加群:148279151(iOS高手在民间)";
     aboutUs.editable = NO;
     aboutUs.backgroundColor = [UIColor lightGrayColor];
     aboutUs.frame = CGRectMake(0, 0, 300, 350);

@@ -14,9 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"自定义tabBar",
-                    @"UISearchController",
-                    @"Masonry基本使用",
+    self.titles = @[@"Masonry基本使用",
                     @"生命周期",
                     @"响应者链条",
                     @"引导页",
