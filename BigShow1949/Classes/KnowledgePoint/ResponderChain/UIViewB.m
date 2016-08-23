@@ -41,7 +41,13 @@
     
 }
 
-
+/*
+ 层级:
+ viewA
+     buttonA
+     viewB
+         buttonB
+ */
 // 3）不让ViewB（ButtonB）收到消息
 // 不让ViewB收到消息，可以设置ViewB.UserInteractionEnable=NO；除了这样还可以override掉ViewB的ponitInside，原理参考上面。
 /*

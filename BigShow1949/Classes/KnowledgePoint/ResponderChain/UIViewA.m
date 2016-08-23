@@ -49,7 +49,13 @@
 }
 
 
-
+/*
+ 层级:
+   viewA
+      buttonA
+      viewB
+         buttonB
+ */
 // 2）ViewA也能收到ViewB所收到的touches消息
 // ViewB只要override掉touches系列的方法，然后在自己处理完后，将消息传递给下一个响应者（即父View即ViewA）。
 #pragma mark - touches

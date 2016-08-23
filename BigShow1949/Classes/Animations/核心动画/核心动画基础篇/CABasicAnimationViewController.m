@@ -24,7 +24,7 @@
      //创建layer
      CALayer *myLayer=[CALayer layer];
      //设置layer的属性
-     myLayer.bounds=CGRectMake(0, 100, 50, 80);
+     myLayer.bounds=CGRectMake(0, 150, 50, 80);
      myLayer.backgroundColor=[UIColor yellowColor].CGColor;
      myLayer.position=CGPointMake(50, 64);
      myLayer.anchorPoint=CGPointMake(0, 0);

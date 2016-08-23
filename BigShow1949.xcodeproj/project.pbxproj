@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180017DE1D6C50D4001CC8C8 /* YFCircleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 180017DD1D6C50D4001CC8C8 /* YFCircleLoader.m */; };
+		180017E11D6C50E3001CC8C8 /* YFCircleLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180017E01D6C50E3001CC8C8 /* YFCircleLoaderViewController.m */; };
 		1816FFFD1D38DD36000CFA74 /* YFNotificationCenter3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */; };
 		181F28951D2CEE4100FC2637 /* YFRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */; };
 		181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */; };
@@ -539,6 +541,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180017DC1D6C50D4001CC8C8 /* YFCircleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCircleLoader.h; sourceTree = "<group>"; };
+		180017DD1D6C50D4001CC8C8 /* YFCircleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCircleLoader.m; sourceTree = "<group>"; };
+		180017DF1D6C50E3001CC8C8 /* YFCircleLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCircleLoaderViewController.h; sourceTree = "<group>"; };
+		180017E01D6C50E3001CC8C8 /* YFCircleLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCircleLoaderViewController.m; sourceTree = "<group>"; };
 		1816FFFB1D38DD36000CFA74 /* YFNotificationCenter3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotificationCenter3VC.h; sourceTree = "<group>"; };
 		1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotificationCenter3VC.m; sourceTree = "<group>"; };
 		181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRunTimeViewController.h; sourceTree = "<group>"; };
@@ -1529,6 +1535,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180017DB1D6C50BA001CC8C8 /* 加载框 */ = {
+			isa = PBXGroup;
+			children = (
+				180017DC1D6C50D4001CC8C8 /* YFCircleLoader.h */,
+				180017DD1D6C50D4001CC8C8 /* YFCircleLoader.m */,
+				180017DF1D6C50E3001CC8C8 /* YFCircleLoaderViewController.h */,
+				180017E01D6C50E3001CC8C8 /* YFCircleLoaderViewController.m */,
+			);
+			path = "加载框";
+			sourceTree = "<group>";
+		};
 		181F28921D2CEE1700FC2637 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
@@ -3120,6 +3137,7 @@
 			children = (
 				B87300811C50742800090C9D /* YFBezierViewController.h */,
 				B87300821C50742800090C9D /* YFBezierViewController.m */,
+				180017DB1D6C50BA001CC8C8 /* 加载框 */,
 				185C98A51D67E6EC00955C5F /* 仿支付宝余额跳动 */,
 				B87300881C50807200090C9D /* 02 - 渐变色 */,
 				B87300841C5075BD00090C9D /* 01 - 动态圆圈 */,
@@ -4364,6 +4382,7 @@
 				18C75C601B9AA77B0038B2EE /* SYComposeViewController.m in Sources */,
 				B87445E91CACBD48009F274E /* YiRefreshHeader.m in Sources */,
 				B8A57EC01CC4832C003ED5EF /* SQLiteBaseUseViewController.m in Sources */,
+				180017E11D6C50E3001CC8C8 /* YFCircleLoaderViewController.m in Sources */,
 				184B38291D25093C005CD7F1 /* OneTableViewCell.m in Sources */,
 				B891DAEC1CA11ABB007F69AF /* MASViewAttribute.m in Sources */,
 				B864C7A01C993CD300D1E440 /* YFNeteaseHomeViewController.m in Sources */,
@@ -4544,6 +4563,7 @@
 				185C990D1D67F0A500955C5F /* SYArenaViewController.m in Sources */,
 				8BC4AD861B9682B00026B012 /* MJMethod.m in Sources */,
 				8BC4AD461B9681B70026B012 /* MKAnnotationView+WebCache.m in Sources */,
+				180017DE1D6C50D4001CC8C8 /* YFCircleLoader.m in Sources */,
 				B864C7AC1C9945FE00D1E440 /* YFStackedPageVC.m in Sources */,
 				B84C03391CE3182600E62D75 /* YFITRAirSideViewController.m in Sources */,
 				B864C7791C99035D00D1E440 /* DeformationButton.m in Sources */,
