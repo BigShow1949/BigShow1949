@@ -21,9 +21,7 @@
                     @"运行时",
                     @"通知中心"];
     
-    self.classNames = @[@"YFKnowledgeVC02",
-                        @"YFSearchController",
-                        @"YFMasonryDemoViewController_UIStoryboard",
+    self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
                         @"YFResponderChainViewController",
                         @"YFGuideViewController",
