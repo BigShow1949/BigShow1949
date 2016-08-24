@@ -18,13 +18,15 @@
                     @"粒子发射器",
                     @"水纹",
                     @"渐变色和贝塞尔曲线",
-                    @"核心动画"];
+                    @"核心动画",
+                    @"抖动密码框"];
     
     self.classNames = @[@"YFPopMenuViewController",
                         @"YFEmitterViewController",
                         @"YFWaterWaveViewController",
                         @"YFBezierViewController",
-                        @"YFCoreAnimationViewController"];
+                        @"YFCoreAnimationViewController",
+                        @"YFPasswordShakeViewController"];
 }
 
 

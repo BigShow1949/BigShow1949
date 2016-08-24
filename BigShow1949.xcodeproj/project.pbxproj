@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		180017DE1D6C50D4001CC8C8 /* YFCircleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 180017DD1D6C50D4001CC8C8 /* YFCircleLoader.m */; };
 		180017E11D6C50E3001CC8C8 /* YFCircleLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180017E01D6C50E3001CC8C8 /* YFCircleLoaderViewController.m */; };
+		180422551D6D77A5009CB5AC /* YFBounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180422541D6D77A5009CB5AC /* YFBounceViewController.m */; };
+		1804225C1D6D7805009CB5AC /* YFPasswordShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804225B1D6D7805009CB5AC /* YFPasswordShakeViewController.m */; };
+		1804225F1D6D782A009CB5AC /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804225E1D6D782A009CB5AC /* UITextField+Shake.m */; };
 		1816FFFD1D38DD36000CFA74 /* YFNotificationCenter3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */; };
 		181F28951D2CEE4100FC2637 /* YFRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28941D2CEE4100FC2637 /* YFRunTimeViewController.m */; };
 		181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F28981D2CEEA200FC2637 /* YFDictToModelViewController.m */; };
@@ -76,7 +79,6 @@
 		185C99311D67F0A500955C5F /* YFScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C99071D67F0A500955C5F /* YFScrollViewController.m */; };
 		185C99321D67F0A500955C5F /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990A1D67F0A500955C5F /* SearchResultsViewController.m */; };
 		185C99331D67F0A500955C5F /* YFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990C1D67F0A500955C5F /* YFSearchController.m */; };
-		186324CE1D6C591800BD5835 /* YFBounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186324CD1D6C591800BD5835 /* YFBounceViewController.m */; };
 		186324D21D6C597900BD5835 /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186324D11D6C597900BD5835 /* BounceView.m */; };
 		189242651B99D065008AC1EB /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAuthorViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
@@ -547,6 +549,12 @@
 		180017DD1D6C50D4001CC8C8 /* YFCircleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCircleLoader.m; sourceTree = "<group>"; };
 		180017DF1D6C50E3001CC8C8 /* YFCircleLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCircleLoaderViewController.h; sourceTree = "<group>"; };
 		180017E01D6C50E3001CC8C8 /* YFCircleLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCircleLoaderViewController.m; sourceTree = "<group>"; };
+		180422531D6D77A5009CB5AC /* YFBounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBounceViewController.h; sourceTree = "<group>"; };
+		180422541D6D77A5009CB5AC /* YFBounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBounceViewController.m; sourceTree = "<group>"; };
+		1804225A1D6D7805009CB5AC /* YFPasswordShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPasswordShakeViewController.h; sourceTree = "<group>"; };
+		1804225B1D6D7805009CB5AC /* YFPasswordShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPasswordShakeViewController.m; sourceTree = "<group>"; };
+		1804225D1D6D782A009CB5AC /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		1804225E1D6D782A009CB5AC /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		1816FFFB1D38DD36000CFA74 /* YFNotificationCenter3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNotificationCenter3VC.h; sourceTree = "<group>"; };
 		1816FFFC1D38DD36000CFA74 /* YFNotificationCenter3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNotificationCenter3VC.m; sourceTree = "<group>"; };
 		181F28931D2CEE4100FC2637 /* YFRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRunTimeViewController.h; sourceTree = "<group>"; };
@@ -667,8 +675,6 @@
 		185C990A1D67F0A500955C5F /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		185C990B1D67F0A500955C5F /* YFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSearchController.h; sourceTree = "<group>"; };
 		185C990C1D67F0A500955C5F /* YFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSearchController.m; sourceTree = "<group>"; };
-		186324CC1D6C591800BD5835 /* YFBounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFBounceViewController.h; path = ../../YFBounceViewController.h; sourceTree = "<group>"; };
-		186324CD1D6C591800BD5835 /* YFBounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFBounceViewController.m; path = ../../YFBounceViewController.m; sourceTree = "<group>"; };
 		186324D01D6C597900BD5835 /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
 		186324D11D6C597900BD5835 /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAuthorViewController.h; sourceTree = "<group>"; };
@@ -1552,6 +1558,17 @@
 			path = "加载框";
 			sourceTree = "<group>";
 		};
+		180422561D6D77C1009CB5AC /* 抖动密码框 */ = {
+			isa = PBXGroup;
+			children = (
+				1804225D1D6D782A009CB5AC /* UITextField+Shake.h */,
+				1804225E1D6D782A009CB5AC /* UITextField+Shake.m */,
+				1804225A1D6D7805009CB5AC /* YFPasswordShakeViewController.h */,
+				1804225B1D6D7805009CB5AC /* YFPasswordShakeViewController.m */,
+			);
+			path = "抖动密码框";
+			sourceTree = "<group>";
+		};
 		181F28921D2CEE1700FC2637 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1908,8 +1925,8 @@
 		186324CF1D6C596900BD5835 /* 手势控制贝塞尔曲线 */ = {
 			isa = PBXGroup;
 			children = (
-				186324CC1D6C591800BD5835 /* YFBounceViewController.h */,
-				186324CD1D6C591800BD5835 /* YFBounceViewController.m */,
+				180422531D6D77A5009CB5AC /* YFBounceViewController.h */,
+				180422541D6D77A5009CB5AC /* YFBounceViewController.m */,
 				186324D01D6C597900BD5835 /* BounceView.h */,
 				186324D11D6C597900BD5835 /* BounceView.m */,
 			);
@@ -2397,6 +2414,7 @@
 			children = (
 				8B0B9AE61B9579470084590D /* YFAnimationsViewController.h */,
 				8B0B9AE71B9579470084590D /* YFAnimationsViewController.m */,
+				180422561D6D77C1009CB5AC /* 抖动密码框 */,
 				B8D446321C50D91600F3A34E /* 核心动画 */,
 				B87300801C50740D00090C9D /* 04 - 渐变色和贝塞尔曲线 */,
 				B85C96971C4F76370096E2A1 /* 03 - 水纹 */,
@@ -4313,7 +4331,6 @@
 				18C760EF1B9AD4300038B2EE /* YFRecordData.m in Sources */,
 				B852D5371C51F8A600454E7F /* YFPushTransitionViewController.m in Sources */,
 				B891DAF01CA11ABB007F69AF /* View+MASAdditions.m in Sources */,
-				186324CE1D6C591800BD5835 /* YFBounceViewController.m in Sources */,
 				B891DB281CA1300D007F69AF /* PFGoldenSectionSpiral.m in Sources */,
 				B870425F1CAB7CEB0067653C /* YFAnswerViewController.m in Sources */,
 				18C75C721B9AA77B0038B2EE /* SYEmotionButton.m in Sources */,
@@ -4387,6 +4404,7 @@
 				B891D9F01CA0F7A9007F69AF /* RZRectZoomAnimationController.m in Sources */,
 				181F28991D2CEEA200FC2637 /* YFDictToModelViewController.m in Sources */,
 				184B38231D24FE5E005CD7F1 /* SecondTableViewCell.m in Sources */,
+				180422551D6D77A5009CB5AC /* YFBounceViewController.m in Sources */,
 				B8A57EEE1CC50187003ED5EF /* LCCSqliteGCD.m in Sources */,
 				B870429F1CABCDFE0067653C /* JLHomePracticeSubjectsCollectionViewCell.m in Sources */,
 				B8DE44F81CB6038D001E022D /* BViewController.m in Sources */,
@@ -4618,6 +4636,7 @@
 				185C99241D67F0A500955C5F /* SecondMenuData.m in Sources */,
 				B88A154B1CA393F400BFC377 /* Case4Cell.m in Sources */,
 				185C990E1D67F0A500955C5F /* SYDiscoverViewController.m in Sources */,
+				1804225C1D6D7805009CB5AC /* YFPasswordShakeViewController.m in Sources */,
 				B83EA95E1CC0C74C00807828 /* FMResultSet.m in Sources */,
 				8BC4AD851B9682B00026B012 /* MJMember.m in Sources */,
 				18CAD07F1B9977E3001066FF /* YFAnimationVC03.m in Sources */,
@@ -4655,6 +4674,7 @@
 				8BC4AD841B9682B00026B012 /* MJIvar.m in Sources */,
 				B8729E831C9A54F900A18AA5 /* LTSlidingViewController.m in Sources */,
 				B87042611CAB7CEB0067653C /* YFAnswerNaviBar.m in Sources */,
+				1804225F1D6D782A009CB5AC /* UITextField+Shake.m in Sources */,
 				B85C96C11C4F83F50096E2A1 /* XXBRippleView.m in Sources */,
 				B893865B1C9FCE6300B122B8 /* HHHeaderView.m in Sources */,
 				B891D9E61CA0F7A9007F69AF /* RZTransitionsNavigationController.m in Sources */,
