@@ -20,14 +20,15 @@
     self.titles = @[@"动态圆圈",
                     @"渐变色",
                     @"仿支付宝余额跳动",
-                    @"加载框"];
+                    @"加载框",
+                    @"手势控制贝塞尔曲线"];
     
     self.classNames = @[@"YFCircleViewController",
                         @"YFGradientViewController",
                         @"YFAliNumberViewController",
-                        @"YFCircleLoaderViewController"];
+                        @"YFCircleLoaderViewController",
+                        @"YFBounceViewController"];
 }
-
 
 
 

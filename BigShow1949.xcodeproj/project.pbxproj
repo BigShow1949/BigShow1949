@@ -76,6 +76,8 @@
 		185C99311D67F0A500955C5F /* YFScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C99071D67F0A500955C5F /* YFScrollViewController.m */; };
 		185C99321D67F0A500955C5F /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990A1D67F0A500955C5F /* SearchResultsViewController.m */; };
 		185C99331D67F0A500955C5F /* YFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990C1D67F0A500955C5F /* YFSearchController.m */; };
+		186324CE1D6C591800BD5835 /* YFBounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186324CD1D6C591800BD5835 /* YFBounceViewController.m */; };
+		186324D21D6C597900BD5835 /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186324D11D6C597900BD5835 /* BounceView.m */; };
 		189242651B99D065008AC1EB /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAuthorViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -665,6 +667,10 @@
 		185C990A1D67F0A500955C5F /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		185C990B1D67F0A500955C5F /* YFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSearchController.h; sourceTree = "<group>"; };
 		185C990C1D67F0A500955C5F /* YFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSearchController.m; sourceTree = "<group>"; };
+		186324CC1D6C591800BD5835 /* YFBounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFBounceViewController.h; path = ../../YFBounceViewController.h; sourceTree = "<group>"; };
+		186324CD1D6C591800BD5835 /* YFBounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFBounceViewController.m; path = ../../YFBounceViewController.m; sourceTree = "<group>"; };
+		186324D01D6C597900BD5835 /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
+		186324D11D6C597900BD5835 /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAuthorViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1897,6 +1903,17 @@
 				185C990C1D67F0A500955C5F /* YFSearchController.m */,
 			);
 			path = UISearchController;
+			sourceTree = "<group>";
+		};
+		186324CF1D6C596900BD5835 /* 手势控制贝塞尔曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				186324CC1D6C591800BD5835 /* YFBounceViewController.h */,
+				186324CD1D6C591800BD5835 /* YFBounceViewController.m */,
+				186324D01D6C597900BD5835 /* BounceView.h */,
+				186324D11D6C597900BD5835 /* BounceView.m */,
+			);
+			path = "手势控制贝塞尔曲线";
 			sourceTree = "<group>";
 		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
@@ -3137,6 +3154,7 @@
 			children = (
 				B87300811C50742800090C9D /* YFBezierViewController.h */,
 				B87300821C50742800090C9D /* YFBezierViewController.m */,
+				186324CF1D6C596900BD5835 /* 手势控制贝塞尔曲线 */,
 				180017DB1D6C50BA001CC8C8 /* 加载框 */,
 				185C98A51D67E6EC00955C5F /* 仿支付宝余额跳动 */,
 				B87300881C50807200090C9D /* 02 - 渐变色 */,
@@ -4295,6 +4313,7 @@
 				18C760EF1B9AD4300038B2EE /* YFRecordData.m in Sources */,
 				B852D5371C51F8A600454E7F /* YFPushTransitionViewController.m in Sources */,
 				B891DAF01CA11ABB007F69AF /* View+MASAdditions.m in Sources */,
+				186324CE1D6C591800BD5835 /* YFBounceViewController.m in Sources */,
 				B891DB281CA1300D007F69AF /* PFGoldenSectionSpiral.m in Sources */,
 				B870425F1CAB7CEB0067653C /* YFAnswerViewController.m in Sources */,
 				18C75C721B9AA77B0038B2EE /* SYEmotionButton.m in Sources */,
@@ -4331,6 +4350,7 @@
 				B891DB051CA124AF007F69AF /* YFTagsCloudViewController.m in Sources */,
 				B88A15481CA393F400BFC377 /* Case1ViewController.m in Sources */,
 				18CAD0D71B998F92001066FF /* YFEmitterRainCell.m in Sources */,
+				186324D21D6C597900BD5835 /* BounceView.m in Sources */,
 				B814BD191CE029780024096A /* HWLineLayout.m in Sources */,
 				B852D51C1C51D60800454E7F /* CABasicAnimationViewController.m in Sources */,
 				B814BD091CE028CB0024096A /* YFHorizontalScrollViewController.m in Sources */,
