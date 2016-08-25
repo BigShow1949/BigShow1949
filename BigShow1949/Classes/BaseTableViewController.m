@@ -1,3 +1,4 @@
+
 //
 //  BaseTableViewController.m
 //  BigShow1949
@@ -95,6 +96,9 @@
             // 注意: 这个storyboard的名字必须是控制器的名字
             UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:className bundle:nil];
             UIViewController *cardVC = [storyBoard instantiateInitialViewController];
+            if (!cardVC) {
+                cardVC = [storyBoard instantiateViewControllerWithIdentifier:className];
+            }
             cardVC.title = self.titles[indexPath.row];
             [self.navigationController pushViewController:cardVC animated:YES ];
         }

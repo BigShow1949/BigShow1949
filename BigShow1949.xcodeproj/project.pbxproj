@@ -80,6 +80,9 @@
 		185C99321D67F0A500955C5F /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990A1D67F0A500955C5F /* SearchResultsViewController.m */; };
 		185C99331D67F0A500955C5F /* YFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C990C1D67F0A500955C5F /* YFSearchController.m */; };
 		186324D21D6C597900BD5835 /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186324D11D6C597900BD5835 /* BounceView.m */; };
+		186E63211D6E868B0070A717 /* YFDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E631C1D6E868B0070A717 /* YFDynamicViewController.m */; };
+		186E63221D6E868B0070A717 /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E631F1D6E868B0070A717 /* YYViewController.m */; };
+		186E63231D6E868B0070A717 /* YYViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186E63201D6E868B0070A717 /* YYViewController.storyboard */; };
 		189242651B99D065008AC1EB /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAuthorViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -677,6 +680,11 @@
 		185C990C1D67F0A500955C5F /* YFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSearchController.m; sourceTree = "<group>"; };
 		186324D01D6C597900BD5835 /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
 		186324D11D6C597900BD5835 /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
+		186E631B1D6E868B0070A717 /* YFDynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDynamicViewController.h; sourceTree = "<group>"; };
+		186E631C1D6E868B0070A717 /* YFDynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDynamicViewController.m; sourceTree = "<group>"; };
+		186E631E1D6E868B0070A717 /* YYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYViewController.h; sourceTree = "<group>"; };
+		186E631F1D6E868B0070A717 /* YYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
+		186E63201D6E868B0070A717 /* YYViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYViewController.storyboard; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAuthorViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1678,6 +1686,7 @@
 			children = (
 				185C98B41D67EF0A00955C5F /* YFUIKitViewController.h */,
 				185C98B51D67EF0A00955C5F /* YFUIKitViewController.m */,
+				186E631A1D6E868B0070A717 /* UIDynamic */,
 				185C98B71D67F0A500955C5F /* Tabbar */,
 				185C98E21D67F0A500955C5F /* UIScrollView */,
 				185C99081D67F0A500955C5F /* UISearchController */,
@@ -1931,6 +1940,26 @@
 				186324D11D6C597900BD5835 /* BounceView.m */,
 			);
 			path = "手势控制贝塞尔曲线";
+			sourceTree = "<group>";
+		};
+		186E631A1D6E868B0070A717 /* UIDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				186E631B1D6E868B0070A717 /* YFDynamicViewController.h */,
+				186E631C1D6E868B0070A717 /* YFDynamicViewController.m */,
+				186E631D1D6E868B0070A717 /* 碰撞检测 */,
+			);
+			path = UIDynamic;
+			sourceTree = "<group>";
+		};
+		186E631D1D6E868B0070A717 /* 碰撞检测 */ = {
+			isa = PBXGroup;
+			children = (
+				186E631E1D6E868B0070A717 /* YYViewController.h */,
+				186E631F1D6E868B0070A717 /* YYViewController.m */,
+				186E63201D6E868B0070A717 /* YYViewController.storyboard */,
+			);
+			path = "碰撞检测";
 			sourceTree = "<group>";
 		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
@@ -4213,6 +4242,7 @@
 				B848CC7F1CB35008005F5DA0 /* YFEmptyDataSetViewController.storyboard in Resources */,
 				B864C7A91C9945DE00D1E440 /* YFStackedPageVC.storyboard in Resources */,
 				B891DACB1CA11808007F69AF /* YFAutolayoutTagViewController.storyboard in Resources */,
+				186E63231D6E868B0070A717 /* YYViewController.storyboard in Resources */,
 				B891D9FA1CA0F7A9007F69AF /* RZSimpleCollectionViewController.xib in Resources */,
 				B8A57EC81CC50089003ED5EF /* SQLiteBaseUseViewController.storyboard in Resources */,
 				B870426F1CAB7FDA0067653C /* node.plist in Resources */,
@@ -4328,6 +4358,7 @@
 				B87300981C508CFF00090C9D /* LXHTwoWaterWaveView.m in Sources */,
 				B87042631CAB7CEB0067653C /* YFAnswerBox.m in Sources */,
 				B86B4A911CE1DC4F00AD54AB /* ZWIntroductionViewController.m in Sources */,
+				186E63221D6E868B0070A717 /* YYViewController.m in Sources */,
 				18C760EF1B9AD4300038B2EE /* YFRecordData.m in Sources */,
 				B852D5371C51F8A600454E7F /* YFPushTransitionViewController.m in Sources */,
 				B891DAF01CA11ABB007F69AF /* View+MASAdditions.m in Sources */,
@@ -4512,6 +4543,7 @@
 				B891D9F41CA0F7A9007F69AF /* RZZoomBlurAnimationController.m in Sources */,
 				18CAD0CB1B998A93001066FF /* YFAnimationManager.m in Sources */,
 				B8E9F0031CEAF0A300E7E668 /* DemoDetailViewController.m in Sources */,
+				186E63211D6E868B0070A717 /* YFDynamicViewController.m in Sources */,
 				B869D5321C462BC500233328 /* BaseTableViewController.m in Sources */,
 				B85C96C21C4F83F50096E2A1 /* YFRippleViewController.m in Sources */,
 				B864C7711C9902B500D1E440 /* YFAnimationCircleButtonVC.m in Sources */,

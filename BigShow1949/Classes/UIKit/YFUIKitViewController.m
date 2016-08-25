@@ -21,11 +21,13 @@
     
     self.titles = @[@"Tabbar",
                     @"UIScrollView",
-                    @"SearchController"];
+                    @"SearchController",
+                    @"UIDynamic"];
     
     self.classNames = @[@"YFKnowledgeVC02",
                         @"YFScrollViewController",
-                        @"YFSearchController"];
+                        @"YFSearchController",
+                        @"YFDynamicViewController"];
 }
 
 @end
