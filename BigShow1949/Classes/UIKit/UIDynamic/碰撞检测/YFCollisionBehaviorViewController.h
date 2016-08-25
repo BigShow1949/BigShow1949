@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YYViewController : UIViewController
+@interface YFCollisionBehaviorViewController : UIViewController
 
 @end

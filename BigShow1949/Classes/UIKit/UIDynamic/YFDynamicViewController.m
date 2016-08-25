@@ -17,9 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"碰撞检测",];
+    self.titles = @[@"碰撞检测",
+                    @"捕捉行为",
+                    @"推动行为",
+                    @"附着行为",
+                    @"动力元素行为"];
     
-    self.classNames = @[@"YYViewController_UIStoryboard",];
+    self.classNames = @[@"YFCollisionBehaviorViewController_UIStoryboard",
+                        @"YFSnapBehaviorViewController",
+                        @"YFPushBehaviorViewController",
+                        @"YFAttachmentBehaviorViewController",
+                        @"YFDynamicItemViewController"];
 
 }
 

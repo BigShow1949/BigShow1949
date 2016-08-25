@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Collision Behavior View Controller-->
         <scene sceneID="sOp-RT-IeU">
             <objects>
-                <viewController storyboardIdentifier="YYViewController" id="UIW-Nv-G6t" customClass="YYViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YFCollisionBehaviorViewController" id="UIW-Nv-G6t" customClass="YFCollisionBehaviorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ouZ-So-xQo"/>
                         <viewControllerLayoutGuide type="bottom" id="PBp-qH-w22"/>
@@ -39,12 +39,12 @@
                     <connections>
                         <outlet property="block1" destination="wyw-MH-YN2" id="wRN-iO-xzX"/>
                         <outlet property="block2" destination="PJC-zH-LNG" id="wWx-r8-lBP"/>
-                        <outlet property="redView" destination="xjl-d9-Mea" id="D1Z-gF-ac1"/>
+                        <outlet property="redView" destination="xjl-d9-Mea" id="V7V-XP-9qA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sm3-xc-Wuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="351"/>
+            <point key="canvasLocation" x="-24" y="311"/>
         </scene>
     </scenes>
 </document>
