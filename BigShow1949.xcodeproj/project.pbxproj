@@ -87,6 +87,15 @@
 		186E63361D6EA5060070A717 /* YFCollisionBehaviorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63341D6EA5060070A717 /* YFCollisionBehaviorViewController.m */; };
 		186E63371D6EA5060070A717 /* YFCollisionBehaviorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186E63351D6EA5060070A717 /* YFCollisionBehaviorViewController.storyboard */; };
 		186E633B1D6EC60C0070A717 /* YFDynamicItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E633A1D6EC60C0070A717 /* YFDynamicItemViewController.m */; };
+		186E63521D6EE18D0070A717 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E634B1D6EE18D0070A717 /* DraggableView.m */; };
+		186E63531D6EE18D0070A717 /* PaneBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E634D1D6EE18D0070A717 /* PaneBehavior.m */; };
+		186E63541D6EE18D0070A717 /* YFFlexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E634F1D6EE18D0070A717 /* YFFlexView.m */; };
+		186E63551D6EE18D0070A717 /* YFFlexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63511D6EE18D0070A717 /* YFFlexViewController.m */; };
+		186E63621D6EE1BB0070A717 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63581D6EE1BB0070A717 /* Animator.m */; };
+		186E63631D6EE1BB0070A717 /* UINTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E635A1D6EE1BB0070A717 /* UINTAppDelegate.m */; };
+		186E63641D6EE1BB0070A717 /* UINTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E635C1D6EE1BB0070A717 /* UINTViewController.m */; };
+		186E63651D6EE1BB0070A717 /* UINTDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E635D1D6EE1BB0070A717 /* UINTDraggableView.m */; };
+		186E63661D6EE1BB0070A717 /* UINTSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63601D6EE1BB0070A717 /* UINTSpringAnimation.m */; };
 		189242651B99D065008AC1EB /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAuthorViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -697,6 +706,25 @@
 		186E63351D6EA5060070A717 /* YFCollisionBehaviorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFCollisionBehaviorViewController.storyboard; sourceTree = "<group>"; };
 		186E63391D6EC60C0070A717 /* YFDynamicItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDynamicItemViewController.h; sourceTree = "<group>"; };
 		186E633A1D6EC60C0070A717 /* YFDynamicItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDynamicItemViewController.m; sourceTree = "<group>"; };
+		186E634A1D6EE18D0070A717 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		186E634B1D6EE18D0070A717 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		186E634C1D6EE18D0070A717 /* PaneBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaneBehavior.h; sourceTree = "<group>"; };
+		186E634D1D6EE18D0070A717 /* PaneBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaneBehavior.m; sourceTree = "<group>"; };
+		186E634E1D6EE18D0070A717 /* YFFlexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFlexView.h; sourceTree = "<group>"; };
+		186E634F1D6EE18D0070A717 /* YFFlexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFlexView.m; sourceTree = "<group>"; };
+		186E63501D6EE18D0070A717 /* YFFlexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFlexViewController.h; sourceTree = "<group>"; };
+		186E63511D6EE18D0070A717 /* YFFlexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFlexViewController.m; sourceTree = "<group>"; };
+		186E63571D6EE1BB0070A717 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		186E63581D6EE1BB0070A717 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		186E63591D6EE1BB0070A717 /* UINTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTAppDelegate.h; sourceTree = "<group>"; };
+		186E635A1D6EE1BB0070A717 /* UINTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINTAppDelegate.m; sourceTree = "<group>"; };
+		186E635B1D6EE1BB0070A717 /* UINTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTViewController.h; sourceTree = "<group>"; };
+		186E635C1D6EE1BB0070A717 /* UINTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINTViewController.m; sourceTree = "<group>"; };
+		186E635D1D6EE1BB0070A717 /* UINTDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINTDraggableView.m; sourceTree = "<group>"; };
+		186E635E1D6EE1BB0070A717 /* UINTDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTDraggableView.h; sourceTree = "<group>"; };
+		186E635F1D6EE1BB0070A717 /* UINTGeometryExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTGeometryExtras.h; sourceTree = "<group>"; };
+		186E63601D6EE1BB0070A717 /* UINTSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINTSpringAnimation.m; sourceTree = "<group>"; };
+		186E63611D6EE1BB0070A717 /* UINTSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTSpringAnimation.h; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAuthorViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1959,6 +1987,8 @@
 			children = (
 				186E631B1D6E868B0070A717 /* YFDynamicViewController.h */,
 				186E631C1D6E868B0070A717 /* YFDynamicViewController.m */,
+				186E63561D6EE1A40070A717 /* 弹簧效果(CADisplayLink) */,
+				186E63491D6EE18D0070A717 /* 弹簧效果(附着行为) */,
 				186E63381D6EC5F50070A717 /* 动力元素行为 */,
 				186E632F1D6EA3130070A717 /* 附着行为 */,
 				186E63281D6E99AD0070A717 /* 推动行为 */,
@@ -2012,6 +2042,39 @@
 				186E633A1D6EC60C0070A717 /* YFDynamicItemViewController.m */,
 			);
 			path = "动力元素行为";
+			sourceTree = "<group>";
+		};
+		186E63491D6EE18D0070A717 /* 弹簧效果(附着行为) */ = {
+			isa = PBXGroup;
+			children = (
+				186E634A1D6EE18D0070A717 /* DraggableView.h */,
+				186E634B1D6EE18D0070A717 /* DraggableView.m */,
+				186E634C1D6EE18D0070A717 /* PaneBehavior.h */,
+				186E634D1D6EE18D0070A717 /* PaneBehavior.m */,
+				186E634E1D6EE18D0070A717 /* YFFlexView.h */,
+				186E634F1D6EE18D0070A717 /* YFFlexView.m */,
+				186E63501D6EE18D0070A717 /* YFFlexViewController.h */,
+				186E63511D6EE18D0070A717 /* YFFlexViewController.m */,
+			);
+			path = "弹簧效果(附着行为)";
+			sourceTree = "<group>";
+		};
+		186E63561D6EE1A40070A717 /* 弹簧效果(CADisplayLink) */ = {
+			isa = PBXGroup;
+			children = (
+				186E63571D6EE1BB0070A717 /* Animator.h */,
+				186E63581D6EE1BB0070A717 /* Animator.m */,
+				186E63591D6EE1BB0070A717 /* UINTAppDelegate.h */,
+				186E635A1D6EE1BB0070A717 /* UINTAppDelegate.m */,
+				186E635B1D6EE1BB0070A717 /* UINTViewController.h */,
+				186E635C1D6EE1BB0070A717 /* UINTViewController.m */,
+				186E635D1D6EE1BB0070A717 /* UINTDraggableView.m */,
+				186E635E1D6EE1BB0070A717 /* UINTDraggableView.h */,
+				186E635F1D6EE1BB0070A717 /* UINTGeometryExtras.h */,
+				186E63601D6EE1BB0070A717 /* UINTSpringAnimation.m */,
+				186E63611D6EE1BB0070A717 /* UINTSpringAnimation.h */,
+			);
+			path = "弹簧效果(CADisplayLink)";
 			sourceTree = "<group>";
 		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
@@ -4456,6 +4519,8 @@
 				B87042601CAB7CEB0067653C /* YFResizableView.m in Sources */,
 				8BC4AD901B9682B00026B012 /* MJRefreshHeaderView.m in Sources */,
 				B88A15511CA393F400BFC377 /* Case7ViewController.m in Sources */,
+				186E63651D6EE1BB0070A717 /* UINTDraggableView.m in Sources */,
+				186E63661D6EE1BB0070A717 /* UINTSpringAnimation.m in Sources */,
 				185C98AC1D67E6EC00955C5F /* UILabel+BezierAnimation.m in Sources */,
 				185C991F1D67F0A500955C5F /* YFKnowledgeVC02.m in Sources */,
 				8BC4AD4C1B9681B70026B012 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -4476,6 +4541,7 @@
 				181F28AF1D2CF53C00FC2637 /* UILabel+Associate.m in Sources */,
 				B891DAE91CA11ABB007F69AF /* MASConstraint.m in Sources */,
 				B8763CE01C980EA8007B200B /* RGCardViewLayout.m in Sources */,
+				186E63541D6EE18D0070A717 /* YFFlexView.m in Sources */,
 				B891DAE81CA11ABB007F69AF /* MASCompositeConstraint.m in Sources */,
 				B87042A11CABCDFE0067653C /* JLHomePracticeViewController.m in Sources */,
 				181F28A31D2CEF1600FC2637 /* Classes.m in Sources */,
@@ -4557,6 +4623,7 @@
 				B891D9F31CA0F7A9007F69AF /* RZZoomAlphaAnimationController.m in Sources */,
 				B869D5391C46406600233328 /* YFBlogViewController.m in Sources */,
 				B89386511C9FCE5A00B122B8 /* HHHorizontalPagingView.m in Sources */,
+				186E63531D6EE18D0070A717 /* PaneBehavior.m in Sources */,
 				8BC4AD481B9681B70026B012 /* SDImageCache.m in Sources */,
 				185C99231D67F0A500955C5F /* MyItem.m in Sources */,
 				18CAD0861B9977E3001066FF /* YFDragRadialMenu.m in Sources */,
@@ -4570,6 +4637,7 @@
 				B891D9F21CA0F7A9007F69AF /* RZShrinkZoomAnimationController.m in Sources */,
 				B852D5721C52315200454E7F /* YFNeteaseViewController.m in Sources */,
 				185C99271D67F0A500955C5F /* SecondViewController.m in Sources */,
+				186E63631D6EE1BB0070A717 /* UINTAppDelegate.m in Sources */,
 				185C992B1D67F0A500955C5F /* YFTableViewDelAllCell.m in Sources */,
 				184B38531D2521A8005CD7F1 /* ModelOne.m in Sources */,
 				B88A15531CA393F400BFC377 /* Case8DataEntity.m in Sources */,
@@ -4579,6 +4647,7 @@
 				185C98AE1D67E6EC00955C5F /* YFAliNumberViewController.m in Sources */,
 				B84C03361CE317DE00E62D75 /* ITRSecondViewController.m in Sources */,
 				18CAD07A1B9977E3001066FF /* YFItemView.m in Sources */,
+				186E63641D6EE1BB0070A717 /* UINTViewController.m in Sources */,
 				B83EA95C1CC0C74C00807828 /* FMDatabasePool.m in Sources */,
 				B852D5261C51D61900454E7F /* YFCoreAnimationViewController.m in Sources */,
 				B88023001CAE5B2D002C0021 /* UIImage+CJZ.m in Sources */,
@@ -4684,6 +4753,7 @@
 				B88022FD1CAE291D002C0021 /* YFImageCategoryViewController.m in Sources */,
 				B891D9ED1CA0F7A9007F69AF /* RZTransitionsManager.m in Sources */,
 				18CAD0D31B998A93001066FF /* YFSnowViewController.m in Sources */,
+				186E63621D6EE1BB0070A717 /* Animator.m in Sources */,
 				8BC4AD891B9682B00026B012 /* NSObject+MJCoding.m in Sources */,
 				185C990D1D67F0A500955C5F /* SYArenaViewController.m in Sources */,
 				8BC4AD861B9682B00026B012 /* MJMethod.m in Sources */,
@@ -4694,6 +4764,7 @@
 				B864C7791C99035D00D1E440 /* DeformationButton.m in Sources */,
 				B8729E801C9A54F200A18AA5 /* LTSlidingViewCoverflowTransition.m in Sources */,
 				18CAD0851B9977E3001066FF /* YFAnimationVC06.m in Sources */,
+				186E63551D6EE18D0070A717 /* YFFlexViewController.m in Sources */,
 				B80E93931CC8785D00607EF3 /* DataAlterFieldView.m in Sources */,
 				B8D444331C50B86200F3A34E /* UPStackMenuItem.m in Sources */,
 				B8763CE21C980EA8007B200B /* RGCollectionViewCell.m in Sources */,
@@ -4764,6 +4835,7 @@
 				B87042611CAB7CEB0067653C /* YFAnswerNaviBar.m in Sources */,
 				1804225F1D6D782A009CB5AC /* UITextField+Shake.m in Sources */,
 				B85C96C11C4F83F50096E2A1 /* XXBRippleView.m in Sources */,
+				186E63521D6EE18D0070A717 /* DraggableView.m in Sources */,
 				B893865B1C9FCE6300B122B8 /* HHHeaderView.m in Sources */,
 				B891D9E61CA0F7A9007F69AF /* RZTransitionsNavigationController.m in Sources */,
 				B87446001CAD2289009F274E /* YFColorViewController.m in Sources */,

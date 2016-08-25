@@ -21,13 +21,17 @@
                     @"捕捉行为",
                     @"推动行为",
                     @"附着行为",
-                    @"动力元素行为"];
+                    @"动力元素行为",
+                    @"弹簧效果(附着行为)",
+                    @"弹簧效果(CADisplayLink)"];
     
     self.classNames = @[@"YFCollisionBehaviorViewController_UIStoryboard",
                         @"YFSnapBehaviorViewController",
                         @"YFPushBehaviorViewController",
                         @"YFAttachmentBehaviorViewController",
-                        @"YFDynamicItemViewController"];
+                        @"YFDynamicItemViewController",
+                        @"YFFlexViewController",
+                        @"UINTViewController"];
 
 }
 
