@@ -38,7 +38,7 @@
         [sphereView addSubview:btn];
     }
     [sphereView setCloudTags:array];
-    sphereView.backgroundColor = [UIColor whiteColor];
+    sphereView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:sphereView];
     
     // Do any additional setup after loading the view, typically from a nib.

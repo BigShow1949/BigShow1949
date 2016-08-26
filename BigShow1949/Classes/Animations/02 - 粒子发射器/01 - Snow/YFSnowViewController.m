@@ -21,7 +21,7 @@
     self.title = @"飘浮的雪花";
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    [[YFAnimationManager shareInstancetype] showAnimationInView:self.view withAnimationStyle:YFAnimationStyleOfSnow];
+    [[YFAnimationManager shareInstancetype] showAnimationInView:self.view withAnimationStyle:YFAnimationStyleOfSnow]; // 雨水有问题
 }
 
 

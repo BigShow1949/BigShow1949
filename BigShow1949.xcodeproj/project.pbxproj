@@ -96,6 +96,8 @@
 		186E63641D6EE1BB0070A717 /* UINTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E635C1D6EE1BB0070A717 /* UINTViewController.m */; };
 		186E63651D6EE1BB0070A717 /* UINTDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E635D1D6EE1BB0070A717 /* UINTDraggableView.m */; };
 		186E63661D6EE1BB0070A717 /* UINTSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63601D6EE1BB0070A717 /* UINTSpringAnimation.m */; };
+		186E636A1D6EED090070A717 /* YFStatisticalCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E63691D6EED090070A717 /* YFStatisticalCodeViewController.m */; };
+		186E636C1D701BD60070A717 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 186E636B1D701BD60070A717 /* rain.png */; };
 		189242651B99D065008AC1EB /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189242641B99D065008AC1EB /* YFAuthorViewController.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -725,6 +727,9 @@
 		186E635F1D6EE1BB0070A717 /* UINTGeometryExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTGeometryExtras.h; sourceTree = "<group>"; };
 		186E63601D6EE1BB0070A717 /* UINTSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINTSpringAnimation.m; sourceTree = "<group>"; };
 		186E63611D6EE1BB0070A717 /* UINTSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINTSpringAnimation.h; sourceTree = "<group>"; };
+		186E63681D6EED090070A717 /* YFStatisticalCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFStatisticalCodeViewController.h; sourceTree = "<group>"; };
+		186E63691D6EED090070A717 /* YFStatisticalCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFStatisticalCodeViewController.m; sourceTree = "<group>"; };
+		186E636B1D701BD60070A717 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
 		189242631B99D065008AC1EB /* YFAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAuthorViewController.h; sourceTree = "<group>"; };
 		189242641B99D065008AC1EB /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -2077,6 +2082,15 @@
 			path = "弹簧效果(CADisplayLink)";
 			sourceTree = "<group>";
 		};
+		186E63671D6EEC780070A717 /* StatisticalCode */ = {
+			isa = PBXGroup;
+			children = (
+				186E63681D6EED090070A717 /* YFStatisticalCodeViewController.h */,
+				186E63691D6EED090070A717 /* YFStatisticalCodeViewController.m */,
+			);
+			path = StatisticalCode;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -2203,6 +2217,7 @@
 			children = (
 				18CAD0301B95FD88001066FF /* YFKnowledgeViewController.h */,
 				18CAD0311B95FD88001066FF /* YFKnowledgeViewController.m */,
+				186E63671D6EEC780070A717 /* StatisticalCode */,
 				18D0A7F71D38B9000007B184 /* NotificationCenter */,
 				181F28921D2CEE1700FC2637 /* RunTime */,
 				B86B4A871CE1DAD900AD54AB /* GuideView */,
@@ -2421,6 +2436,7 @@
 		18CAD0D41B998D11001066FF /* RainCell */ = {
 			isa = PBXGroup;
 			children = (
+				186E636B1D701BD60070A717 /* rain.png */,
 				18CAD0D51B998F92001066FF /* YFEmitterRainCell.h */,
 				18CAD0D61B998F92001066FF /* YFEmitterRainCell.m */,
 			);
@@ -4412,6 +4428,7 @@
 				B891DA2F1CA0F8A0007F69AF /* photo_sample_04.png in Resources */,
 				B891DB071CA124DE007F69AF /* YFTagsCloudViewController.storyboard in Resources */,
 				B8729ECC1C9AA06700A18AA5 /* YFSlidingViewController.storyboard in Resources */,
+				186E636C1D701BD60070A717 /* rain.png in Resources */,
 				185C99191D67F0A500955C5F /* TabBar_History_new@2x.png in Resources */,
 				185C991B1D67F0A500955C5F /* TabBar_LotteryHall_new@2x.png in Resources */,
 				B864C7CD1C995ED400D1E440 /* awcollectionviewdiallayout_2.jpg in Resources */,
@@ -4861,6 +4878,7 @@
 				B864C7A61C9945D500D1E440 /* SSStackedPageView.m in Sources */,
 				8BC4AD881B9682B00026B012 /* MJTypeEncoding.m in Sources */,
 				B891DABE1CA117CB007F69AF /* SKTag.m in Sources */,
+				186E636A1D6EED090070A717 /* YFStatisticalCodeViewController.m in Sources */,
 				B891DB4A1CA14661007F69AF /* YFMarqueeViewController.m in Sources */,
 				8BC4AD491B9681B70026B012 /* SDWebImageCompat.m in Sources */,
 				B852D51B1C51D60800454E7F /* CAAnimationGroupViewController.m in Sources */,

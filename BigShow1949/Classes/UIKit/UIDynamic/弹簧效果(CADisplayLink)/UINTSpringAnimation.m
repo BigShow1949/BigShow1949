@@ -39,14 +39,19 @@
     CGFloat time = (CGFloat) dt;
 
     // friction force = velocity * friction constant
+    // 摩擦力 = 速度 * 摩擦系数
     CGPoint frictionForce = CGPointMultiply(self.velocity, frictionConstant);
     // spring force = (target point - current position) * spring constant
+    // 弹力=  (目标位置 - 当前位置) * 弹簧劲度系数
     CGPoint springForce = CGPointMultiply(CGPointSubtract(self.targetPoint, self.view.center), springConstant);
     // force = spring force - friction force
+    // 力 = 弹力 - 摩擦力
     CGPoint force = CGPointSubtract(springForce, frictionForce);
     // velocity = current velocity + force * time / mass
+    // 速度 = 当前速度 + 力 * 时间 / 质量
     self.velocity = CGPointAdd(self.velocity, CGPointMultiply(force, time));
     // position = current position + velocity * time
+    // 位置 = 当前位置 + 速度 * 时间
     self.view.center = CGPointAdd(self.view.center, CGPointMultiply(self.velocity, time));
 
     CGFloat speed = CGPointLength(self.velocity);

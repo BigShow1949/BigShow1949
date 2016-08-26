@@ -97,15 +97,12 @@
 
 +(void)rainLayerInView:(UIView *)view atPosition:(CGPoint)position andDirection:(YFEmitterParticleCellDirection)direction andRadious:(CGFloat)radious andCellImg:(NSString *)cellImg
 {
-    NSLog(@"调用了 - rainLayerInView");
-    
-    //创建雪花所在图层layer
+    //创建雨点所在图层layer
     YFEmitterCustomLayer *rainLayer=[self addCustomLayerInView:view atPosition:position inSize:CGSizeMake(view.frame.size.width, view.frame.size.height)];
     rainLayer.emitterPosition = CGPointMake(320 / 2.0, -30);
-    rainLayer.emitterSize		= CGSizeMake(320 * 2.0, 0);;
+    rainLayer.emitterSize	  = CGSizeMake(320 * 2.0, 0);
     
-    // Spawn points for the flakes are within on the outline of the line
-    rainLayer.emitterMode		= kCAEmitterLayerOutline;
+    rainLayer.emitterMode   = kCAEmitterLayerOutline;
     rainLayer.emitterShape	= kCAEmitterLayerLine;
     
     rainLayer.shadowOpacity = 1.0;
@@ -115,7 +112,7 @@
     rainLayer.seed = (arc4random()%100)+1;
     
     //粒子
-    YFEmitterRainCell *emitterCell=[YFEmitterRainCell rainCellWithCellImg:cellImg andRadious:radious andVelocity:20 andDirection:direction];
+    YFEmitterRainCell *emitterCell = [YFEmitterRainCell rainCellWithCellImg:cellImg andRadious:radious andVelocity:20 andDirection:direction];
 
 //    emitterCell.contents		= (id)[image CGImage];
     emitterCell.color			= [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
@@ -126,14 +123,12 @@
 
 + (void)addRainLayerInView:(UIView *)view {
     
-    //树叶粒子所在view,发射树叶的位置,树叶飘向的方向,树叶粒子半径,树叶粒子图片
     [YFEmitterCustomLayer rainLayerInView:view atPosition:CGPointMake(160,120) andDirection:YFEmitterParticleCellDirectionToBottom andRadious:19 andCellImg:nil];
     
-//    [YFEmitterCustomLayer rainLayerInView:view atPosition:CGPointMake(-60,-20) andDirection:YFEmitterParticleCellDirectionToBottom andRadious:9 andCellImg:nil];
-//    
-//    [YFEmitterCustomLayer rainLayerInView:view atPosition:CGPointMake(-60,view.frame.size.height*0.33) andDirection:YFEmitterParticleCellDirectionToBottom andRadious:14 andCellImg:nil];
-    
+    [YFEmitterCustomLayer rainLayerInView:view atPosition:CGPointMake(-60,-20) andDirection:YFEmitterParticleCellDirectionToBottom andRadious:9 andCellImg:nil];
 
+    [YFEmitterCustomLayer rainLayerInView:view atPosition:CGPointMake(-60,view.frame.size.height*0.33) andDirection:YFEmitterParticleCellDirectionToBottom andRadious:14 andCellImg:nil];
+    
 }
 
 

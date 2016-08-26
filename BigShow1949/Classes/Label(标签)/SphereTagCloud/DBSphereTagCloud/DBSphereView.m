@@ -43,6 +43,7 @@
     tags = [NSMutableArray arrayWithArray:array];
     coordinate = [[NSMutableArray alloc] initWithCapacity:0];
     
+    // 重置view的中心点,便于计算
     for (NSInteger i = 0; i < tags.count; i ++) {
         UIView *view = [tags objectAtIndex:i];
         view.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
@@ -50,7 +51,7 @@
     
     CGFloat p1 = M_PI * (3 - sqrt(5));
     CGFloat p2 = 2. / tags.count;
-    
+    NSLog(@"p1:%f p2:%f", p1, p2);
     for (NSInteger i = 0; i < tags.count; i ++) {
         
         CGFloat y = i * p2 - 1 + (p2 / 2);
@@ -63,7 +64,7 @@
         DBPoint point = DBPointMake(x, y, z);
         NSValue *value = [NSValue value:&point withObjCType:@encode(DBPoint)];
         [coordinate addObject:value];
-        
+        NSLog(@"x:%f y:%f z:%f", point.x, point.y, point.z);
         CGFloat time = (arc4random() % 10 + 10.) / 20.;
         [UIView animateWithDuration:time delay:0. options:UIViewAnimationOptionCurveEaseOut animations:^{
             [self setTagOfPoint:point andIndex:i];

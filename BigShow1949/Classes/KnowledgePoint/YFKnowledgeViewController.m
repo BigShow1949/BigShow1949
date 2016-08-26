@@ -19,14 +19,16 @@
                     @"响应者链条",
                     @"引导页",
                     @"运行时",
-                    @"通知中心"];
+                    @"通知中心",
+                    @"统一代码行数"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
                         @"YFResponderChainViewController",
                         @"YFGuideViewController",
                         @"YFRunTimeViewController",
-                        @"YFNotificationCenterVC"];
+                        @"YFNotificationCenterVC",
+                        @"YFStatisticalCodeViewController"];
 }
 
 
