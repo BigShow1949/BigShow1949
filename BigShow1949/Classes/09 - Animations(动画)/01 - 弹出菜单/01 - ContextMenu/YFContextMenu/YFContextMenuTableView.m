@@ -48,7 +48,7 @@ typedef NS_ENUM(NSUInteger, AnimatingState) {
 - (instancetype)initWithTableViewDelegateDataSource:(id<UITableViewDelegate, UITableViewDataSource>)delegateDataSource {
     self = [self init];
     if (self) {
-        self.delegate = delegateDataSource;
+//        self.delegate = delegateDataSource;
         self.dataSource = delegateDataSource;
     }
     return self;

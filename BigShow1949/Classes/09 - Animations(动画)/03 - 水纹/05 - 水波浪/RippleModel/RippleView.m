@@ -20,7 +20,7 @@ enum
     UNIFORM_RGB,
     NUM_UNIFORMS
 };
-GLint uniforms[NUM_UNIFORMS];
+GLint uniforms_ripple[NUM_UNIFORMS];
 
 enum
 {
@@ -73,7 +73,7 @@ enum
     [EAGLContext setCurrentContext:self.context];
     [self loadShaders];
     glUseProgram(_program);
-    glUniform1i(uniforms[UNIFORM_RGB], 0);
+    glUniform1i(uniforms_ripple[UNIFORM_RGB], 0);
 }
 
 - (void)setupBuffers
@@ -270,7 +270,7 @@ enum
         }
         return NO;
     }
-    uniforms[UNIFORM_RGB] = glGetUniformLocation(_program, "SamplerRGB");
+    uniforms_ripple[UNIFORM_RGB] = glGetUniformLocation(_program, "SamplerRGB");
     if (vertShader) {
         glDetachShader(_program, vertShader);
         glDeleteShader(vertShader);
