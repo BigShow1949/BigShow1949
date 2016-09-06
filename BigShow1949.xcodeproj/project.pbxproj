@@ -25,7 +25,7 @@
 		186E6F331D70262E0070A717 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A801D70262D0070A717 /* SKTagView.m */; };
 		186E6F341D70262E0070A717 /* YFAutolayoutTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A821D70262D0070A717 /* YFAutolayoutTagViewController.m */; };
 		186E6F351D70262E0070A717 /* YFAutolayoutTagViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186E6A831D70262D0070A717 /* YFAutolayoutTagViewController.storyboard */; };
-		186E6F361D70262E0070A717 /* CloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A861D70262D0070A717 /* CloudView.m */; };
+		186E6F361D70262E0070A717 /* CloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A861D70262D0070A717 /* CloudView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		186E6F371D70262E0070A717 /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A881D70262D0070A717 /* NSObject+KVC.m */; };
 		186E6F381D70262E0070A717 /* YFDynamicLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A8A1D70262D0070A717 /* YFDynamicLabelViewController.m */; };
 		186E6F391D70262E0070A717 /* LazyFadeInLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6A8F1D70262D0070A717 /* LazyFadeInLayer.m */; };
@@ -42,7 +42,7 @@
 		186E6F441D70262E0070A717 /* DBSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AA91D70262D0070A717 /* DBSphereView.m */; };
 		186E6F451D70262E0070A717 /* YFSphereTagCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AAB1D70262D0070A717 /* YFSphereTagCloud.m */; };
 		186E6F461D70262E0070A717 /* PFGoldenSectionSpiral.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AB01D70262D0070A717 /* PFGoldenSectionSpiral.m */; };
-		186E6F471D70262E0070A717 /* ZYQSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AB61D70262D0070A717 /* ZYQSphereView.m */; };
+		186E6F471D70262E0070A717 /* ZYQSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AB61D70262D0070A717 /* ZYQSphereView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		186E6F481D70262E0070A717 /* YFSphereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6AB81D70262D0070A717 /* YFSphereViewController.m */; };
 		186E6F491D70262E0070A717 /* WWTagsCloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6ABB1D70262D0070A717 /* WWTagsCloudView.m */; };
 		186E6F4A1D70262E0070A717 /* YFTagsCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6ABD1D70262D0070A717 /* YFTagsCloudViewController.m */; };
@@ -301,8 +301,6 @@
 		186E70471D70262E0070A717 /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CD91D70262D0070A717 /* BounceView.m */; };
 		186E70481D70262E0070A717 /* YFBounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CDB1D70262D0070A717 /* YFBounceViewController.m */; };
 		186E70491D70262E0070A717 /* YFAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CDD1D70262D0070A717 /* YFAnimationsViewController.m */; };
-		186E704A1D70262E0070A717 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CE01D70262D0070A717 /* DeformationButton.m */; };
-		186E704B1D70262E0070A717 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CE21D70262D0070A717 /* MMMaterialDesignSpinner.m */; };
 		186E704C1D70262E0070A717 /* YFNormalAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CE41D70262D0070A717 /* YFNormalAnimationsViewController.m */; };
 		186E704D1D70262E0070A717 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CE71D70262D0070A717 /* UITextField+Shake.m */; };
 		186E704E1D70262E0070A717 /* YFPasswordShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6CE91D70262D0070A717 /* YFPasswordShakeViewController.m */; };
@@ -1119,10 +1117,6 @@
 		186E6CDB1D70262D0070A717 /* YFBounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBounceViewController.m; sourceTree = "<group>"; };
 		186E6CDC1D70262D0070A717 /* YFAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAnimationsViewController.h; sourceTree = "<group>"; };
 		186E6CDD1D70262D0070A717 /* YFAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAnimationsViewController.m; sourceTree = "<group>"; };
-		186E6CDF1D70262D0070A717 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
-		186E6CE01D70262D0070A717 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
-		186E6CE11D70262D0070A717 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
-		186E6CE21D70262D0070A717 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		186E6CE31D70262D0070A717 /* YFNormalAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNormalAnimationsViewController.h; sourceTree = "<group>"; };
 		186E6CE41D70262D0070A717 /* YFNormalAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNormalAnimationsViewController.m; sourceTree = "<group>"; };
 		186E6CE61D70262D0070A717 /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
@@ -3129,10 +3123,6 @@
 		186E6CDE1D70262D0070A717 /* 一般动画 */ = {
 			isa = PBXGroup;
 			children = (
-				186E6CDF1D70262D0070A717 /* DeformationButton.h */,
-				186E6CE01D70262D0070A717 /* DeformationButton.m */,
-				186E6CE11D70262D0070A717 /* MMMaterialDesignSpinner.h */,
-				186E6CE21D70262D0070A717 /* MMMaterialDesignSpinner.m */,
 				186E6CE31D70262D0070A717 /* YFNormalAnimationsViewController.h */,
 				186E6CE41D70262D0070A717 /* YFNormalAnimationsViewController.m */,
 			);
@@ -4937,7 +4927,6 @@
 				186E70691D70262E0070A717 /* SYMineViewController.m in Sources */,
 				186E6F631D70262E0070A717 /* YFHomeLabelButton.m in Sources */,
 				186E6FD61D70262E0070A717 /* Case6ViewController.m in Sources */,
-				186E704A1D70262E0070A717 /* DeformationButton.m in Sources */,
 				186E70C81D70262E0070A717 /* MyBaseDataSource.m in Sources */,
 				186E70AA1D70262E0070A717 /* YFResizableView.m in Sources */,
 				186E70331D70262E0070A717 /* RippleView.m in Sources */,
@@ -4953,7 +4942,6 @@
 				186E71441D70262E0070A717 /* UIView+WebCacheOperation.m in Sources */,
 				186E712E1D70262E0070A717 /* MJRefreshBaseView.m in Sources */,
 				186E6FA31D70262E0070A717 /* YFSlidingViewController.m in Sources */,
-				186E704B1D70262E0070A717 /* MMMaterialDesignSpinner.m in Sources */,
 				186E6F361D70262E0070A717 /* CloudView.m in Sources */,
 				186E70881D70262E0070A717 /* MenuData.m in Sources */,
 				186E6F8D1D70262E0070A717 /* YSLCardView.m in Sources */,
@@ -5211,6 +5199,7 @@
 		8B0B9AD31B9572000084590D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
@@ -5235,6 +5224,7 @@
 		8B0B9AD41B9572000084590D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
