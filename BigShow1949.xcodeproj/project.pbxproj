@@ -555,6 +555,10 @@
 		1873D7311D8006EA008C2D1D /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72E1D8006EA008C2D1D /* 1.plist */; };
 		1873D7321D8006EA008C2D1D /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72F1D8006EA008C2D1D /* 2.plist */; };
 		1873D7331D8006EA008C2D1D /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D7301D8006EA008C2D1D /* 3.plist */; };
+		1873D7771D801CD1008C2D1D /* YFJigsawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873D7721D801CD1008C2D1D /* YFJigsawViewController.m */; };
+		1873D7781D801CD1008C2D1D /* YFCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873D7741D801CD1008C2D1D /* YFCard.m */; };
+		1873D7791D801CD1008C2D1D /* YFChessBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873D7761D801CD1008C2D1D /* YFChessBoardView.m */; };
+		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
 		18C2D5381BAEDCD2006CD3B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */; };
@@ -1602,6 +1606,13 @@
 		1873D72E1D8006EA008C2D1D /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		1873D72F1D8006EA008C2D1D /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
 		1873D7301D8006EA008C2D1D /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		1873D7711D801CD1008C2D1D /* YFJigsawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFJigsawViewController.h; sourceTree = "<group>"; };
+		1873D7721D801CD1008C2D1D /* YFJigsawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFJigsawViewController.m; sourceTree = "<group>"; };
+		1873D7731D801CD1008C2D1D /* YFCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCard.h; sourceTree = "<group>"; };
+		1873D7741D801CD1008C2D1D /* YFCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCard.m; sourceTree = "<group>"; };
+		1873D7751D801CD1008C2D1D /* YFChessBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFChessBoardView.h; sourceTree = "<group>"; };
+		1873D7761D801CD1008C2D1D /* YFChessBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFChessBoardView.m; sourceTree = "<group>"; };
+		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -2602,6 +2613,7 @@
 		186E6C151D70262D0070A717 /* 08 - LittleProject(小项目展示) */ = {
 			isa = PBXGroup;
 			children = (
+				1873D7701D801CC8008C2D1D /* Jigsaw */,
 				186E6C161D70262D0070A717 /* 01 - RotateButton */,
 				186E6C1A1D70262D0070A717 /* 02 - EmotionsKeyboard */,
 				186E6C341D70262D0070A717 /* 03 - 2048 */,
@@ -4365,6 +4377,19 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		1873D7701D801CC8008C2D1D /* Jigsaw */ = {
+			isa = PBXGroup;
+			children = (
+				1873D7711D801CD1008C2D1D /* YFJigsawViewController.h */,
+				1873D7721D801CD1008C2D1D /* YFJigsawViewController.m */,
+				1873D7731D801CD1008C2D1D /* YFCard.h */,
+				1873D7741D801CD1008C2D1D /* YFCard.m */,
+				1873D7751D801CD1008C2D1D /* YFChessBoardView.h */,
+				1873D7761D801CD1008C2D1D /* YFChessBoardView.m */,
+			);
+			path = Jigsaw;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -4418,6 +4443,7 @@
 		8B0B9AB21B9572000084590D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1873D77A1D8021AE008C2D1D /* img1.jpg */,
 				B84C03281CE2E04700E62D75 /* 1.mp4 */,
 				18C760021B9AB24A0038B2EE /* lxh */,
 				18C760031B9AB24A0038B2EE /* default */,
@@ -4630,6 +4656,7 @@
 				186E6F7B1D70262E0070A717 /* YFShopCell.xib in Resources */,
 				186E706E1D70262E0070A717 /* TabBar_Arena_selected_new@2x.png in Resources */,
 				186E6F981D70262E0070A717 /* HHHeaderView.xib in Resources */,
+				1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */,
 				186E6F3D1D70262E0070A717 /* gift@2x.png in Resources */,
 				186E6F651D70262E0070A717 /* coffee_to_go-50.png in Resources */,
 				186E70761D70262E0070A717 /* TabBar_MyLottery_selected_new@2x.png in Resources */,
@@ -4675,6 +4702,7 @@
 				186E6F751D70262E0070A717 /* SSStackedPageView.m in Sources */,
 				186E6FF91D70262E0070A717 /* SYEmotion.m in Sources */,
 				186E6FAC1D70262E0070A717 /* RZTransitionsManager.m in Sources */,
+				1873D7781D801CD1008C2D1D /* YFCard.m in Sources */,
 				186E6F4A1D70262E0070A717 /* YFTagsCloudViewController.m in Sources */,
 				186E70601D70262E0070A717 /* HyTransitions.m in Sources */,
 				186E70891D70262E0070A717 /* MenuItemCell.m in Sources */,
@@ -4712,6 +4740,7 @@
 				186E6FE11D70262E0070A717 /* YFNotificationCenterVC.m in Sources */,
 				186E71241D70262E0070A717 /* MJFoundation.m in Sources */,
 				186E71351D70262E0070A717 /* MKAnnotationView+WebCache.m in Sources */,
+				1873D7771D801CD1008C2D1D /* YFJigsawViewController.m in Sources */,
 				186E6FF61D70262E0070A717 /* ViewController.m in Sources */,
 				186E6F951D70262E0070A717 /* HHContentScrollView.m in Sources */,
 				186E70451D70262E0070A717 /* YFCircleLoader.m in Sources */,
@@ -4823,6 +4852,7 @@
 				186E6F3B1D70262E0070A717 /* YFLazyInViewController.m in Sources */,
 				186E6F401D70262E0070A717 /* YFCycleView.m in Sources */,
 				186E6F971D70262E0070A717 /* HHHeaderView.m in Sources */,
+				1873D7791D801CD1008C2D1D /* YFChessBoardView.m in Sources */,
 				186E6F821D70262E0070A717 /* TempViewController.m in Sources */,
 				186E6F2C1D70262E0070A717 /* DWBubbleMenuButton.m in Sources */,
 				186E71021D70262E0070A717 /* AFHTTPRequestOperationManager.m in Sources */,

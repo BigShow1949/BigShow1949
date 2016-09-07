@@ -20,10 +20,12 @@
     
     self.titles = @[@"旋转动画",
                     @"表情键盘",
-                    @"游戏2048"];
+                    @"游戏2048",
+                    @"拼图"];
     self.classNames = @[@"YFRotateButtonViewController",
                         @"YFLittleProjectVC02",
-                        @"YFLittleProjectVC03"];
+                        @"YFLittleProjectVC03",
+                        @"YFJigsawViewController"];
     
 }
 
