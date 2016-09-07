@@ -45,23 +45,23 @@
     
     switch (indexPath.section) {
         case 0:
-            cell.imageView.image =  [UIImage imageNamed:@"i1.png"];
+            cell.imageView.image =  [UIImage imageNamed:@"i1.jpg"];
             cell.mainLabel.text = @"Glaciers";
             break;
         case 1:
-            cell.imageView.image =  [UIImage imageNamed:@"i2.png"];
+            cell.imageView.image =  [UIImage imageNamed:@"i2.jpg"];
             cell.mainLabel.text = @"Parrots";
             break;
         case 2:
-            cell.imageView.image =  [UIImage imageNamed:@"i3.png"];
+            cell.imageView.image =  [UIImage imageNamed:@"i3.jpg"];
             cell.mainLabel.text = @"Whales";
             break;
         case 3:
-            cell.imageView.image =  [UIImage imageNamed:@"i4.png"];
+            cell.imageView.image =  [UIImage imageNamed:@"i4.jpg"];
             cell.mainLabel.text = @"Lake View";
             break;
         case 4:
-            cell.imageView.image =  [UIImage imageNamed:@"i5.png"];
+            cell.imageView.image =  [UIImage imageNamed:@"i5.jpg"];
             break;
         default:
             break;
