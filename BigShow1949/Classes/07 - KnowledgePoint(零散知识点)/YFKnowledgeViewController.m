@@ -20,7 +20,7 @@
                     @"引导页",
                     @"运行时",
                     @"通知中心",
-                    @"统一代码行数"];
+                    @"统计代码行数"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",

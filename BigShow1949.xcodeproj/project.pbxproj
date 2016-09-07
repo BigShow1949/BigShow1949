@@ -95,9 +95,6 @@
 		186E6F791D70262E0070A717 /* YFShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6B091D70262D0070A717 /* YFShop.m */; };
 		186E6F7A1D70262E0070A717 /* YFShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6B0B1D70262D0070A717 /* YFShopCell.m */; };
 		186E6F7B1D70262E0070A717 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E6B0C1D70262D0070A717 /* YFShopCell.xib */; };
-		186E6F7C1D70262E0070A717 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186E6B0E1D70262D0070A717 /* 1.plist */; };
-		186E6F7D1D70262E0070A717 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186E6B0F1D70262D0070A717 /* 2.plist */; };
-		186E6F7E1D70262E0070A717 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186E6B101D70262D0070A717 /* 3.plist */; };
 		186E6F7F1D70262E0070A717 /* YFWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6B131D70262D0070A717 /* YFWaterflowLayout.m */; };
 		186E6F801D70262E0070A717 /* YFWaterflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6B151D70262D0070A717 /* YFWaterflowViewController.m */; };
 		186E6F811D70262E0070A717 /* YFViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6B171D70262D0070A717 /* YFViewLayoutViewController.m */; };
@@ -554,6 +551,10 @@
 		186E71461D70262E0070A717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F1F1D70262E0070A717 /* main.m */; };
 		186E71471D70262E0070A717 /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F211D70262E0070A717 /* YFAuthorViewController.m */; };
 		186E71481D70262E0070A717 /* YFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F231D70262E0070A717 /* YFHomeViewController.m */; };
+		1873D7271D8004C2008C2D1D /* YFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */; };
+		1873D7311D8006EA008C2D1D /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72E1D8006EA008C2D1D /* 1.plist */; };
+		1873D7321D8006EA008C2D1D /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72F1D8006EA008C2D1D /* 2.plist */; };
+		1873D7331D8006EA008C2D1D /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D7301D8006EA008C2D1D /* 3.plist */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
 		18C2D5381BAEDCD2006CD3B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */; };
@@ -737,9 +738,6 @@
 		186E6B0A1D70262D0070A717 /* YFShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFShopCell.h; sourceTree = "<group>"; };
 		186E6B0B1D70262D0070A717 /* YFShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFShopCell.m; sourceTree = "<group>"; };
 		186E6B0C1D70262D0070A717 /* YFShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
-		186E6B0E1D70262D0070A717 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
-		186E6B0F1D70262D0070A717 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
-		186E6B101D70262D0070A717 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
 		186E6B121D70262D0070A717 /* YFWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFWaterflowLayout.h; sourceTree = "<group>"; };
 		186E6B131D70262D0070A717 /* YFWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFWaterflowLayout.m; sourceTree = "<group>"; };
 		186E6B141D70262D0070A717 /* YFWaterflowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFWaterflowViewController.h; sourceTree = "<group>"; };
@@ -1599,6 +1597,11 @@
 		186E6F211D70262E0070A717 /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		186E6F221D70262E0070A717 /* YFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHomeViewController.h; sourceTree = "<group>"; };
 		186E6F231D70262E0070A717 /* YFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHomeViewController.m; sourceTree = "<group>"; };
+		1873D7251D8004C2008C2D1D /* YFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCollectionViewController.h; sourceTree = "<group>"; };
+		1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCollectionViewController.m; sourceTree = "<group>"; };
+		1873D72E1D8006EA008C2D1D /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		1873D72F1D8006EA008C2D1D /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		1873D7301D8006EA008C2D1D /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -2072,9 +2075,9 @@
 		186E6B0D1D70262D0070A717 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				186E6B0E1D70262D0070A717 /* 1.plist */,
-				186E6B0F1D70262D0070A717 /* 2.plist */,
-				186E6B101D70262D0070A717 /* 3.plist */,
+				1873D72E1D8006EA008C2D1D /* 1.plist */,
+				1873D72F1D8006EA008C2D1D /* 2.plist */,
+				1873D7301D8006EA008C2D1D /* 3.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -3212,6 +3215,7 @@
 		186E6D141D70262E0070A717 /* 10 - UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1873D7241D80049A008C2D1D /* UICollectionView */,
 				186E6D151D70262E0070A717 /* Tabbar */,
 				186E6D401D70262E0070A717 /* UIDynamic */,
 				186E6D681D70262E0070A717 /* UIScrollView */,
@@ -4352,6 +4356,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		1873D7241D80049A008C2D1D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1873D7251D8004C2008C2D1D /* YFCollectionViewController.h */,
+				1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -4516,7 +4529,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186E6F7E1D70262E0070A717 /* 3.plist in Resources */,
 				186E6FF41D70262E0070A717 /* YFRotateButtonViewController.storyboard in Resources */,
 				186E70D31D70262E0070A717 /* placeholder_fancy@2x.png in Resources */,
 				186E70171D70262E0070A717 /* editButton@3x.png in Resources */,
@@ -4526,9 +4538,9 @@
 				18C760041B9AB24A0038B2EE /* lxh in Resources */,
 				186E71171D70262E0070A717 /* Info.plist in Resources */,
 				186E6F501D70262E0070A717 /* carmelo_anthony.png in Resources */,
+				1873D7311D8006EA008C2D1D /* 1.plist in Resources */,
 				186E6FF71D70262E0070A717 /* defaultEmotionsInfo.plist in Resources */,
 				186E705C1D70262E0070A717 /* Transition2.jpg in Resources */,
-				186E6F7D1D70262E0070A717 /* 2.plist in Resources */,
 				186E6FA41D70262E0070A717 /* YFSlidingViewController.storyboard in Resources */,
 				186E6F8A1D70262E0070A717 /* photo_sample_06.png in Resources */,
 				186E6F891D70262E0070A717 /* photo_sample_05.png in Resources */,
@@ -4547,6 +4559,7 @@
 				186E6F861D70262E0070A717 /* photo_sample_02.png in Resources */,
 				186E70181D70262E0070A717 /* markButton@2x.png in Resources */,
 				186E6F4E1D70262E0070A717 /* awcollectionviewdiallayout_1.jpg in Resources */,
+				1873D7321D8006EA008C2D1D /* 2.plist in Resources */,
 				186E70731D70262E0070A717 /* TabBar_LotteryHall_new@2x.png in Resources */,
 				186E70D71D70262E0070A717 /* YFEmptyDataSetViewController.storyboard in Resources */,
 				186E70A21D70262E0070A717 /* dance.mp3 in Resources */,
@@ -4581,6 +4594,7 @@
 				186E6F6E1D70262E0070A717 /* trophy-50.png in Resources */,
 				186E70221D70262E0070A717 /* rain.png in Resources */,
 				186E6FC81D70262E0070A717 /* YFKeepViewController.storyboard in Resources */,
+				1873D7331D8006EA008C2D1D /* 3.plist in Resources */,
 				186E6F581D70262E0070A717 /* lebron_james.png in Resources */,
 				186E6F571D70262E0070A717 /* kyrie_irving.png in Resources */,
 				186E6F781D70262E0070A717 /* YFStackedPageVC.storyboard in Resources */,
@@ -4611,7 +4625,6 @@
 				186E705D1D70262E0070A717 /* Transition3.jpg in Resources */,
 				186E70941D70262E0070A717 /* blurtView1.jpg in Resources */,
 				186E6F541D70262E0070A717 /* iphone_settings_view.xib in Resources */,
-				186E6F7C1D70262E0070A717 /* 1.plist in Resources */,
 				186E6F5F1D70262E0070A717 /* HWCollectionViewCell.xib in Resources */,
 				186E70DD1D70262E0070A717 /* FMDBBaseUseViewController.storyboard in Resources */,
 				186E6F7B1D70262E0070A717 /* YFShopCell.xib in Resources */,
@@ -4995,6 +5008,7 @@
 				186E702A1D70262E0070A717 /* BMWaveButton.m in Sources */,
 				186E70C21D70262E0070A717 /* YiCustomTableViewCell.m in Sources */,
 				186E6FE51D70262E0070A717 /* UILabel+Associate.m in Sources */,
+				1873D7271D8004C2008C2D1D /* YFCollectionViewController.m in Sources */,
 				186E71431D70262E0070A717 /* UIImageView+WebCache.m in Sources */,
 				186E70591D70262E0070A717 /* CoreAnimationViewController.m in Sources */,
 				186E71391D70262E0070A717 /* SDWebImageDecoder.m in Sources */,
