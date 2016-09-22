@@ -551,6 +551,32 @@
 		186E71461D70262E0070A717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F1F1D70262E0070A717 /* main.m */; };
 		186E71471D70262E0070A717 /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F211D70262E0070A717 /* YFAuthorViewController.m */; };
 		186E71481D70262E0070A717 /* YFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E6F231D70262E0070A717 /* YFHomeViewController.m */; };
+		186F40FB1D93C62D005431D8 /* YFNormalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F40FA1D93C62D005431D8 /* YFNormalCollectionViewController.m */; };
+		186F40FF1D93DB56005431D8 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F40FE1D93DB56005431D8 /* RAViewController.m */; };
+		186F41011D93DB65005431D8 /* RAViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186F41001D93DB65005431D8 /* RAViewController.storyboard */; };
+		186F41041D93DB6C005431D8 /* RACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F41031D93DB6C005431D8 /* RACollectionViewCell.m */; };
+		186F41091D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F41061D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.m */; };
+		186F410A1D93DB71005431D8 /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F41081D93DB71005431D8 /* RACollectionViewTripletLayout.m */; };
+		186F41201D93DCF9005431D8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F410C1D93DCF9005431D8 /* 1.jpg */; };
+		186F41211D93DCF9005431D8 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F410D1D93DCF9005431D8 /* 10.jpg */; };
+		186F41221D93DCF9005431D8 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F410E1D93DCF9005431D8 /* 11.jpg */; };
+		186F41231D93DCF9005431D8 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F410F1D93DCF9005431D8 /* 12.jpg */; };
+		186F41241D93DCF9005431D8 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41101D93DCF9005431D8 /* 13.jpg */; };
+		186F41251D93DCF9005431D8 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41111D93DCF9005431D8 /* 14.jpg */; };
+		186F41261D93DCF9005431D8 /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41121D93DCF9005431D8 /* 15.jpg */; };
+		186F41271D93DCF9005431D8 /* 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41131D93DCF9005431D8 /* 16.jpg */; };
+		186F41281D93DCF9005431D8 /* 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41141D93DCF9005431D8 /* 17.jpg */; };
+		186F41291D93DCF9005431D8 /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41151D93DCF9005431D8 /* 18.jpg */; };
+		186F412A1D93DCF9005431D8 /* 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41161D93DCF9005431D8 /* 19.jpg */; };
+		186F412B1D93DCF9005431D8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41171D93DCF9005431D8 /* 2.jpg */; };
+		186F412C1D93DCF9005431D8 /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41181D93DCF9005431D8 /* 20.jpg */; };
+		186F412D1D93DCF9005431D8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F41191D93DCF9005431D8 /* 3.jpg */; };
+		186F412E1D93DCF9005431D8 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411A1D93DCF9005431D8 /* 4.jpg */; };
+		186F412F1D93DCF9005431D8 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411B1D93DCF9005431D8 /* 5.jpg */; };
+		186F41301D93DCF9005431D8 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411C1D93DCF9005431D8 /* 6.jpg */; };
+		186F41311D93DCF9005431D8 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411D1D93DCF9005431D8 /* 7.jpg */; };
+		186F41321D93DCF9005431D8 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411E1D93DCF9005431D8 /* 8.jpg */; };
+		186F41331D93DCF9005431D8 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186F411F1D93DCF9005431D8 /* 9.jpg */; };
 		1873D7271D8004C2008C2D1D /* YFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */; };
 		1873D7311D8006EA008C2D1D /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72E1D8006EA008C2D1D /* 1.plist */; };
 		1873D7321D8006EA008C2D1D /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873D72F1D8006EA008C2D1D /* 2.plist */; };
@@ -1601,6 +1627,37 @@
 		186E6F211D70262E0070A717 /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		186E6F221D70262E0070A717 /* YFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHomeViewController.h; sourceTree = "<group>"; };
 		186E6F231D70262E0070A717 /* YFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHomeViewController.m; sourceTree = "<group>"; };
+		186F40F91D93C62D005431D8 /* YFNormalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNormalCollectionViewController.h; sourceTree = "<group>"; };
+		186F40FA1D93C62D005431D8 /* YFNormalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNormalCollectionViewController.m; sourceTree = "<group>"; };
+		186F40FD1D93DB56005431D8 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
+		186F40FE1D93DB56005431D8 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		186F41001D93DB65005431D8 /* RAViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RAViewController.storyboard; sourceTree = "<group>"; };
+		186F41021D93DB6C005431D8 /* RACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewCell.h; sourceTree = "<group>"; };
+		186F41031D93DB6C005431D8 /* RACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewCell.m; sourceTree = "<group>"; };
+		186F41051D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
+		186F41061D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
+		186F41071D93DB71005431D8 /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
+		186F41081D93DB71005431D8 /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
+		186F410C1D93DCF9005431D8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		186F410D1D93DCF9005431D8 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		186F410E1D93DCF9005431D8 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		186F410F1D93DCF9005431D8 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		186F41101D93DCF9005431D8 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		186F41111D93DCF9005431D8 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		186F41121D93DCF9005431D8 /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		186F41131D93DCF9005431D8 /* 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16.jpg; sourceTree = "<group>"; };
+		186F41141D93DCF9005431D8 /* 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17.jpg; sourceTree = "<group>"; };
+		186F41151D93DCF9005431D8 /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
+		186F41161D93DCF9005431D8 /* 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 19.jpg; sourceTree = "<group>"; };
+		186F41171D93DCF9005431D8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		186F41181D93DCF9005431D8 /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
+		186F41191D93DCF9005431D8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		186F411A1D93DCF9005431D8 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		186F411B1D93DCF9005431D8 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		186F411C1D93DCF9005431D8 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		186F411D1D93DCF9005431D8 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		186F411E1D93DCF9005431D8 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		186F411F1D93DCF9005431D8 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		1873D7251D8004C2008C2D1D /* YFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCollectionViewController.h; sourceTree = "<group>"; };
 		1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCollectionViewController.m; sourceTree = "<group>"; };
 		1873D72E1D8006EA008C2D1D /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
@@ -4368,11 +4425,66 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		186F40F81D93C5EB005431D8 /* 基础collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				186F40F91D93C62D005431D8 /* YFNormalCollectionViewController.h */,
+				186F40FA1D93C62D005431D8 /* YFNormalCollectionViewController.m */,
+			);
+			path = "基础collectionView";
+			sourceTree = "<group>";
+		};
+		186F40FC1D93DAF9005431D8 /* RACollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				186F410B1D93DCF9005431D8 /* photos */,
+				186F41001D93DB65005431D8 /* RAViewController.storyboard */,
+				186F40FD1D93DB56005431D8 /* RAViewController.h */,
+				186F40FE1D93DB56005431D8 /* RAViewController.m */,
+				186F41021D93DB6C005431D8 /* RACollectionViewCell.h */,
+				186F41031D93DB6C005431D8 /* RACollectionViewCell.m */,
+				186F41051D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.h */,
+				186F41061D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.m */,
+				186F41071D93DB71005431D8 /* RACollectionViewTripletLayout.h */,
+				186F41081D93DB71005431D8 /* RACollectionViewTripletLayout.m */,
+			);
+			path = RACollectionViewController;
+			sourceTree = "<group>";
+		};
+		186F410B1D93DCF9005431D8 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				186F410C1D93DCF9005431D8 /* 1.jpg */,
+				186F410D1D93DCF9005431D8 /* 10.jpg */,
+				186F410E1D93DCF9005431D8 /* 11.jpg */,
+				186F410F1D93DCF9005431D8 /* 12.jpg */,
+				186F41101D93DCF9005431D8 /* 13.jpg */,
+				186F41111D93DCF9005431D8 /* 14.jpg */,
+				186F41121D93DCF9005431D8 /* 15.jpg */,
+				186F41131D93DCF9005431D8 /* 16.jpg */,
+				186F41141D93DCF9005431D8 /* 17.jpg */,
+				186F41151D93DCF9005431D8 /* 18.jpg */,
+				186F41161D93DCF9005431D8 /* 19.jpg */,
+				186F41171D93DCF9005431D8 /* 2.jpg */,
+				186F41181D93DCF9005431D8 /* 20.jpg */,
+				186F41191D93DCF9005431D8 /* 3.jpg */,
+				186F411A1D93DCF9005431D8 /* 4.jpg */,
+				186F411B1D93DCF9005431D8 /* 5.jpg */,
+				186F411C1D93DCF9005431D8 /* 6.jpg */,
+				186F411D1D93DCF9005431D8 /* 7.jpg */,
+				186F411E1D93DCF9005431D8 /* 8.jpg */,
+				186F411F1D93DCF9005431D8 /* 9.jpg */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
 		1873D7241D80049A008C2D1D /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				1873D7251D8004C2008C2D1D /* YFCollectionViewController.h */,
 				1873D7261D8004C2008C2D1D /* YFCollectionViewController.m */,
+				186F40FC1D93DAF9005431D8 /* RACollectionViewController */,
+				186F40F81D93C5EB005431D8 /* 基础collectionView */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -4560,6 +4672,8 @@
 				186E70171D70262E0070A717 /* editButton@3x.png in Resources */,
 				186E6FC31D70262E0070A717 /* typewriter.wav in Resources */,
 				186E705E1D70262E0070A717 /* Home.png in Resources */,
+				186F41311D93DCF9005431D8 /* 7.jpg in Resources */,
+				186F41281D93DCF9005431D8 /* 17.jpg in Resources */,
 				186E6F6C1D70262E0070A717 /* i5.jpg in Resources */,
 				18C760041B9AB24A0038B2EE /* lxh in Resources */,
 				186E71171D70262E0070A717 /* Info.plist in Resources */,
@@ -4582,19 +4696,25 @@
 				186E708E1D70262E0070A717 /* RootViewController.xib in Resources */,
 				186E6F671D70262E0070A717 /* headphones-50.png in Resources */,
 				186E6F881D70262E0070A717 /* photo_sample_04.png in Resources */,
+				186F41331D93DCF9005431D8 /* 9.jpg in Resources */,
 				186E6F861D70262E0070A717 /* photo_sample_02.png in Resources */,
 				186E70181D70262E0070A717 /* markButton@2x.png in Resources */,
 				186E6F4E1D70262E0070A717 /* awcollectionviewdiallayout_1.jpg in Resources */,
+				186F412A1D93DCF9005431D8 /* 19.jpg in Resources */,
 				1873D7321D8006EA008C2D1D /* 2.plist in Resources */,
+				186F412F1D93DCF9005431D8 /* 5.jpg in Resources */,
 				186E70731D70262E0070A717 /* TabBar_LotteryHall_new@2x.png in Resources */,
 				186E70D71D70262E0070A717 /* YFEmptyDataSetViewController.storyboard in Resources */,
+				186F41221D93DCF9005431D8 /* 11.jpg in Resources */,
 				186E70A21D70262E0070A717 /* dance.mp3 in Resources */,
 				186E6F871D70262E0070A717 /* photo_sample_03.png in Resources */,
 				186E70191D70262E0070A717 /* markButton@3x.png in Resources */,
 				186E6F4B1D70262E0070A717 /* YFTagsCloudViewController.storyboard in Resources */,
+				186F41261D93DCF9005431D8 /* 15.jpg in Resources */,
 				186E70701D70262E0070A717 /* TabBar_Discovery_selected_new@2x.png in Resources */,
 				186E70241D70262E0070A717 /* snow.png in Resources */,
 				186E70A11D70262E0070A717 /* bg_yaoyao_under.png in Resources */,
+				186F412C1D93DCF9005431D8 /* 20.jpg in Resources */,
 				186E70D11D70262E0070A717 /* YFColorViewController.storyboard in Resources */,
 				186E6F261D70262E0070A717 /* YFAllRoundButtonVC.storyboard in Resources */,
 				186E703B1D70262E0070A717 /* Shader.vsh in Resources */,
@@ -4620,11 +4740,14 @@
 				186E6F6E1D70262E0070A717 /* trophy-50.png in Resources */,
 				186E70221D70262E0070A717 /* rain.png in Resources */,
 				186E6FC81D70262E0070A717 /* YFKeepViewController.storyboard in Resources */,
+				186F41291D93DCF9005431D8 /* 18.jpg in Resources */,
 				1873D7331D8006EA008C2D1D /* 3.plist in Resources */,
 				186E6F581D70262E0070A717 /* lebron_james.png in Resources */,
+				186F41321D93DCF9005431D8 /* 8.jpg in Resources */,
 				186E6F571D70262E0070A717 /* kyrie_irving.png in Resources */,
 				186E6F781D70262E0070A717 /* YFStackedPageVC.storyboard in Resources */,
 				186E70301D70262E0070A717 /* background.jpg in Resources */,
+				186F41211D93DCF9005431D8 /* 10.jpg in Resources */,
 				186E6F561D70262E0070A717 /* kevin_durant.png in Resources */,
 				186E6F5C1D70262E0070A717 /* YFHalfCircleLayoutViewController.storyboard in Resources */,
 				186E706D1D70262E0070A717 /* TabBar_Arena_new@2x.png in Resources */,
@@ -4633,6 +4756,7 @@
 				186E706F1D70262E0070A717 /* TabBar_Discovery_new@2x.png in Resources */,
 				186E6F521D70262E0070A717 /* dialCell2.xib in Resources */,
 				186E70A01D70262E0070A717 /* bg_yaoyao_above.png in Resources */,
+				186F41231D93DCF9005431D8 /* 12.jpg in Resources */,
 				186E6F271D70262E0070A717 /* button_bg@2x.png in Resources */,
 				186E6FBB1D70262E0070A717 /* RZSimpleColorViewController.xib in Resources */,
 				B84C03291CE2E04700E62D75 /* 1.mp4 in Resources */,
@@ -4642,16 +4766,22 @@
 				186E705A1D70262E0070A717 /* Transition0.jpg in Resources */,
 				186E6F551D70262E0070A717 /* james_harden.png in Resources */,
 				186E70E61D70262E0070A717 /* SQLiteBaseUseViewController.storyboard in Resources */,
+				186F412D1D93DCF9005431D8 /* 3.jpg in Resources */,
 				186E70611D70262E0070A717 /* Login.png in Resources */,
+				186F41301D93DCF9005431D8 /* 6.jpg in Resources */,
 				186E70711D70262E0070A717 /* TabBar_History_new@2x.png in Resources */,
+				186F412E1D93DCF9005431D8 /* 4.jpg in Resources */,
 				8B0B9AC31B9572000084590D /* LaunchScreen.xib in Resources */,
 				186E70751D70262E0070A717 /* TabBar_MyLottery_new@2x.png in Resources */,
 				186E70351D70262E0070A717 /* Shader.vsh in Resources */,
 				186E70901D70262E0070A717 /* SecondViewController.xib in Resources */,
 				186E705D1D70262E0070A717 /* Transition3.jpg in Resources */,
 				186E70941D70262E0070A717 /* blurtView1.jpg in Resources */,
+				186F412B1D93DCF9005431D8 /* 2.jpg in Resources */,
 				186E6F541D70262E0070A717 /* iphone_settings_view.xib in Resources */,
+				186F41271D93DCF9005431D8 /* 16.jpg in Resources */,
 				186E6F5F1D70262E0070A717 /* HWCollectionViewCell.xib in Resources */,
+				186F41251D93DCF9005431D8 /* 14.jpg in Resources */,
 				186E70DD1D70262E0070A717 /* FMDBBaseUseViewController.storyboard in Resources */,
 				186E6F7B1D70262E0070A717 /* YFShopCell.xib in Resources */,
 				186E706E1D70262E0070A717 /* TabBar_Arena_selected_new@2x.png in Resources */,
@@ -4660,12 +4790,15 @@
 				186E6F3D1D70262E0070A717 /* gift@2x.png in Resources */,
 				186E6F651D70262E0070A717 /* coffee_to_go-50.png in Resources */,
 				186E70761D70262E0070A717 /* TabBar_MyLottery_selected_new@2x.png in Resources */,
+				186F41201D93DCF9005431D8 /* 1.jpg in Resources */,
 				186E70741D70262E0070A717 /* TabBar_LotteryHall_selected_new@2x.png in Resources */,
 				186E6FDD1D70262E0070A717 /* YFMasonryDemoViewController.storyboard in Resources */,
 				186E6F4F1D70262E0070A717 /* awcollectionviewdiallayout_2.jpg in Resources */,
 				18C760051B9AB24A0038B2EE /* default in Resources */,
 				8B0B9AC01B9572000084590D /* Images.xcassets in Resources */,
 				186E6FF81D70262E0070A717 /* lxhEmotionsInfo.plist in Resources */,
+				186F41241D93DCF9005431D8 /* 13.jpg in Resources */,
+				186F41011D93DB65005431D8 /* RAViewController.storyboard in Resources */,
 				186E6F851D70262E0070A717 /* photo_sample_01.png in Resources */,
 				186E6F3C1D70262E0070A717 /* YFLazyInViewController.storyboard in Resources */,
 				186E709F1D70262E0070A717 /* bg_shaking.png in Resources */,
@@ -4719,6 +4852,7 @@
 				186E6F921D70262E0070A717 /* SBGradientOverlayLayer.m in Sources */,
 				186E70BF1D70262E0070A717 /* YiCustomModel.m in Sources */,
 				186E6FAE1D70262E0070A717 /* RZCirclePushAnimationController.m in Sources */,
+				186F41041D93DB6C005431D8 /* RACollectionViewCell.m in Sources */,
 				186E71371D70262E0070A717 /* SDImageCache.m in Sources */,
 				186E6FA61D70262E0070A717 /* RZUniqueTransition.m in Sources */,
 				186E706B1D70262E0070A717 /* SYTabBar.m in Sources */,
@@ -4742,6 +4876,7 @@
 				186E71351D70262E0070A717 /* MKAnnotationView+WebCache.m in Sources */,
 				1873D7771D801CD1008C2D1D /* YFJigsawViewController.m in Sources */,
 				186E6FF61D70262E0070A717 /* ViewController.m in Sources */,
+				186F41091D93DB71005431D8 /* RACollectionViewReorderableTripletLayout.m in Sources */,
 				186E6F951D70262E0070A717 /* HHContentScrollView.m in Sources */,
 				186E70451D70262E0070A717 /* YFCircleLoader.m in Sources */,
 				186E6FA01D70262E0070A717 /* LTSlidingViewController.m in Sources */,
@@ -4828,12 +4963,14 @@
 				186E71131D70262E0070A717 /* FMDatabaseAdditions.m in Sources */,
 				186E711F1D70262E0070A717 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				186E6F711D70262E0070A717 /* RGCardViewLayout.m in Sources */,
+				186F410A1D93DB71005431D8 /* RACollectionViewTripletLayout.m in Sources */,
 				186E70E21D70262E0070A717 /* Depart.m in Sources */,
 				186E6FC11D70262E0070A717 /* YFStar.m in Sources */,
 				186E70DB1D70262E0070A717 /* YFToolsViewController.m in Sources */,
 				186E6F931D70262E0070A717 /* YFFlipPageViewController.m in Sources */,
 				186E6FB11D70262E0070A717 /* RZShrinkZoomAnimationController.m in Sources */,
 				186E6F301D70262E0070A717 /* YFButtonViewController.m in Sources */,
+				186F40FF1D93DB56005431D8 /* RAViewController.m in Sources */,
 				186E700F1D70262E0070A717 /* YFAnimationVC04.m in Sources */,
 				186E70871D70262E0070A717 /* YFAttachmentBehaviorViewController.m in Sources */,
 				186E6FE01D70262E0070A717 /* YFNotificationCenter3VC.m in Sources */,
@@ -4846,6 +4983,7 @@
 				186E70471D70262E0070A717 /* BounceView.m in Sources */,
 				186E6FED1D70262E0070A717 /* YFDictToModelViewController.m in Sources */,
 				186E701D1D70262E0070A717 /* YFAnimationManager.m in Sources */,
+				186F40FB1D93C62D005431D8 /* YFNormalCollectionViewController.m in Sources */,
 				186E6F5E1D70262E0070A717 /* HWCollectionViewCell.m in Sources */,
 				186E6F9F1D70262E0070A717 /* YFITRAirSideViewController.m in Sources */,
 				186E70B71D70262E0070A717 /* YFNode.m in Sources */,
