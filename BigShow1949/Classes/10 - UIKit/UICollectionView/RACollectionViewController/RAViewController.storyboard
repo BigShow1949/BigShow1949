@@ -64,7 +64,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5wM-vA-er4">
-                        <barButtonItem key="leftBarButtonItem" title="Refresh" id="9bn-Ms-Y1y">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="9bn-Ms-Y1y">
                             <connections>
                                 <action selector="refresh:" destination="wjw-n1-v1T" id="Ept-X6-eAG"/>
                             </connections>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOU-1O-1ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-428"/>
+            <point key="canvasLocation" x="-314" y="-507"/>
         </scene>
     </scenes>
 </document>
