@@ -80,9 +80,15 @@
     NSUInteger storyBoardLength = @"_UIStoryboard".length;
     NSUInteger xibLength = @"_xib".length;
     
-//    NSString *suffixClassName = [className substringFromIndex:classNameLength - storyBoardLength];
+    NSString *suffixClassName;
+    if (classNameLength > storyBoardLength) {
+        suffixClassName = [className substringFromIndex:classNameLength - storyBoardLength];
+    }
+//    else {
+//        suffixClassName = className;
+//    }
     
-    if ([[className substringFromIndex:classNameLength - storyBoardLength] isEqualToString:@"_UIStoryboard"]) {
+    if ([suffixClassName isEqualToString:@"_UIStoryboard"]) {
         
         className = [className substringToIndex:classNameLength - storyBoardLength];
         
