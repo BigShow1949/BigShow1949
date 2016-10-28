@@ -10,6 +10,11 @@
 #import <objc/runtime.h>
 @implementation YFPerson
 
+-(void)run{
+    NSLog(@"%s",__func__);
+}
+
+/*------------------- KVC字典转模型  ----------------------------*/
 + (instancetype)personWithDict:(NSDictionary *)dict
 {
     YFPerson *person = [[self alloc] init];
@@ -20,9 +25,15 @@
     
 }
 
--(void)run{
-    NSLog(@"%s",__func__);
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    NSLog(@"value = %@, key = %@", value, key);
+    if ([key isEqualToString:@"userName"]) {
+        self.name = value;
+    }
+    
 }
+
 
 /*------------------------ 下面是动态添加方法------------------------------*/
 /**

@@ -8,6 +8,7 @@
 
 #import "YFDictToModelViewController.h"
 #import "Person.h"
+#import "YFPerson.h"
 @interface YFDictToModelViewController ()
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @end
@@ -42,11 +43,23 @@
     //
 
 
-
+    [self KVCtoModel];
+    
+//    [self printValue];
     
 }
 
-///
+// VC字典转模型
+- (void)KVCtoModel {
+
+    NSDictionary *dict = @{@"userName" : @"jack",
+                           @"age" : @"12"};
+    YFPerson *person = [YFPerson personWithDict:dict];
+    NSLog(@"name = %@, age = %@", person.name, person.age);
+    
+}
+
+// 打印字典属性
 - (void)printValue {
     // 模型嵌套是打印不出来的
     NSDictionary *dict = @{@"name" : @"jack",
