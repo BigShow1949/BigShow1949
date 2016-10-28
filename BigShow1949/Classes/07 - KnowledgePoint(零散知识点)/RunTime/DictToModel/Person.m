@@ -18,4 +18,5 @@
 
     return [NSString stringWithFormat:@"name = %@, userId = %@, [classes = %@], [teachers = %@]", self.name, self.userId, self.classes, self.teachers];
 }
+
 @end

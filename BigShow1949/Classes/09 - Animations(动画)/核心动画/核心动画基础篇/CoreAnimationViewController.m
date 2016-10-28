@@ -24,12 +24,14 @@
     self.titles = @[@"基础动画",
                     @"关键帧动画",
                     @"转场动画",
-                    @"组动画"];
+                    @"组动画",
+                    @"Transform"];
     
     self.classNames = @[@"CABasicAnimationViewController",
                         @"CAKeyframeAnimationViewController",
                         @"CATransitionViewController",
-                        @"CAAnimationGroupViewController"];
+                        @"CAAnimationGroupViewController",
+                        @"CATransformViewController_UIStoryboard"];
 
 }
 

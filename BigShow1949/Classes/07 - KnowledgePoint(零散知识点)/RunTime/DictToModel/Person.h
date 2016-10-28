@@ -18,6 +18,4 @@
 @property (nonatomic, strong) Teacher *teachers; // 老师
 
 
-
-
 @end

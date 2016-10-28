@@ -19,11 +19,13 @@
     
     self.titles = @[@"字典转模型",
                     @"分类属性",
+                    @"动态添加方法",
                     @"图片加载(方法交换)",
                     @"多次点击按钮(方法交换)"];
     
     self.classNames = @[@"YFDictToModelViewController",
                         @"YFCategoryAttributeViewController",
+                        @"YFAddMethodViewController",
                         @"YFExchangeMethodVC",
                         @"YFMultipleClicksViewController"];
     

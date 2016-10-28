@@ -17,7 +17,7 @@
     UIView *currentVisibleView;
     NSMutableArray *allViews;
     UIView *maskView;
-    UIView *tarBarView;
+//    UIView *tarBarView;
     UIView *tarBarToolView;
     CGFloat screenWidth;
     CGFloat screenHeight;
@@ -25,6 +25,9 @@
     UITableView *viewList;
     NSInteger currentViewIndex;
 }
+
+@property (nonatomic, strong) UIView *tarBarView;
+
 @end
 
 @implementation YFBaiduViewTransitionViewController
@@ -67,36 +70,11 @@ typedef enum
     [maskView setAlpha:0];
     UITapGestureRecognizer *reAnGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reAnGRAction)];
     [maskView addGestureRecognizer:reAnGR];
-    tarBarView = [[UIView alloc] initWithFrame:CGRectMake(0, screenHeight, screenWidth, 340)];
-    [tarBarView setBackgroundColor:[UIColor whiteColor]];
-    tarBarToolView = [[UIView alloc] initWithFrame:CGRectMake(0, 340 - 44, screenWidth, 44)];
-    [tarBarToolView setBackgroundColor:COLOR(57, 107, 117, 1)];
-    [tarBarView addSubview:tarBarToolView];
-    [self.view addSubview:tarBarView];
     
-    UIButton *addBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 12, 80, 20)];
-    [addBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateNormal];
-    [addBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateHighlighted];
-    [addBtn setTitle:@"新建窗口" forState:UIControlStateNormal];
-    [addBtn addTarget:self action:@selector(addViewController) forControlEvents:UIControlEventTouchUpInside];
-    [tarBarToolView addSubview:addBtn];
     
-    UIButton *finishBtn = [[UIButton alloc] initWithFrame:CGRectMake(screenWidth - 50, 12, 40, 20)];
-    [finishBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateNormal];
-    [finishBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateHighlighted];
-    [finishBtn setTitle:@"完成" forState:UIControlStateNormal];
-    [finishBtn addTarget:self action:@selector(reAnGRAction) forControlEvents:UIControlEventTouchUpInside];
-    [tarBarToolView addSubview:finishBtn];
-    if (screenWidth == 320) {
-        viewList = [[UITableView alloc] initWithFrame:CGRectMake(20, -10, 276, screenWidth)];
-    }else if (screenWidth == 375) {
-        viewList = [[UITableView alloc] initWithFrame:CGRectMake(50, -40, 276, screenWidth)];
-    }else{
-        viewList = [[UITableView alloc] initWithFrame:CGRectMake(70, -60, 276, screenWidth)];
-    }
     
     [viewList setBackgroundColor:[UIColor purpleColor]];
-    [tarBarView addSubview:viewList];
+    [self.tarBarView addSubview:viewList];
     [viewList setDataSource:self];
     [viewList setDelegate:self];
     [viewList setShowsVerticalScrollIndicator:NO];
@@ -109,15 +87,18 @@ typedef enum
     TempViewController *subVC = [[TempViewController alloc] init];
     [self addChildViewController:subVC];
     [subVC setTitle:@"新建窗口"];
+    
     NSMutableArray *arr = [NSMutableArray arrayWithArray:tableviewArr];
     [arr addObject:@"新建窗口"];
     tableviewArr = arr;
+    
     [viewList beginUpdates];
     [viewList insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:arr.count-1 inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
     [viewList endUpdates];
     [viewList scrollToNearestSelectedRowAtScrollPosition:UITableViewScrollPositionBottom animated:YES];
     [allViews addObject:subVC.view];
     [self.view insertSubview:subVC.view belowSubview:maskView];
+    
     [self showViewToScreen:currentVisibleView next:subVC.view direction:ShowViewDirectionRightToLeft currViewIndex:tableviewArr.count];
 }
 
@@ -168,7 +149,7 @@ typedef enum
 - (void)animateForView:(UIView *)view
 {
     [self.view addSubview:maskView];
-    CGRect frame = [tarBarView frame];
+    CGRect frame = [self.tarBarView frame];
     frame.origin.y = screenHeight - 340;
     [UIView animateWithDuration:0.2f animations:^{
         [view.layer setTransform:[self firstTransform]];
@@ -178,20 +159,20 @@ typedef enum
         } completion:^(BOOL finished){
             [UIView animateWithDuration:0.2 animations:^{
                 [maskView setAlpha:0.5f];
-                [tarBarView setFrame:frame];
+                [self.tarBarView setFrame:frame];
             }];
         }];
     }];
-    [self.view bringSubviewToFront:tarBarView];
+    [self.view bringSubviewToFront:self.tarBarView];
 }
 
 - (void)reAnimateForView:(UIView *)view
 {
-    CGRect frame = [tarBarView frame];
+    CGRect frame = [self.tarBarView frame];
     frame.origin.y += 340;
     [UIView animateWithDuration:0.2f animations:^{
         [maskView setAlpha:0.f];
-        [tarBarView setFrame:frame];
+        [self.tarBarView setFrame:frame];
     } completion:^(BOOL finished){
         [UIView animateWithDuration:0.2f animations:^{
             [maskView removeFromSuperview];
@@ -275,5 +256,41 @@ typedef enum
     }
 }
 
+#pragma mark - setter
+- (UIView *)tarBarView {
+
+    if (!_tarBarView) {
+        _tarBarView = [[UIView alloc] initWithFrame:CGRectMake(0, screenHeight, screenWidth, 340)];
+        [_tarBarView setBackgroundColor:[UIColor whiteColor]];
+        
+        tarBarToolView = [[UIView alloc] initWithFrame:CGRectMake(0, 340 - 44, screenWidth, 44)];
+        [tarBarToolView setBackgroundColor:COLOR(57, 107, 117, 1)];
+        [_tarBarView addSubview:tarBarToolView];
+        [self.view addSubview:_tarBarView];
+        
+        UIButton *addBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 12, 80, 20)];
+        [addBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateNormal];
+        [addBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateHighlighted];
+        [addBtn setTitle:@"新建窗口" forState:UIControlStateNormal];
+        [addBtn addTarget:self action:@selector(addViewController) forControlEvents:UIControlEventTouchUpInside];
+        [tarBarToolView addSubview:addBtn];
+        
+        UIButton *finishBtn = [[UIButton alloc] initWithFrame:CGRectMake(screenWidth - 50, 12, 40, 20)];
+        [finishBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateNormal];
+        [finishBtn setTitleColor:COLOR(231, 231, 231, 1) forState:UIControlStateHighlighted];
+        [finishBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [finishBtn addTarget:self action:@selector(reAnGRAction) forControlEvents:UIControlEventTouchUpInside];
+        [tarBarToolView addSubview:finishBtn];
+        if (screenWidth == 320) {
+            viewList = [[UITableView alloc] initWithFrame:CGRectMake(20, -10, 276, screenWidth)];
+        }else if (screenWidth == 375) {
+            viewList = [[UITableView alloc] initWithFrame:CGRectMake(50, -40, 276, screenWidth)];
+        }else{
+            viewList = [[UITableView alloc] initWithFrame:CGRectMake(70, -60, 276, screenWidth)];
+        }
+
+    }
+    return _tarBarView;
+}
 
 @end

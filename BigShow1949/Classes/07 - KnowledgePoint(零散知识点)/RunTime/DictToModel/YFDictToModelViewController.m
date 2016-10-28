@@ -39,7 +39,21 @@
     }
 
     NSLog(@"dataArr = %@", self.dataArr);
+    //
+
+
+
+    
 }
+
+///
+- (void)printValue {
+    // 模型嵌套是打印不出来的
+    NSDictionary *dict = @{@"name" : @"jack",
+                           @"age" : @"12"};
+    [Model resolveDict:dict];
+}
+
 
 
 @end

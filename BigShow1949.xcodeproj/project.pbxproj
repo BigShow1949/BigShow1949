@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
+		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
+		187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */; };
 		18B4872E1DAE3E2700ACD4BA /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482341DAE3E2600ACD4BA /* APRoundedButton.m */; };
 		18B4872F1DAE3E2700ACD4BA /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482361DAE3E2600ACD4BA /* YFAllRoundButtonVC.m */; };
 		18B487301DAE3E2700ACD4BA /* YFAllRoundButtonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B482371DAE3E2600ACD4BA /* YFAllRoundButtonVC.storyboard */; };
@@ -625,7 +628,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
+		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformViewController.h; sourceTree = "<group>"; };
+		187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformViewController.m; sourceTree = "<group>"; };
+		187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CATransformViewController.storyboard; sourceTree = "<group>"; };
 		18B482331DAE3E2600ACD4BA /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		18B482341DAE3E2600ACD4BA /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		18B482351DAE3E2600ACD4BA /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
@@ -1751,6 +1759,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183699061DC325B2009AD5D5 /* AddMethod */ = {
+			isa = PBXGroup;
+			children = (
+				183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */,
+				183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */,
+			);
+			path = AddMethod;
+			sourceTree = "<group>";
+		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2625,6 +2642,7 @@
 		18B483C91DAE3E2600ACD4BA /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				183699061DC325B2009AD5D5 /* AddMethod */,
 				18B483CA1DAE3E2600ACD4BA /* CategoryAttribute */,
 				18B483D31DAE3E2600ACD4BA /* DictToModel */,
 				18B483DE1DAE3E2600ACD4BA /* ExchangeMethod */,
@@ -3286,6 +3304,9 @@
 				18B484D81DAE3E2700ACD4BA /* CATransitionViewController.m */,
 				18B484D91DAE3E2700ACD4BA /* CoreAnimationViewController.h */,
 				18B484DA1DAE3E2700ACD4BA /* CoreAnimationViewController.m */,
+				187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */,
+				187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */,
+				187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */,
 				18B484DB1DAE3E2700ACD4BA /* Transition0.jpg */,
 				18B484DC1DAE3E2700ACD4BA /* Transition1.jpg */,
 				18B484DD1DAE3E2700ACD4BA /* Transition2.jpg */,
@@ -4708,6 +4729,7 @@
 				18B488951DAE3E2800ACD4BA /* 8.jpg in Resources */,
 				18B488B01DAE3E2800ACD4BA /* MenuItemCell.xib in Resources */,
 				18B487C71DAE3E2700ACD4BA /* RZSimpleViewController.xib in Resources */,
+				187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */,
 				18B487881DAE3E2700ACD4BA /* 3.plist in Resources */,
 				18B487871DAE3E2700ACD4BA /* 2.plist in Resources */,
 				18B488921DAE3E2800ACD4BA /* 5.jpg in Resources */,
@@ -5043,6 +5065,7 @@
 				18B488F11DAE3E2800ACD4BA /* OneTableViewCell.m in Sources */,
 				18B4889D1DAE3E2800ACD4BA /* YFNormalCollectionViewController.m in Sources */,
 				18B489051DAE3E2800ACD4BA /* JKDBModel.m in Sources */,
+				183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */,
 				18B4891F1DAE3E2800ACD4BA /* YFNetworkRequestViewController.m in Sources */,
 				18B488B31DAE3E2800ACD4BA /* RootViewController.m in Sources */,
 				18B4878C1DAE3E2700ACD4BA /* TempViewController.m in Sources */,
@@ -5247,6 +5270,7 @@
 				18B489451DAE3E2800ACD4BA /* MASConstraint.m in Sources */,
 				18B488271DAE3E2800ACD4BA /* XRPopMenuView.m in Sources */,
 				18B487371DAE3E2700ACD4BA /* YFBubbleMenuButtonViewController.m in Sources */,
+				187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */,
 				18B4874C1DAE3E2700ACD4BA /* RQShineLabel.m in Sources */,
 				18B487A41DAE3E2700ACD4BA /* YFHorizontalPagingViewController.m in Sources */,
 				18B4882B1DAE3E2800ACD4BA /* YFEmitterCustomLayer.m in Sources */,

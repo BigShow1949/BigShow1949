@@ -12,4 +12,7 @@
 
 
 + (instancetype)modelWithDict:(NSDictionary *)dict;
+
+// 自动打印属性字符串
++ (void)resolveDict:(NSDictionary *)dict;
 @end

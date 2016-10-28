@@ -10,6 +10,8 @@
 
 @interface YFPerson : NSObject
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *age;
 
 -(void)run;
++ (instancetype)personWithDict:(NSDictionary *)dict;
 @end
