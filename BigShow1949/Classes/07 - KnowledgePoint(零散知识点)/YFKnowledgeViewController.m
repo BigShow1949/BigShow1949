@@ -20,7 +20,8 @@
                     @"引导页",
                     @"运行时",
                     @"通知中心",
-                    @"统计代码行数"];
+                    @"统计代码行数",
+                    @"GCD"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
@@ -28,7 +29,8 @@
                         @"YFGuideViewController",
                         @"YFRunTimeViewController",
                         @"YFNotificationCenterVC",
-                        @"YFStatisticalCodeViewController"];
+                        @"YFStatisticalCodeViewController",
+                        @"GCDDispatchGroupViewController"];
 }
 
 

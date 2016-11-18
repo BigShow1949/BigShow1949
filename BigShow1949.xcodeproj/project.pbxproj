@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9E9F1DDEE61100FC1030 /* GCDViewController.m */; };
+		182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EA21DDEE6A900FC1030 /* GCDDispatchGroupViewController.m */; };
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
@@ -628,6 +630,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182B9E9E1DDEE61100FC1030 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		182B9E9F1DDEE61100FC1030 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		182B9EA11DDEE6A900FC1030 /* GCDDispatchGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDispatchGroupViewController.h; sourceTree = "<group>"; };
+		182B9EA21DDEE6A900FC1030 /* GCDDispatchGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchGroupViewController.m; sourceTree = "<group>"; };
 		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
 		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
@@ -1759,6 +1765,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182B9E9D1DDEE5F700FC1030 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				182B9E9E1DDEE61100FC1030 /* GCDViewController.h */,
+				182B9E9F1DDEE61100FC1030 /* GCDViewController.m */,
+				182B9EA11DDEE6A900FC1030 /* GCDDispatchGroupViewController.h */,
+				182B9EA21DDEE6A900FC1030 /* GCDDispatchGroupViewController.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		183699061DC325B2009AD5D5 /* AddMethod */ = {
 			isa = PBXGroup;
 			children = (
@@ -2517,6 +2534,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
+				182B9E9D1DDEE5F700FC1030 /* GCD */,
 				18B483881DAE3E2600ACD4BA /* GuideView */,
 				18B483941DAE3E2600ACD4BA /* LifeCycle */,
 				18B483991DAE3E2600ACD4BA /* MasonryDemo */,
@@ -4919,6 +4937,7 @@
 				18B4890F1DAE3E2800ACD4BA /* LCCSqliteSheetHandler.m in Sources */,
 				18B487411DAE3E2700ACD4BA /* NSObject+KVC.m in Sources */,
 				18B4893A1DAE3E2800ACD4BA /* UIImageView+AFNetworking.m in Sources */,
+				182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */,
 				18B488AA1DAE3E2800ACD4BA /* YFPushBehaviorViewController.m in Sources */,
 				18B4880E1DAE3E2700ACD4BA /* YFChessBoardView.m in Sources */,
 				18B4884E1DAE3E2800ACD4BA /* YFBezierViewController.m in Sources */,
@@ -5017,6 +5036,7 @@
 				18B487E11DAE3E2700ACD4BA /* Case7ViewController.m in Sources */,
 				18B488101DAE3E2700ACD4BA /* YFLittleProjectViewController.m in Sources */,
 				18B487FF1DAE3E2700ACD4BA /* SYComposeViewController.m in Sources */,
+				182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */,
 				18B4894D1DAE3E2800ACD4BA /* ViewController+MASAdditions.m in Sources */,
 				18B488751DAE3E2800ACD4BA /* SYTabBarViewController.m in Sources */,
 				18B487E21DAE3E2700ACD4BA /* Case8Cell.m in Sources */,
