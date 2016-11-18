@@ -30,7 +30,7 @@
                         @"YFRunTimeViewController",
                         @"YFNotificationCenterVC",
                         @"YFStatisticalCodeViewController",
-                        @"GCDDispatchGroupViewController"];
+                        @"GCDViewController"];
 }
 
 
