@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */; };
 		182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9E9F1DDEE61100FC1030 /* GCDViewController.m */; };
 		182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EA21DDEE6A900FC1030 /* GCDDispatchGroupViewController.m */; };
 		182B9EAA1DE2ED6F00FC1030 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EA91DE2ED6F00FC1030 /* KVCViewController.m */; };
@@ -603,6 +604,9 @@
 		18B489721DAE3E2800ACD4BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B487291DAE3E2700ACD4BA /* main.m */; };
 		18B489731DAE3E2800ACD4BA /* YFAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4872B1DAE3E2700ACD4BA /* YFAuthorViewController.m */; };
 		18B489741DAE3E2800ACD4BA /* YFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4872D1DAE3E2700ACD4BA /* YFHomeViewController.m */; };
+		18B5FE241DE7E999008FC62F /* QRCodeGenerateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */; };
+		18B5FE271DE7E9A3008FC62F /* QRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE261DE7E9A3008FC62F /* QRCodeView.m */; };
+		18B5FE2A1DE7EA0E008FC62F /* CIImage+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE291DE7EA0E008FC62F /* CIImage+SGExtension.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
 		18C2D5381BAEDCD2006CD3B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */; };
@@ -637,6 +641,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E0EAD1DE7CEE300B5658A /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		182B9E9E1DDEE61100FC1030 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		182B9E9F1DDEE61100FC1030 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		182B9EA11DDEE6A900FC1030 /* GCDDispatchGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDispatchGroupViewController.h; sourceTree = "<group>"; };
@@ -1723,6 +1729,12 @@
 		18B4872B1DAE3E2700ACD4BA /* YFAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAuthorViewController.m; sourceTree = "<group>"; };
 		18B4872C1DAE3E2700ACD4BA /* YFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHomeViewController.h; sourceTree = "<group>"; };
 		18B4872D1DAE3E2700ACD4BA /* YFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHomeViewController.m; sourceTree = "<group>"; };
+		18B5FE221DE7E999008FC62F /* QRCodeGenerateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerateViewController.h; sourceTree = "<group>"; };
+		18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerateViewController.m; sourceTree = "<group>"; };
+		18B5FE251DE7E9A3008FC62F /* QRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
+		18B5FE261DE7E9A3008FC62F /* QRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeView.m; sourceTree = "<group>"; };
+		18B5FE281DE7EA0E008FC62F /* CIImage+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIImage+SGExtension.h"; sourceTree = "<group>"; };
+		18B5FE291DE7EA0E008FC62F /* CIImage+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIImage+SGExtension.m"; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1786,6 +1798,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180E0EAC1DE7CEB200B5658A /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				180E0EAD1DE7CEE300B5658A /* QRCodeViewController.h */,
+				180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */,
+				18B5FE281DE7EA0E008FC62F /* CIImage+SGExtension.h */,
+				18B5FE291DE7EA0E008FC62F /* CIImage+SGExtension.m */,
+				18B5FE251DE7E9A3008FC62F /* QRCodeView.h */,
+				18B5FE261DE7E9A3008FC62F /* QRCodeView.m */,
+				18B5FE221DE7E999008FC62F /* QRCodeGenerateViewController.h */,
+				18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		182B9E9D1DDEE5F700FC1030 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -2576,6 +2603,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
+				180E0EAC1DE7CEB200B5658A /* QRCode */,
 				182B9EA71DE2ED5E00FC1030 /* KVC */,
 				182B9E9D1DDEE5F700FC1030 /* GCD */,
 				18B483881DAE3E2600ACD4BA /* GuideView */,
@@ -5081,6 +5109,7 @@
 				18B487FF1DAE3E2700ACD4BA /* SYComposeViewController.m in Sources */,
 				182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */,
 				18B4894D1DAE3E2800ACD4BA /* ViewController+MASAdditions.m in Sources */,
+				18B5FE271DE7E9A3008FC62F /* QRCodeView.m in Sources */,
 				18B488751DAE3E2800ACD4BA /* SYTabBarViewController.m in Sources */,
 				18B487E21DAE3E2700ACD4BA /* Case8Cell.m in Sources */,
 				18B488E41DAE3E2800ACD4BA /* YiTableViewController.m in Sources */,
@@ -5214,6 +5243,7 @@
 				182B9EBC1DE2F25400FC1030 /* Nure_KVO.m in Sources */,
 				18B489121DAE3E2800ACD4BA /* DataInsertView.m in Sources */,
 				18B488C31DAE3E2800ACD4BA /* YFImitateAppViewController.m in Sources */,
+				18B5FE241DE7E999008FC62F /* QRCodeGenerateViewController.m in Sources */,
 				18B487CC1DAE3E2700ACD4BA /* YFViewEffectsViewController.m in Sources */,
 				18B487FC1DAE3E2700ACD4BA /* YFKnowledgeViewController.m in Sources */,
 				18B489001DAE3E2800ACD4BA /* YFImageCategoryViewController.m in Sources */,
@@ -5258,6 +5288,7 @@
 				18B4886F1DAE3E2800ACD4BA /* YFLoginTransitionViewController.m in Sources */,
 				18B4895F1DAE3E2800ACD4BA /* UIScrollView+MJRefresh.m in Sources */,
 				18B487401DAE3E2700ACD4BA /* CloudView.m in Sources */,
+				18B5FE2A1DE7EA0E008FC62F /* CIImage+SGExtension.m in Sources */,
 				18B4893F1DAE3E2800ACD4BA /* FMDatabaseAdditions.m in Sources */,
 				18B488A61DAE3E2800ACD4BA /* PaneBehavior.m in Sources */,
 				18B487971DAE3E2700ACD4BA /* YSLCardView.m in Sources */,
@@ -5331,6 +5362,7 @@
 				18B488F21DAE3E2800ACD4BA /* SecondTableViewCell.m in Sources */,
 				18B488E01DAE3E2800ACD4BA /* YFNeteaseViewController.m in Sources */,
 				18B489021DAE3E2800ACD4BA /* FMDBBaseUseViewController.m in Sources */,
+				180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */,
 				18B489241DAE3E2800ACD4BA /* YFHanoiVC.m in Sources */,
 				18B487A51DAE3E2700ACD4BA /* ITRAirSideMenu.m in Sources */,
 				18B489581DAE3E2800ACD4BA /* NSObject+MJMember.m in Sources */,

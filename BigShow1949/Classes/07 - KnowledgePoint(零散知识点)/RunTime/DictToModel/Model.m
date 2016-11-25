@@ -34,11 +34,9 @@
         // 二级转换:如果字典中还有字典，也需要把对应的字典转换成模型
         // 判断下value是否是字典
         if ([value isKindOfClass:[NSDictionary class]]) {
-            NSLog(@"value = %@", value);
             // 字典转模型
             // 获取模型的类对象，调用modelWithDict
             // 模型的类名已知，就是成员属性的类型
-            
             // 获取成员属性类型
             NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
             

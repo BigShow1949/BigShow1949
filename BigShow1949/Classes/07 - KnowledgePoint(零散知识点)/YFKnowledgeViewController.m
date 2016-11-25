@@ -22,7 +22,8 @@
                     @"通知中心",
                     @"统计代码行数",
                     @"GCD",
-                    @"KVC"];
+                    @"KVC",
+                    @"二维码"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
@@ -32,7 +33,8 @@
                         @"YFNotificationCenterVC",
                         @"YFStatisticalCodeViewController",
                         @"GCDViewController",
-                        @"KVCViewController"];
+                        @"KVCViewController",
+                        @"QRCodeViewController"];
 }
 
 
