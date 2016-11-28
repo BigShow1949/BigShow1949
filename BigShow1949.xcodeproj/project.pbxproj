@@ -606,6 +606,9 @@
 		18B489741DAE3E2800ACD4BA /* YFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4872D1DAE3E2700ACD4BA /* YFHomeViewController.m */; };
 		18B5FE241DE7E999008FC62F /* QRCodeGenerateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */; };
 		18B5FE271DE7E9A3008FC62F /* QRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE261DE7E9A3008FC62F /* QRCodeView.m */; };
+		18B5FE371DEC0A9F008FC62F /* MsgForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE361DEC0A9F008FC62F /* MsgForwardingViewController.m */; };
+		18B5FE3A1DEC0B05008FC62F /* Person_Msg.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE391DEC0B05008FC62F /* Person_Msg.m */; };
+		18B5FE3D1DEC0B11008FC62F /* Car_Msg.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5FE3C1DEC0B11008FC62F /* Car_Msg.m */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
 		18C2D5381BAEDCD2006CD3B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */; };
@@ -1732,6 +1735,12 @@
 		18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerateViewController.m; sourceTree = "<group>"; };
 		18B5FE251DE7E9A3008FC62F /* QRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
 		18B5FE261DE7E9A3008FC62F /* QRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeView.m; sourceTree = "<group>"; };
+		18B5FE351DEC0A9F008FC62F /* MsgForwardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgForwardingViewController.h; sourceTree = "<group>"; };
+		18B5FE361DEC0A9F008FC62F /* MsgForwardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgForwardingViewController.m; sourceTree = "<group>"; };
+		18B5FE381DEC0B05008FC62F /* Person_Msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person_Msg.h; sourceTree = "<group>"; };
+		18B5FE391DEC0B05008FC62F /* Person_Msg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Msg.m; sourceTree = "<group>"; };
+		18B5FE3B1DEC0B11008FC62F /* Car_Msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car_Msg.h; sourceTree = "<group>"; };
+		18B5FE3C1DEC0B11008FC62F /* Car_Msg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car_Msg.m; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -2726,6 +2735,7 @@
 		18B483C91DAE3E2600ACD4BA /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				18B5FE341DEC0A7F008FC62F /* MessageForwarding */,
 				183699061DC325B2009AD5D5 /* AddMethod */,
 				18B483CA1DAE3E2600ACD4BA /* CategoryAttribute */,
 				18B483D31DAE3E2600ACD4BA /* DictToModel */,
@@ -4645,6 +4655,19 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		18B5FE341DEC0A7F008FC62F /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				18B5FE351DEC0A9F008FC62F /* MsgForwardingViewController.h */,
+				18B5FE361DEC0A9F008FC62F /* MsgForwardingViewController.m */,
+				18B5FE381DEC0B05008FC62F /* Person_Msg.h */,
+				18B5FE391DEC0B05008FC62F /* Person_Msg.m */,
+				18B5FE3B1DEC0B11008FC62F /* Car_Msg.h */,
+				18B5FE3C1DEC0B11008FC62F /* Car_Msg.m */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -4971,6 +4994,7 @@
 				18B4880B1DAE3E2700ACD4BA /* YFLittleProjectVC03.m in Sources */,
 				18B489721DAE3E2800ACD4BA /* main.m in Sources */,
 				18B488E71DAE3E2800ACD4BA /* YiTableViewDelegate.m in Sources */,
+				18B5FE371DEC0A9F008FC62F /* MsgForwardingViewController.m in Sources */,
 				18B4881E1DAE3E2800ACD4BA /* YFAnimationVC05.m in Sources */,
 				18B487561DAE3E2700ACD4BA /* YFLabelViewController.m in Sources */,
 				18B488591DAE3E2800ACD4BA /* YFPasswordShakeViewController.m in Sources */,
@@ -5283,6 +5307,7 @@
 				18B4886F1DAE3E2800ACD4BA /* YFLoginTransitionViewController.m in Sources */,
 				18B4895F1DAE3E2800ACD4BA /* UIScrollView+MJRefresh.m in Sources */,
 				18B487401DAE3E2700ACD4BA /* CloudView.m in Sources */,
+				18B5FE3D1DEC0B11008FC62F /* Car_Msg.m in Sources */,
 				18B4893F1DAE3E2800ACD4BA /* FMDatabaseAdditions.m in Sources */,
 				18B488A61DAE3E2800ACD4BA /* PaneBehavior.m in Sources */,
 				18B487971DAE3E2700ACD4BA /* YSLCardView.m in Sources */,
@@ -5427,6 +5452,7 @@
 				18B488D11DAE3E2800ACD4BA /* JLBaseDataController.m in Sources */,
 				18B488E61DAE3E2800ACD4BA /* YiTableViewDataSource.m in Sources */,
 				18B488BE1DAE3E2800ACD4BA /* YFBlurtViewController.m in Sources */,
+				18B5FE3A1DEC0B05008FC62F /* Person_Msg.m in Sources */,
 				18B487391DAE3E2700ACD4BA /* YFMultipleClicksViewController.m in Sources */,
 				18B4889A1DAE3E2800ACD4BA /* RAViewController.m in Sources */,
 			);

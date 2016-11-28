@@ -36,8 +36,6 @@ static char const *strAddrKey = "strAddrKey";
      2) const void *key 属性对应的key
      3) id value  设置属性值为value
      4) objc_AssociationPolicy policy  使用的策略，是一个枚举值，和copy，retain，assign是一样的，手机开发一般都选择NONATOMIC
-     
-     
      */
     objc_setAssociatedObject(self, strAddrKey, addr, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
