@@ -23,7 +23,8 @@
                     @"统计代码行数",
                     @"GCD",
                     @"KVC",
-                    @"二维码"];
+                    @"二维码",
+                    @"多继承"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
@@ -34,7 +35,8 @@
                         @"YFStatisticalCodeViewController",
                         @"GCDViewController",
                         @"KVCViewController",
-                        @"QRCodeViewController"];
+                        @"QRCodeViewController",
+                        @"MultipleInheritanceViewController"];
 }
 
 

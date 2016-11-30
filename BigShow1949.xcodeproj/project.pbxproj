@@ -18,6 +18,25 @@
 		182B9EB91DE2F1D000FC1030 /* Children_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EB81DE2F1D000FC1030 /* Children_KVO.m */; };
 		182B9EBC1DE2F25400FC1030 /* Nure_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EBB1DE2F25400FC1030 /* Nure_KVO.m */; };
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
+		1841F8061DEEB7AC00EAA812 /* MultipleInheritanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */; };
+		1841F8191DEEB91600EAA812 /* MultipleCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8181DEEB91600EAA812 /* MultipleCategory.m */; };
+		1841F81C1DEEB92900EAA812 /* MultipleCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F81B1DEEB92900EAA812 /* MultipleCombination.m */; };
+		1841F81F1DEEB93500EAA812 /* MultipleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F81E1DEEB93500EAA812 /* MultipleDelegate.m */; };
+		1841F8221DEEB94100EAA812 /* MultipleMsgForawrd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8211DEEB94100EAA812 /* MultipleMsgForawrd.m */; };
+		1841F8251DEEB94D00EAA812 /* MultipleProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8241DEEB94D00EAA812 /* MultipleProtocol.m */; };
+		1841F82C1DEEBAC600EAA812 /* Teacher_MMF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8271DEEBAC600EAA812 /* Teacher_MMF.m */; };
+		1841F82D1DEEBAC600EAA812 /* Lawyer_MMF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8291DEEBAC600EAA812 /* Lawyer_MMF.m */; };
+		1841F82E1DEEBAC600EAA812 /* Doctor_MMF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F82B1DEEBAC600EAA812 /* Doctor_MMF.m */; };
+		1841F8351DEEBBF400EAA812 /* Fish_MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8301DEEBBF400EAA812 /* Fish_MP.m */; };
+		1841F8361DEEBBF400EAA812 /* Bird_MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8321DEEBBF400EAA812 /* Bird_MP.m */; };
+		1841F8371DEEBBF400EAA812 /* Dog_MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8341DEEBBF400EAA812 /* Dog_MP.m */; };
+		1841F83E1DEEBCBE00EAA812 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8391DEEBCBE00EAA812 /* ClassA.m */; };
+		1841F83F1DEEBCBE00EAA812 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F83B1DEEBCBE00EAA812 /* ClassB.m */; };
+		1841F8401DEEBCBE00EAA812 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F83D1DEEBCBE00EAA812 /* ClassC.m */; };
+		1841F8451DEEBD2C00EAA812 /* My.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8421DEEBD2C00EAA812 /* My.m */; };
+		1841F8461DEEBD2C00EAA812 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8441DEEBD2C00EAA812 /* Business.m */; };
+		1841F8491DEEBE1000EAA812 /* Student_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8481DEEBE1000EAA812 /* Student_MC.m */; };
+		1841F84C1DEEBF4600EAA812 /* Dancer_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
 		187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */; };
@@ -665,6 +684,44 @@
 		182B9EBB1DE2F25400FC1030 /* Nure_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nure_KVO.m; sourceTree = "<group>"; };
 		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
 		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
+		1841F8041DEEB7AC00EAA812 /* MultipleInheritanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleInheritanceViewController.h; sourceTree = "<group>"; };
+		1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritanceViewController.m; sourceTree = "<group>"; };
+		1841F8171DEEB91600EAA812 /* MultipleCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleCategory.h; sourceTree = "<group>"; };
+		1841F8181DEEB91600EAA812 /* MultipleCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleCategory.m; sourceTree = "<group>"; };
+		1841F81A1DEEB92900EAA812 /* MultipleCombination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleCombination.h; sourceTree = "<group>"; };
+		1841F81B1DEEB92900EAA812 /* MultipleCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleCombination.m; sourceTree = "<group>"; };
+		1841F81D1DEEB93500EAA812 /* MultipleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleDelegate.h; sourceTree = "<group>"; };
+		1841F81E1DEEB93500EAA812 /* MultipleDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleDelegate.m; sourceTree = "<group>"; };
+		1841F8201DEEB94100EAA812 /* MultipleMsgForawrd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleMsgForawrd.h; sourceTree = "<group>"; };
+		1841F8211DEEB94100EAA812 /* MultipleMsgForawrd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleMsgForawrd.m; sourceTree = "<group>"; };
+		1841F8231DEEB94D00EAA812 /* MultipleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleProtocol.h; sourceTree = "<group>"; };
+		1841F8241DEEB94D00EAA812 /* MultipleProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleProtocol.m; sourceTree = "<group>"; };
+		1841F8261DEEBAC600EAA812 /* Teacher_MMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher_MMF.h; sourceTree = "<group>"; };
+		1841F8271DEEBAC600EAA812 /* Teacher_MMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher_MMF.m; sourceTree = "<group>"; };
+		1841F8281DEEBAC600EAA812 /* Lawyer_MMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lawyer_MMF.h; sourceTree = "<group>"; };
+		1841F8291DEEBAC600EAA812 /* Lawyer_MMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lawyer_MMF.m; sourceTree = "<group>"; };
+		1841F82A1DEEBAC600EAA812 /* Doctor_MMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor_MMF.h; sourceTree = "<group>"; };
+		1841F82B1DEEBAC600EAA812 /* Doctor_MMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor_MMF.m; sourceTree = "<group>"; };
+		1841F82F1DEEBBF400EAA812 /* Fish_MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish_MP.h; sourceTree = "<group>"; };
+		1841F8301DEEBBF400EAA812 /* Fish_MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish_MP.m; sourceTree = "<group>"; };
+		1841F8311DEEBBF400EAA812 /* Bird_MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird_MP.h; sourceTree = "<group>"; };
+		1841F8321DEEBBF400EAA812 /* Bird_MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird_MP.m; sourceTree = "<group>"; };
+		1841F8331DEEBBF400EAA812 /* Dog_MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog_MP.h; sourceTree = "<group>"; };
+		1841F8341DEEBBF400EAA812 /* Dog_MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog_MP.m; sourceTree = "<group>"; };
+		1841F8381DEEBCBE00EAA812 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		1841F8391DEEBCBE00EAA812 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		1841F83A1DEEBCBE00EAA812 /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		1841F83B1DEEBCBE00EAA812 /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		1841F83C1DEEBCBE00EAA812 /* ClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
+		1841F83D1DEEBCBE00EAA812 /* ClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassC.m; sourceTree = "<group>"; };
+		1841F8411DEEBD2C00EAA812 /* My.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = My.h; sourceTree = "<group>"; };
+		1841F8421DEEBD2C00EAA812 /* My.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = My.m; sourceTree = "<group>"; };
+		1841F8431DEEBD2C00EAA812 /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
+		1841F8441DEEBD2C00EAA812 /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
+		1841F8471DEEBE1000EAA812 /* Student_MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student_MC.h; sourceTree = "<group>"; };
+		1841F8481DEEBE1000EAA812 /* Student_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student_MC.m; sourceTree = "<group>"; };
+		1841F84A1DEEBF4600EAA812 /* Dancer_MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer_MC.h; sourceTree = "<group>"; };
+		1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer_MC.m; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformViewController.h; sourceTree = "<group>"; };
 		187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformViewController.m; sourceTree = "<group>"; };
@@ -1858,6 +1915,91 @@
 			path = AddMethod;
 			sourceTree = "<group>";
 		};
+		1841F8031DEEB79200EAA812 /* MultipleInheritance */ = {
+			isa = PBXGroup;
+			children = (
+				1841F8041DEEB7AC00EAA812 /* MultipleInheritanceViewController.h */,
+				1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */,
+				1841F80F1DEEB90900EAA812 /* MultipleCategory */,
+				1841F8121DEEB90900EAA812 /* MultipleCombination */,
+				1841F8131DEEB90900EAA812 /* MultipleDelegate */,
+				1841F8141DEEB90900EAA812 /* MultipleMsgForawrd */,
+				1841F8151DEEB90900EAA812 /* MultipleProtocol */,
+			);
+			path = MultipleInheritance;
+			sourceTree = "<group>";
+		};
+		1841F80F1DEEB90900EAA812 /* MultipleCategory */ = {
+			isa = PBXGroup;
+			children = (
+				1841F8171DEEB91600EAA812 /* MultipleCategory.h */,
+				1841F8181DEEB91600EAA812 /* MultipleCategory.m */,
+				1841F8471DEEBE1000EAA812 /* Student_MC.h */,
+				1841F8481DEEBE1000EAA812 /* Student_MC.m */,
+				1841F84A1DEEBF4600EAA812 /* Dancer_MC.h */,
+				1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */,
+			);
+			path = MultipleCategory;
+			sourceTree = "<group>";
+		};
+		1841F8121DEEB90900EAA812 /* MultipleCombination */ = {
+			isa = PBXGroup;
+			children = (
+				1841F81A1DEEB92900EAA812 /* MultipleCombination.h */,
+				1841F81B1DEEB92900EAA812 /* MultipleCombination.m */,
+				1841F8381DEEBCBE00EAA812 /* ClassA.h */,
+				1841F8391DEEBCBE00EAA812 /* ClassA.m */,
+				1841F83A1DEEBCBE00EAA812 /* ClassB.h */,
+				1841F83B1DEEBCBE00EAA812 /* ClassB.m */,
+				1841F83C1DEEBCBE00EAA812 /* ClassC.h */,
+				1841F83D1DEEBCBE00EAA812 /* ClassC.m */,
+			);
+			path = MultipleCombination;
+			sourceTree = "<group>";
+		};
+		1841F8131DEEB90900EAA812 /* MultipleDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1841F81D1DEEB93500EAA812 /* MultipleDelegate.h */,
+				1841F81E1DEEB93500EAA812 /* MultipleDelegate.m */,
+				1841F8411DEEBD2C00EAA812 /* My.h */,
+				1841F8421DEEBD2C00EAA812 /* My.m */,
+				1841F8431DEEBD2C00EAA812 /* Business.h */,
+				1841F8441DEEBD2C00EAA812 /* Business.m */,
+			);
+			path = MultipleDelegate;
+			sourceTree = "<group>";
+		};
+		1841F8141DEEB90900EAA812 /* MultipleMsgForawrd */ = {
+			isa = PBXGroup;
+			children = (
+				1841F8201DEEB94100EAA812 /* MultipleMsgForawrd.h */,
+				1841F8211DEEB94100EAA812 /* MultipleMsgForawrd.m */,
+				1841F8261DEEBAC600EAA812 /* Teacher_MMF.h */,
+				1841F8271DEEBAC600EAA812 /* Teacher_MMF.m */,
+				1841F8281DEEBAC600EAA812 /* Lawyer_MMF.h */,
+				1841F8291DEEBAC600EAA812 /* Lawyer_MMF.m */,
+				1841F82A1DEEBAC600EAA812 /* Doctor_MMF.h */,
+				1841F82B1DEEBAC600EAA812 /* Doctor_MMF.m */,
+			);
+			path = MultipleMsgForawrd;
+			sourceTree = "<group>";
+		};
+		1841F8151DEEB90900EAA812 /* MultipleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1841F8231DEEB94D00EAA812 /* MultipleProtocol.h */,
+				1841F8241DEEB94D00EAA812 /* MultipleProtocol.m */,
+				1841F82F1DEEBBF400EAA812 /* Fish_MP.h */,
+				1841F8301DEEBBF400EAA812 /* Fish_MP.m */,
+				1841F8311DEEBBF400EAA812 /* Bird_MP.h */,
+				1841F8321DEEBBF400EAA812 /* Bird_MP.m */,
+				1841F8331DEEBBF400EAA812 /* Dog_MP.h */,
+				1841F8341DEEBBF400EAA812 /* Dog_MP.m */,
+			);
+			path = MultipleProtocol;
+			sourceTree = "<group>";
+		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2607,6 +2749,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
+				1841F8031DEEB79200EAA812 /* MultipleInheritance */,
 				180E0EAC1DE7CEB200B5658A /* QRCode */,
 				182B9EA71DE2ED5E00FC1030 /* KVC */,
 				182B9E9D1DDEE5F700FC1030 /* GCD */,
@@ -5077,11 +5220,14 @@
 				18B488361DAE3E2800ACD4BA /* YFRippleViewController.m in Sources */,
 				18B488581DAE3E2800ACD4BA /* UITextField+Shake.m in Sources */,
 				18B4880F1DAE3E2700ACD4BA /* YFJigsawViewController.m in Sources */,
+				1841F83E1DEEBCBE00EAA812 /* ClassA.m in Sources */,
 				18B4889F1DAE3E2800ACD4BA /* YFDynamicItemViewController.m in Sources */,
 				18B488331DAE3E2800ACD4BA /* YFSnowViewController.m in Sources */,
 				18B4874B1DAE3E2700ACD4BA /* YFMarqueeViewController.m in Sources */,
 				18B4880D1DAE3E2700ACD4BA /* YFCard.m in Sources */,
+				1841F8491DEEBE1000EAA812 /* Student_MC.m in Sources */,
 				18B489131DAE3E2800ACD4BA /* DataListController.m in Sources */,
+				1841F8061DEEB7AC00EAA812 /* MultipleInheritanceViewController.m in Sources */,
 				18B489441DAE3E2800ACD4BA /* MASCompositeConstraint.m in Sources */,
 				18B4881B1DAE3E2800ACD4BA /* YFAnimationVC03.m in Sources */,
 				18B489681DAE3E2800ACD4BA /* SDWebImageManager.m in Sources */,
@@ -5129,14 +5275,18 @@
 				182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */,
 				18B4894D1DAE3E2800ACD4BA /* ViewController+MASAdditions.m in Sources */,
 				18B5FE271DE7E9A3008FC62F /* QRCodeView.m in Sources */,
+				1841F8361DEEBBF400EAA812 /* Bird_MP.m in Sources */,
 				18B488751DAE3E2800ACD4BA /* SYTabBarViewController.m in Sources */,
 				18B487E21DAE3E2700ACD4BA /* Case8Cell.m in Sources */,
+				1841F83F1DEEBCBE00EAA812 /* ClassB.m in Sources */,
 				18B488E41DAE3E2800ACD4BA /* YiTableViewController.m in Sources */,
 				18B4878B1DAE3E2700ACD4BA /* YFViewLayoutViewController.m in Sources */,
 				18B4877E1DAE3E2700ACD4BA /* YFSlideTitlesViewController.m in Sources */,
+				1841F81F1DEEB93500EAA812 /* MultipleDelegate.m in Sources */,
 				18B488341DAE3E2800ACD4BA /* YFEmitterViewController.m in Sources */,
 				18B488051DAE3E2700ACD4BA /* SYEmotionButton.m in Sources */,
 				18B488731DAE3E2800ACD4BA /* SYHistoryViewController.m in Sources */,
+				1841F81C1DEEB92900EAA812 /* MultipleCombination.m in Sources */,
 				18B488221DAE3E2800ACD4BA /* YFDragRadialMenu.m in Sources */,
 				18B487A81DAE3E2700ACD4BA /* ITRSecondViewController.m in Sources */,
 				18B487D51DAE3E2700ACD4BA /* ZWIntroductionViewController.m in Sources */,
@@ -5146,6 +5296,7 @@
 				18B488F51DAE3E2800ACD4BA /* UIColor+Extension.m in Sources */,
 				18B488FA1DAE3E2800ACD4BA /* UIScrollView+EmptyDataSet.m in Sources */,
 				18B489101DAE3E2800ACD4BA /* DataAlterFieldView.m in Sources */,
+				1841F84C1DEEBF4600EAA812 /* Dancer_MC.m in Sources */,
 				18B4876A1DAE3E2700ACD4BA /* HWLineLayout.m in Sources */,
 				18B487C81DAE3E2700ACD4BA /* YFViewTransitionViewController.m in Sources */,
 				18B4877B1DAE3E2700ACD4BA /* RGCardViewLayout.m in Sources */,
@@ -5175,6 +5326,7 @@
 				18B487A11DAE3E2700ACD4BA /* HHHeaderView.m in Sources */,
 				18B488F11DAE3E2800ACD4BA /* OneTableViewCell.m in Sources */,
 				18B4889D1DAE3E2800ACD4BA /* YFNormalCollectionViewController.m in Sources */,
+				1841F8251DEEB94D00EAA812 /* MultipleProtocol.m in Sources */,
 				18B489051DAE3E2800ACD4BA /* JKDBModel.m in Sources */,
 				183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */,
 				18B4891F1DAE3E2800ACD4BA /* YFNetworkRequestViewController.m in Sources */,
@@ -5241,9 +5393,11 @@
 				18B488571DAE3E2800ACD4BA /* YFNormalAnimationsViewController.m in Sources */,
 				18B489551DAE3E2800ACD4BA /* MJTypeEncoding.m in Sources */,
 				18B4894B1DAE3E2800ACD4BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				1841F82C1DEEBAC600EAA812 /* Teacher_MMF.m in Sources */,
 				18B489741DAE3E2800ACD4BA /* YFHomeViewController.m in Sources */,
 				18B487F11DAE3E2700ACD4BA /* YFPerson+addproty.m in Sources */,
 				18B488F41DAE3E2800ACD4BA /* YFDesignPatternViewController.m in Sources */,
+				1841F8461DEEBD2C00EAA812 /* Business.m in Sources */,
 				18B487961DAE3E2700ACD4BA /* YFDraggableCardViewController.m in Sources */,
 				18B488A41DAE3E2800ACD4BA /* UINTViewController.m in Sources */,
 				18B488FE1DAE3E2800ACD4BA /* UIImage+CJZ.m in Sources */,
@@ -5263,6 +5417,7 @@
 				18B489121DAE3E2800ACD4BA /* DataInsertView.m in Sources */,
 				18B488C31DAE3E2800ACD4BA /* YFImitateAppViewController.m in Sources */,
 				18B5FE241DE7E999008FC62F /* QRCodeGenerateViewController.m in Sources */,
+				1841F8371DEEBBF400EAA812 /* Dog_MP.m in Sources */,
 				18B487CC1DAE3E2700ACD4BA /* YFViewEffectsViewController.m in Sources */,
 				18B487FC1DAE3E2700ACD4BA /* YFKnowledgeViewController.m in Sources */,
 				18B489001DAE3E2800ACD4BA /* YFImageCategoryViewController.m in Sources */,
@@ -5308,7 +5463,9 @@
 				18B4895F1DAE3E2800ACD4BA /* UIScrollView+MJRefresh.m in Sources */,
 				18B487401DAE3E2700ACD4BA /* CloudView.m in Sources */,
 				18B5FE3D1DEC0B11008FC62F /* Car_Msg.m in Sources */,
+				1841F82E1DEEBAC600EAA812 /* Doctor_MMF.m in Sources */,
 				18B4893F1DAE3E2800ACD4BA /* FMDatabaseAdditions.m in Sources */,
+				1841F82D1DEEBAC600EAA812 /* Lawyer_MMF.m in Sources */,
 				18B488A61DAE3E2800ACD4BA /* PaneBehavior.m in Sources */,
 				18B487971DAE3E2700ACD4BA /* YSLCardView.m in Sources */,
 				18B4883A1DAE3E2800ACD4BA /* YFOneWaterWaveViewController.m in Sources */,
@@ -5371,7 +5528,9 @@
 				18B488AD1DAE3E2800ACD4BA /* YFAttachmentBehaviorViewController.m in Sources */,
 				18B487F31DAE3E2700ACD4BA /* Classes.m in Sources */,
 				18B488C21DAE3E2800ACD4BA /* YFUIKitViewController.m in Sources */,
+				1841F8401DEEBCBE00EAA812 /* ClassC.m in Sources */,
 				18B4872E1DAE3E2700ACD4BA /* APRoundedButton.m in Sources */,
+				1841F8221DEEB94100EAA812 /* MultipleMsgForawrd.m in Sources */,
 				18B488E81DAE3E2800ACD4BA /* YiCustomTableViewCell.m in Sources */,
 				18B488DA1DAE3E2800ACD4BA /* JLHomePracticeSubjectsCollectionCellViewModel.m in Sources */,
 				18B487EF1DAE3E2700ACD4BA /* UILabel+Associate.m in Sources */,
@@ -5398,6 +5557,7 @@
 				18B4878A1DAE3E2700ACD4BA /* YFWaterflowViewController.m in Sources */,
 				18B4896E1DAE3E2800ACD4BA /* UIImageView+HighlightedWebCache.m in Sources */,
 				18B487D31DAE3E2700ACD4BA /* YFGuideViewController.m in Sources */,
+				1841F8351DEEBBF400EAA812 /* Fish_MP.m in Sources */,
 				18B489011DAE3E2800ACD4BA /* YFToolsViewController.m in Sources */,
 				18B489371DAE3E2800ACD4BA /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				18B487DB1DAE3E2700ACD4BA /* Case4Cell.m in Sources */,
@@ -5440,7 +5600,9 @@
 				18B488641DAE3E2800ACD4BA /* CoreAnimationViewController.m in Sources */,
 				18B488F61DAE3E2800ACD4BA /* YFColorViewController.m in Sources */,
 				18B489351DAE3E2800ACD4BA /* AFURLSessionManager.m in Sources */,
+				1841F8191DEEB91600EAA812 /* MultipleCategory.m in Sources */,
 				18B487E91DAE3E2700ACD4BA /* YFNotificationCenter2VC.m in Sources */,
+				1841F8451DEEBD2C00EAA812 /* My.m in Sources */,
 				18B487521DAE3E2700ACD4BA /* YFSphereViewController.m in Sources */,
 				18B488171DAE3E2700ACD4BA /* YFRotateCircleMenuVC.m in Sources */,
 				18B488AF1DAE3E2800ACD4BA /* MenuItemCell.m in Sources */,
