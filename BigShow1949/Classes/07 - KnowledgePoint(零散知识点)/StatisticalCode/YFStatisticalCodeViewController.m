@@ -28,6 +28,8 @@
     
     // 在这里写下需要统计的代码的目录
     NSString *path = @"/Users/apple/GitHub/BigShow1949";
+//    NSString *path = @"/Users/apple/Desktop/Code/BSJZ/SJZ";
+
     NSLog(@"在这个文件中代码行数是：%ld",codeLineCount2(path,path));
 }
 
