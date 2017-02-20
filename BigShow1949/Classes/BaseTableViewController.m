@@ -11,6 +11,7 @@
 
 #import "RZTransitionsNavigationController.h"  // 自定义push动画
 #import "RZSimpleViewController.h"
+#import "BigShow-Swift.h"
 
 @interface BaseTableViewController ()
 
@@ -117,6 +118,7 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     }else {
+        NSLog(@"className = %@", className);
         UIViewController *vc = [[NSClassFromString(className) alloc] init];
         vc.title = self.titles[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];

@@ -17,6 +17,14 @@
 		182B9EB61DE2EFFC00FC1030 /* Book_KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EB51DE2EFFC00FC1030 /* Book_KVC.m */; };
 		182B9EB91DE2F1D000FC1030 /* Children_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EB81DE2F1D000FC1030 /* Children_KVO.m */; };
 		182B9EBC1DE2F25400FC1030 /* Nure_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EBB1DE2F25400FC1030 /* Nure_KVO.m */; };
+		182C48931E5A9AAC0099A49D /* SpreadViewController_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C48921E5A9AAC0099A49D /* SpreadViewController_swift.swift */; };
+		182C48961E5A9B520099A49D /* HelpSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C48941E5A9B520099A49D /* HelpSectionHeader.swift */; };
+		182C48971E5A9B520099A49D /* HelpSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182C48951E5A9B520099A49D /* HelpSectionHeader.xib */; };
+		182C489A1E5A9B590099A49D /* HelpTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C48981E5A9B590099A49D /* HelpTableCell.swift */; };
+		182C489B1E5A9B590099A49D /* HelpTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182C48991E5A9B590099A49D /* HelpTableCell.xib */; };
+		182C489D1E5ABAE10099A49D /* icon_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C489C1E5ABAE10099A49D /* icon_up@2x.png */; };
+		182C489F1E5ABAE90099A49D /* icon_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C489E1E5ABAE90099A49D /* icon_down@2x.png */; };
+		182C48A11E5ABAEE0099A49D /* logon_button_enter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */; };
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
 		1841F8061DEEB7AC00EAA812 /* MultipleInheritanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */; };
 		1841F8191DEEB91600EAA812 /* MultipleCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8181DEEB91600EAA812 /* MultipleCategory.m */; };
@@ -640,6 +648,7 @@
 		18C2D5461BAEDD14006CD3B2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5451BAEDD14006CD3B2 /* libc++.dylib */; };
 		18C2D5481BAEDD1A006CD3B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5471BAEDD1A006CD3B2 /* Security.framework */; };
 		18C2D5531BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5521BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib */; };
+		18C3E8751E55489D00D275AD /* SwiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E8741E55489D00D275AD /* SwiftViewController.m */; };
 		18C760041B9AB24A0038B2EE /* lxh in Resources */ = {isa = PBXBuildFile; fileRef = 18C760021B9AB24A0038B2EE /* lxh */; };
 		18C760051B9AB24A0038B2EE /* default in Resources */ = {isa = PBXBuildFile; fileRef = 18C760031B9AB24A0038B2EE /* default */; };
 		8B0B9AC01B9572000084590D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9ABF1B9572000084590D /* Images.xcassets */; };
@@ -682,6 +691,14 @@
 		182B9EB81DE2F1D000FC1030 /* Children_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Children_KVO.m; sourceTree = "<group>"; };
 		182B9EBA1DE2F25400FC1030 /* Nure_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nure_KVO.h; sourceTree = "<group>"; };
 		182B9EBB1DE2F25400FC1030 /* Nure_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nure_KVO.m; sourceTree = "<group>"; };
+		182C48921E5A9AAC0099A49D /* SpreadViewController_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadViewController_swift.swift; sourceTree = "<group>"; };
+		182C48941E5A9B520099A49D /* HelpSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpSectionHeader.swift; sourceTree = "<group>"; };
+		182C48951E5A9B520099A49D /* HelpSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpSectionHeader.xib; sourceTree = "<group>"; };
+		182C48981E5A9B590099A49D /* HelpTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableCell.swift; sourceTree = "<group>"; };
+		182C48991E5A9B590099A49D /* HelpTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpTableCell.xib; sourceTree = "<group>"; };
+		182C489C1E5ABAE10099A49D /* icon_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_up@2x.png"; sourceTree = "<group>"; };
+		182C489E1E5ABAE90099A49D /* icon_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_down@2x.png"; sourceTree = "<group>"; };
+		182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logon_button_enter@2x.png"; sourceTree = "<group>"; };
 		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
 		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
 		1841F8041DEEB7AC00EAA812 /* MultipleInheritanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleInheritanceViewController.h; sourceTree = "<group>"; };
@@ -1810,6 +1827,9 @@
 		18C2D5451BAEDD14006CD3B2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		18C2D5471BAEDD1A006CD3B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		18C2D5521BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		18C3E8731E55489D00D275AD /* SwiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftViewController.h; sourceTree = "<group>"; };
+		18C3E8741E55489D00D275AD /* SwiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftViewController.m; sourceTree = "<group>"; };
+		18C3E8761E5548E800D275AD /* BigShow1949-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigShow1949-Bridging-Header.h"; sourceTree = "<group>"; };
 		18C760021B9AB24A0038B2EE /* lxh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lxh; sourceTree = "<group>"; };
 		18C760031B9AB24A0038B2EE /* default */ = {isa = PBXFileReference; lastKnownFileType = folder; path = default; sourceTree = "<group>"; };
 		8B0B9AAF1B9572000084590D /* BigShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1904,6 +1924,21 @@
 				182B9EBB1DE2F25400FC1030 /* Nure_KVO.m */,
 			);
 			path = KVC;
+			sourceTree = "<group>";
+		};
+		182C48911E5A9A860099A49D /* SpreadTableView */ = {
+			isa = PBXGroup;
+			children = (
+				182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */,
+				182C489E1E5ABAE90099A49D /* icon_down@2x.png */,
+				182C489C1E5ABAE10099A49D /* icon_up@2x.png */,
+				182C48981E5A9B590099A49D /* HelpTableCell.swift */,
+				182C48991E5A9B590099A49D /* HelpTableCell.xib */,
+				182C48941E5A9B520099A49D /* HelpSectionHeader.swift */,
+				182C48951E5A9B520099A49D /* HelpSectionHeader.xib */,
+				182C48921E5A9AAC0099A49D /* SpreadViewController_swift.swift */,
+			);
+			path = SpreadTableView;
 			sourceTree = "<group>";
 		};
 		183699061DC325B2009AD5D5 /* AddMethod */ = {
@@ -2003,6 +2038,7 @@
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18C3E8721E55486F00D275AD /* 18 - Swift专栏 */,
 				18B482311DAE3E2600ACD4BA /* 01 - Button(按钮) */,
 				18B4824D1DAE3E2600ACD4BA /* 02 - Label(标签) */,
 				18B482961DAE3E2600ACD4BA /* 03 - ViewLayout(视图布局) */,
@@ -4833,6 +4869,17 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		18C3E8721E55486F00D275AD /* 18 - Swift专栏 */ = {
+			isa = PBXGroup;
+			children = (
+				182C48911E5A9A860099A49D /* SpreadTableView */,
+				18C3E8731E55489D00D275AD /* SwiftViewController.h */,
+				18C3E8741E55489D00D275AD /* SwiftViewController.m */,
+				18C3E8761E5548E800D275AD /* BigShow1949-Bridging-Header.h */,
+			);
+			path = "18 - Swift专栏";
+			sourceTree = "<group>";
+		};
 		8B0B9AA61B9572000084590D = {
 			isa = PBXGroup;
 			children = (
@@ -4945,6 +4992,7 @@
 					8B0B9AAE1B9572000084590D = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 686TP5D9Q7;
+						LastSwiftMigration = 0800;
 					};
 					8B0B9AC71B9572000084590D = {
 						CreatedOnToolsVersion = 6.4;
@@ -4992,12 +5040,14 @@
 				18B4888E1DAE3E2800ACD4BA /* 2.jpg in Resources */,
 				18B488121DAE3E2700ACD4BA /* ContextMenuCell.xib in Resources */,
 				18B487581DAE3E2700ACD4BA /* awcollectionviewdiallayout_1.jpg in Resources */,
+				182C489D1E5ABAE10099A49D /* icon_up@2x.png in Resources */,
 				18B487AE1DAE3E2700ACD4BA /* YFSlidingViewController.storyboard in Resources */,
 				18B487741DAE3E2700ACD4BA /* i3.jpg in Resources */,
 				18B4883E1DAE3E2800ACD4BA /* home_top_bg@2x.png in Resources */,
 				18B488891DAE3E2800ACD4BA /* 15.jpg in Resources */,
 				18B4890C1DAE3E2800ACD4BA /* SQLiteBaseUseViewController.storyboard in Resources */,
 				18B4888B1DAE3E2800ACD4BA /* 17.jpg in Resources */,
+				182C48A11E5ABAEE0099A49D /* logon_button_enter@2x.png in Resources */,
 				18B488411DAE3E2800ACD4BA /* Shader.fsh in Resources */,
 				18B488311DAE3E2800ACD4BA /* snow.png in Resources */,
 				18B487631DAE3E2700ACD4BA /* paul_george.png in Resources */,
@@ -5035,6 +5085,7 @@
 				18B4887D1DAE3E2800ACD4BA /* TabBar_History_selected_new@2x.png in Resources */,
 				18B487921DAE3E2700ACD4BA /* photo_sample_04.png in Resources */,
 				18B488791DAE3E2800ACD4BA /* TabBar_Arena_selected_new@2x.png in Resources */,
+				182C48971E5A9B520099A49D /* HelpSectionHeader.xib in Resources */,
 				18B487591DAE3E2700ACD4BA /* awcollectionviewdiallayout_2.jpg in Resources */,
 				18B4887F1DAE3E2800ACD4BA /* TabBar_LotteryHall_selected_new@2x.png in Resources */,
 				18B488241DAE3E2800ACD4BA /* editButton@3x.png in Resources */,
@@ -5077,6 +5128,7 @@
 				18B488831DAE3E2800ACD4BA /* 1.jpg in Resources */,
 				18B488481DAE3E2800ACD4BA /* Shader.vsh in Resources */,
 				18B487781DAE3E2700ACD4BA /* trophy-50.png in Resources */,
+				182C489B1E5A9B590099A49D /* HelpTableCell.xib in Resources */,
 				18B488861DAE3E2800ACD4BA /* 12.jpg in Resources */,
 				1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */,
 				18B4882F1DAE3E2800ACD4BA /* rain.png in Resources */,
@@ -5110,6 +5162,7 @@
 				18B488F81DAE3E2800ACD4BA /* placeholder_fancy.png in Resources */,
 				18B487C51DAE3E2700ACD4BA /* RZSimpleColorViewController.xib in Resources */,
 				18B487301DAE3E2700ACD4BA /* YFAllRoundButtonVC.storyboard in Resources */,
+				182C489F1E5ABAE90099A49D /* icon_down@2x.png in Resources */,
 				18B487951DAE3E2700ACD4BA /* photo_sample_07.png in Resources */,
 				18B489591DAE3E2800ACD4BA /* MJRefresh.bundle in Resources */,
 				18B4888F1DAE3E2800ACD4BA /* 20.jpg in Resources */,
@@ -5198,6 +5251,7 @@
 				18B488EC1DAE3E2800ACD4BA /* ModelOne.m in Sources */,
 				18B4890B1DAE3E2800ACD4BA /* SQLiteBaseUseViewController.m in Sources */,
 				18B487501DAE3E2700ACD4BA /* PFGoldenSectionSpiral.m in Sources */,
+				18C3E8751E55489D00D275AD /* SwiftViewController.m in Sources */,
 				18B489091DAE3E2800ACD4BA /* User.m in Sources */,
 				18B4882D1DAE3E2800ACD4BA /* YFEmitterLeavesCell.m in Sources */,
 				18B488141DAE3E2700ACD4BA /* YFContextMenuTableView.m in Sources */,
@@ -5274,6 +5328,7 @@
 				18B487FF1DAE3E2700ACD4BA /* SYComposeViewController.m in Sources */,
 				182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */,
 				18B4894D1DAE3E2800ACD4BA /* ViewController+MASAdditions.m in Sources */,
+				182C489A1E5A9B590099A49D /* HelpTableCell.swift in Sources */,
 				18B5FE271DE7E9A3008FC62F /* QRCodeView.m in Sources */,
 				1841F8361DEEBBF400EAA812 /* Bird_MP.m in Sources */,
 				18B488751DAE3E2800ACD4BA /* SYTabBarViewController.m in Sources */,
@@ -5312,6 +5367,7 @@
 				18B487EA1DAE3E2700ACD4BA /* YFNotificationCenter3VC.m in Sources */,
 				18B488E31DAE3E2800ACD4BA /* YiRefreshHeader.m in Sources */,
 				18B4874D1DAE3E2700ACD4BA /* YFShineLabelViewController.m in Sources */,
+				182C48961E5A9B520099A49D /* HelpSectionHeader.swift in Sources */,
 				18B4881C1DAE3E2800ACD4BA /* YFAnimationVC04.m in Sources */,
 				18B487F71DAE3E2700ACD4BA /* YFDictToModelViewController.m in Sources */,
 				18B488B21DAE3E2800ACD4BA /* SecondMenuData.m in Sources */,
@@ -5516,6 +5572,7 @@
 				18B488991DAE3E2800ACD4BA /* RACollectionViewTripletLayout.m in Sources */,
 				18B488F01DAE3E2800ACD4BA /* MyDataSourceViewController2.m in Sources */,
 				18B488741DAE3E2800ACD4BA /* SYMineViewController.m in Sources */,
+				182C48931E5A9AAC0099A49D /* SpreadViewController_swift.swift in Sources */,
 				18B489711DAE3E2800ACD4BA /* AppDelegate.m in Sources */,
 				18B4874F1DAE3E2700ACD4BA /* YFSphereTagCloud.m in Sources */,
 				18B487C01DAE3E2700ACD4BA /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
@@ -5735,7 +5792,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5747,10 +5806,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BigShow1949/YFAppStoreDemo.pch";
 				INFOPLIST_FILE = BigShow1949/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = BigShow;
 				PRODUCT_NAME = BigShow;
+				SWIFT_OBJC_BRIDGING_HEADER = "BigShow1949/Classes/18 - Swift专栏/BigShow1949-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -5760,7 +5823,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5772,10 +5837,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BigShow1949/YFAppStoreDemo.pch";
 				INFOPLIST_FILE = BigShow1949/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = BigShow;
 				PRODUCT_NAME = BigShow;
+				SWIFT_OBJC_BRIDGING_HEADER = "BigShow1949/Classes/18 - Swift专栏/BigShow1949-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -5783,6 +5851,7 @@
 		8B0B9AD61B9572000084590D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -5803,6 +5872,7 @@
 		8B0B9AD71B9572000084590D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

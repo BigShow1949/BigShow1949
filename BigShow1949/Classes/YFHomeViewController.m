@@ -43,7 +43,8 @@
                     @"数据持久化",
                     @"网络请求",
                     @"博客/论坛",
-                    @"算法"];
+                    @"算法",
+                    @"swift专栏"];
     
     // 框架模式有哪些？
     //  MVC、MTV、MVP、CBD、ORM等等；
@@ -65,7 +66,8 @@
                         @"YFDataPersistenceViewController",
                         @"YFNetworkRequestViewController",
                         @"YFBlogViewController",
-                        @"YFAlgorithmViewController"];
+                        @"YFAlgorithmViewController",
+                        @"SwiftViewController"];
     
     [self setupNav];
 
