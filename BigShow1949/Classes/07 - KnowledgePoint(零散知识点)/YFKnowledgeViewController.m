@@ -24,7 +24,8 @@
                     @"GCD",
                     @"KVC",
                     @"二维码",
-                    @"多继承"];
+                    @"多继承",
+                    @"Quartz2D"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
@@ -36,7 +37,8 @@
                         @"GCDViewController",
                         @"KVCViewController",
                         @"QRCodeViewController",
-                        @"MultipleInheritanceViewController"];
+                        @"MultipleInheritanceViewController",
+                        @"YFQuartz2DViewController"];
 }
 
 

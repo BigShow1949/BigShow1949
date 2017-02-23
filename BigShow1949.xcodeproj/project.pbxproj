@@ -26,6 +26,8 @@
 		182C489F1E5ABAE90099A49D /* icon_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C489E1E5ABAE90099A49D /* icon_down@2x.png */; };
 		182C48A11E5ABAEE0099A49D /* logon_button_enter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */; };
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
+		183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183803F21E5EDB7900CB3715 /* YFQuartz2DViewController.m */; };
+		183803F61E5EDBD100CB3715 /* YFQuartz2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183803F51E5EDBD100CB3715 /* YFQuartz2DView.m */; };
 		1841F8061DEEB7AC00EAA812 /* MultipleInheritanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */; };
 		1841F8191DEEB91600EAA812 /* MultipleCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8181DEEB91600EAA812 /* MultipleCategory.m */; };
 		1841F81C1DEEB92900EAA812 /* MultipleCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F81B1DEEB92900EAA812 /* MultipleCombination.m */; };
@@ -701,6 +703,10 @@
 		182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logon_button_enter@2x.png"; sourceTree = "<group>"; };
 		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
 		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
+		183803F11E5EDB7900CB3715 /* YFQuartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFQuartz2DViewController.h; sourceTree = "<group>"; };
+		183803F21E5EDB7900CB3715 /* YFQuartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFQuartz2DViewController.m; sourceTree = "<group>"; };
+		183803F41E5EDBD100CB3715 /* YFQuartz2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFQuartz2DView.h; sourceTree = "<group>"; };
+		183803F51E5EDBD100CB3715 /* YFQuartz2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFQuartz2DView.m; sourceTree = "<group>"; };
 		1841F8041DEEB7AC00EAA812 /* MultipleInheritanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleInheritanceViewController.h; sourceTree = "<group>"; };
 		1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritanceViewController.m; sourceTree = "<group>"; };
 		1841F8171DEEB91600EAA812 /* MultipleCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleCategory.h; sourceTree = "<group>"; };
@@ -1950,6 +1956,17 @@
 			path = AddMethod;
 			sourceTree = "<group>";
 		};
+		183803F01E5EDB6A00CB3715 /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				183803F11E5EDB7900CB3715 /* YFQuartz2DViewController.h */,
+				183803F21E5EDB7900CB3715 /* YFQuartz2DViewController.m */,
+				183803F41E5EDBD100CB3715 /* YFQuartz2DView.h */,
+				183803F51E5EDBD100CB3715 /* YFQuartz2DView.m */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
 		1841F8031DEEB79200EAA812 /* MultipleInheritance */ = {
 			isa = PBXGroup;
 			children = (
@@ -2785,6 +2802,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
+				183803F01E5EDB6A00CB3715 /* Quartz2D */,
 				1841F8031DEEB79200EAA812 /* MultipleInheritance */,
 				180E0EAC1DE7CEB200B5658A /* QRCode */,
 				182B9EA71DE2ED5E00FC1030 /* KVC */,
@@ -5477,6 +5495,7 @@
 				18B487CC1DAE3E2700ACD4BA /* YFViewEffectsViewController.m in Sources */,
 				18B487FC1DAE3E2700ACD4BA /* YFKnowledgeViewController.m in Sources */,
 				18B489001DAE3E2800ACD4BA /* YFImageCategoryViewController.m in Sources */,
+				183803F61E5EDBD100CB3715 /* YFQuartz2DView.m in Sources */,
 				18B489061DAE3E2800ACD4BA /* JKDBViewController.m in Sources */,
 				18B489541DAE3E2800ACD4BA /* MJType.m in Sources */,
 				18B487B41DAE3E2700ACD4BA /* RZPinchInteractionController.m in Sources */,
@@ -5499,6 +5518,7 @@
 				18B489491DAE3E2800ACD4BA /* MASViewConstraint.m in Sources */,
 				18B488A51DAE3E2800ACD4BA /* DraggableView.m in Sources */,
 				18B487E01DAE3E2700ACD4BA /* Case6ViewController.m in Sources */,
+				183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */,
 				18B489331DAE3E2800ACD4BA /* AFURLRequestSerialization.m in Sources */,
 				18B488391DAE3E2800ACD4BA /* YFRipple2ViewController.m in Sources */,
 				18B488BC1DAE3E2800ACD4BA /* UIImageView+YFBlurtImage.m in Sources */,
