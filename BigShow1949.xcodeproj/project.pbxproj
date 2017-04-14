@@ -552,7 +552,7 @@
 		18B489211DAE3E2800ACD4BA /* YFAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B486741DAE3E2700ACD4BA /* YFAlgorithmViewController.m */; };
 		18B489221DAE3E2800ACD4BA /* YFEightQueensVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B486761DAE3E2700ACD4BA /* YFEightQueensVC.m */; };
 		18B489231DAE3E2800ACD4BA /* YFFalseCoinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B486781DAE3E2700ACD4BA /* YFFalseCoinVC.m */; };
-		18B489241DAE3E2800ACD4BA /* YFHanoiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.m */; };
+		18B489241DAE3E2800ACD4BA /* YFHanoiVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.mm */; };
 		18B489251DAE3E2800ACD4BA /* YFMonkeyKingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4867C1DAE3E2700ACD4BA /* YFMonkeyKingVC.m */; };
 		18B489261DAE3E2800ACD4BA /* YFSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4867E1DAE3E2700ACD4BA /* YFSortVC.m */; };
 		18B489271DAE3E2800ACD4BA /* YFAuthorBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B486811DAE3E2700ACD4BA /* YFAuthorBlogViewController.m */; };
@@ -1645,7 +1645,7 @@
 		18B486771DAE3E2700ACD4BA /* YFFalseCoinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFalseCoinVC.h; sourceTree = "<group>"; };
 		18B486781DAE3E2700ACD4BA /* YFFalseCoinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFalseCoinVC.m; sourceTree = "<group>"; };
 		18B486791DAE3E2700ACD4BA /* YFHanoiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHanoiVC.h; sourceTree = "<group>"; };
-		18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHanoiVC.m; sourceTree = "<group>"; };
+		18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YFHanoiVC.mm; sourceTree = "<group>"; };
 		18B4867B1DAE3E2700ACD4BA /* YFMonkeyKingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMonkeyKingVC.h; sourceTree = "<group>"; };
 		18B4867C1DAE3E2700ACD4BA /* YFMonkeyKingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMonkeyKingVC.m; sourceTree = "<group>"; };
 		18B4867D1DAE3E2700ACD4BA /* YFSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSortVC.h; sourceTree = "<group>"; };
@@ -4578,7 +4578,7 @@
 				18B486771DAE3E2700ACD4BA /* YFFalseCoinVC.h */,
 				18B486781DAE3E2700ACD4BA /* YFFalseCoinVC.m */,
 				18B486791DAE3E2700ACD4BA /* YFHanoiVC.h */,
-				18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.m */,
+				18B4867A1DAE3E2700ACD4BA /* YFHanoiVC.mm */,
 				18B4867B1DAE3E2700ACD4BA /* YFMonkeyKingVC.h */,
 				18B4867C1DAE3E2700ACD4BA /* YFMonkeyKingVC.m */,
 				18B4867D1DAE3E2700ACD4BA /* YFSortVC.h */,
@@ -5618,7 +5618,7 @@
 				18B488E01DAE3E2800ACD4BA /* YFNeteaseViewController.m in Sources */,
 				18B489021DAE3E2800ACD4BA /* FMDBBaseUseViewController.m in Sources */,
 				180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */,
-				18B489241DAE3E2800ACD4BA /* YFHanoiVC.m in Sources */,
+				18B489241DAE3E2800ACD4BA /* YFHanoiVC.mm in Sources */,
 				18B487A51DAE3E2700ACD4BA /* ITRAirSideMenu.m in Sources */,
 				18B489581DAE3E2800ACD4BA /* NSObject+MJMember.m in Sources */,
 				18B4891E1DAE3E2800ACD4BA /* MGJRequestManager.m in Sources */,
@@ -5826,7 +5826,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BigShow1949/YFAppStoreDemo.pch";
 				INFOPLIST_FILE = BigShow1949/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = BigShow;
@@ -5857,7 +5857,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BigShow1949/YFAppStoreDemo.pch";
 				INFOPLIST_FILE = BigShow1949/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = BigShow;

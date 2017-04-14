@@ -60,15 +60,11 @@
     BOOL result =  [manger insertDataToSheet :self.sheetTitle withData:dataArray];
 
     if (result == YES) {
-
         [self.delegate insertSuccess];
-
     }
 
     if (result == NO) {
-        
         [self.delegate insertError];
-        
     }
 }
 //关闭
