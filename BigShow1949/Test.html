@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>hello World</title>
+</head>
+
+<script type="text/javascript">
+
+    function JSCallOc1(){
+    test1();
+    }
+   function JSCallOc2(){
+    test2('少停','iOS');
+   }
+  function aaa(){
+      alert("OC调用了无参数的js方法");
+  }
+  function bbb(name,num){
+      alert(name+num);
+  }
+
+</script>
+
+<body bgcolor="#555555">
+  <button type="button"  onclick="JSCallOc1()">JS调用OC方法(无参)</button>
+  <button type="button"  onclick="JSCallOc2()">JS调用OC方法(传参)</button>
+</body>
+</html>

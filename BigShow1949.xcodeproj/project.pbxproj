@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */; };
+		182399681F034F9B005B58A0 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182399671F034F9B005B58A0 /* JSCoreViewController.m */; };
+		1823996A1F0350AE005B58A0 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 182399691F0350AE005B58A0 /* Test.html */; };
+		1823996D1F0350D2005B58A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */; };
 		182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9E9F1DDEE61100FC1030 /* GCDViewController.m */; };
 		182B9EA31DDEE6A900FC1030 /* GCDDispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EA21DDEE6A900FC1030 /* GCDDispatchGroupViewController.m */; };
 		182B9EAA1DE2ED6F00FC1030 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9EA91DE2ED6F00FC1030 /* KVCViewController.m */; };
@@ -675,6 +678,10 @@
 /* Begin PBXFileReference section */
 		180E0EAD1DE7CEE300B5658A /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		182399661F034F9B005B58A0 /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
+		182399671F034F9B005B58A0 /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
+		182399691F0350AE005B58A0 /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
+		1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		182B9E9E1DDEE61100FC1030 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		182B9E9F1DDEE61100FC1030 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		182B9EA11DDEE6A900FC1030 /* GCDDispatchGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDispatchGroupViewController.h; sourceTree = "<group>"; };
@@ -1857,6 +1864,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1823996D1F0350D2005B58A0 /* JavaScriptCore.framework in Frameworks */,
 				18B4892B1DAE3E2800ACD4BA /* AMapSearchKit.framework in Frameworks */,
 				B83EA9661CC0DDCB00807828 /* libsqlite3.0.tbd in Frameworks */,
 				B83EA9651CC0D16100807828 /* libsqlite3.dylib in Frameworks */,
@@ -1898,6 +1906,15 @@
 				18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		182399651F034ED2005B58A0 /* JSCore */ = {
+			isa = PBXGroup;
+			children = (
+				182399661F034F9B005B58A0 /* JSCoreViewController.h */,
+				182399671F034F9B005B58A0 /* JSCoreViewController.m */,
+			);
+			path = JSCore;
 			sourceTree = "<group>";
 		};
 		182B9E9D1DDEE5F700FC1030 /* GCD */ = {
@@ -2802,6 +2819,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
+				182399651F034ED2005B58A0 /* JSCore */,
 				183803F01E5EDB6A00CB3715 /* Quartz2D */,
 				1841F8031DEEB79200EAA812 /* MultipleInheritance */,
 				180E0EAC1DE7CEB200B5658A /* QRCode */,
@@ -4865,9 +4883,10 @@
 			path = MessageForwarding;
 			sourceTree = "<group>";
 		};
-		18C2D52F1BAEDC2C006CD3B2 /* Framework */ = {
+		18C2D52F1BAEDC2C006CD3B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */,
 				B83EA9641CC0D16100807828 /* libsqlite3.dylib */,
 				B83EA9621CC0D06E00807828 /* libsqlite3.0.tbd */,
 				B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */,
@@ -4884,7 +4903,7 @@
 				18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */,
 				18C2D5311BAEDC61006CD3B2 /* UIKit.framework */,
 			);
-			name = Framework;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		18C3E8721E55486F00D275AD /* 18 - Swift专栏 */ = {
@@ -4901,7 +4920,7 @@
 		8B0B9AA61B9572000084590D = {
 			isa = PBXGroup;
 			children = (
-				18C2D52F1BAEDC2C006CD3B2 /* Framework */,
+				18C2D52F1BAEDC2C006CD3B2 /* Frameworks */,
 				8B0B9AB11B9572000084590D /* BigShow1949 */,
 				8B0B9ACB1B9572000084590D /* BigShow1949Tests */,
 				8B0B9AB01B9572000084590D /* Products */,
@@ -4929,6 +4948,7 @@
 		8B0B9AB21B9572000084590D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				182399691F0350AE005B58A0 /* Test.html */,
 				1873D77A1D8021AE008C2D1D /* img1.jpg */,
 				B84C03281CE2E04700E62D75 /* 1.mp4 */,
 				18C760021B9AB24A0038B2EE /* lxh */,
@@ -5057,6 +5077,7 @@
 				18B488841DAE3E2800ACD4BA /* 10.jpg in Resources */,
 				18B4888E1DAE3E2800ACD4BA /* 2.jpg in Resources */,
 				18B488121DAE3E2700ACD4BA /* ContextMenuCell.xib in Resources */,
+				1823996A1F0350AE005B58A0 /* Test.html in Resources */,
 				18B487581DAE3E2700ACD4BA /* awcollectionviewdiallayout_1.jpg in Resources */,
 				182C489D1E5ABAE10099A49D /* icon_up@2x.png in Resources */,
 				18B487AE1DAE3E2700ACD4BA /* YFSlidingViewController.storyboard in Resources */,
@@ -5623,6 +5644,7 @@
 				18B489581DAE3E2800ACD4BA /* NSObject+MJMember.m in Sources */,
 				18B4891E1DAE3E2800ACD4BA /* MGJRequestManager.m in Sources */,
 				18B489601DAE3E2800ACD4BA /* UIView+Extension.m in Sources */,
+				182399681F034F9B005B58A0 /* JSCoreViewController.m in Sources */,
 				18B489451DAE3E2800ACD4BA /* MASConstraint.m in Sources */,
 				18B488271DAE3E2800ACD4BA /* XRPopMenuView.m in Sources */,
 				18B487371DAE3E2700ACD4BA /* YFBubbleMenuButtonViewController.m in Sources */,

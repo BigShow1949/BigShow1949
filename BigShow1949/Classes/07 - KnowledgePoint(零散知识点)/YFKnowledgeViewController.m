@@ -25,7 +25,8 @@
                     @"KVC",
                     @"二维码",
                     @"多继承",
-                    @"Quartz2D"];
+                    @"Quartz2D",
+                    @"JSCore"];
     
     self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
                         @"YFLifeCycleViewController",
@@ -38,7 +39,8 @@
                         @"KVCViewController",
                         @"QRCodeViewController",
                         @"MultipleInheritanceViewController",
-                        @"YFQuartz2DViewController"];
+                        @"YFQuartz2DViewController",
+                        @"JSCoreViewController"];
 }
 
 
