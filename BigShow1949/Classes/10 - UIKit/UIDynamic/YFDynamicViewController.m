@@ -16,23 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupDataArr:@[@[@"碰撞检测",@"YFCollisionBehaviorViewController_UIStoryboard"],
+                         @[@"捕捉行为",@"YFSnapBehaviorViewController"],
+                         @[@"推动行为",@"YFPushBehaviorViewController"],
+                         @[@"附着行为",@"YFAttachmentBehaviorViewController"],
+                         @[@"动力元素行为",@"YFDynamicItemViewController"],
+                         @[@"弹簧效果(附着行为)",@"YFFlexViewController"],
+                         @[@"弹簧效果(CADisplayLink)",@"UINTViewController"],]];
     
-    self.titles = @[@"碰撞检测",
-                    @"捕捉行为",
-                    @"推动行为",
-                    @"附着行为",
-                    @"动力元素行为",
-                    @"弹簧效果(附着行为)",
-                    @"弹簧效果(CADisplayLink)"];
-    
-    self.classNames = @[@"YFCollisionBehaviorViewController_UIStoryboard",
-                        @"YFSnapBehaviorViewController",
-                        @"YFPushBehaviorViewController",
-                        @"YFAttachmentBehaviorViewController",
-                        @"YFDynamicItemViewController",
-                        @"YFFlexViewController",
-                        @"UINTViewController"];
-
 }
 
 

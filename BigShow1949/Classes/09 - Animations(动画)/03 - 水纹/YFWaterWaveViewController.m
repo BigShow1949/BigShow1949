@@ -17,17 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"放大水波纹",
-                    @"放大水波纹2",
-                    @"一条水纹",
-                    @"两条水纹",
-                    @"水波浪"];
-    
-    self.classNames = @[@"YFRippleViewController",
-                        @"YFRipple2ViewController",
-                        @"YFOneWaterWaveViewController",
-                        @"YFTwoWaterWaveViewController",
-                        @"YFWaterRippleViewController"];
+    [self setupDataArr:@[@[@"放大水波纹",@"YFRippleViewController"],
+                         @[@"放大水波纹2",@"YFRipple2ViewController"],
+                         @[@"一条水纹",@"YFOneWaterWaveViewController"],
+                         @[@"两条水纹",@"YFTwoWaterWaveViewController"],
+                         @[@"水波浪",@"YFWaterRippleViewController"],]];
 
 }
 

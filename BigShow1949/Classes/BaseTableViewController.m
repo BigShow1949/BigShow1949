@@ -14,7 +14,8 @@
 #import "BigShow-Swift.h"
 
 @interface BaseTableViewController ()
-
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *classNames;
 @end
 
 @implementation BaseTableViewController
@@ -28,6 +29,19 @@
 //    UITableViewCellSeparatorStyleNone,
 //    UITableViewCellSeparatorStyleSingleLine,
 //    UITableViewCellSeparatorStyleSingleLineEtched
+}
+
+- (void)setupDataArr:(NSArray *)dataArr {
+
+    NSMutableArray *tempTitleArr = [NSMutableArray array];
+    NSMutableArray *tempNamesArr = [NSMutableArray array];
+
+    for (NSArray *arr in dataArr) {
+        [tempTitleArr addObject:arr[0]];
+        [tempNamesArr addObject:arr[1]];
+    }
+    self.titles = tempTitleArr;
+    self.classNames = tempNamesArr;
 }
 
 

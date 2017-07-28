@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"顶部滑动标签1"];
-    
-    self.classNames = @[@"YFNeteaseHomeViewController"];
+    [self setupDataArr:@[@[@"顶部滑动标签1",@"YFNeteaseHomeViewController"]]];
 }
 
 

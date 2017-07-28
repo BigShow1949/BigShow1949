@@ -21,17 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"基础动画",
-                    @"关键帧动画",
-                    @"转场动画",
-                    @"组动画",
-                    @"Transform"];
-    
-    self.classNames = @[@"CABasicAnimationViewController",
-                        @"CAKeyframeAnimationViewController",
-                        @"CATransitionViewController",
-                        @"CAAnimationGroupViewController",
-                        @"CATransformViewController_UIStoryboard"];
+    [self setupDataArr:@[@[@"基础动画",@"CABasicAnimationViewController"],
+                         @[@"关键帧动画",@"CAKeyframeAnimationViewController"],
+                         @[@"转场动画",@"CATransitionViewController"],
+                         @[@"组动画",@"CAAnimationGroupViewController"],
+                         @[@"Transform",@"CATransformViewController_UIStoryboard"],]];
 
 }
 

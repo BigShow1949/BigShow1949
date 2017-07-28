@@ -27,48 +27,67 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"按钮",
-                    @"标签",
-                    @"视图布局",
-                    @"视图切换",
-                    @"视图效果",
-                    @"文字视图",
-                    @"零散知识点",
-                    @"小项目展示",
-                    @"动画集合",
-                    @"UIKit",
-                    @"仿主流app功能",
-                    @"设计模式",
-                    @"常用工具类",
-                    @"数据持久化",
-                    @"网络请求",
-                    @"博客/论坛",
-                    @"算法",
-                    @"swift专栏"];
+//    self.titles = @[@"按钮",
+//                    @"标签",
+//                    @"视图布局",
+//                    @"视图切换",
+//                    @"视图效果",
+//                    @"文字视图",
+//                    @"零散知识点",
+//                    @"小项目展示",
+//                    @"动画集合",
+//                    @"UIKit",
+//                    @"仿主流app功能",
+//                    @"设计模式",
+//                    @"常用工具类",
+//                    @"数据持久化",
+//                    @"网络请求",
+//                    @"博客/论坛",
+//                    @"算法",
+//                    @"swift专栏"];
+//    
+//    // 框架模式有哪些？
+//    //  MVC、MTV、MVP、CBD、ORM等等；
+//    
+//    
+//    self.classNames = @[@"YFButtonViewController",
+//                        @"YFLabelViewController",
+//                        @"YFViewLayoutViewController",
+//                        @"YFViewTransitionViewController",
+//                        @"YFViewEffectsViewController",
+//                        @"YFTextViewController",
+//                        @"YFKnowledgeViewController",
+//                        @"YFLittleProjectViewController",
+//                        @"YFAnimationsViewController",
+//                        @"YFUIKitViewController",
+//                        @"YFImitateAppViewController",
+//                        @"YFDesignPatternViewController",
+//                        @"YFToolsViewController",
+//                        @"YFDataPersistenceViewController",
+//                        @"YFNetworkRequestViewController",
+//                        @"YFBlogViewController",
+//                        @"YFAlgorithmViewController",
+//                        @"SwiftViewController"];
     
-    // 框架模式有哪些？
-    //  MVC、MTV、MVP、CBD、ORM等等；
     
-    
-    self.classNames = @[@"YFButtonViewController",
-                        @"YFLabelViewController",
-                        @"YFViewLayoutViewController",
-                        @"YFViewTransitionViewController",
-                        @"YFViewEffectsViewController",
-                        @"YFTextViewController",
-                        @"YFKnowledgeViewController",
-                        @"YFLittleProjectViewController",
-                        @"YFAnimationsViewController",
-                        @"YFUIKitViewController",
-                        @"YFImitateAppViewController",
-                        @"YFDesignPatternViewController",
-                        @"YFToolsViewController",
-                        @"YFDataPersistenceViewController",
-                        @"YFNetworkRequestViewController",
-                        @"YFBlogViewController",
-                        @"YFAlgorithmViewController",
-                        @"SwiftViewController"];
-    
+    [self setupDataArr:@[@[@"按钮",@"YFButtonViewController"],
+                         @[@"标签",@"YFLabelViewController"],
+                         @[@"视图布局",@"YFViewLayoutViewController"],
+                         @[@"视图切换",@"YFViewTransitionViewController"],
+                         @[@"视图效果",@"YFViewEffectsViewController"],
+                         @[@"文字视图",@"YFTextViewController"],
+                         @[@"零散知识点",@"YFKnowledgeViewController"],
+                         @[@"小项目展示",@"YFLittleProjectViewController"],
+                         @[@"动画集合",@"YFAnimationsViewController"],
+                         @[@"UIKit",@"YFUIKitViewController"],
+                         @[@"仿主流app功能",@"YFImitateAppViewController"],
+                         @[@"设计模式",@"YFDesignPatternViewController"],
+                         @[@"常用工具类",@"YFToolsViewController"],
+                         @[@"数据持久化",@"YFDataPersistenceViewController"],
+                         @[@"网络请求",@"YFNetworkRequestViewController"],
+                         @[@"博客/论坛",@"YFBlogViewController"],
+                         @[@"算法",@"YFAlgorithmViewController"],
+                         @[@"swift专栏",@"SwiftViewController"],]];
     [self setupNav];
 
 }

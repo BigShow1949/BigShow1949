@@ -10,7 +10,8 @@
 
 @interface BaseTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *titles;
-@property (nonatomic, strong) NSArray *classNames;
+
+
+- (void)setupDataArr:(NSArray *)dataArr;
 
 @end

@@ -16,15 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"JKDBModel(错误)",
-                    @"FMDB基本使用",
-                    @"SQLite基本使用",
-                    @"LCCSqliteManager"];
-    
-    self.classNames = @[@"JKDBViewController_UIStoryboard",
-                        @"FMDBBaseUseViewController_UIStoryboard",
-                        @"SQLiteBaseUseViewController_UIStoryboard",
-                        @"SheetListController"];
+    [self setupDataArr:@[@[@"JKDBModel(错误)",@"JKDBViewController_UIStoryboard"],
+                         @[@"FMDB基本使用",@"FMDBBaseUseViewController_UIStoryboard"],
+                         @[@"SQLite基本使用",@"SQLiteBaseUseViewController_UIStoryboard"],
+                         @[@"LCCSqliteManager",@"SheetListController"],]];
 }
 
 

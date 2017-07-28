@@ -20,23 +20,14 @@
     [super viewDidLoad];
 
     
-    self.titles = @[@"百度视图切换",
-                    @"领英动画",
-                    @"LTSlidingTransitions",
-                    @"折卡效果",
-                    @"卡牌拖动翻页",
-                    @"滚动悬浮视图",
-                    @"侧滑形变效果"];
+    [self setupDataArr:@[@[@"百度视图切换",@"YFBaiduViewTransitionViewController"],
+                         @[@"领英动画",@"RZSimpleViewController_UIStoryboard"],
+                         @[@"LTSlidingTransitions",@"YFSlidingViewController_UIStoryboard"],
+                         @[@"折卡效果",@"YFFlipPageViewController"],
+                         @[@"卡牌拖动翻页",@"YFDraggableCardViewController"],
+                         @[@"滚动悬浮视图",@"YFHorizontalPagingViewController"],
+                         @[@"侧滑形变效果",@"YFITRAirSideViewController"],]];
     
-    
-    self.classNames = @[@"YFBaiduViewTransitionViewController",
-                        @"RZSimpleViewController_UIStoryboard",
-                        @"YFSlidingViewController_UIStoryboard",
-                        @"YFFlipPageViewController",
-                        @"YFDraggableCardViewController",
-                        @"YFHorizontalPagingViewController",
-                        @"YFITRAirSideViewController"];
-
 }
 
 

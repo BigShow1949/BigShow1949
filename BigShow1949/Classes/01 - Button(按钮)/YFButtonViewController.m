@@ -17,16 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"多次点击按钮",
-                    @"微信注册按钮",
-                    @"ape展开按钮",  // 猿题库动画
-                    @"各种圆角按钮"];
-    
-    
-    self.classNames = @[@"YFMultipleClicksViewController",
-                        @"YFAnimationCircleButtonVC",
-                        @"YFBubbleMenuButtonViewController",
-                        @"YFAllRoundButtonVC_UIStoryboard"];
+    [self setupDataArr:@[@[@"多次点击按钮",@"YFMultipleClicksViewController"],
+                         @[@"微信注册按钮",@"YFAnimationCircleButtonVC"],
+                         @[@"ape展开按钮",@"YFBubbleMenuButtonViewController"],
+                         @[@"各种圆角按钮",@"YFAllRoundButtonVC_UIStoryboard"],]];
 
 }
 

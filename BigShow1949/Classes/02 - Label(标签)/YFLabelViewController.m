@@ -17,25 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"自动布局标签",
-                    @"球形滚动标签",
-                    @"球形滚动标签2",
-                    @"视觉效果标签云",
-                    @"闪烁文字渐现",
-                    @"闪烁文字渐现2",
-                    @"快播动态标签",
-                    @"跑马灯"];
+    [self setupDataArr:@[@[@"自动布局标签",@"YFAutolayoutTagViewController_UIStoryboard"],
+                         @[@"球形滚动标签",@"YFSphereTagCloud"],
+                         @[@"球形滚动标签2",@"YFSphereViewController"],
+                         @[@"视觉效果标签云",@"YFTagsCloudViewController_UIStoryboard"],
+                         @[@"闪烁文字渐现",@"YFShineLabelViewController"],
+                         @[@"闪烁文字渐现2",@"YFLazyInViewController_UIStoryboard"],
+                         @[@"快播动态标签",@"YFDynamicLabelViewController"],
+                         @[@"跑马灯",@"YFMarqueeViewController"],]];
     
-    
-    self.classNames = @[@"YFAutolayoutTagViewController_UIStoryboard",
-                        @"YFSphereTagCloud",
-                        @"YFSphereViewController",
-                        @"YFTagsCloudViewController_UIStoryboard",
-                        @"YFShineLabelViewController",
-                        @"YFLazyInViewController_UIStoryboard",
-                        @"YFDynamicLabelViewController",
-                        @"YFMarqueeViewController"];
-
 }
 
 

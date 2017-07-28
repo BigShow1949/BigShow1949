@@ -15,15 +15,10 @@
 
     [super viewDidLoad];
     
-    self.titles = @[@"CollectionView基本使用",
-                    @"水平滚动布局",
-                    @"瀑布流布局",
-                    @"RACollectionView"];
-    
-    self.classNames = @[@"YFNormalCollectionViewController",
-                        @"YFHorizontalScrollViewController",
-                        @"YFWaterflowViewController",
-                        @"RAViewController_UIStoryboard"];
+    [self setupDataArr:@[@[@"CollectionView基本使用",@"YFNormalCollectionViewController"],
+                         @[@"水平滚动布局",@"YFHorizontalScrollViewController"],
+                         @[@"瀑布流布局",@"YFWaterflowViewController"],
+                         @[@"RACollectionView",@"RAViewController_UIStoryboard"],]];
 }
 
 @end

@@ -17,19 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"字典转模型",
-                    @"分类属性",
-                    @"动态添加方法",
-                    @"图片加载(方法交换)",
-                    @"多次点击按钮(方法交换)",
-                    @"消息转发"];
-    
-    self.classNames = @[@"YFDictToModelViewController",
-                        @"YFCategoryAttributeViewController",
-                        @"YFAddMethodViewController",
-                        @"YFExchangeMethodVC",
-                        @"YFMultipleClicksViewController",
-                        @"MsgForwardingViewController"];
+    [self setupDataArr:@[@[@"字典转模型",@"YFDictToModelViewController"],
+                         @[@"分类属性",@"YFCategoryAttributeViewController"],
+                         @[@"动态添加方法",@"YFAddMethodViewController"],
+                         @[@"图片加载(方法交换)",@"YFExchangeMethodVC"],
+                         @[@"多次点击按钮(方法交换)",@"YFMultipleClicksViewController"],
+                         @[@"消息转发",@"MsgForwardingViewController"],]];
     
 
 

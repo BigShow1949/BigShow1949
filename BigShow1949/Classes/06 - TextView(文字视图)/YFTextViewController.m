@@ -17,10 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"打印机特效"];
-    
-    
-    self.classNames = @[@"YFPrinterEffectViewController"];
+    [self setupDataArr:@[@[@"打印机特效",@"YFPrinterEffectViewController"]]];
 }
 
 

@@ -18,14 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"旋转动画",
-                    @"表情键盘",
-                    @"游戏2048",
-                    @"拼图"];
-    self.classNames = @[@"YFRotateButtonViewController",
-                        @"YFLittleProjectVC02",
-                        @"YFLittleProjectVC03",
-                        @"YFJigsawViewController"];
+    [self setupDataArr:@[@[@"旋转动画",@"YFRotateButtonViewController"],
+                         @[@"表情键盘",@"YFLittleProjectVC02"],
+                         @[@"游戏2048",@"YFLittleProjectVC03"],
+                         @[@"拼图",@"YFJigsawViewController"],]];
     
 }
 

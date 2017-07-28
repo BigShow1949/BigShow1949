@@ -16,9 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"仿支付宝余额跳动"];
-    
-    self.classNames = @[@"YFAliNumberViewController"];
+      
+    [self setupDataArr:@[@"仿支付宝余额跳动",@"YFAliNumberViewController"]];
     
     
 }

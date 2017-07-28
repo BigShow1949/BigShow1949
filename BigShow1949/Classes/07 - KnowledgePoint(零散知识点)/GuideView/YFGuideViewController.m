@@ -14,11 +14,7 @@
 
     [super viewDidLoad];
     
-    
-    self.titles = @[@"渐变切换",
-                    @"Keep引导页动画"];
-    
-    self.classNames = @[@"YFGradualChangeViewController",
-                        @"YFKeepViewController_UIStoryboard"];
+    [self setupDataArr:@[@[@"渐变切换",@"YFGradualChangeViewController"],
+                         @[@"Keep引导页动画",@"YFKeepViewController_UIStoryboard"],]];
 }
 @end

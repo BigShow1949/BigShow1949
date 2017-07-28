@@ -19,17 +19,11 @@
     
     [super viewDidLoad];
     
-    self.titles = @[@"Tabbar",
-                    @"UIScrollView",
-                    @"SearchController",
-                    @"UIDynamic",
-                    @"UICollectionView"];
-    
-    self.classNames = @[@"YFKnowledgeVC02",
-                        @"YFScrollViewController",
-                        @"YFSearchController",
-                        @"YFDynamicViewController",
-                        @"YFCollectionViewController"];
+    [self setupDataArr:@[@[@"Tabbar",@"YFKnowledgeVC02"],
+                         @[@"UIScrollView",@"YFScrollViewController"],
+                         @[@"SearchController",@"YFSearchController"],
+                         @[@"UIDynamic",@"YFDynamicViewController"],
+                         @[@"UICollectionView",@"YFCollectionViewController"],]];
 }
 
 @end

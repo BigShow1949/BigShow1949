@@ -17,15 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"网易",
-                    @"微信",
-                    @"猿题库",
-                    @"阿里巴巴"];
-    
-    self.classNames = @[@"YFNeteaseViewController",
-                        @"YFWeChatViewController",
-                        @"YFApeExamViewController",
-                        @"YFAliViewController"];
+    [self setupDataArr:@[@[@"网易",@"YFNeteaseViewController"],
+                         @[@"微信",@"YFWeChatViewController"],
+                         @[@"猿题库",@"YFApeExamViewController"],
+                         @[@"阿里巴巴",@"YFAliViewController"],]];
 }
 
 @end

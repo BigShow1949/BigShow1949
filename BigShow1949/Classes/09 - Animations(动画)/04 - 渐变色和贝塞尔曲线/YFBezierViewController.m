@@ -17,17 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"动态圆圈",
-                    @"渐变色",
-                    @"仿支付宝余额跳动",
-                    @"加载框",
-                    @"手势控制贝塞尔曲线"];
-    
-    self.classNames = @[@"YFCircleViewController",
-                        @"YFGradientViewController",
-                        @"YFAliNumberViewController",
-                        @"YFCircleLoaderViewController",
-                        @"YFBounceViewController"];
+    [self setupDataArr:@[@[@"动态圆圈",@"YFCircleViewController"],
+                         @[@"渐变色",@"YFGradientViewController"],
+                         @[@"仿支付宝余额跳动",@"YFAliNumberViewController"],
+                         @[@"加载框",@"YFCircleLoaderViewController"],
+                         @[@"手势控制贝塞尔曲线",@"YFBounceViewController"],]];
 }
 
 

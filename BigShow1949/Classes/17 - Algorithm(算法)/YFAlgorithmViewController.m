@@ -13,17 +13,12 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
-    self.titles = @[@"八皇后",
-                    @"汉诺塔",
-                    @"猴子选大王",
-                    @"假金币",
-                    @"各种排序对比"];
     
-    
-    self.classNames = @[@"YFEightQueensVC",
-                        @"YFHanoiVC",
-                        @"YFMonkeyKingVC",
-                        @"YFFalseCoinVC",
-                        @"YFSortVC"];
+    [self setupDataArr:@[@[@"八皇后",@"YFEightQueensVC"],
+                         @[@"汉诺塔",@"YFHanoiVC"],
+                         @[@"猴子选大王",@"YFMonkeyKingVC"],
+                         @[@"假金币",@"YFFalseCoinVC"],
+                         @[@"各种排序对比",@"YFSortVC"],]];
+
 }
 @end

@@ -17,11 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"摇一摇",
-                    @"微信注册按钮"];
-    
-    self.classNames = @[@"YFWeChatShakeViewController",
-                        @"YFAnimationCircleButtonVC"];
+    [self setupDataArr:@[@[@"摇一摇",@"YFWeChatShakeViewController"],
+                         @[@"微信注册按钮",@"YFAnimationCircleButtonVC"],]];
 
     
 }

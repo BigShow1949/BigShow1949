@@ -17,21 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"水平滚动布局",
-                    @"瀑布流布局",
-                    @"浏览卡",
-                    @"半圆布局",
-                    @"滑动标题",
-                    @"网易滑动标题",
-                    @"抽卡效果"];
-    
-    self.classNames = @[@"YFHorizontalScrollViewController",
-                        @"YFWaterflowViewController",
-                        @"RGCardLayoutViewController_UIStoryboard",
-                        @"YFHalfCircleLayoutViewController_UIStoryboard",
-                        @"YFSlideTitlesViewController",
-                        @"YFNeteaseHomeViewController",
-                        @"YFStackedPageVC_UIStoryboard"];
+    [self setupDataArr:@[@[@"水平滚动布局",@"YFHorizontalScrollViewController"],
+                         @[@"瀑布流布局",@"YFWaterflowViewController"],
+                         @[@"浏览卡",@"RGCardLayoutViewController_UIStoryboard"],
+                         @[@"半圆布局",@"YFHalfCircleLayoutViewController_UIStoryboard"],
+                         @[@"滑动标题",@"YFSlideTitlesViewController"],
+                         @[@"网易滑动标题",@"YFNeteaseHomeViewController"],
+                         @[@"抽卡效果",@"YFStackedPageVC_UIStoryboard"],]];
 }
 
 

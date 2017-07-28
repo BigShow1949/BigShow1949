@@ -17,17 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"分类",
-                    @"组合模式",
-                    @"代理",
-                    @"消息转发",
-                    @"协议"];
-    
-    self.classNames = @[@"MultipleCategory",
-                        @"MultipleCombination",
-                        @"MultipleDelegate",
-                        @"MultipleMsgForawrd",
-                        @"MultipleProtocol"];
+    [self setupDataArr:@[@[@"分类",@"MultipleCategory"],
+                         @[@"组合模式",@"MultipleCombination"],
+                         @[@"代理",@"MultipleDelegate"],
+                         @[@"消息转发",@"MultipleMsgForawrd"],
+                         @[@"协议",@"MultipleProtocol"],]];
 }
 
 

@@ -15,8 +15,10 @@
 
     [super viewDidLoad];
     
-    self.titles = @[@"蘑菇街网络请求"];
-
-    self.classNames = @[@"DemoListViewController"];
+//    self.titles = @[@"蘑菇街网络请求"];
+//
+//    self.classNames = @[@"DemoListViewController"];
+    
+    [self setupDataArr:@[@[@"蘑菇街网络请求",@"DemoListViewController"]]];
 }
 @end

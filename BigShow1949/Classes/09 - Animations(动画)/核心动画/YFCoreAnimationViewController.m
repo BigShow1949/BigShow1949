@@ -17,13 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"核心动画基础篇",
-                    @"3D翻转push跳转",
-                    @"登陆转场动画"];
-    
-    self.classNames = @[@"CoreAnimationViewController",
-                        @"YFPushTransitionViewController",
-                        @"YFLoginTransitionViewController"];
+    [self setupDataArr:@[@[@"核心动画基础篇",@"CoreAnimationViewController"],
+                         @[@"3D翻转push跳转",@"YFPushTransitionViewController"],
+                         @[@"登陆转场动画",@"YFLoginTransitionViewController"],]];
 }
 
 

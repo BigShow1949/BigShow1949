@@ -10,6 +10,7 @@
 
 @interface YFBlogViewController () {
     NSIndexPath             *_indexPath;
+    NSArray *_dataArr;
 }
 @end
 
@@ -18,27 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"唐巧",
-                    @"王巍",
-                    @"文顶顶",
-                    @"池建强",
-                    @"CocoaChina",
-                    @"Code4App",
-                    @"Git@OSC",
-                    @"开源中国社区",
-                    @"GitHub",
-                    @"苹果Library"];
+    _dataArr = @[@[@"唐巧",@"http://blog.devtang.com/blog/archives/"],
+                 @[@"王巍",@"http://www.onevcat.com"],
+                 @[@"文顶顶",@"http://www.cnblogs.com/wendingding/p/"],
+                 @[@"池建强",@"http://macshuo.com"],
+                 @[@"CocoaChina",@"http://www.cocoachina.com"],
+                 @[@"Code4App",@"http://www.code4app.com"],
+                 @[@"Git@OSC",@"http://git.oschina.net"],
+                 @[@"开源中国社区",@"http://www.oschina.net/code/list"],
+                 @[@"GitHub",@"https://github.com"],
+                 @[@"苹果Library",@"https://developer.apple.com/library/mac/navigation/"],];
     
-    self.classNames = @[@"http://blog.devtang.com/blog/archives/",
-                        @"http://www.onevcat.com",
-                        @"http://www.cnblogs.com/wendingding/p/",
-                        @"http://macshuo.com",
-                        @"http://www.cocoachina.com",
-                        @"http://www.code4app.com",
-                        @"http://git.oschina.net",
-                        @"http://www.oschina.net/code/list",
-                        @"https://github.com",
-                        @"https://developer.apple.com/library/mac/navigation/"];
+    
+    [self setupDataArr:_dataArr];
     
     //添加长按手势
     UILongPressGestureRecognizer *longPressGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressToDo:)];
@@ -55,7 +48,8 @@
         _indexPath = [self.tableView indexPathForRowAtPoint:point];
         
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-        pasteboard.string = self.classNames[_indexPath.row];
+        NSArray *itemArr = _dataArr[_indexPath.row];
+        pasteboard.string = itemArr[1];
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"链接复制完成"
                                                         message:pasteboard.string

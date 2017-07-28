@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"展开的tableView"];
-    
-    self.classNames = @[@"_TtC7BigShow26SpreadViewController_swift"];
+    [self setupDataArr:@[@[@"展开的tableView",@"_TtC7BigShow26SpreadViewController_swift"]]];
 }
 
 - (void)didReceiveMemoryWarning {

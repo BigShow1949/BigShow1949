@@ -13,9 +13,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.titles = @[@"下雪花"];
-    self.classNames = @[@"YFSnowViewController"];
+        
+    [self setupDataArr:@[@[@"下雪花",@"YFSnowViewController"]]];
     
 }
 

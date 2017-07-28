@@ -17,13 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"颜色转换",
-                    @"图片",
-                    @"无数据界面提示"];
-    
-    self.classNames = @[@"YFColorViewController_UIStoryboard",
-                        @"YFImageCategoryViewController",
-                        @"YFEmptyDataSetViewController_UIStoryboard"];
+    [self setupDataArr:@[@[@"颜色转换",@"YFColorViewController_UIStoryboard"],
+                         @[@"图片",@"YFImageCategoryViewController"],
+                         @[@"无数据界面提示",@"YFEmptyDataSetViewController_UIStoryboard"],]];
 
 }
 

@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"同步若干异步"];
-    
-    self.classNames = @[@"GCDDispatchGroupViewController"];
+    [self setupDataArr:@[@[@"同步若干异步",@"GCDDispatchGroupViewController"],]];
     
 }
 

@@ -14,33 +14,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"Masonry基本使用",
-                    @"生命周期",
-                    @"响应者链条",
-                    @"引导页",
-                    @"运行时",
-                    @"通知中心",
-                    @"统计代码行数",
-                    @"GCD",
-                    @"KVC",
-                    @"二维码",
-                    @"多继承",
-                    @"Quartz2D",
-                    @"JSCore"];
     
-    self.classNames = @[@"YFMasonryDemoViewController_UIStoryboard",
-                        @"YFLifeCycleViewController",
-                        @"YFResponderChainViewController",
-                        @"YFGuideViewController",
-                        @"YFRunTimeViewController",
-                        @"YFNotificationCenterVC",
-                        @"YFStatisticalCodeViewController",
-                        @"GCDViewController",
-                        @"KVCViewController",
-                        @"QRCodeViewController",
-                        @"MultipleInheritanceViewController",
-                        @"YFQuartz2DViewController",
-                        @"JSCoreViewController"];
+    [self setupDataArr:@[@[@"Masonry基本使用",@"YFMasonryDemoViewController_UIStoryboard"],
+                         @[@"生命周期",@"YFLifeCycleViewController"],
+                         @[@"响应者链条",@"YFResponderChainViewController"],
+                         @[@"引导页",@"YFGuideViewController"],
+                         @[@"运行时",@"YFRunTimeViewController"],
+                         @[@"通知中心",@"YFNotificationCenterVC"],
+                         @[@"统计代码行数",@"YFStatisticalCodeViewController"],
+                         @[@"GCD",@"GCDViewController"],
+                         @[@"KVC",@"KVCViewController"],
+                         @[@"二维码",@"QRCodeViewController"],
+                         @[@"多继承",@"MultipleInheritanceViewController"],
+                         @[@"Quartz2D",@"YFQuartz2DViewController"],
+                         @[@"JSCore",@"JSCoreViewController"]
+                         ]];
+    
 }
 
 

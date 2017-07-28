@@ -17,13 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"放大头部视图",
-                    @"UITableView全选删除",
-                    @"UITableViewCell多级视图"];
-    
-    self.classNames = @[@"YFBlurtViewController",
-                        @"YFTableViewDelAll",
-                        @"RootViewController_xib"];
+    [self setupDataArr:@[@[@"放大头部视图",@"YFBlurtViewController"],
+                         @[@"UITableView全选删除",@"YFTableViewDelAll"],
+                         @[@"UITableViewCell多级视图",@"RootViewController_xib"],]];
 }
 
 

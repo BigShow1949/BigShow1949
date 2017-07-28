@@ -16,10 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"评分条"];
     
-    
-    self.classNames = @[@"YFRatingBarViewController"];
+    [self setupDataArr:@[@[@"评分条",@"YFRatingBarViewController"]]];
 }
 
 

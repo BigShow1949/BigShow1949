@@ -16,9 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"二维码生成"];
-    
-    self.classNames = @[@"QRCodeGenerateViewController"];
+
+    [self setupDataArr:@[@[@"二维码生成",@"QRCodeGenerateViewController"]]];
                         
 }
 

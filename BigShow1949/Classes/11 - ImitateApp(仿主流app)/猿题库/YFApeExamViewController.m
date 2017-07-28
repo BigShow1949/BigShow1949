@@ -16,15 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"答题界面",
-                    @"多级cell展开",
-                    @"ape展开按钮",
-                    @"系统架构"];
-    
-    self.classNames = @[@"YFAnswerViewController",
-                        @"YFTableNodeViewController",
-                        @"YFBubbleMenuButtonViewController",
-                        @"JLHomePracticeViewController"];
+    [self setupDataArr:@[@[@"答题界面",@"YFAnswerViewController"],
+                         @[@"多级cell展开",@"YFTableNodeViewController"],
+                         @[@"ape展开按钮",@"YFBubbleMenuButtonViewController"],
+                         @[@"系统架构",@"JLHomePracticeViewController"],]];
 
 
 }
