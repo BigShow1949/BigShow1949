@@ -1,0 +1,15 @@
+PODS:
+  - WebViewJavascriptBridge (5.2.0)
+  - XLPhotoBrowser (1.0.2)
+
+DEPENDENCIES:
+  - WebViewJavascriptBridge (~> 5.0)
+  - XLPhotoBrowser (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
+  XLPhotoBrowser: ec30940437ac76ca27a88ecc4fac6f52b327bcc7
+
+PODFILE CHECKSUM: 61652a6f28c7530b99c9406922b58eca1f80e4c8
+
+COCOAPODS: 1.2.0

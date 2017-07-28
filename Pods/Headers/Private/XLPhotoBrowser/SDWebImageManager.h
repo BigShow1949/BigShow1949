@@ -1,0 +1,1 @@
+../../../XLPhotoBrowser/Pods/SDWebImage/SDWebImage/SDWebImageManager.h

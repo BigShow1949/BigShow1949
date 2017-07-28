@@ -1,0 +1,1 @@
+../../../XLPhotoBrowser/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h

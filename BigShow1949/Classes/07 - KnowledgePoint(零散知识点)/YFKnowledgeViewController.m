@@ -27,7 +27,7 @@
                          @[@"二维码",@"QRCodeViewController"],
                          @[@"多继承",@"MultipleInheritanceViewController"],
                          @[@"Quartz2D",@"YFQuartz2DViewController"],
-                         @[@"JSCore",@"JSCoreViewController"]
+                         @[@"JS调用",@"JSViewController"]
                          ]];
     
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+            <title>简书文章</title>
+    </head>
+    <body onload="onLoaded()">
+        <div class="title">
+            iOS优化录1：解决iOS中像素不对齐问题（节选）
+        </div>
+        <div class="subtitle">
+            2017.05.08 17:23 字数 1640 阅读 64评论 2喜欢 5
+        </div>
+        <div class="text">
+            像素对齐并不是一个复杂的问题，但是开发中稍不注意的话，是会造成像素不对齐的情况（恰恰容易被忽视掉），本文使用一个案例来分析如何解决像素不对齐问题。如下图所示,文本部分出现洋红色（frame像素不对齐）和 图片部分是黄色(图片的缩放导致的不对齐)。
+        </div>
+        <div class="image">
+            <img img-index="0" img-src="http://upload-images.jianshu.io/upload_images/201701-6488810d0b101328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" onclick="onImageClicked(0)"/>
+        </div>
+        <div class="text">
+            主要的解决像素不对齐的办法有：
+        </div>
+        <div class="text">
+            1、frame设置时候，使用整数; 需要计算frame时候，计算的结果使用ceil处理一下，避免小数点后有非0数存在。UITableViewCell的高度的高度是整数；
+        </div>
+        <div class="text">
+            2、项目中，要求UI设计师提供@2x和@3x的切图;
+        </div>
+        <div class="text">
+            其他略。经过若干优化后，效果如下图：
+        </div>
+        <div class="image">
+            <img img-index="1" img-src="http://upload-images.jianshu.io/upload_images/201701-9064a88debd6a43a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" onclick="onImageClicked(1)" src=""/>
+        </div>
+        <div id="moredetail">
+            <span>详见</span>
+            <a class="detailpage" href="http://www.jianshu.com/p/432fea0232b8">iOS优化录1：解决iOS中像素不对齐问题</a>
+        </div>
+
+
+        <script src="./content1.js"></script>
+        <link rel="stylesheet" href="./content1.css">
+    </body>
+    
+</html>
+
+

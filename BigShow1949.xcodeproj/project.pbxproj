@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */; };
-		182399681F034F9B005B58A0 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182399671F034F9B005B58A0 /* JSCoreViewController.m */; };
 		1823996A1F0350AE005B58A0 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 182399691F0350AE005B58A0 /* Test.html */; };
 		1823996D1F0350D2005B58A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */; };
 		182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9E9F1DDEE61100FC1030 /* GCDViewController.m */; };
@@ -29,6 +28,12 @@
 		182C489F1E5ABAE90099A49D /* icon_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C489E1E5ABAE90099A49D /* icon_down@2x.png */; };
 		182C48A11E5ABAEE0099A49D /* logon_button_enter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */; };
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
+		183717661F2B1FCA009D5882 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183717651F2B1FCA009D5882 /* JSCoreViewController.m */; };
+		183717691F2B1FDD009D5882 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183717681F2B1FDD009D5882 /* JSViewController.m */; };
+		1837176D1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */; };
+		183717741F2B2724009D5882 /* content1.css in Resources */ = {isa = PBXBuildFile; fileRef = 183717711F2B2724009D5882 /* content1.css */; };
+		183717751F2B2724009D5882 /* content1.html in Resources */ = {isa = PBXBuildFile; fileRef = 183717721F2B2724009D5882 /* content1.html */; };
+		183717761F2B2724009D5882 /* content1.js in Resources */ = {isa = PBXBuildFile; fileRef = 183717731F2B2724009D5882 /* content1.js */; };
 		183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183803F21E5EDB7900CB3715 /* YFQuartz2DViewController.m */; };
 		183803F61E5EDBD100CB3715 /* YFQuartz2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183803F51E5EDBD100CB3715 /* YFQuartz2DView.m */; };
 		1841F8061DEEB7AC00EAA812 /* MultipleInheritanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8051DEEB7AC00EAA812 /* MultipleInheritanceViewController.m */; };
@@ -656,6 +661,7 @@
 		18C3E8751E55489D00D275AD /* SwiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E8741E55489D00D275AD /* SwiftViewController.m */; };
 		18C760041B9AB24A0038B2EE /* lxh in Resources */ = {isa = PBXBuildFile; fileRef = 18C760021B9AB24A0038B2EE /* lxh */; };
 		18C760051B9AB24A0038B2EE /* default in Resources */ = {isa = PBXBuildFile; fileRef = 18C760031B9AB24A0038B2EE /* default */; };
+		20D93EECA061DE73587053CE /* libPods-BigShow1949.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */; };
 		8B0B9AC01B9572000084590D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9ABF1B9572000084590D /* Images.xcassets */; };
 		8B0B9AC31B9572000084590D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9AC11B9572000084590D /* LaunchScreen.xib */; };
 		8B0B9ACF1B9572000084590D /* BigShow1949Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9ACE1B9572000084590D /* BigShow1949Tests.m */; };
@@ -678,8 +684,6 @@
 /* Begin PBXFileReference section */
 		180E0EAD1DE7CEE300B5658A /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
-		182399661F034F9B005B58A0 /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
-		182399671F034F9B005B58A0 /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		182399691F0350AE005B58A0 /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
 		1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		182B9E9E1DDEE61100FC1030 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
@@ -710,6 +714,15 @@
 		182C48A01E5ABAEE0099A49D /* logon_button_enter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logon_button_enter@2x.png"; sourceTree = "<group>"; };
 		183699071DC325CE009AD5D5 /* YFAddMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAddMethodViewController.h; sourceTree = "<group>"; };
 		183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAddMethodViewController.m; sourceTree = "<group>"; };
+		183717641F2B1FCA009D5882 /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
+		183717651F2B1FCA009D5882 /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
+		183717671F2B1FDD009D5882 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		183717681F2B1FDD009D5882 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		1837176B1F2B214F009D5882 /* WebViewJavascriptBridgeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeVC.h; sourceTree = "<group>"; };
+		1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeVC.m; sourceTree = "<group>"; };
+		183717711F2B2724009D5882 /* content1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content1.css; sourceTree = "<group>"; };
+		183717721F2B2724009D5882 /* content1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content1.html; sourceTree = "<group>"; };
+		183717731F2B2724009D5882 /* content1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content1.js; sourceTree = "<group>"; };
 		183803F11E5EDB7900CB3715 /* YFQuartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFQuartz2DViewController.h; sourceTree = "<group>"; };
 		183803F21E5EDB7900CB3715 /* YFQuartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFQuartz2DViewController.m; sourceTree = "<group>"; };
 		183803F41E5EDBD100CB3715 /* YFQuartz2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFQuartz2DView.h; sourceTree = "<group>"; };
@@ -1845,6 +1858,8 @@
 		18C3E8761E5548E800D275AD /* BigShow1949-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigShow1949-Bridging-Header.h"; sourceTree = "<group>"; };
 		18C760021B9AB24A0038B2EE /* lxh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lxh; sourceTree = "<group>"; };
 		18C760031B9AB24A0038B2EE /* default */ = {isa = PBXFileReference; lastKnownFileType = folder; path = default; sourceTree = "<group>"; };
+		29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BigShow1949.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		383128C758708AD06ABB381C /* Pods-BigShow1949.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigShow1949.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949.release.xcconfig"; sourceTree = "<group>"; };
 		8B0B9AAF1B9572000084590D /* BigShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9AB31B9572000084590D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0B9ABF1B9572000084590D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1857,6 +1872,7 @@
 		B83EA9641CC0D16100807828 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
 		B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B84C03281CE2E04700E62D75 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		B8B98549B8B6FFEEC088A839 /* Pods-BigShow1949.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigShow1949.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1882,6 +1898,7 @@
 				18C2D5381BAEDCD2006CD3B2 /* CoreGraphics.framework in Frameworks */,
 				18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */,
 				18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */,
+				20D93EECA061DE73587053CE /* libPods-BigShow1949.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1906,15 +1923,6 @@
 				18B5FE231DE7E999008FC62F /* QRCodeGenerateViewController.m */,
 			);
 			path = QRCode;
-			sourceTree = "<group>";
-		};
-		182399651F034ED2005B58A0 /* JSCore */ = {
-			isa = PBXGroup;
-			children = (
-				182399661F034F9B005B58A0 /* JSCoreViewController.h */,
-				182399671F034F9B005B58A0 /* JSCoreViewController.m */,
-			);
-			path = JSCore;
 			sourceTree = "<group>";
 		};
 		182B9E9D1DDEE5F700FC1030 /* GCD */ = {
@@ -1971,6 +1979,38 @@
 				183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */,
 			);
 			path = AddMethod;
+			sourceTree = "<group>";
+		};
+		183717621F2B1FCA009D5882 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				1837176A1F2B20F0009D5882 /* WebViewJSBridge */,
+				183717631F2B1FCA009D5882 /* JSCore */,
+				183717671F2B1FDD009D5882 /* JSViewController.h */,
+				183717681F2B1FDD009D5882 /* JSViewController.m */,
+			);
+			path = JS;
+			sourceTree = "<group>";
+		};
+		183717631F2B1FCA009D5882 /* JSCore */ = {
+			isa = PBXGroup;
+			children = (
+				183717641F2B1FCA009D5882 /* JSCoreViewController.h */,
+				183717651F2B1FCA009D5882 /* JSCoreViewController.m */,
+			);
+			path = JSCore;
+			sourceTree = "<group>";
+		};
+		1837176A1F2B20F0009D5882 /* WebViewJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1837176B1F2B214F009D5882 /* WebViewJavascriptBridgeVC.h */,
+				1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */,
+				183717711F2B2724009D5882 /* content1.css */,
+				183717721F2B2724009D5882 /* content1.html */,
+				183717731F2B2724009D5882 /* content1.js */,
+			);
+			path = WebViewJSBridge;
 			sourceTree = "<group>";
 		};
 		183803F01E5EDB6A00CB3715 /* Quartz2D */ = {
@@ -2819,7 +2859,7 @@
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
 			isa = PBXGroup;
 			children = (
-				182399651F034ED2005B58A0 /* JSCore */,
+				183717621F2B1FCA009D5882 /* JS */,
 				183803F01E5EDB6A00CB3715 /* Quartz2D */,
 				1841F8031DEEB79200EAA812 /* MultipleInheritance */,
 				180E0EAC1DE7CEB200B5658A /* QRCode */,
@@ -4902,6 +4942,7 @@
 				18C2D5371BAEDCD2006CD3B2 /* CoreGraphics.framework */,
 				18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */,
 				18C2D5311BAEDC61006CD3B2 /* UIKit.framework */,
+				29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4924,6 +4965,7 @@
 				8B0B9AB11B9572000084590D /* BigShow1949 */,
 				8B0B9ACB1B9572000084590D /* BigShow1949Tests */,
 				8B0B9AB01B9572000084590D /* Products */,
+				9A4FAFA061A877D7298F217A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4979,6 +5021,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A4FAFA061A877D7298F217A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8B98549B8B6FFEEC088A839 /* Pods-BigShow1949.debug.xcconfig */,
+				383128C758708AD06ABB381C /* Pods-BigShow1949.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4986,9 +5037,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B0B9AD21B9572000084590D /* Build configuration list for PBXNativeTarget "BigShow1949" */;
 			buildPhases = (
+				119FAB20A4F0A942CE90BE49 /* [CP] Check Pods Manifest.lock */,
 				8B0B9AAB1B9572000084590D /* Sources */,
 				8B0B9AAC1B9572000084590D /* Frameworks */,
 				8B0B9AAD1B9572000084590D /* Resources */,
+				FC6191ADE5E015A4A913E9E3 /* [CP] Embed Pods Frameworks */,
+				F70C5B82D5BB63F63B526461 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5120,6 +5174,7 @@
 				18B4889B1DAE3E2800ACD4BA /* RAViewController.storyboard in Resources */,
 				18B488931DAE3E2800ACD4BA /* 6.jpg in Resources */,
 				18B4875D1DAE3E2700ACD4BA /* dwayne_wade.png in Resources */,
+				183717761F2B2724009D5882 /* content1.js in Resources */,
 				18B488C51DAE3E2800ACD4BA /* bg_shaking.png in Resources */,
 				18B4887D1DAE3E2800ACD4BA /* TabBar_History_selected_new@2x.png in Resources */,
 				18B487921DAE3E2700ACD4BA /* photo_sample_04.png in Resources */,
@@ -5184,6 +5239,7 @@
 				18B488671DAE3E2800ACD4BA /* Transition2.jpg in Resources */,
 				18B488F91DAE3E2800ACD4BA /* placeholder_fancy@2x.png in Resources */,
 				18B4888D1DAE3E2800ACD4BA /* 19.jpg in Resources */,
+				183717751F2B2724009D5882 /* content1.html in Resources */,
 				18B487701DAE3E2700ACD4BA /* documentary-50.png in Resources */,
 				18B487611DAE3E2700ACD4BA /* kyrie_irving.png in Resources */,
 				18B4875B1DAE3E2700ACD4BA /* dialCell.xib in Resources */,
@@ -5205,6 +5261,7 @@
 				18B487951DAE3E2700ACD4BA /* photo_sample_07.png in Resources */,
 				18B489591DAE3E2800ACD4BA /* MJRefresh.bundle in Resources */,
 				18B4888F1DAE3E2800ACD4BA /* 20.jpg in Resources */,
+				183717741F2B2724009D5882 /* content1.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5216,6 +5273,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		119FAB20A4F0A942CE90BE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F70C5B82D5BB63F63B526461 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC6191ADE5E015A4A913E9E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B0B9AAB1B9572000084590D /* Sources */ = {
@@ -5448,6 +5553,7 @@
 				18B489311DAE3E2800ACD4BA /* AFSecurityPolicy.m in Sources */,
 				18B4884B1DAE3E2800ACD4BA /* YFCircleViewController.m in Sources */,
 				18B488321DAE3E2800ACD4BA /* YFEmitterSnowCell.m in Sources */,
+				183717691F2B1FDD009D5882 /* JSViewController.m in Sources */,
 				18B489181DAE3E2800ACD4BA /* SheetInsertView.m in Sources */,
 				182B9EAD1DE2EDDE00FC1030 /* Dog_KVC.m in Sources */,
 				18B489381DAE3E2800ACD4BA /* UIAlertView+AFNetworking.m in Sources */,
@@ -5537,6 +5643,7 @@
 				18B4876D1DAE3E2700ACD4BA /* YFHomeLabelButton.m in Sources */,
 				18B489671DAE3E2800ACD4BA /* SDWebImageDownloaderOperation.m in Sources */,
 				18B489491DAE3E2800ACD4BA /* MASViewConstraint.m in Sources */,
+				1837176D1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m in Sources */,
 				18B488A51DAE3E2800ACD4BA /* DraggableView.m in Sources */,
 				18B487E01DAE3E2700ACD4BA /* Case6ViewController.m in Sources */,
 				183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */,
@@ -5644,7 +5751,7 @@
 				18B489581DAE3E2800ACD4BA /* NSObject+MJMember.m in Sources */,
 				18B4891E1DAE3E2800ACD4BA /* MGJRequestManager.m in Sources */,
 				18B489601DAE3E2800ACD4BA /* UIView+Extension.m in Sources */,
-				182399681F034F9B005B58A0 /* JSCoreViewController.m in Sources */,
+				183717661F2B1FCA009D5882 /* JSCoreViewController.m in Sources */,
 				18B489451DAE3E2800ACD4BA /* MASConstraint.m in Sources */,
 				18B488271DAE3E2800ACD4BA /* XRPopMenuView.m in Sources */,
 				18B487371DAE3E2700ACD4BA /* YFBubbleMenuButtonViewController.m in Sources */,
@@ -5831,6 +5938,7 @@
 		};
 		8B0B9AD31B9572000084590D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B98549B8B6FFEEC088A839 /* Pods-BigShow1949.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -5862,6 +5970,7 @@
 		};
 		8B0B9AD41B9572000084590D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383128C758708AD06ABB381C /* Pods-BigShow1949.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

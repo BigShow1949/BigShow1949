@@ -1,0 +1,71 @@
+body {
+    background-color: #fff;
+    margin-left:15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+
+
+div.title  {
+    color: #000000;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height:30px;
+    font-weight:bold;
+}
+
+div.subtitle {
+    
+    color: #c6c6c6;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+div.text {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    text-indent: 32px;
+}
+
+div.image img {
+    width: 100%;
+    vertical-align:bottom;
+    display: block;
+    overflow: hidden;
+    margin-top: 10px;
+    background: #e6e6e6;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    -webkit-user-select: none;
+    border-style: outset;
+    border-width: thick;
+}
+
+#moredetail{
+    text-align:left;
+    margin:20px 0 15px 0;
+}
+
+.detailpage {
+    
+    display: inline-block;
+    text-decoration: inherit;
+    font-size:15px;
+    padding:10px;
+    background:#e1e1e1;
+    color:#333333;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
