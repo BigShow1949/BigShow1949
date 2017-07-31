@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>WebViewJavascriptBridge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05594AF131C9DD67CAA003B216AF4E4B</key>
+		<key>2040F06428D8010D534E4F44FBE1A4DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DC507E35152D34FDC62CF69EE73B135</key>
+		<key>D6C8CE0C5EF2A8A821E225322D94CEFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE207270F10478FA7273C72364F4648C</key>
+		<key>EEF2CE5BC21A358E717C8B5A9C25B17D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2A542D457B5A008EC0043BDE5CE74A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

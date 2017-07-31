@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */; };
+		181DC7CA1F2B396C0026C58B /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DC7C71F2B396C0026C58B /* EXTSelectorChecking.m */; };
+		181DC7CB1F2B396C0026C58B /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 181DC7C91F2B396C0026C58B /* Version */; };
 		1823996A1F0350AE005B58A0 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 182399691F0350AE005B58A0 /* Test.html */; };
 		1823996D1F0350D2005B58A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */; };
 		182B9EA01DDEE61100FC1030 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B9E9F1DDEE61100FC1030 /* GCDViewController.m */; };
@@ -30,7 +32,7 @@
 		183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183699081DC325CE009AD5D5 /* YFAddMethodViewController.m */; };
 		183717661F2B1FCA009D5882 /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183717651F2B1FCA009D5882 /* JSCoreViewController.m */; };
 		183717691F2B1FDD009D5882 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183717681F2B1FDD009D5882 /* JSViewController.m */; };
-		1837176D1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */; };
+		1837176D1F2B214F009D5882 /* WebViewJSBridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837176C1F2B214F009D5882 /* WebViewJSBridgeVC.m */; };
 		183717741F2B2724009D5882 /* content1.css in Resources */ = {isa = PBXBuildFile; fileRef = 183717711F2B2724009D5882 /* content1.css */; };
 		183717751F2B2724009D5882 /* content1.html in Resources */ = {isa = PBXBuildFile; fileRef = 183717721F2B2724009D5882 /* content1.html */; };
 		183717761F2B2724009D5882 /* content1.js in Resources */ = {isa = PBXBuildFile; fileRef = 183717731F2B2724009D5882 /* content1.js */; };
@@ -684,6 +686,12 @@
 /* Begin PBXFileReference section */
 		180E0EAD1DE7CEE300B5658A /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		180E0EAE1DE7CEE300B5658A /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		181DC7C41F2B396C0026C58B /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		181DC7C51F2B396C0026C58B /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		181DC7C61F2B396C0026C58B /* EXTSelectorChecking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSelectorChecking.h; sourceTree = "<group>"; };
+		181DC7C71F2B396C0026C58B /* EXTSelectorChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSelectorChecking.m; sourceTree = "<group>"; };
+		181DC7C81F2B396C0026C58B /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		181DC7C91F2B396C0026C58B /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
 		182399691F0350AE005B58A0 /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
 		1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		182B9E9E1DDEE61100FC1030 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
@@ -718,8 +726,8 @@
 		183717651F2B1FCA009D5882 /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		183717671F2B1FDD009D5882 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
 		183717681F2B1FDD009D5882 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
-		1837176B1F2B214F009D5882 /* WebViewJavascriptBridgeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeVC.h; sourceTree = "<group>"; };
-		1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeVC.m; sourceTree = "<group>"; };
+		1837176B1F2B214F009D5882 /* WebViewJSBridgeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJSBridgeVC.h; sourceTree = "<group>"; };
+		1837176C1F2B214F009D5882 /* WebViewJSBridgeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJSBridgeVC.m; sourceTree = "<group>"; };
 		183717711F2B2724009D5882 /* content1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content1.css; sourceTree = "<group>"; };
 		183717721F2B2724009D5882 /* content1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content1.html; sourceTree = "<group>"; };
 		183717731F2B2724009D5882 /* content1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content1.js; sourceTree = "<group>"; };
@@ -1925,6 +1933,19 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		181DC7C31F2B396C0026C58B /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				181DC7C41F2B396C0026C58B /* EXTKeyPathCoding.h */,
+				181DC7C51F2B396C0026C58B /* EXTScope.h */,
+				181DC7C61F2B396C0026C58B /* EXTSelectorChecking.h */,
+				181DC7C71F2B396C0026C58B /* EXTSelectorChecking.m */,
+				181DC7C81F2B396C0026C58B /* metamacros.h */,
+				181DC7C91F2B396C0026C58B /* Version */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
 		182B9E9D1DDEE5F700FC1030 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -2004,8 +2025,9 @@
 		1837176A1F2B20F0009D5882 /* WebViewJSBridge */ = {
 			isa = PBXGroup;
 			children = (
-				1837176B1F2B214F009D5882 /* WebViewJavascriptBridgeVC.h */,
-				1837176C1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m */,
+				181DC7C31F2B396C0026C58B /* extobjc */,
+				1837176B1F2B214F009D5882 /* WebViewJSBridgeVC.h */,
+				1837176C1F2B214F009D5882 /* WebViewJSBridgeVC.m */,
 				183717711F2B2724009D5882 /* content1.css */,
 				183717721F2B2724009D5882 /* content1.html */,
 				183717731F2B2724009D5882 /* content1.js */,
@@ -5152,6 +5174,7 @@
 				18B487D21DAE3E2700ACD4BA /* YFKeepViewController.storyboard in Resources */,
 				18B4881F1DAE3E2800ACD4BA /* YFAnimationVC05.storyboard in Resources */,
 				18B487821DAE3E2700ACD4BA /* YFStackedPageVC.storyboard in Resources */,
+				181DC7CB1F2B396C0026C58B /* Version in Resources */,
 				18B4887B1DAE3E2800ACD4BA /* TabBar_Discovery_selected_new@2x.png in Resources */,
 				18B4875C1DAE3E2700ACD4BA /* dialCell2.xib in Resources */,
 				18B489031DAE3E2800ACD4BA /* FMDBBaseUseViewController.storyboard in Resources */,
@@ -5643,7 +5666,7 @@
 				18B4876D1DAE3E2700ACD4BA /* YFHomeLabelButton.m in Sources */,
 				18B489671DAE3E2800ACD4BA /* SDWebImageDownloaderOperation.m in Sources */,
 				18B489491DAE3E2800ACD4BA /* MASViewConstraint.m in Sources */,
-				1837176D1F2B214F009D5882 /* WebViewJavascriptBridgeVC.m in Sources */,
+				1837176D1F2B214F009D5882 /* WebViewJSBridgeVC.m in Sources */,
 				18B488A51DAE3E2800ACD4BA /* DraggableView.m in Sources */,
 				18B487E01DAE3E2700ACD4BA /* Case6ViewController.m in Sources */,
 				183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */,
@@ -5747,6 +5770,7 @@
 				18B489021DAE3E2800ACD4BA /* FMDBBaseUseViewController.m in Sources */,
 				180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */,
 				18B489241DAE3E2800ACD4BA /* YFHanoiVC.mm in Sources */,
+				181DC7CA1F2B396C0026C58B /* EXTSelectorChecking.m in Sources */,
 				18B487A51DAE3E2700ACD4BA /* ITRAirSideMenu.m in Sources */,
 				18B489581DAE3E2800ACD4BA /* NSObject+MJMember.m in Sources */,
 				18B4891E1DAE3E2800ACD4BA /* MGJRequestManager.m in Sources */,

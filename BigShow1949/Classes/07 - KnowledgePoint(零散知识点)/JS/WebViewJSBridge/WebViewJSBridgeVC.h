@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewJavascriptBridgeVC : UIViewController
+@interface WebViewJSBridgeVC : UIViewController
 
 @end

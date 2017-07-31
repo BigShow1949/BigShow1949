@@ -1,15 +1,20 @@
 PODS:
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - WebViewJavascriptBridge (5.2.0)
   - XLPhotoBrowser (1.0.2)
 
 DEPENDENCIES:
+  - SDWebImage (~> 4.0.0)
   - WebViewJavascriptBridge (~> 5.0)
   - XLPhotoBrowser (~> 1.0.2)
 
 SPEC CHECKSUMS:
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
   XLPhotoBrowser: ec30940437ac76ca27a88ecc4fac6f52b327bcc7
 
-PODFILE CHECKSUM: 61652a6f28c7530b99c9406922b58eca1f80e4c8
+PODFILE CHECKSUM: af599be1505f3bd0b0cb520ee699deb090d91a39
 
 COCOAPODS: 1.2.0
