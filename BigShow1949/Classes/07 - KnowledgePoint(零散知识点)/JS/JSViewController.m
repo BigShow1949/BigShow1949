@@ -15,7 +15,8 @@
     
     
     [self setupDataArr:@[@[@"JSCore",@"JSCoreViewController"],
-                         @[@"JSBridge使用",@"WebViewJSBridgeVC"]]];
+                         @[@"JSBridge使用",@"WebViewJSBridgeVC"], // 还有点问题
+                         ]];
     
 }
 @end
