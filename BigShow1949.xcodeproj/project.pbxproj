@@ -61,6 +61,9 @@
 		18494D471F3D4D4300BFCC80 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D461F3D4D4300BFCC80 /* LoginModel.m */; };
 		18494D4A1F3D4D5D00BFCC80 /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D491F3D4D5D00BFCC80 /* HttpUtils.m */; };
 		18494D501F3D4E5100BFCC80 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */; };
+		18494D541F3D54D000BFCC80 /* MVPCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D531F3D54D000BFCC80 /* MVPCounterViewController.m */; };
+		18494D571F3D578A00BFCC80 /* CounterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D561F3D578A00BFCC80 /* CounterPresenter.m */; };
+		18494D5A1F3D57D800BFCC80 /* CounterRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D591F3D57D800BFCC80 /* CounterRepository.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
 		187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */; };
@@ -786,6 +789,15 @@
 		18494D4B1F3D4DE400BFCC80 /* LoginViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewProtocol.h; sourceTree = "<group>"; };
 		18494D4E1F3D4E5100BFCC80 /* LoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPresenter.h; sourceTree = "<group>"; };
 		18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
+		18494D521F3D54D000BFCC80 /* MVPCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPCounterViewController.h; sourceTree = "<group>"; };
+		18494D531F3D54D000BFCC80 /* MVPCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPCounterViewController.m; sourceTree = "<group>"; };
+		18494D551F3D578A00BFCC80 /* CounterPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterPresenter.h; sourceTree = "<group>"; };
+		18494D561F3D578A00BFCC80 /* CounterPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterPresenter.m; sourceTree = "<group>"; };
+		18494D581F3D57D800BFCC80 /* CounterRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterRepository.h; sourceTree = "<group>"; };
+		18494D591F3D57D800BFCC80 /* CounterRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterRepository.m; sourceTree = "<group>"; };
+		18494D5B1F3D581000BFCC80 /* CounterPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterPresenterProtocol.h; sourceTree = "<group>"; };
+		18494D5C1F3D582400BFCC80 /* CounterRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterRepositoryProtocol.h; sourceTree = "<group>"; };
+		18494D5D1F3D58F200BFCC80 /* CounterViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewProtocol.h; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformViewController.h; sourceTree = "<group>"; };
 		187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformViewController.m; sourceTree = "<group>"; };
@@ -2158,6 +2170,22 @@
 				18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */,
 			);
 			path = MVP_Login;
+			sourceTree = "<group>";
+		};
+		18494D511F3D549E00BFCC80 /* MVP_Counter */ = {
+			isa = PBXGroup;
+			children = (
+				18494D521F3D54D000BFCC80 /* MVPCounterViewController.h */,
+				18494D531F3D54D000BFCC80 /* MVPCounterViewController.m */,
+				18494D5D1F3D58F200BFCC80 /* CounterViewProtocol.h */,
+				18494D551F3D578A00BFCC80 /* CounterPresenter.h */,
+				18494D561F3D578A00BFCC80 /* CounterPresenter.m */,
+				18494D5B1F3D581000BFCC80 /* CounterPresenterProtocol.h */,
+				18494D581F3D57D800BFCC80 /* CounterRepository.h */,
+				18494D591F3D57D800BFCC80 /* CounterRepository.m */,
+				18494D5C1F3D582400BFCC80 /* CounterRepositoryProtocol.h */,
+			);
+			path = MVP_Counter;
 			sourceTree = "<group>";
 		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
@@ -4315,6 +4343,7 @@
 		18B485D91DAE3E2700ACD4BA /* 12 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				18494D511F3D549E00BFCC80 /* MVP_Counter */,
 				18494D411F3D4CC800BFCC80 /* MVP_Login */,
 				18B485DA1DAE3E2700ACD4BA /* MVVM_coderyi */,
 				18B485F21DAE3E2700ACD4BA /* MyDataSource */,
@@ -5402,6 +5431,7 @@
 				18B489611DAE3E2800ACD4BA /* MKAnnotationView+WebCache.m in Sources */,
 				18B488621DAE3E2800ACD4BA /* CAKeyframeAnimationViewController.m in Sources */,
 				18B489731DAE3E2800ACD4BA /* YFAuthorViewController.m in Sources */,
+				18494D5A1F3D57D800BFCC80 /* CounterRepository.m in Sources */,
 				18B4877F1DAE3E2700ACD4BA /* SSStackedPageView.m in Sources */,
 				18B488351DAE3E2800ACD4BA /* XXBRippleView.m in Sources */,
 				18B488D01DAE3E2800ACD4BA /* YFResizableView.m in Sources */,
@@ -5811,6 +5841,7 @@
 				18B489601DAE3E2800ACD4BA /* UIView+Extension.m in Sources */,
 				183717661F2B1FCA009D5882 /* JSCoreViewController.m in Sources */,
 				18B489451DAE3E2800ACD4BA /* MASConstraint.m in Sources */,
+				18494D571F3D578A00BFCC80 /* CounterPresenter.m in Sources */,
 				18B488271DAE3E2800ACD4BA /* XRPopMenuView.m in Sources */,
 				18B487371DAE3E2700ACD4BA /* YFBubbleMenuButtonViewController.m in Sources */,
 				187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */,
@@ -5851,6 +5882,7 @@
 				18B488A21DAE3E2800ACD4BA /* UINTDraggableView.m in Sources */,
 				18B4876B1DAE3E2700ACD4BA /* YFHorizontalScrollViewController.m in Sources */,
 				18B4884A1DAE3E2800ACD4BA /* YFWaterWaveViewController.m in Sources */,
+				18494D541F3D54D000BFCC80 /* MVPCounterViewController.m in Sources */,
 				18B487791DAE3E2700ACD4BA /* RGCardLayoutViewController.m in Sources */,
 				18B488501DAE3E2800ACD4BA /* WSBezier.m in Sources */,
 				18B488111DAE3E2700ACD4BA /* ContextMenuCell.m in Sources */,

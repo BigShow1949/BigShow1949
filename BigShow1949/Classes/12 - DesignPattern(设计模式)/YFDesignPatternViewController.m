@@ -19,7 +19,8 @@
 
     [self setupDataArr:@[@[@"MVVM_coderyi",@"YiTableViewController"],
                          @[@"DataSource分离",@"MyDataSourceViewController"],
-                         @[@"MVP登录",@"MVPLoginViewController"]]];
+                         @[@"MVP登录",@"MVPLoginViewController"],
+                         @[@"MVP计数器",@"MVPCounterViewController"]]];
 
 }
 
