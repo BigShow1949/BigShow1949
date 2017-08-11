@@ -67,6 +67,11 @@
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
 		187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */; };
+		188275E21F3D75CA00EBC9A5 /* MVPLogin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275E11F3D75CA00EBC9A5 /* MVPLogin2ViewController.m */; };
+		188275E41F3D763F00EBC9A5 /* MVPLogin2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188275E31F3D763F00EBC9A5 /* MVPLogin2ViewController.storyboard */; };
+		188275E71F3D781400EBC9A5 /* DemoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275E61F3D781400EBC9A5 /* DemoPresenter.m */; };
+		188275EA1F3D784700EBC9A5 /* DemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275E91F3D784700EBC9A5 /* DemoViewModel.m */; };
+		188275EF1F3D7CFE00EBC9A5 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */; };
 		18B4872E1DAE3E2700ACD4BA /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482341DAE3E2600ACD4BA /* APRoundedButton.m */; };
 		18B4872F1DAE3E2700ACD4BA /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482361DAE3E2600ACD4BA /* YFAllRoundButtonVC.m */; };
 		18B487301DAE3E2700ACD4BA /* YFAllRoundButtonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B482371DAE3E2600ACD4BA /* YFAllRoundButtonVC.storyboard */; };
@@ -802,6 +807,17 @@
 		187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformViewController.h; sourceTree = "<group>"; };
 		187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformViewController.m; sourceTree = "<group>"; };
 		187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CATransformViewController.storyboard; sourceTree = "<group>"; };
+		188275E01F3D75CA00EBC9A5 /* MVPLogin2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPLogin2ViewController.h; sourceTree = "<group>"; };
+		188275E11F3D75CA00EBC9A5 /* MVPLogin2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPLogin2ViewController.m; sourceTree = "<group>"; };
+		188275E31F3D763F00EBC9A5 /* MVPLogin2ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVPLogin2ViewController.storyboard; sourceTree = "<group>"; };
+		188275E51F3D781400EBC9A5 /* DemoPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPresenter.h; sourceTree = "<group>"; };
+		188275E61F3D781400EBC9A5 /* DemoPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoPresenter.m; sourceTree = "<group>"; };
+		188275E81F3D784700EBC9A5 /* DemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewModel.h; sourceTree = "<group>"; };
+		188275E91F3D784700EBC9A5 /* DemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewModel.m; sourceTree = "<group>"; };
+		188275EB1F3D788D00EBC9A5 /* DemoViewProrocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewProrocol.h; sourceTree = "<group>"; };
+		188275EC1F3D78A300EBC9A5 /* DemoPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPresenterProtocol.h; sourceTree = "<group>"; };
+		188275ED1F3D7CFE00EBC9A5 /* PasswordValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordValidator.h; sourceTree = "<group>"; };
+		188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
 		18B482331DAE3E2600ACD4BA /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		18B482341DAE3E2600ACD4BA /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		18B482351DAE3E2600ACD4BA /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
@@ -2186,6 +2202,24 @@
 				18494D5C1F3D582400BFCC80 /* CounterRepositoryProtocol.h */,
 			);
 			path = MVP_Counter;
+			sourceTree = "<group>";
+		};
+		188275DF1F3D759F00EBC9A5 /* MVP_Login2 */ = {
+			isa = PBXGroup;
+			children = (
+				188275E01F3D75CA00EBC9A5 /* MVPLogin2ViewController.h */,
+				188275E11F3D75CA00EBC9A5 /* MVPLogin2ViewController.m */,
+				188275E31F3D763F00EBC9A5 /* MVPLogin2ViewController.storyboard */,
+				188275EB1F3D788D00EBC9A5 /* DemoViewProrocol.h */,
+				188275E51F3D781400EBC9A5 /* DemoPresenter.h */,
+				188275E61F3D781400EBC9A5 /* DemoPresenter.m */,
+				188275EC1F3D78A300EBC9A5 /* DemoPresenterProtocol.h */,
+				188275E81F3D784700EBC9A5 /* DemoViewModel.h */,
+				188275E91F3D784700EBC9A5 /* DemoViewModel.m */,
+				188275ED1F3D7CFE00EBC9A5 /* PasswordValidator.h */,
+				188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */,
+			);
+			path = MVP_Login2;
 			sourceTree = "<group>";
 		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
@@ -4343,6 +4377,7 @@
 		18B485D91DAE3E2700ACD4BA /* 12 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				188275DF1F3D759F00EBC9A5 /* MVP_Login2 */,
 				18494D511F3D549E00BFCC80 /* MVP_Counter */,
 				18494D411F3D4CC800BFCC80 /* MVP_Login */,
 				18B485DA1DAE3E2700ACD4BA /* MVVM_coderyi */,
@@ -5219,6 +5254,7 @@
 				18B487741DAE3E2700ACD4BA /* i3.jpg in Resources */,
 				18B4883E1DAE3E2800ACD4BA /* home_top_bg@2x.png in Resources */,
 				18B488891DAE3E2800ACD4BA /* 15.jpg in Resources */,
+				188275E41F3D763F00EBC9A5 /* MVPLogin2ViewController.storyboard in Resources */,
 				18B4890C1DAE3E2800ACD4BA /* SQLiteBaseUseViewController.storyboard in Resources */,
 				18B4888B1DAE3E2800ACD4BA /* 17.jpg in Resources */,
 				182C48A11E5ABAEE0099A49D /* logon_button_enter@2x.png in Resources */,
@@ -5614,6 +5650,7 @@
 				18B4889D1DAE3E2800ACD4BA /* YFNormalCollectionViewController.m in Sources */,
 				1841F8251DEEB94D00EAA812 /* MultipleProtocol.m in Sources */,
 				18B489051DAE3E2800ACD4BA /* JKDBModel.m in Sources */,
+				188275E71F3D781400EBC9A5 /* DemoPresenter.m in Sources */,
 				183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */,
 				18B4891F1DAE3E2800ACD4BA /* YFNetworkRequestViewController.m in Sources */,
 				18B488B31DAE3E2800ACD4BA /* RootViewController.m in Sources */,
@@ -5651,6 +5688,7 @@
 				18B487C41DAE3E2700ACD4BA /* RZSimpleColorViewController.m in Sources */,
 				18B488081DAE3E2700ACD4BA /* SYTextView.m in Sources */,
 				18B489081DAE3E2800ACD4BA /* Depart.m in Sources */,
+				188275EF1F3D7CFE00EBC9A5 /* PasswordValidator.m in Sources */,
 				18B4879E1DAE3E2700ACD4BA /* HHContentCollectionView.m in Sources */,
 				18B487D01DAE3E2700ACD4BA /* YFTextViewController.m in Sources */,
 				18B489261DAE3E2800ACD4BA /* YFSortVC.m in Sources */,
@@ -5686,6 +5724,7 @@
 				18B487F11DAE3E2700ACD4BA /* YFPerson+addproty.m in Sources */,
 				18B488F41DAE3E2800ACD4BA /* YFDesignPatternViewController.m in Sources */,
 				1841F8461DEEBD2C00EAA812 /* Business.m in Sources */,
+				188275EA1F3D784700EBC9A5 /* DemoViewModel.m in Sources */,
 				18B487961DAE3E2700ACD4BA /* YFDraggableCardViewController.m in Sources */,
 				18B488A41DAE3E2800ACD4BA /* UINTViewController.m in Sources */,
 				18B488FE1DAE3E2800ACD4BA /* UIImage+CJZ.m in Sources */,
@@ -5833,6 +5872,7 @@
 				18B488E01DAE3E2800ACD4BA /* YFNeteaseViewController.m in Sources */,
 				18B489021DAE3E2800ACD4BA /* FMDBBaseUseViewController.m in Sources */,
 				180E0EAF1DE7CEE300B5658A /* QRCodeViewController.m in Sources */,
+				188275E21F3D75CA00EBC9A5 /* MVPLogin2ViewController.m in Sources */,
 				18B489241DAE3E2800ACD4BA /* YFHanoiVC.mm in Sources */,
 				181DC7CA1F2B396C0026C58B /* EXTSelectorChecking.m in Sources */,
 				18B487A51DAE3E2700ACD4BA /* ITRAirSideMenu.m in Sources */,

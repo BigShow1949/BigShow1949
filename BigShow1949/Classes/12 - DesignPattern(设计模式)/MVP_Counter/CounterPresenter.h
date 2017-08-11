@@ -12,8 +12,9 @@
 #import "CounterPresenterProtocol.h"
 #import "CounterRepositoryProtocol.h"
 
-
-// P层
+/* P层
+ 作为model和view的中间人，从model层获取数据之后传给view，使得View和model没有耦合。
+ */
 @interface CounterPresenter : NSObject<CounterPresenterProtocol>
 
 

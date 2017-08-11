@@ -10,7 +10,7 @@
 #import "CounterRepository.h"
 #import "CounterPresenter.h"
 
-// M层
+
 @interface MVPCounterViewController ()<CounterViewProtocol>
 {
     CounterPresenter *_presenter;
