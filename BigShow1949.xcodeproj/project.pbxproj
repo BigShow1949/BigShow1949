@@ -57,6 +57,10 @@
 		1841F8461DEEBD2C00EAA812 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8441DEEBD2C00EAA812 /* Business.m */; };
 		1841F8491DEEBE1000EAA812 /* Student_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8481DEEBE1000EAA812 /* Student_MC.m */; };
 		1841F84C1DEEBF4600EAA812 /* Dancer_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */; };
+		18494D441F3D4CEE00BFCC80 /* MVPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D431F3D4CEE00BFCC80 /* MVPLoginViewController.m */; };
+		18494D471F3D4D4300BFCC80 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D461F3D4D4300BFCC80 /* LoginModel.m */; };
+		18494D4A1F3D4D5D00BFCC80 /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D491F3D4D5D00BFCC80 /* HttpUtils.m */; };
+		18494D501F3D4E5100BFCC80 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		187C28CE1DC04B1C00E77B2F /* CATransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */; };
 		187C28D01DC04BA600E77B2F /* CATransformViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C28CF1DC04BA600E77B2F /* CATransformViewController.storyboard */; };
@@ -773,6 +777,15 @@
 		1841F8481DEEBE1000EAA812 /* Student_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student_MC.m; sourceTree = "<group>"; };
 		1841F84A1DEEBF4600EAA812 /* Dancer_MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer_MC.h; sourceTree = "<group>"; };
 		1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer_MC.m; sourceTree = "<group>"; };
+		18494D421F3D4CEE00BFCC80 /* MVPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPLoginViewController.h; sourceTree = "<group>"; };
+		18494D431F3D4CEE00BFCC80 /* MVPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPLoginViewController.m; sourceTree = "<group>"; };
+		18494D451F3D4D4300BFCC80 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		18494D461F3D4D4300BFCC80 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		18494D481F3D4D5D00BFCC80 /* HttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtils.h; sourceTree = "<group>"; };
+		18494D491F3D4D5D00BFCC80 /* HttpUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtils.m; sourceTree = "<group>"; };
+		18494D4B1F3D4DE400BFCC80 /* LoginViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewProtocol.h; sourceTree = "<group>"; };
+		18494D4E1F3D4E5100BFCC80 /* LoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPresenter.h; sourceTree = "<group>"; };
+		18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		187C28CC1DC04B1C00E77B2F /* CATransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformViewController.h; sourceTree = "<group>"; };
 		187C28CD1DC04B1C00E77B2F /* CATransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformViewController.m; sourceTree = "<group>"; };
@@ -2129,6 +2142,22 @@
 				1841F8341DEEBBF400EAA812 /* Dog_MP.m */,
 			);
 			path = MultipleProtocol;
+			sourceTree = "<group>";
+		};
+		18494D411F3D4CC800BFCC80 /* MVP_Login */ = {
+			isa = PBXGroup;
+			children = (
+				18494D481F3D4D5D00BFCC80 /* HttpUtils.h */,
+				18494D491F3D4D5D00BFCC80 /* HttpUtils.m */,
+				18494D421F3D4CEE00BFCC80 /* MVPLoginViewController.h */,
+				18494D431F3D4CEE00BFCC80 /* MVPLoginViewController.m */,
+				18494D451F3D4D4300BFCC80 /* LoginModel.h */,
+				18494D461F3D4D4300BFCC80 /* LoginModel.m */,
+				18494D4B1F3D4DE400BFCC80 /* LoginViewProtocol.h */,
+				18494D4E1F3D4E5100BFCC80 /* LoginPresenter.h */,
+				18494D4F1F3D4E5100BFCC80 /* LoginPresenter.m */,
+			);
+			path = MVP_Login;
 			sourceTree = "<group>";
 		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
@@ -4286,6 +4315,7 @@
 		18B485D91DAE3E2700ACD4BA /* 12 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				18494D411F3D4CC800BFCC80 /* MVP_Login */,
 				18B485DA1DAE3E2700ACD4BA /* MVVM_coderyi */,
 				18B485F21DAE3E2700ACD4BA /* MyDataSource */,
 				18B486071DAE3E2700ACD4BA /* YFDesignPatternViewController.h */,
@@ -5380,7 +5410,9 @@
 				18B488031DAE3E2700ACD4BA /* SYEmotion.m in Sources */,
 				18B489391DAE3E2800ACD4BA /* UIButton+AFNetworking.m in Sources */,
 				18B487B61DAE3E2700ACD4BA /* RZTransitionsManager.m in Sources */,
+				18494D501F3D4E5100BFCC80 /* LoginPresenter.m in Sources */,
 				18B487541DAE3E2700ACD4BA /* YFTagsCloudViewController.m in Sources */,
+				18494D4A1F3D4D5D00BFCC80 /* HttpUtils.m in Sources */,
 				18B488301DAE3E2800ACD4BA /* YFEmitterRainCell.m in Sources */,
 				18B488181DAE3E2700ACD4BA /* YFAnimationVC02.m in Sources */,
 				18B488CD1DAE3E2800ACD4BA /* YFAnswerViewController.m in Sources */,
@@ -5512,6 +5544,7 @@
 				18B488221DAE3E2800ACD4BA /* YFDragRadialMenu.m in Sources */,
 				18B487A81DAE3E2700ACD4BA /* ITRSecondViewController.m in Sources */,
 				18B487D51DAE3E2700ACD4BA /* ZWIntroductionViewController.m in Sources */,
+				18494D441F3D4CEE00BFCC80 /* MVPLoginViewController.m in Sources */,
 				18B489251DAE3E2800ACD4BA /* YFMonkeyKingVC.m in Sources */,
 				18B489221DAE3E2800ACD4BA /* YFEightQueensVC.m in Sources */,
 				18B489141DAE3E2800ACD4BA /* DataUpdateView.m in Sources */,
@@ -5565,6 +5598,7 @@
 				18B4891B1DAE3E2800ACD4BA /* YFDataPersistenceViewController.m in Sources */,
 				18B487DA1DAE3E2700ACD4BA /* Case3ViewController.m in Sources */,
 				18B488561DAE3E2800ACD4BA /* YFAnimationsViewController.m in Sources */,
+				18494D471F3D4D4300BFCC80 /* LoginModel.m in Sources */,
 				18B4896A1DAE3E2800ACD4BA /* UIButton+WebCache.m in Sources */,
 				18B4879B1DAE3E2700ACD4BA /* JCFlipViewAnimationHelper.m in Sources */,
 				18B488041DAE3E2700ACD4BA /* SYEmotionTool.m in Sources */,

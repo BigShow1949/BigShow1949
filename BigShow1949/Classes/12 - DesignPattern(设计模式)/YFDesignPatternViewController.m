@@ -18,7 +18,8 @@
     [super viewDidLoad];
 
     [self setupDataArr:@[@[@"MVVM_coderyi",@"YiTableViewController"],
-                         @[@"DataSource分离",@"MyDataSourceViewController"],]];
+                         @[@"DataSource分离",@"MyDataSourceViewController"],
+                         @[@"MVP登录",@"MVPLoginViewController"]]];
 
 }
 
