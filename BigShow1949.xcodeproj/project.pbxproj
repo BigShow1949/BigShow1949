@@ -72,6 +72,13 @@
 		188275E71F3D781400EBC9A5 /* DemoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275E61F3D781400EBC9A5 /* DemoPresenter.m */; };
 		188275EA1F3D784700EBC9A5 /* DemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275E91F3D784700EBC9A5 /* DemoViewModel.m */; };
 		188275EF1F3D7CFE00EBC9A5 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */; };
+		188275F31F3D806D00EBC9A5 /* MVPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275F21F3D806D00EBC9A5 /* MVPHomeViewController.m */; };
+		188275F81F3D82D600EBC9A5 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275F71F3D82D600EBC9A5 /* HomeModel.m */; };
+		188275FC1F3D82EC00EBC9A5 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275FB1F3D82EC00EBC9A5 /* HomePresenter.m */; };
+		188276081F3D846900EBC9A5 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 188275FF1F3D846900EBC9A5 /* HttpClient.m */; };
+		188276091F3D846900EBC9A5 /* HttpPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 188276011F3D846900EBC9A5 /* HttpPresenter.m */; };
+		1882760A1F3D846900EBC9A5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 188276041F3D846900EBC9A5 /* Reachability.m */; };
+		1882760B1F3D846900EBC9A5 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 188276071F3D846900EBC9A5 /* Presenter.m */; };
 		18B4872E1DAE3E2700ACD4BA /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482341DAE3E2600ACD4BA /* APRoundedButton.m */; };
 		18B4872F1DAE3E2700ACD4BA /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B482361DAE3E2600ACD4BA /* YFAllRoundButtonVC.m */; };
 		18B487301DAE3E2700ACD4BA /* YFAllRoundButtonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B482371DAE3E2600ACD4BA /* YFAllRoundButtonVC.storyboard */; };
@@ -818,6 +825,22 @@
 		188275EC1F3D78A300EBC9A5 /* DemoPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPresenterProtocol.h; sourceTree = "<group>"; };
 		188275ED1F3D7CFE00EBC9A5 /* PasswordValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordValidator.h; sourceTree = "<group>"; };
 		188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
+		188275F11F3D806D00EBC9A5 /* MVPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPHomeViewController.h; sourceTree = "<group>"; };
+		188275F21F3D806D00EBC9A5 /* MVPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPHomeViewController.m; sourceTree = "<group>"; };
+		188275F61F3D82D600EBC9A5 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		188275F71F3D82D600EBC9A5 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		188275F91F3D82E600EBC9A5 /* HomeViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewProtocol.h; sourceTree = "<group>"; };
+		188275FA1F3D82EC00EBC9A5 /* HomePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePresenter.h; sourceTree = "<group>"; };
+		188275FB1F3D82EC00EBC9A5 /* HomePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePresenter.m; sourceTree = "<group>"; };
+		188275FE1F3D846900EBC9A5 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		188275FF1F3D846900EBC9A5 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		188276001F3D846900EBC9A5 /* HttpPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpPresenter.h; sourceTree = "<group>"; };
+		188276011F3D846900EBC9A5 /* HttpPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpPresenter.m; sourceTree = "<group>"; };
+		188276021F3D846900EBC9A5 /* HttpResponseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponseHandle.h; sourceTree = "<group>"; };
+		188276031F3D846900EBC9A5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		188276041F3D846900EBC9A5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		188276061F3D846900EBC9A5 /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		188276071F3D846900EBC9A5 /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
 		18B482331DAE3E2600ACD4BA /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		18B482341DAE3E2600ACD4BA /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		18B482351DAE3E2600ACD4BA /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
@@ -2220,6 +2243,45 @@
 				188275EE1F3D7CFE00EBC9A5 /* PasswordValidator.m */,
 			);
 			path = MVP_Login2;
+			sourceTree = "<group>";
+		};
+		188275F01F3D805A00EBC9A5 /* MVP_Home */ = {
+			isa = PBXGroup;
+			children = (
+				188275F91F3D82E600EBC9A5 /* HomeViewProtocol.h */,
+				188275F11F3D806D00EBC9A5 /* MVPHomeViewController.h */,
+				188275F21F3D806D00EBC9A5 /* MVPHomeViewController.m */,
+				188275F61F3D82D600EBC9A5 /* HomeModel.h */,
+				188275F71F3D82D600EBC9A5 /* HomeModel.m */,
+				188275FA1F3D82EC00EBC9A5 /* HomePresenter.h */,
+				188275FB1F3D82EC00EBC9A5 /* HomePresenter.m */,
+				188275FD1F3D846900EBC9A5 /* net */,
+				188276051F3D846900EBC9A5 /* presenter */,
+			);
+			path = MVP_Home;
+			sourceTree = "<group>";
+		};
+		188275FD1F3D846900EBC9A5 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				188275FE1F3D846900EBC9A5 /* HttpClient.h */,
+				188275FF1F3D846900EBC9A5 /* HttpClient.m */,
+				188276001F3D846900EBC9A5 /* HttpPresenter.h */,
+				188276011F3D846900EBC9A5 /* HttpPresenter.m */,
+				188276021F3D846900EBC9A5 /* HttpResponseHandle.h */,
+				188276031F3D846900EBC9A5 /* Reachability.h */,
+				188276041F3D846900EBC9A5 /* Reachability.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		188276051F3D846900EBC9A5 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				188276061F3D846900EBC9A5 /* Presenter.h */,
+				188276071F3D846900EBC9A5 /* Presenter.m */,
+			);
+			path = presenter;
 			sourceTree = "<group>";
 		};
 		18B482301DAE3E2600ACD4BA /* Classes */ = {
@@ -4377,6 +4439,7 @@
 		18B485D91DAE3E2700ACD4BA /* 12 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				188275F01F3D805A00EBC9A5 /* MVP_Home */,
 				188275DF1F3D759F00EBC9A5 /* MVP_Login2 */,
 				18494D511F3D549E00BFCC80 /* MVP_Counter */,
 				18494D411F3D4CC800BFCC80 /* MVP_Login */,
@@ -5567,6 +5630,7 @@
 				18B488211DAE3E2800ACD4BA /* YFAnimationVC06.m in Sources */,
 				18B488BB1DAE3E2800ACD4BA /* UIImage+ImageEffects.m in Sources */,
 				18B487571DAE3E2700ACD4BA /* AWCollectionViewDialLayout.m in Sources */,
+				188276091F3D846900EBC9A5 /* HttpPresenter.m in Sources */,
 				18B487D11DAE3E2700ACD4BA /* YFKeepViewController.m in Sources */,
 				18B487A31DAE3E2700ACD4BA /* HHHorizontalPagingView.m in Sources */,
 				18B4873B1DAE3E2700ACD4BA /* SKTag.m in Sources */,
@@ -5611,6 +5675,7 @@
 				18B487A81DAE3E2700ACD4BA /* ITRSecondViewController.m in Sources */,
 				18B487D51DAE3E2700ACD4BA /* ZWIntroductionViewController.m in Sources */,
 				18494D441F3D4CEE00BFCC80 /* MVPLoginViewController.m in Sources */,
+				188276081F3D846900EBC9A5 /* HttpClient.m in Sources */,
 				18B489251DAE3E2800ACD4BA /* YFMonkeyKingVC.m in Sources */,
 				18B489221DAE3E2800ACD4BA /* YFEightQueensVC.m in Sources */,
 				18B489141DAE3E2800ACD4BA /* DataUpdateView.m in Sources */,
@@ -5661,6 +5726,7 @@
 				18B4894C1DAE3E2800ACD4BA /* View+MASAdditions.m in Sources */,
 				18B487F21DAE3E2700ACD4BA /* YFPerson.m in Sources */,
 				18B487DE1DAE3E2700ACD4BA /* Case5ViewController.m in Sources */,
+				1882760A1F3D846900EBC9A5 /* Reachability.m in Sources */,
 				18B4883C1DAE3E2800ACD4BA /* YFTwoWaterWaveViewController.m in Sources */,
 				18B4891B1DAE3E2800ACD4BA /* YFDataPersistenceViewController.m in Sources */,
 				18B487DA1DAE3E2700ACD4BA /* Case3ViewController.m in Sources */,
@@ -5681,6 +5747,7 @@
 				18B489181DAE3E2800ACD4BA /* SheetInsertView.m in Sources */,
 				182B9EAD1DE2EDDE00FC1030 /* Dog_KVC.m in Sources */,
 				18B489381DAE3E2800ACD4BA /* UIAlertView+AFNetworking.m in Sources */,
+				188275FC1F3D82EC00EBC9A5 /* HomePresenter.m in Sources */,
 				18B4895A1DAE3E2800ACD4BA /* MJRefreshBaseView.m in Sources */,
 				18B488701DAE3E2800ACD4BA /* SYArenaViewController.m in Sources */,
 				18B488061DAE3E2700ACD4BA /* SYEmotionContentView.m in Sources */,
@@ -5765,6 +5832,7 @@
 				18B4891C1DAE3E2800ACD4BA /* DemoDetailViewController.m in Sources */,
 				18B489411DAE3E2800ACD4BA /* FMDatabaseQueue.m in Sources */,
 				18B488CB1DAE3E2800ACD4BA /* YFAnswerBox.m in Sources */,
+				188275F81F3D82D600EBC9A5 /* HomeModel.m in Sources */,
 				18B4893D1DAE3E2800ACD4BA /* UIWebView+AFNetworking.m in Sources */,
 				18B4876D1DAE3E2700ACD4BA /* YFHomeLabelButton.m in Sources */,
 				18B489671DAE3E2800ACD4BA /* SDWebImageDownloaderOperation.m in Sources */,
@@ -5775,6 +5843,7 @@
 				183803F31E5EDB7900CB3715 /* YFQuartz2DViewController.m in Sources */,
 				18B489331DAE3E2800ACD4BA /* AFURLRequestSerialization.m in Sources */,
 				18B488391DAE3E2800ACD4BA /* YFRipple2ViewController.m in Sources */,
+				1882760B1F3D846900EBC9A5 /* Presenter.m in Sources */,
 				18B488BC1DAE3E2800ACD4BA /* UIImageView+YFBlurtImage.m in Sources */,
 				18B489161DAE3E2800ACD4BA /* LccDataCell.m in Sources */,
 				18B488EE1DAE3E2800ACD4BA /* MyBaseDataSource.m in Sources */,
@@ -5906,6 +5975,7 @@
 				18B488FB1DAE3E2800ACD4BA /* UITableView+Gzw.m in Sources */,
 				18B488191DAE3E2700ACD4BA /* UPStackMenu.m in Sources */,
 				18B487E41DAE3E2700ACD4BA /* Case8ViewController.m in Sources */,
+				188275F31F3D806D00EBC9A5 /* MVPHomeViewController.m in Sources */,
 				18B488B71DAE3E2800ACD4BA /* YFBottomEditView.m in Sources */,
 				18B487F41DAE3E2700ACD4BA /* Model.m in Sources */,
 				18B4885D1DAE3E2800ACD4BA /* YFPushTransitionViewController.m in Sources */,

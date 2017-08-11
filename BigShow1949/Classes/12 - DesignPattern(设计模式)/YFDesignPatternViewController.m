@@ -21,7 +21,8 @@
                          @[@"DataSource分离",@"MyDataSourceViewController"],
                          @[@"MVP登录",@"MVPLoginViewController"],
                          @[@"MVP登录2",@"MVPLogin2ViewController_UIStoryboard"],
-                         @[@"MVP计数器",@"MVPCounterViewController"]]];
+                         @[@"MVP计数器",@"MVPCounterViewController"],
+                         @[@"MVP Home",@"MVPHomeViewController"]]];
 
 }
 
