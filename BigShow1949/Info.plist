@@ -18,10 +18,29 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>my</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>JLRoutesOne</string>
+				<string>JLRoutesTwo</string>
+				<string>JLRoutesThree</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>地图--&gt;02-定位</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>地图--&gt;02-定位</string>
 	<key>NSMainNibFile</key>
 	<string>LaunchScreen</string>
 	<key>UILaunchStoryboardName</key>
@@ -36,9 +55,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>地图--&gt;02-定位</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>地图--&gt;02-定位</string>
 </dict>
 </plist>

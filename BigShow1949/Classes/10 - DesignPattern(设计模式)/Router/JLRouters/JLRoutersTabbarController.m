@@ -38,7 +38,12 @@
     nav3.tabBarItem.title = @"模块三";
     [self addChildViewController:nav3];
     
-    //
+    /*
+     1、在"info"-->"URL Types"里添加一个URL Schemes, "JLRoutesOne, JLRoutesTwo, JLRoutesThree"
+     2、在AppDeleate里实现路由跳转
+     
+     
+     */
     [[JLRoutes globalRoutes]addRoute:@"/:toController/:paramOne/:paramTwo/:paramThree/:paramFour" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
         
         NSLog(@"parameters = %@", parameters);
