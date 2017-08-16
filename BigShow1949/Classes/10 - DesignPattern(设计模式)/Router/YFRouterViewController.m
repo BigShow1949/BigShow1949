@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupDataArr:@[@[@"EcoRouter",@"EcoMainViewController"]]];
+    [self setupDataArr:@[@[@"EcoRouter",@"EcoMainViewController"],
+                         @[@"JLRouters",@"JLRoutersTabbarController"]]];
     
 }
 
