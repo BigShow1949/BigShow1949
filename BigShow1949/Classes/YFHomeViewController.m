@@ -34,8 +34,7 @@
                          @[@"标签",@"YFLabelViewController"],
                          @[@"视图布局",@"YFViewLayoutViewController"],
                          @[@"视图切换",@"YFViewTransitionViewController"],
-                         @[@"视图效果",@"YFViewEffectsViewController"],
-                         @[@"文字视图",@"YFTextViewController"],
+                      
                          @[@"零散知识点",@"YFKnowledgeViewController"],
                          @[@"小项目展示",@"YFLittleProjectViewController"],
                          @[@"动画集合",@"YFAnimationsViewController"],

@@ -235,14 +235,6 @@
 		18B487C61DAE3E2700ACD4BA /* RZSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483701DAE3E2600ACD4BA /* RZSimpleViewController.m */; };
 		18B487C71DAE3E2700ACD4BA /* RZSimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B483711DAE3E2600ACD4BA /* RZSimpleViewController.xib */; };
 		18B487C81DAE3E2700ACD4BA /* YFViewTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483731DAE3E2600ACD4BA /* YFViewTransitionViewController.m */; };
-		18B487C91DAE3E2700ACD4BA /* YFRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483771DAE3E2600ACD4BA /* YFRatingBar.m */; };
-		18B487CA1DAE3E2700ACD4BA /* YFRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483791DAE3E2600ACD4BA /* YFRatingBarViewController.m */; };
-		18B487CB1DAE3E2700ACD4BA /* YFStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4837B1DAE3E2600ACD4BA /* YFStar.m */; };
-		18B487CC1DAE3E2700ACD4BA /* YFViewEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4837D1DAE3E2600ACD4BA /* YFViewEffectsViewController.m */; };
-		18B487CD1DAE3E2700ACD4BA /* typewriter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18B483801DAE3E2600ACD4BA /* typewriter.wav */; };
-		18B487CE1DAE3E2700ACD4BA /* YFPrinterEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483821DAE3E2600ACD4BA /* YFPrinterEffectViewController.m */; };
-		18B487CF1DAE3E2700ACD4BA /* ZTypewriteEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483841DAE3E2600ACD4BA /* ZTypewriteEffectLabel.m */; };
-		18B487D01DAE3E2700ACD4BA /* YFTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B483861DAE3E2600ACD4BA /* YFTextViewController.m */; };
 		18B487D11DAE3E2700ACD4BA /* YFKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4838B1DAE3E2600ACD4BA /* YFKeepViewController.m */; };
 		18B487D21DAE3E2700ACD4BA /* YFKeepViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B4838C1DAE3E2600ACD4BA /* YFKeepViewController.storyboard */; };
 		18B487D31DAE3E2700ACD4BA /* YFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4838E1DAE3E2600ACD4BA /* YFGuideViewController.m */; };
@@ -1127,21 +1119,6 @@
 		18B483711DAE3E2600ACD4BA /* RZSimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RZSimpleViewController.xib; sourceTree = "<group>"; };
 		18B483721DAE3E2600ACD4BA /* YFViewTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewTransitionViewController.h; sourceTree = "<group>"; };
 		18B483731DAE3E2600ACD4BA /* YFViewTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewTransitionViewController.m; sourceTree = "<group>"; };
-		18B483761DAE3E2600ACD4BA /* YFRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRatingBar.h; sourceTree = "<group>"; };
-		18B483771DAE3E2600ACD4BA /* YFRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRatingBar.m; sourceTree = "<group>"; };
-		18B483781DAE3E2600ACD4BA /* YFRatingBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRatingBarViewController.h; sourceTree = "<group>"; };
-		18B483791DAE3E2600ACD4BA /* YFRatingBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRatingBarViewController.m; sourceTree = "<group>"; };
-		18B4837A1DAE3E2600ACD4BA /* YFStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFStar.h; sourceTree = "<group>"; };
-		18B4837B1DAE3E2600ACD4BA /* YFStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFStar.m; sourceTree = "<group>"; };
-		18B4837C1DAE3E2600ACD4BA /* YFViewEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewEffectsViewController.h; sourceTree = "<group>"; };
-		18B4837D1DAE3E2600ACD4BA /* YFViewEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewEffectsViewController.m; sourceTree = "<group>"; };
-		18B483801DAE3E2600ACD4BA /* typewriter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = typewriter.wav; sourceTree = "<group>"; };
-		18B483811DAE3E2600ACD4BA /* YFPrinterEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPrinterEffectViewController.h; sourceTree = "<group>"; };
-		18B483821DAE3E2600ACD4BA /* YFPrinterEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPrinterEffectViewController.m; sourceTree = "<group>"; };
-		18B483831DAE3E2600ACD4BA /* ZTypewriteEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTypewriteEffectLabel.h; sourceTree = "<group>"; };
-		18B483841DAE3E2600ACD4BA /* ZTypewriteEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTypewriteEffectLabel.m; sourceTree = "<group>"; };
-		18B483851DAE3E2600ACD4BA /* YFTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTextViewController.h; sourceTree = "<group>"; };
-		18B483861DAE3E2600ACD4BA /* YFTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTextViewController.m; sourceTree = "<group>"; };
 		18B4838A1DAE3E2600ACD4BA /* YFKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFKeepViewController.h; sourceTree = "<group>"; };
 		18B4838B1DAE3E2600ACD4BA /* YFKeepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFKeepViewController.m; sourceTree = "<group>"; };
 		18B4838C1DAE3E2600ACD4BA /* YFKeepViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFKeepViewController.storyboard; sourceTree = "<group>"; };
@@ -2326,8 +2303,6 @@
 				18B4824D1DAE3E2600ACD4BA /* 02 - Label(标签) */,
 				18B482961DAE3E2600ACD4BA /* 03 - ViewLayout(视图布局) */,
 				18B482ED1DAE3E2600ACD4BA /* 04 - ViewTransition(视图切换) */,
-				18B483741DAE3E2600ACD4BA /* 05 - ViewEffects(视图效果) */,
-				18B4837E1DAE3E2600ACD4BA /* 06 - TextView(文字视图) */,
 				18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */,
 				18B483EA1DAE3E2600ACD4BA /* 08 - LittleProject(小项目展示) */,
 				18B484191DAE3E2600ACD4BA /* 09 - Animations(动画) */,
@@ -3018,51 +2993,6 @@
 				18B483711DAE3E2600ACD4BA /* RZSimpleViewController.xib */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		18B483741DAE3E2600ACD4BA /* 05 - ViewEffects(视图效果) */ = {
-			isa = PBXGroup;
-			children = (
-				18B483751DAE3E2600ACD4BA /* RatingBar */,
-				18B4837C1DAE3E2600ACD4BA /* YFViewEffectsViewController.h */,
-				18B4837D1DAE3E2600ACD4BA /* YFViewEffectsViewController.m */,
-			);
-			path = "05 - ViewEffects(视图效果)";
-			sourceTree = "<group>";
-		};
-		18B483751DAE3E2600ACD4BA /* RatingBar */ = {
-			isa = PBXGroup;
-			children = (
-				18B483761DAE3E2600ACD4BA /* YFRatingBar.h */,
-				18B483771DAE3E2600ACD4BA /* YFRatingBar.m */,
-				18B483781DAE3E2600ACD4BA /* YFRatingBarViewController.h */,
-				18B483791DAE3E2600ACD4BA /* YFRatingBarViewController.m */,
-				18B4837A1DAE3E2600ACD4BA /* YFStar.h */,
-				18B4837B1DAE3E2600ACD4BA /* YFStar.m */,
-			);
-			path = RatingBar;
-			sourceTree = "<group>";
-		};
-		18B4837E1DAE3E2600ACD4BA /* 06 - TextView(文字视图) */ = {
-			isa = PBXGroup;
-			children = (
-				18B4837F1DAE3E2600ACD4BA /* PrinterEffect */,
-				18B483851DAE3E2600ACD4BA /* YFTextViewController.h */,
-				18B483861DAE3E2600ACD4BA /* YFTextViewController.m */,
-			);
-			path = "06 - TextView(文字视图)";
-			sourceTree = "<group>";
-		};
-		18B4837F1DAE3E2600ACD4BA /* PrinterEffect */ = {
-			isa = PBXGroup;
-			children = (
-				18B483801DAE3E2600ACD4BA /* typewriter.wav */,
-				18B483811DAE3E2600ACD4BA /* YFPrinterEffectViewController.h */,
-				18B483821DAE3E2600ACD4BA /* YFPrinterEffectViewController.m */,
-				18B483831DAE3E2600ACD4BA /* ZTypewriteEffectLabel.h */,
-				18B483841DAE3E2600ACD4BA /* ZTypewriteEffectLabel.m */,
-			);
-			path = PrinterEffect;
 			sourceTree = "<group>";
 		};
 		18B483871DAE3E2600ACD4BA /* 07 - KnowledgePoint(零散知识点) */ = {
@@ -5552,7 +5482,6 @@
 				18B488021DAE3E2700ACD4BA /* lxhEmotionsInfo.plist in Resources */,
 				18B488651DAE3E2800ACD4BA /* Transition0.jpg in Resources */,
 				18B488FD1DAE3E2800ACD4BA /* YFEmptyDataSetViewController.storyboard in Resources */,
-				18B487CD1DAE3E2700ACD4BA /* typewriter.wav in Resources */,
 				18B487471DAE3E2700ACD4BA /* gift@2x.png in Resources */,
 				18B4875E1DAE3E2700ACD4BA /* iphone_settings_view.xib in Resources */,
 				18B489431DAE3E2800ACD4BA /* Info.plist in Resources */,
@@ -5747,7 +5676,6 @@
 				18B488C01DAE3E2800ACD4BA /* SearchResultsViewController.m in Sources */,
 				18B488D31DAE3E2800ACD4BA /* JLSubjectDataController.m in Sources */,
 				18B488B11DAE3E2800ACD4BA /* MyItem.m in Sources */,
-				18B487C91DAE3E2700ACD4BA /* YFRatingBar.m in Sources */,
 				18B488F31DAE3E2800ACD4BA /* UITableViewCell+YFDataSource.m in Sources */,
 				18B488531DAE3E2800ACD4BA /* YFCircleLoaderViewController.m in Sources */,
 				18B489041DAE3E2800ACD4BA /* JKDBHelper.m in Sources */,
@@ -5767,7 +5695,6 @@
 				18B487FB1DAE3E2700ACD4BA /* YFStatisticalCodeViewController.m in Sources */,
 				18B487D71DAE3E2700ACD4BA /* YFLifeCycleViewController.m in Sources */,
 				18B488071DAE3E2700ACD4BA /* SYEmotionKeyboard.m in Sources */,
-				18B487CE1DAE3E2700ACD4BA /* YFPrinterEffectViewController.m in Sources */,
 				18B4878D1DAE3E2700ACD4BA /* YFBaiduViewTransitionViewController.m in Sources */,
 				18B488161DAE3E2700ACD4BA /* YFItemView.m in Sources */,
 				18B489291DAE3E2800ACD4BA /* UIView+Extension.m in Sources */,
@@ -5813,7 +5740,6 @@
 				18B4876A1DAE3E2700ACD4BA /* HWLineLayout.m in Sources */,
 				18B487C81DAE3E2700ACD4BA /* YFViewTransitionViewController.m in Sources */,
 				18B4877B1DAE3E2700ACD4BA /* RGCardViewLayout.m in Sources */,
-				18B487CB1DAE3E2700ACD4BA /* YFStar.m in Sources */,
 				18B4879D1DAE3E2700ACD4BA /* YFFlipPageViewController.m in Sources */,
 				18B489321DAE3E2800ACD4BA /* AFURLConnectionOperation.m in Sources */,
 				18CBE9541F443219009A38FF /* ModuleARootViewController.m in Sources */,
@@ -5886,7 +5812,6 @@
 				18B489081DAE3E2800ACD4BA /* Depart.m in Sources */,
 				188275EF1F3D7CFE00EBC9A5 /* PasswordValidator.m in Sources */,
 				18B4879E1DAE3E2700ACD4BA /* HHContentCollectionView.m in Sources */,
-				18B487D01DAE3E2700ACD4BA /* YFTextViewController.m in Sources */,
 				18B489261DAE3E2800ACD4BA /* YFSortVC.m in Sources */,
 				18B488E11DAE3E2800ACD4BA /* YFAliViewController.m in Sources */,
 				18B488A71DAE3E2800ACD4BA /* YFFlexView.m in Sources */,
@@ -5942,7 +5867,6 @@
 				18B488C31DAE3E2800ACD4BA /* YFImitateAppViewController.m in Sources */,
 				18B5FE241DE7E999008FC62F /* QRCodeGenerateViewController.m in Sources */,
 				1841F8371DEEBBF400EAA812 /* Dog_MP.m in Sources */,
-				18B487CC1DAE3E2700ACD4BA /* YFViewEffectsViewController.m in Sources */,
 				18B487FC1DAE3E2700ACD4BA /* YFKnowledgeViewController.m in Sources */,
 				18B489001DAE3E2800ACD4BA /* YFImageCategoryViewController.m in Sources */,
 				183803F61E5EDBD100CB3715 /* YFQuartz2DView.m in Sources */,
@@ -6114,12 +6038,10 @@
 				182B9EB91DE2F1D000FC1030 /* Children_KVO.m in Sources */,
 				18B487B71DAE3E2700ACD4BA /* RZCardSlideAnimationController.m in Sources */,
 				18B4886D1DAE3E2800ACD4BA /* SpinerLayer.m in Sources */,
-				18B487CA1DAE3E2700ACD4BA /* YFRatingBarViewController.m in Sources */,
 				18B487531DAE3E2700ACD4BA /* WWTagsCloudView.m in Sources */,
 				18B487BA1DAE3E2700ACD4BA /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
 				18B4874E1DAE3E2700ACD4BA /* DBSphereView.m in Sources */,
 				18B488D81DAE3E2800ACD4BA /* JLHomePracticeSubjectsView.m in Sources */,
-				18B487CF1DAE3E2700ACD4BA /* ZTypewriteEffectLabel.m in Sources */,
 				18B487B11DAE3E2700ACD4BA /* RZBaseSwipeInteractionController.m in Sources */,
 				18B488A21DAE3E2800ACD4BA /* UINTDraggableView.m in Sources */,
 				18B4876B1DAE3E2700ACD4BA /* YFHorizontalScrollViewController.m in Sources */,

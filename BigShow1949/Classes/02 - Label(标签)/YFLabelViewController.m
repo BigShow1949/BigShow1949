@@ -24,7 +24,9 @@
                          @[@"闪烁文字渐现",@"YFShineLabelViewController"],
                          @[@"闪烁文字渐现2",@"YFLazyInViewController_UIStoryboard"],
                          @[@"快播动态标签",@"YFDynamicLabelViewController"],
-                         @[@"跑马灯",@"YFMarqueeViewController"],]];
+                         @[@"跑马灯",@"YFMarqueeViewController"],
+                         @[@"打印机特效",@"YFPrinterEffectViewController"],
+                         @[@"评分条",@"YFRatingBarViewController"]]];
     
 }
 
