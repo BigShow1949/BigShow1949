@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ModuleAViewController</key>
+	<string>eco://moduleA/A</string>
+	<key>ModuleARootViewController</key>
+	<string>eco://moduleA/Root</string>
+	<key>ModuleBViewController</key>
+	<string>eco://moduleB/B</string>
+	<key>ModuleBRootViewController</key>
+	<string>eco://moduleB/Root</string>
+</dict>
+</plist>

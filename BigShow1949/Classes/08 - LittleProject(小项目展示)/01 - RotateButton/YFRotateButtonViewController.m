@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     //   UIButton *btn =  [[UIButton alloc] init];
     ////    NSString *str = ;

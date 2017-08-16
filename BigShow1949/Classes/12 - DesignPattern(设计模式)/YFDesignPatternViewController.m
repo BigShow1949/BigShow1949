@@ -22,7 +22,8 @@
                          @[@"MVP登录",@"MVPLoginViewController"],
                          @[@"MVP登录2",@"MVPLogin2ViewController_UIStoryboard"],
                          @[@"MVP计数器",@"MVPCounterViewController"],
-                         @[@"MVP Home",@"MVPHomeViewController"]]];
+                         @[@"MVP Home",@"MVPHomeViewController"],
+                         @[@"Router跳转",@"YFRouterViewController"]]];
 
 }
 

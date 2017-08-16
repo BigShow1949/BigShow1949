@@ -57,6 +57,7 @@
 		1841F8461DEEBD2C00EAA812 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8441DEEBD2C00EAA812 /* Business.m */; };
 		1841F8491DEEBE1000EAA812 /* Student_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F8481DEEBE1000EAA812 /* Student_MC.m */; };
 		1841F84C1DEEBF4600EAA812 /* Dancer_MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */; };
+		184348731F44357800FA5080 /* router.html in Resources */ = {isa = PBXBuildFile; fileRef = 184348721F44357800FA5080 /* router.html */; };
 		18494D441F3D4CEE00BFCC80 /* MVPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D431F3D4CEE00BFCC80 /* MVPLoginViewController.m */; };
 		18494D471F3D4D4300BFCC80 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D461F3D4D4300BFCC80 /* LoginModel.m */; };
 		18494D4A1F3D4D5D00BFCC80 /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18494D491F3D4D5D00BFCC80 /* HttpUtils.m */; };
@@ -682,6 +683,17 @@
 		18C3E8751E55489D00D275AD /* SwiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E8741E55489D00D275AD /* SwiftViewController.m */; };
 		18C760041B9AB24A0038B2EE /* lxh in Resources */ = {isa = PBXBuildFile; fileRef = 18C760021B9AB24A0038B2EE /* lxh */; };
 		18C760051B9AB24A0038B2EE /* default in Resources */ = {isa = PBXBuildFile; fileRef = 18C760031B9AB24A0038B2EE /* default */; };
+		18CBE92F1F442F3A009A38FF /* YFRouterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE92E1F442F3A009A38FF /* YFRouterViewController.m */; };
+		18CBE9331F443055009A38FF /* EcoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9321F443055009A38FF /* EcoMainViewController.m */; };
+		18CBE9541F443219009A38FF /* ModuleARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9421F443219009A38FF /* ModuleARootViewController.m */; };
+		18CBE9551F443219009A38FF /* ModuleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9441F443219009A38FF /* ModuleAViewController.m */; };
+		18CBE9561F443219009A38FF /* ModuleBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9481F443219009A38FF /* ModuleBRootViewController.m */; };
+		18CBE9571F443219009A38FF /* ModuleBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE94A1F443219009A38FF /* ModuleBViewController.m */; };
+		18CBE9581F443219009A38FF /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE94E1F443219009A38FF /* UIViewController+Router.m */; };
+		18CBE9591F443219009A38FF /* EcoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9501F443219009A38FF /* EcoRouter.m */; };
+		18CBE95A1F443219009A38FF /* EcoRouterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE9521F443219009A38FF /* EcoRouterTool.m */; };
+		18CBE95B1F443219009A38FF /* RouterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18CBE9531F443219009A38FF /* RouterList.plist */; };
+		18CBE95E1F443245009A38FF /* EcoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CBE95D1F443245009A38FF /* EcoBaseViewController.m */; };
 		20D93EECA061DE73587053CE /* libPods-BigShow1949.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */; };
 		8B0B9AC01B9572000084590D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9ABF1B9572000084590D /* Images.xcassets */; };
 		8B0B9AC31B9572000084590D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9AC11B9572000084590D /* LaunchScreen.xib */; };
@@ -792,6 +804,7 @@
 		1841F8481DEEBE1000EAA812 /* Student_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student_MC.m; sourceTree = "<group>"; };
 		1841F84A1DEEBF4600EAA812 /* Dancer_MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer_MC.h; sourceTree = "<group>"; };
 		1841F84B1DEEBF4600EAA812 /* Dancer_MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer_MC.m; sourceTree = "<group>"; };
+		184348721F44357800FA5080 /* router.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = router.html; sourceTree = "<group>"; };
 		18494D421F3D4CEE00BFCC80 /* MVPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPLoginViewController.h; sourceTree = "<group>"; };
 		18494D431F3D4CEE00BFCC80 /* MVPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPLoginViewController.m; sourceTree = "<group>"; };
 		18494D451F3D4D4300BFCC80 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
@@ -1930,6 +1943,27 @@
 		18C3E8761E5548E800D275AD /* BigShow1949-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigShow1949-Bridging-Header.h"; sourceTree = "<group>"; };
 		18C760021B9AB24A0038B2EE /* lxh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lxh; sourceTree = "<group>"; };
 		18C760031B9AB24A0038B2EE /* default */ = {isa = PBXFileReference; lastKnownFileType = folder; path = default; sourceTree = "<group>"; };
+		18CBE92D1F442F3A009A38FF /* YFRouterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRouterViewController.h; sourceTree = "<group>"; };
+		18CBE92E1F442F3A009A38FF /* YFRouterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRouterViewController.m; sourceTree = "<group>"; };
+		18CBE9311F443055009A38FF /* EcoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcoMainViewController.h; sourceTree = "<group>"; };
+		18CBE9321F443055009A38FF /* EcoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcoMainViewController.m; sourceTree = "<group>"; };
+		18CBE9411F443219009A38FF /* ModuleARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleARootViewController.h; sourceTree = "<group>"; };
+		18CBE9421F443219009A38FF /* ModuleARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleARootViewController.m; sourceTree = "<group>"; };
+		18CBE9431F443219009A38FF /* ModuleAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleAViewController.h; sourceTree = "<group>"; };
+		18CBE9441F443219009A38FF /* ModuleAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleAViewController.m; sourceTree = "<group>"; };
+		18CBE9471F443219009A38FF /* ModuleBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleBRootViewController.h; sourceTree = "<group>"; };
+		18CBE9481F443219009A38FF /* ModuleBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleBRootViewController.m; sourceTree = "<group>"; };
+		18CBE9491F443219009A38FF /* ModuleBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleBViewController.h; sourceTree = "<group>"; };
+		18CBE94A1F443219009A38FF /* ModuleBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleBViewController.m; sourceTree = "<group>"; };
+		18CBE94D1F443219009A38FF /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Router.h"; sourceTree = "<group>"; };
+		18CBE94E1F443219009A38FF /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Router.m"; sourceTree = "<group>"; };
+		18CBE94F1F443219009A38FF /* EcoRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcoRouter.h; sourceTree = "<group>"; };
+		18CBE9501F443219009A38FF /* EcoRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcoRouter.m; sourceTree = "<group>"; };
+		18CBE9511F443219009A38FF /* EcoRouterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcoRouterTool.h; sourceTree = "<group>"; };
+		18CBE9521F443219009A38FF /* EcoRouterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcoRouterTool.m; sourceTree = "<group>"; };
+		18CBE9531F443219009A38FF /* RouterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RouterList.plist; sourceTree = "<group>"; };
+		18CBE95C1F443245009A38FF /* EcoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcoBaseViewController.h; sourceTree = "<group>"; };
+		18CBE95D1F443245009A38FF /* EcoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcoBaseViewController.m; sourceTree = "<group>"; };
 		29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BigShow1949.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		383128C758708AD06ABB381C /* Pods-BigShow1949.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigShow1949.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949.release.xcconfig"; sourceTree = "<group>"; };
 		8B0B9AAF1B9572000084590D /* BigShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4439,6 +4473,7 @@
 		18B485D91DAE3E2700ACD4BA /* 12 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				18CBE92C1F442F1D009A38FF /* Router */,
 				188275F01F3D805A00EBC9A5 /* MVP_Home */,
 				188275DF1F3D759F00EBC9A5 /* MVP_Login2 */,
 				18494D511F3D549E00BFCC80 /* MVP_Counter */,
@@ -5137,6 +5172,91 @@
 			path = "18 - Swift专栏";
 			sourceTree = "<group>";
 		};
+		18CBE92C1F442F1D009A38FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE9301F442FD1009A38FF /* EcoRouterDemo */,
+				18CBE92D1F442F3A009A38FF /* YFRouterViewController.h */,
+				18CBE92E1F442F3A009A38FF /* YFRouterViewController.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		18CBE9301F442FD1009A38FF /* EcoRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE93F1F443219009A38FF /* ModuleA */,
+				18CBE9451F443219009A38FF /* ModuleB */,
+				18CBE94B1F443219009A38FF /* Router */,
+				18CBE9311F443055009A38FF /* EcoMainViewController.h */,
+				18CBE9321F443055009A38FF /* EcoMainViewController.m */,
+				184348721F44357800FA5080 /* router.html */,
+				18CBE95C1F443245009A38FF /* EcoBaseViewController.h */,
+				18CBE95D1F443245009A38FF /* EcoBaseViewController.m */,
+			);
+			path = EcoRouterDemo;
+			sourceTree = "<group>";
+		};
+		18CBE93F1F443219009A38FF /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE9401F443219009A38FF /* Controllers */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		18CBE9401F443219009A38FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE9411F443219009A38FF /* ModuleARootViewController.h */,
+				18CBE9421F443219009A38FF /* ModuleARootViewController.m */,
+				18CBE9431F443219009A38FF /* ModuleAViewController.h */,
+				18CBE9441F443219009A38FF /* ModuleAViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18CBE9451F443219009A38FF /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE9461F443219009A38FF /* Controllers */,
+			);
+			path = ModuleB;
+			sourceTree = "<group>";
+		};
+		18CBE9461F443219009A38FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE9471F443219009A38FF /* ModuleBRootViewController.h */,
+				18CBE9481F443219009A38FF /* ModuleBRootViewController.m */,
+				18CBE9491F443219009A38FF /* ModuleBViewController.h */,
+				18CBE94A1F443219009A38FF /* ModuleBViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18CBE94B1F443219009A38FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE94C1F443219009A38FF /* Category */,
+				18CBE94F1F443219009A38FF /* EcoRouter.h */,
+				18CBE9501F443219009A38FF /* EcoRouter.m */,
+				18CBE9511F443219009A38FF /* EcoRouterTool.h */,
+				18CBE9521F443219009A38FF /* EcoRouterTool.m */,
+				18CBE9531F443219009A38FF /* RouterList.plist */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		18CBE94C1F443219009A38FF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18CBE94D1F443219009A38FF /* UIViewController+Router.h */,
+				18CBE94E1F443219009A38FF /* UIViewController+Router.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8B0B9AA61B9572000084590D = {
 			isa = PBXGroup;
 			children = (
@@ -5340,6 +5460,7 @@
 				18B488781DAE3E2800ACD4BA /* TabBar_Arena_new@2x.png in Resources */,
 				18B487311DAE3E2700ACD4BA /* button_bg@2x.png in Resources */,
 				18B487761DAE3E2700ACD4BA /* i5.jpg in Resources */,
+				184348731F44357800FA5080 /* router.html in Resources */,
 				18B4875F1DAE3E2700ACD4BA /* james_harden.png in Resources */,
 				18B488941DAE3E2800ACD4BA /* 7.jpg in Resources */,
 				18B487731DAE3E2700ACD4BA /* i2.jpg in Resources */,
@@ -5361,6 +5482,7 @@
 				18B487921DAE3E2700ACD4BA /* photo_sample_04.png in Resources */,
 				18B488791DAE3E2800ACD4BA /* TabBar_Arena_selected_new@2x.png in Resources */,
 				182C48971E5A9B520099A49D /* HelpSectionHeader.xib in Resources */,
+				18CBE95B1F443219009A38FF /* RouterList.plist in Resources */,
 				18B487591DAE3E2700ACD4BA /* awcollectionviewdiallayout_2.jpg in Resources */,
 				18B4887F1DAE3E2800ACD4BA /* TabBar_LotteryHall_selected_new@2x.png in Resources */,
 				18B488241DAE3E2800ACD4BA /* editButton@3x.png in Resources */,
@@ -5510,6 +5632,7 @@
 			files = (
 				18B488B51DAE3E2800ACD4BA /* SecondViewController.m in Sources */,
 				18B488541DAE3E2800ACD4BA /* BounceView.m in Sources */,
+				18CBE9331F443055009A38FF /* EcoMainViewController.m in Sources */,
 				18B488461DAE3E2800ACD4BA /* RippleTableViewController.m in Sources */,
 				18B4893C1DAE3E2800ACD4BA /* UIRefreshControl+AFNetworking.m in Sources */,
 				18B4880B1DAE3E2700ACD4BA /* YFLittleProjectVC03.m in Sources */,
@@ -5528,6 +5651,7 @@
 				18B488B81DAE3E2800ACD4BA /* YFTableViewDelAll.m in Sources */,
 				18B487A61DAE3E2700ACD4BA /* ITRFirstViewController.m in Sources */,
 				18B489611DAE3E2800ACD4BA /* MKAnnotationView+WebCache.m in Sources */,
+				18CBE9581F443219009A38FF /* UIViewController+Router.m in Sources */,
 				18B488621DAE3E2800ACD4BA /* CAKeyframeAnimationViewController.m in Sources */,
 				18B489731DAE3E2800ACD4BA /* YFAuthorViewController.m in Sources */,
 				18494D5A1F3D57D800BFCC80 /* CounterRepository.m in Sources */,
@@ -5573,6 +5697,7 @@
 				18B487491DAE3E2700ACD4BA /* UIImage+Extend.m in Sources */,
 				18B4891D1DAE3E2800ACD4BA /* DemoListViewController.m in Sources */,
 				18B488DD1DAE3E2800ACD4BA /* YFNode.m in Sources */,
+				18CBE95E1F443245009A38FF /* EcoBaseViewController.m in Sources */,
 				18B4894F1DAE3E2800ACD4BA /* MJConst.m in Sources */,
 				18B487EC1DAE3E2700ACD4BA /* UIViewA.m in Sources */,
 				18B4877C1DAE3E2700ACD4BA /* RGCollectionViewCell.m in Sources */,
@@ -5676,12 +5801,14 @@
 				18B487D51DAE3E2700ACD4BA /* ZWIntroductionViewController.m in Sources */,
 				18494D441F3D4CEE00BFCC80 /* MVPLoginViewController.m in Sources */,
 				188276081F3D846900EBC9A5 /* HttpClient.m in Sources */,
+				18CBE9561F443219009A38FF /* ModuleBRootViewController.m in Sources */,
 				18B489251DAE3E2800ACD4BA /* YFMonkeyKingVC.m in Sources */,
 				18B489221DAE3E2800ACD4BA /* YFEightQueensVC.m in Sources */,
 				18B489141DAE3E2800ACD4BA /* DataUpdateView.m in Sources */,
 				18B488F51DAE3E2800ACD4BA /* UIColor+Extension.m in Sources */,
 				18B488FA1DAE3E2800ACD4BA /* UIScrollView+EmptyDataSet.m in Sources */,
 				18B489101DAE3E2800ACD4BA /* DataAlterFieldView.m in Sources */,
+				18CBE9591F443219009A38FF /* EcoRouter.m in Sources */,
 				1841F84C1DEEBF4600EAA812 /* Dancer_MC.m in Sources */,
 				18B4876A1DAE3E2700ACD4BA /* HWLineLayout.m in Sources */,
 				18B487C81DAE3E2700ACD4BA /* YFViewTransitionViewController.m in Sources */,
@@ -5689,6 +5816,7 @@
 				18B487CB1DAE3E2700ACD4BA /* YFStar.m in Sources */,
 				18B4879D1DAE3E2700ACD4BA /* YFFlipPageViewController.m in Sources */,
 				18B489321DAE3E2800ACD4BA /* AFURLConnectionOperation.m in Sources */,
+				18CBE9541F443219009A38FF /* ModuleARootViewController.m in Sources */,
 				18B4881D1DAE3E2800ACD4BA /* YFRadialMenu.m in Sources */,
 				18B4892D1DAE3E2800ACD4BA /* AFHTTPRequestOperation.m in Sources */,
 				18B487BB1DAE3E2700ACD4BA /* RZShrinkZoomAnimationController.m in Sources */,
@@ -5718,6 +5846,7 @@
 				188275E71F3D781400EBC9A5 /* DemoPresenter.m in Sources */,
 				183699091DC325CE009AD5D5 /* YFAddMethodViewController.m in Sources */,
 				18B4891F1DAE3E2800ACD4BA /* YFNetworkRequestViewController.m in Sources */,
+				18CBE92F1F442F3A009A38FF /* YFRouterViewController.m in Sources */,
 				18B488B31DAE3E2800ACD4BA /* RootViewController.m in Sources */,
 				18B4878C1DAE3E2700ACD4BA /* TempViewController.m in Sources */,
 				18B487361DAE3E2700ACD4BA /* DWBubbleMenuButton.m in Sources */,
@@ -5762,6 +5891,7 @@
 				18B488E11DAE3E2800ACD4BA /* YFAliViewController.m in Sources */,
 				18B488A71DAE3E2800ACD4BA /* YFFlexView.m in Sources */,
 				18B488A91DAE3E2800ACD4BA /* YFSnapBehaviorViewController.m in Sources */,
+				18CBE95A1F443219009A38FF /* EcoRouterTool.m in Sources */,
 				18B4879A1DAE3E2700ACD4BA /* JCFlipPageView.m in Sources */,
 				18B489151DAE3E2800ACD4BA /* LccCell.m in Sources */,
 				18B489281DAE3E2800ACD4BA /* BaseTableViewController.m in Sources */,
@@ -5848,6 +5978,7 @@
 				18B489161DAE3E2800ACD4BA /* LccDataCell.m in Sources */,
 				18B488EE1DAE3E2800ACD4BA /* MyBaseDataSource.m in Sources */,
 				18B488451DAE3E2800ACD4BA /* RippleModel2.m in Sources */,
+				18CBE9571F443219009A38FF /* ModuleBViewController.m in Sources */,
 				18B487DD1DAE3E2700ACD4BA /* Case4ViewController.m in Sources */,
 				18B488DE1DAE3E2800ACD4BA /* YFTableNodeViewController.m in Sources */,
 				18B487381DAE3E2700ACD4BA /* UIButton+touch.m in Sources */,
@@ -5928,6 +6059,7 @@
 				18B488AD1DAE3E2800ACD4BA /* YFAttachmentBehaviorViewController.m in Sources */,
 				18B487F31DAE3E2700ACD4BA /* Classes.m in Sources */,
 				18B488C21DAE3E2800ACD4BA /* YFUIKitViewController.m in Sources */,
+				18CBE9551F443219009A38FF /* ModuleAViewController.m in Sources */,
 				1841F8401DEEBCBE00EAA812 /* ClassC.m in Sources */,
 				18B4872E1DAE3E2700ACD4BA /* APRoundedButton.m in Sources */,
 				1841F8221DEEB94100EAA812 /* MultipleMsgForawrd.m in Sources */,
