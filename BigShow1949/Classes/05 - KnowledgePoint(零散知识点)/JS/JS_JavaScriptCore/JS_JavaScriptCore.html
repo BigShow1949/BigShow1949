@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+            <script language="javascript">
+             
+            function scanClick() {
+                scan();
+            }
+                
+            function shareClick() {
+                share('测试分享的标题','测试分享的内容','url=http://www.baidu.com');
+            }
+
+            function locationClick() {
+                getLocation();
+            }
+
+            function setLocation(location) {
+                asyncAlert(location);
+                document.getElementById("returnValue").value = location;
+            }
+
+            function getQRCode(result) {
+                asyncAlert(result);
+                document.getElementById("returnValue").value = result;
+            }
+            
+            function colorClick() {
+                setColor(67,205,12,0.5);
+            }
+            
+            function payClick() {
+                payAction('201511120981234','wx',1,'粉色外套');
+            }
+            
+            function payResult(str) {
+                asyncAlert(str);
+                document.getElementById("returnValue").value = str;
+            }
+            
+            function shareResult(channel_id,share_channel,share_url) {
+                var content = channel_id+","+share_channel+","+share_url;
+                asyncAlert(content);
+                document.getElementById("returnValue").value = content;
+            }
+
+            function shake() {
+                shake();
+            }
+            
+            function goBack() {
+                goBack();
+            }
+            
+            function showArr(){
+                asyncAlert(arr);
+            }
+            
+            function asyncAlert(content) {
+                setTimeout(function(){
+                           alert(content);
+                           },1);
+            }
+            
+            
+            </script>
+            </head>
+    
+    <body>
+        <h1>这是按钮调用</h1>
+        <input type="button" value="扫一扫" onclick="scanClick()" />
+        <input type="button" value="获取定位" onclick="locationClick()" />
+        <input type="button" value="修改背景色" onclick="colorClick()" />
+        <input type="button" value="分享" onclick="shareClick()" />
+        <input type="button" value="支付" onclick="payClick()" />
+        <input type="button" value="摇一摇" onclick="shake()" />
+        <input type="button" value="返回" onclick="goBack()" />
+        <input type="button" value="输出arr" onclick="showArr()" />
+        
+        <h1>这是文件上传</h1>
+
+        <input type="file" />
+        
+        <h1>这是回调结果展示区</h1>
+        <textarea id ="returnValue" type="value" rows="5" cols="50">
+        
+        </textarea>
+        
+        <h4>竖直方向的表头：</h4>
+        <table border="1" style="width:300px;height:600px">
+            <tr>
+                <th>姓名</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th>电话</th>
+                <td>555 77 854</td>
+            </tr>
+            <tr>
+                <th>传真</th>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

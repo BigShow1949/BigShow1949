@@ -16,6 +16,10 @@
 		1868EE972066266C00EEE713 /* JS_MessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 1868EE962066266C00EEE713 /* JS_MessageHandler.html */; };
 		1868EE992066267100EEE713 /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1868EE982066267100EEE713 /* shake_sound_male.wav */; };
 		1868EE9C2066269C00EEE713 /* HLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE9B2066269C00EEE713 /* HLAudioPlayer.m */; };
+		1868EEA02066349000EEE713 /* JS_JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE9F2066349000EEE713 /* JS_JavaScriptCoreViewController.m */; };
+		1868EEA22066350C00EEE713 /* JS_JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = 1868EEA12066350C00EEE713 /* JS_JavaScriptCore.html */; };
+		1868EEA62066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EEA52066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m */; };
+		1868EEA8206641E000EEE713 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1868EEA7206641E000EEE713 /* index.html */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -746,6 +750,12 @@
 		1868EE982066267100EEE713 /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
 		1868EE9A2066269C00EEE713 /* HLAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAudioPlayer.h; sourceTree = "<group>"; };
 		1868EE9B2066269C00EEE713 /* HLAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAudioPlayer.m; sourceTree = "<group>"; };
+		1868EE9E2066349000EEE713 /* JS_JavaScriptCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS_JavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		1868EE9F2066349000EEE713 /* JS_JavaScriptCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS_JavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		1868EEA12066350C00EEE713 /* JS_JavaScriptCore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JS_JavaScriptCore.html; sourceTree = "<group>"; };
+		1868EEA42066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS_UIWebViewJSBridgeViewController.h; sourceTree = "<group>"; };
+		1868EEA52066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS_UIWebViewJSBridgeViewController.m; sourceTree = "<group>"; };
+		1868EEA7206641E000EEE713 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2094,6 +2104,26 @@
 			path = JS_MessageHandler;
 			sourceTree = "<group>";
 		};
+		1868EE9D2066345F00EEE713 /* JS_JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				1868EEA12066350C00EEE713 /* JS_JavaScriptCore.html */,
+				1868EE9E2066349000EEE713 /* JS_JavaScriptCoreViewController.h */,
+				1868EE9F2066349000EEE713 /* JS_JavaScriptCoreViewController.m */,
+			);
+			path = JS_JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		1868EEA3206640EF00EEE713 /* JS_WebViewJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1868EEA7206641E000EEE713 /* index.html */,
+				1868EEA42066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.h */,
+				1868EEA52066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m */,
+			);
+			path = JS_WebViewJSBridge;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2913,6 +2943,8 @@
 		18E51EF81F443EED00514693 /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				1868EEA3206640EF00EEE713 /* JS_WebViewJSBridge */,
+				1868EE9D2066345F00EEE713 /* JS_JavaScriptCore */,
 				1868EE922066260100EEE713 /* JS_MessageHandler */,
 				1868EE892065FB9F00EEE713 /* JS_URL */,
 				18E51EF91F443EED00514693 /* JSCore */,
@@ -5630,6 +5662,7 @@
 				18E524E91F443EF100514693 /* 6.jpg in Resources */,
 				18E523901F443EEF00514693 /* kyrie_irving.png in Resources */,
 				18E523701F443EEF00514693 /* gift@2x.png in Resources */,
+				1868EEA8206641E000EEE713 /* index.html in Resources */,
 				18E524A11F443EF000514693 /* YFGradientViewController.png in Resources */,
 				18E523A71F443EEF00514693 /* trophy-50.png in Resources */,
 				18E523B61F443EEF00514693 /* 2.plist in Resources */,
@@ -5648,6 +5681,7 @@
 				18E524731F443EF000514693 /* YFAnimationVC05.storyboard in Resources */,
 				18E524CE1F443EF100514693 /* TabBar_Arena_new@2x.png in Resources */,
 				18E524C21F443EF000514693 /* Login.png in Resources */,
+				1868EEA22066350C00EEE713 /* JS_JavaScriptCore.html in Resources */,
 				18E523F41F443EEF00514693 /* RZSimpleColorViewController.xib in Resources */,
 				18E525491F443EF100514693 /* MVPLogin2ViewController.storyboard in Resources */,
 				18E524771F443EF000514693 /* editButton@2x.png in Resources */,
@@ -5687,13 +5721,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigShow1949-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F70C5B82D5BB63F63B526461 /* [CP] Copy Pods Resources */ = {
@@ -5738,6 +5775,7 @@
 				18E524F71F443EF100514693 /* UINTAppDelegate.m in Sources */,
 				18E524C91F443EF000514693 /* SYHistoryViewController.m in Sources */,
 				18E525401F443EF100514693 /* Reachability.m in Sources */,
+				1868EEA62066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m in Sources */,
 				18E5249E1F443EF000514693 /* YFWaterWaveViewController.m in Sources */,
 				18E525DB1F443EF200514693 /* MJRefreshHeaderView.m in Sources */,
 				18E524B91F443EF000514693 /* CATransitionViewController.m in Sources */,
@@ -6143,6 +6181,7 @@
 				18E5243B1F443EF000514693 /* YFQuartz2DViewController.m in Sources */,
 				18E524611F443EF000514693 /* YFCard.m in Sources */,
 				18E524191F443EEF00514693 /* Case7ViewController.m in Sources */,
+				1868EEA02066349000EEE713 /* JS_JavaScriptCoreViewController.m in Sources */,
 				18E525001F443EF100514693 /* YFPushBehaviorViewController.m in Sources */,
 				18E524271F443EEF00514693 /* Business.m in Sources */,
 				18E524B11F443EF000514693 /* YFPushTransitionViewController.m in Sources */,

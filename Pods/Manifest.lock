@@ -2,22 +2,22 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - WebViewJavascriptBridge (5.2.0)
+  - WebViewJavascriptBridge (6.0.3)
   - XLPhotoBrowser (1.0.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - SDWebImage (~> 4.0.0)
-  - WebViewJavascriptBridge (~> 5.0)
+  - WebViewJavascriptBridge (~> 6.0.3)
   - XLPhotoBrowser (~> 1.0.2)
   - YYModel
 
 SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   XLPhotoBrowser: ec30940437ac76ca27a88ecc4fac6f52b327bcc7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8f284e5d9d49d2ae7b9ade62d67177fecf92c96c
+PODFILE CHECKSUM: 98d2359f01aa3c7b273bf8ef6d197605910dd9a6
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0

@@ -26,6 +26,7 @@
     [self setupDataArr:@[@[@"UIWebView拦截URL",@"JS_UIWebView_URLViewController"],
                          @[@"WKWebView拦截URL",@"JS_WKWebView_URLViewController"],
                          @[@"MessageHandler",@"JS_MessageHandlerViewController"],
+                         @[@"JavaScriptCore",@"JS_JavaScriptCoreViewController"],
                          @[@"JSCore",@"JSCoreViewController"],
                          @[@"JSBridge使用",@"WebViewJSBridgeVC"], // 还有点问题
                          ]];
