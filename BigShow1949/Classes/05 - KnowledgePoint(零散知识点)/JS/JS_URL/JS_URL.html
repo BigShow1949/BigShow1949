@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+            <script language="javascript">
+                function loadURL(url) {
+                    var iFrame;
+                    iFrame = document.createElement("iframe");
+                    iFrame.setAttribute("src", url);
+                    iFrame.setAttribute("style", "display:none;");
+                    iFrame.setAttribute("height", "0px");
+                    iFrame.setAttribute("width", "0px");
+                    iFrame.setAttribute("frameborder", "0");
+                    document.body.appendChild(iFrame);
+                    // 发起请求后这个iFrame就没用了，所以把它从dom上移除掉
+                    iFrame.parentNode.removeChild(iFrame);
+                    iFrame = null;
+                }
+            function scanClick() {
+                alert(arr);
+                loadURL("haleyAction://scanClick");
+            }
+                
+            function shareClick() {
+                loadURL("haleyAction://shareClick?title=测试分享的标题&content=测试分享的内容&url=http://www.baidu.com");
+            }
+            
+            function locationClick() {
+                loadURL("haleyAction://getLocation");
+            }
+            
+            function setLocation(location) {
+                asyncAlert(location);
+                document.getElementById("returnValue").value = location;
+            }
+            
+            function getQRCode(result) {
+                asyncAlert(result);
+                document.getElementById("returnValue").value = result;
+            }
+            
+            function colorClick() {
+                loadURL("haleyAction://setColor?r=67&g=205&b=128&a=0.5");
+            }
+            
+            function payClick() {
+                loadURL("haleyAction://payAction?order_no=201511120981234&channel=wx&amount=1&subject=粉色外套");
+            }
+            
+            function payResult(str,code) {
+                var content = str + ", " + code;
+                asyncAlert(content);
+                document.getElementById("returnValue").value = content;
+            }
+            
+<!--            function payResult(str) {-->
+<!--                var content = str;-->
+<!--                asyncAlert(content);-->
+<!--                document.getElementById("returnValue").value = content;-->
+<!--            }-->
+            
+            function shareResult(channel_id,share_channel,share_url) {
+                var content = channel_id+","+share_channel+","+share_url;
+                asyncAlert(content);
+                document.getElementById("returnValue").value = content;
+            }
+
+            function shake() {
+                loadURL("haleyAction://shake");
+            }
+            
+            function goBack() {
+                loadURL("haleyAction://back");
+            }
+            
+            function asyncAlert(content) {
+                setTimeout(function(){
+                           alert(content);
+                           },1);
+            }
+            
+            
+            </script>
+            </head>
+    
+    <body>
+        <h1>这是按钮调用</h1>
+        <input type="button" value="扫一扫" onclick="scanClick()" />
+        <input type="button" value="获取定位" onclick="locationClick()" />
+        <input type="button" value="修改背景色" onclick="colorClick()" />
+        <input type="button" value="分享" onclick="shareClick()" />
+        <input type="button" value="支付" onclick="payClick()" />
+        <input type="button" value="摇一摇" onclick="shake()" />
+        <input type="button" value="返回" onclick="goBack()" />
+        
+        <h1>这是文件上传</h1>
+
+        <input type="file" />
+        
+        <h1>这是回调结果展示区</h1>
+        <textarea id ="returnValue" type="value" rows="5" cols="50">
+        
+        </textarea>
+        
+        <h4>竖直方向的表头：</h4>
+        <table border="1" style="width:300px;height:600px">
+            <tr>
+                <th>姓名</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th>电话</th>
+                <td>555 77 854</td>
+            </tr>
+            <tr>
+                <th>传真</th>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

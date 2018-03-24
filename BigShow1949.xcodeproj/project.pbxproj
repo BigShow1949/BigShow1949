@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1823996A1F0350AE005B58A0 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 182399691F0350AE005B58A0 /* Test.html */; };
 		1823996D1F0350D2005B58A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */; };
+		1868EE8C2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE8B2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m */; };
+		1868EE8E2066011B00EEE713 /* JS_URL.html in Resources */ = {isa = PBXBuildFile; fileRef = 1868EE8D2066011B00EEE713 /* JS_URL.html */; };
+		1868EE9120661E9D00EEE713 /* JS_WKWebView_URLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE9020661E9D00EEE713 /* JS_WKWebView_URLViewController.m */; };
+		1868EE952066263800EEE713 /* JS_MessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE942066263800EEE713 /* JS_MessageHandlerViewController.m */; };
+		1868EE972066266C00EEE713 /* JS_MessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 1868EE962066266C00EEE713 /* JS_MessageHandler.html */; };
+		1868EE992066267100EEE713 /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1868EE982066267100EEE713 /* shake_sound_male.wav */; };
+		1868EE9C2066269C00EEE713 /* HLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EE9B2066269C00EEE713 /* HLAudioPlayer.m */; };
 		1873D77B1D8021AE008C2D1D /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1873D77A1D8021AE008C2D1D /* img1.jpg */; };
 		18C2D5331BAEDC98006CD3B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5311BAEDC61006CD3B2 /* UIKit.framework */; };
 		18C2D5361BAEDCC8006CD3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */; };
@@ -728,6 +735,17 @@
 /* Begin PBXFileReference section */
 		182399691F0350AE005B58A0 /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
 		1823996C1F0350D2005B58A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1868EE8A2065FBCF00EEE713 /* JS_UIWebView_URLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS_UIWebView_URLViewController.h; sourceTree = "<group>"; };
+		1868EE8B2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS_UIWebView_URLViewController.m; sourceTree = "<group>"; };
+		1868EE8D2066011B00EEE713 /* JS_URL.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JS_URL.html; sourceTree = "<group>"; };
+		1868EE8F20661E9D00EEE713 /* JS_WKWebView_URLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS_WKWebView_URLViewController.h; sourceTree = "<group>"; };
+		1868EE9020661E9D00EEE713 /* JS_WKWebView_URLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS_WKWebView_URLViewController.m; sourceTree = "<group>"; };
+		1868EE932066263800EEE713 /* JS_MessageHandlerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS_MessageHandlerViewController.h; sourceTree = "<group>"; };
+		1868EE942066263800EEE713 /* JS_MessageHandlerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS_MessageHandlerViewController.m; sourceTree = "<group>"; };
+		1868EE962066266C00EEE713 /* JS_MessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JS_MessageHandler.html; sourceTree = "<group>"; };
+		1868EE982066267100EEE713 /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
+		1868EE9A2066269C00EEE713 /* HLAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAudioPlayer.h; sourceTree = "<group>"; };
+		1868EE9B2066269C00EEE713 /* HLAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAudioPlayer.m; sourceTree = "<group>"; };
 		1873D77A1D8021AE008C2D1D /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		18C2D5311BAEDC61006CD3B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C2D5341BAEDCAC006CD3B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2051,6 +2069,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1868EE892065FB9F00EEE713 /* JS_URL */ = {
+			isa = PBXGroup;
+			children = (
+				1868EE8D2066011B00EEE713 /* JS_URL.html */,
+				1868EE8A2065FBCF00EEE713 /* JS_UIWebView_URLViewController.h */,
+				1868EE8B2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m */,
+				1868EE8F20661E9D00EEE713 /* JS_WKWebView_URLViewController.h */,
+				1868EE9020661E9D00EEE713 /* JS_WKWebView_URLViewController.m */,
+			);
+			path = JS_URL;
+			sourceTree = "<group>";
+		};
+		1868EE922066260100EEE713 /* JS_MessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1868EE982066267100EEE713 /* shake_sound_male.wav */,
+				1868EE962066266C00EEE713 /* JS_MessageHandler.html */,
+				1868EE932066263800EEE713 /* JS_MessageHandlerViewController.h */,
+				1868EE942066263800EEE713 /* JS_MessageHandlerViewController.m */,
+				1868EE9A2066269C00EEE713 /* HLAudioPlayer.h */,
+				1868EE9B2066269C00EEE713 /* HLAudioPlayer.m */,
+			);
+			path = JS_MessageHandler;
+			sourceTree = "<group>";
+		};
 		18C2D52F1BAEDC2C006CD3B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2870,6 +2913,8 @@
 		18E51EF81F443EED00514693 /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				1868EE922066260100EEE713 /* JS_MessageHandler */,
+				1868EE892065FB9F00EEE713 /* JS_URL */,
 				18E51EF91F443EED00514693 /* JSCore */,
 				18E51EFC1F443EED00514693 /* JSViewController.h */,
 				18E51EFD1F443EED00514693 /* JSViewController.m */,
@@ -5492,6 +5537,7 @@
 				18E523C01F443EEF00514693 /* photo_sample_03.png in Resources */,
 				18E524E11F443EF100514693 /* 17.jpg in Resources */,
 				18E525021F443EF100514693 /* YFCollisionBehaviorViewController.storyboard in Resources */,
+				1868EE992066267100EEE713 /* shake_sound_male.wav in Resources */,
 				18E523881F443EEF00514693 /* awcollectionviewdiallayout_2.jpg in Resources */,
 				18E523751F443EEF00514693 /* typewriter.wav in Resources */,
 				18E523DD1F443EEF00514693 /* YFSlidingViewController.storyboard in Resources */,
@@ -5524,6 +5570,7 @@
 				18E525061F443EF100514693 /* MenuItemCell.xib in Resources */,
 				18E5251C1F443EF100514693 /* bg_yaoyao_above.png in Resources */,
 				18E5238B1F443EEF00514693 /* dialCell2.xib in Resources */,
+				1868EE8E2066011B00EEE713 /* JS_URL.html in Resources */,
 				18E524DF1F443EF100514693 /* 15.jpg in Resources */,
 				18E524BE1F443EF000514693 /* Transition3.jpg in Resources */,
 				18E523C31F443EEF00514693 /* photo_sample_06.png in Resources */,
@@ -5562,6 +5609,7 @@
 				18E524551F443EF000514693 /* defaultEmotionsInfo.plist in Resources */,
 				18E5241F1F443EEF00514693 /* YFMasonryDemoViewController.storyboard in Resources */,
 				18E524E71F443EF100514693 /* 4.jpg in Resources */,
+				1868EE972066266C00EEE713 /* JS_MessageHandler.html in Resources */,
 				18E523891F443EEF00514693 /* carmelo_anthony.png in Resources */,
 				18E524661F443EF000514693 /* ContextMenuCell.xib in Resources */,
 				18E524DC1F443EF100514693 /* 12.jpg in Resources */,
@@ -5827,6 +5875,7 @@
 				18E523641F443EEF00514693 /* SKTag.m in Sources */,
 				18E5241B1F443EEF00514693 /* Case8DataEntity.m in Sources */,
 				18E525C61F443EF200514693 /* MASViewAttribute.m in Sources */,
+				1868EE8C2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m in Sources */,
 				18E526031F4442EC00514693 /* JLRoutes.m in Sources */,
 				18E525341F443EF100514693 /* YFTableNodeViewController.m in Sources */,
 				18E525741F443EF100514693 /* UIImage+EXtension.m in Sources */,
@@ -5856,6 +5905,7 @@
 				18E524FC1F443EF100514693 /* PaneBehavior.m in Sources */,
 				18E525441F443EF100514693 /* LoginPresenter.m in Sources */,
 				18E5240A1F443EEF00514693 /* Dog_KVC.m in Sources */,
+				1868EE952066263800EEE713 /* JS_MessageHandlerViewController.m in Sources */,
 				18E5242E1F443EEF00514693 /* Teacher_MMF.m in Sources */,
 				18E5257F1F443EF100514693 /* QueryTableViewController.m in Sources */,
 				18E5237E1F443EEF00514693 /* YFSphereTagCloud.m in Sources */,
@@ -5962,6 +6012,7 @@
 				18E525B11F443EF200514693 /* AFURLRequestSerialization.m in Sources */,
 				18E524991F443EF000514693 /* RippleModel2.m in Sources */,
 				18E525E61F443EF200514693 /* SDWebImageManager.m in Sources */,
+				1868EE9120661E9D00EEE713 /* JS_WKWebView_URLViewController.m in Sources */,
 				18E525961F443EF200514693 /* YFAlgorithmViewController.m in Sources */,
 				18E524671F443EF000514693 /* UIView+YFConstraints.m in Sources */,
 				18E525E31F443EF200514693 /* SDWebImageDecoder.m in Sources */,
@@ -5975,6 +6026,7 @@
 				18E5240C1F443EEF00514693 /* Nure_KVO.m in Sources */,
 				18E5247B1F443EF000514693 /* XRPopMenuView.m in Sources */,
 				18E5252C1F443EF100514693 /* JLHomePracticeBannerView.m in Sources */,
+				1868EE9C2066269C00EEE713 /* HLAudioPlayer.m in Sources */,
 				18E525261F443EF100514693 /* YFResizableView.m in Sources */,
 				18E5241E1F443EEF00514693 /* YFMasonryDemoViewController.m in Sources */,
 				18E523F01F443EEF00514693 /* UIColor+Random.m in Sources */,
