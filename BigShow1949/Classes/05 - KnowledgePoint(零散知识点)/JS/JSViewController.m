@@ -13,6 +13,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /*
+     
+     JS交互的几种方式:
+     1.
+     */
     
     [self setupDataArr:@[@[@"JSCore",@"JSCoreViewController"],
                          @[@"JSBridge使用",@"WebViewJSBridgeVC"], // 还有点问题
