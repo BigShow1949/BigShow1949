@@ -528,7 +528,7 @@
     } configurationHandler:nil completionHandler:^(NSError *error, id result, BOOL isFromCache, AFHTTPRequestOperation *operation) {
         if (!error) {
             [self appendLog:@"图片上传成功，正在下载显示..."];
-            [imageView setImageWithURL:[NSURL URLWithString:result[@"links"][@"image_link"]]];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:result[@"links"][@"image_link"]]];
         } else {
             [self appendLog:error.description];
         }
