@@ -44,16 +44,37 @@
 // 不能在分类中重写系统方法imageNamed，因为会把系统的功能给覆盖掉，而且分类中不能调用super.
 
 // 既能加载图片又能打印
+// 场景1: 如果本地图片 图片如果写错了,会有提示
+//+ (instancetype)imageWithName:(NSString *)name
+//{
+//    // 这里调用imageWithName，相当于调用imageName
+//    UIImage *image = [self imageWithName:name];
+//
+//    if (image == nil) {
+//        NSLog(@"ERROR:加载空的图片");
+//    }
+//
+//    return image;
+//}
+
+// 场景2:所有图片的名称都拼接_os7的话,当旧项目需要更改一套图片时,可以避免一个个更改
+//    NSString *newName = [name stringByAppendingString:@"_os7"];
 + (instancetype)imageWithName:(NSString *)name
 {
-    
-    // 这里调用imageWithName，相当于调用imageName
-    UIImage *image = [self imageWithName:name];
-    
-    if (image == nil) {
-        NSLog(@"ERROR:加载空的图片");
+    BOOL img_iOS7 = [[UIDevice currentDevice].systemVersion floatValue] >= 7.0;
+    UIImage *image = nil;
+    if (img_iOS7) {
+        NSString *newName = [name stringByAppendingString:@"_os7"];
+        image = [UIImage imageWithName:newName];//这里实际调用的时系统方法imageNamed:
     }
     
+    if (image == nil) { // _os7 图片没有就还是显示原来的图片
+        image = [UIImage imageWithName:name];
+    }
+    
+    if (image == nil) { // 图片还是没有,就报错提示
+        NSLog(@"ERROR:加载空的图片");
+    }
     return image;
 }
 

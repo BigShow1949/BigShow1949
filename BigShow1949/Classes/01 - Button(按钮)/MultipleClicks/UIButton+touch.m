@@ -18,7 +18,7 @@
     dispatch_once(&onceToken, ^{
         SEL selA = @selector(sendAction:to:forEvent:);
         SEL selB = @selector(mySendAction:to:forEvent:); // B是自己定义的方法
-        Method methodA =   class_getInstanceMethod(self,selA);
+        Method methodA = class_getInstanceMethod(self, selA);
         Method methodB = class_getInstanceMethod(self, selB);
        BOOL isAdd = class_addMethod(self, selA, method_getImplementation(methodB), method_getTypeEncoding(methodB));
         if (isAdd) {

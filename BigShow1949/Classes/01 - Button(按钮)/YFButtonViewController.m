@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // 避免按钮多次点击的三种实现方法
     [self setupDataArr:@[@[@"多次点击按钮",@"YFMultipleClicksViewController"],
                          @[@"微信注册按钮",@"YFAnimationCircleButtonVC"],
                          @[@"ape展开按钮",@"YFBubbleMenuButtonViewController"],

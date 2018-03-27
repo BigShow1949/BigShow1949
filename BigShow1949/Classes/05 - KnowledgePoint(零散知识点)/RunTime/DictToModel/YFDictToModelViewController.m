@@ -45,7 +45,7 @@
 
     [self KVCtoModel];
     
-//    [self printValue];
+    [self printValue];
     
 }
 
