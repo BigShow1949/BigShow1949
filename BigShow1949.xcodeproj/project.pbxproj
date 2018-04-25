@@ -35,6 +35,9 @@
 		18C2D5531BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2D5521BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib */; };
 		18C760041B9AB24A0038B2EE /* lxh in Resources */ = {isa = PBXBuildFile; fileRef = 18C760021B9AB24A0038B2EE /* lxh */; };
 		18C760051B9AB24A0038B2EE /* default in Resources */ = {isa = PBXBuildFile; fileRef = 18C760031B9AB24A0038B2EE /* default */; };
+		18CCA1692090200400300966 /* placeholder30.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1652090200400300966 /* placeholder30.png */; };
+		18CCA16A2090200400300966 /* YFButtonCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1662090200400300966 /* YFButtonCategoryViewController.m */; };
+		18CCA16B2090200400300966 /* UIButton+TitlePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1672090200400300966 /* UIButton+TitlePosition.m */; };
 		18E523571F443EEF00514693 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51D991F443EED00514693 /* APRoundedButton.m */; };
 		18E523581F443EEF00514693 /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51D9B1F443EED00514693 /* YFAllRoundButtonVC.m */; };
 		18E523591F443EEF00514693 /* YFAllRoundButtonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E51D9C1F443EED00514693 /* YFAllRoundButtonVC.storyboard */; };
@@ -755,6 +758,11 @@
 		18C2D5521BAEDDE7006CD3B2 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		18C760021B9AB24A0038B2EE /* lxh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lxh; sourceTree = "<group>"; };
 		18C760031B9AB24A0038B2EE /* default */ = {isa = PBXFileReference; lastKnownFileType = folder; path = default; sourceTree = "<group>"; };
+		18CCA1642090200400300966 /* UIButton+TitlePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TitlePosition.h"; sourceTree = "<group>"; };
+		18CCA1652090200400300966 /* placeholder30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder30.png; sourceTree = "<group>"; };
+		18CCA1662090200400300966 /* YFButtonCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFButtonCategoryViewController.m; sourceTree = "<group>"; };
+		18CCA1672090200400300966 /* UIButton+TitlePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TitlePosition.m"; sourceTree = "<group>"; };
+		18CCA1682090200400300966 /* YFButtonCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFButtonCategoryViewController.h; sourceTree = "<group>"; };
 		18E51D981F443EED00514693 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		18E51D991F443EED00514693 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		18E51D9A1F443EED00514693 /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
@@ -2097,6 +2105,18 @@
 				29DBB5795F8F06EEFDA426E9 /* libPods-BigShow1949.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18CCA1632090200400300966 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				18CCA1642090200400300966 /* UIButton+TitlePosition.h */,
+				18CCA1652090200400300966 /* placeholder30.png */,
+				18CCA1662090200400300966 /* YFButtonCategoryViewController.m */,
+				18CCA1672090200400300966 /* UIButton+TitlePosition.m */,
+				18CCA1682090200400300966 /* YFButtonCategoryViewController.h */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		18E51D951F443EED00514693 /* Classes */ = {
@@ -4744,6 +4764,7 @@
 		18E522251F443EEE00514693 /* 11 - Tools(常用工具) */ = {
 			isa = PBXGroup;
 			children = (
+				18CCA1632090200400300966 /* UIButton */,
 				18E522261F443EEE00514693 /* Color */,
 				18E5222C1F443EEE00514693 /* EmptyDataSet */,
 				18E522381F443EEE00514693 /* Image */,
@@ -5424,7 +5445,7 @@
 				TargetAttributes = {
 					8B0B9AAE1B9572000084590D = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 686TP5D9Q7;
+						DevelopmentTeam = 3JJP29A3NU;
 						LastSwiftMigration = 0800;
 					};
 					8B0B9AC71B9572000084590D = {
@@ -5535,6 +5556,7 @@
 				18E5238E1F443EEF00514693 /* james_harden.png in Resources */,
 				18E524801F443EF000514693 /* leaves.png in Resources */,
 				18E524961F443EF000514693 /* Shader.vsh in Resources */,
+				18CCA1692090200400300966 /* placeholder30.png in Resources */,
 				18E5249B1F443EF000514693 /* Shader.fsh in Resources */,
 				18C760041B9AB24A0038B2EE /* lxh in Resources */,
 				18E524EB1F443EF100514693 /* 8.jpg in Resources */,
@@ -5683,6 +5705,7 @@
 				18E5237C1F443EEF00514693 /* YFShineLabelViewController.m in Sources */,
 				18E5241C1F443EEF00514693 /* Case8ViewController.m in Sources */,
 				18E524F71F443EF100514693 /* UINTAppDelegate.m in Sources */,
+				18CCA16A2090200400300966 /* YFButtonCategoryViewController.m in Sources */,
 				18E524C91F443EF000514693 /* SYHistoryViewController.m in Sources */,
 				18E525401F443EF100514693 /* Reachability.m in Sources */,
 				1868EEA62066419B00EEE713 /* JS_UIWebViewJSBridgeViewController.m in Sources */,
@@ -6158,6 +6181,7 @@
 				18E524EF1F443EF100514693 /* RACollectionViewTripletLayout.m in Sources */,
 				18E523941F443EEF00514693 /* YFHalfCircleLayoutViewController.m in Sources */,
 				18E525011F443EF100514693 /* YFCollisionBehaviorViewController.m in Sources */,
+				18CCA16B2090200400300966 /* UIButton+TitlePosition.m in Sources */,
 				18E5236C1F443EEF00514693 /* LazyFadeInLayer.m in Sources */,
 				18E523831F443EEF00514693 /* YFTagsCloudViewController.m in Sources */,
 				18E525041F443EF100514693 /* MenuData.m in Sources */,
@@ -6328,6 +6352,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6361,6 +6386,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
