@@ -38,6 +38,14 @@
 		18CCA1692090200400300966 /* placeholder30.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1652090200400300966 /* placeholder30.png */; };
 		18CCA16A2090200400300966 /* YFButtonCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1662090200400300966 /* YFButtonCategoryViewController.m */; };
 		18CCA16B2090200400300966 /* UIButton+TitlePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1672090200400300966 /* UIButton+TitlePosition.m */; };
+		18CCA1942090221400300966 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1862090221400300966 /* NSMutableArray+Safe.m */; };
+		18CCA1952090221400300966 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1892090221400300966 /* NSMutableDictionary+Safe.m */; };
+		18CCA1962090221400300966 /* NSMutableString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA18E2090221400300966 /* NSMutableString+Safe.m */; };
+		18CCA1972090221400300966 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1902090221400300966 /* NSDictionary+Safe.m */; };
+		18CCA1982090221400300966 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1912090221400300966 /* NSObject+Swizzling.m */; };
+		18CCA1992090221400300966 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1922090221400300966 /* NSArray+Safe.m */; };
+		18CCA19A2090221400300966 /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1932090221400300966 /* NSObject+ImpChangeTool.m */; };
+		18CCA19D2090222C00300966 /* YFSafeObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA19C2090222C00300966 /* YFSafeObjectViewController.m */; };
 		18E523571F443EEF00514693 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51D991F443EED00514693 /* APRoundedButton.m */; };
 		18E523581F443EEF00514693 /* YFAllRoundButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51D9B1F443EED00514693 /* YFAllRoundButtonVC.m */; };
 		18E523591F443EEF00514693 /* YFAllRoundButtonVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E51D9C1F443EED00514693 /* YFAllRoundButtonVC.storyboard */; };
@@ -763,6 +771,23 @@
 		18CCA1662090200400300966 /* YFButtonCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFButtonCategoryViewController.m; sourceTree = "<group>"; };
 		18CCA1672090200400300966 /* UIButton+TitlePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TitlePosition.m"; sourceTree = "<group>"; };
 		18CCA1682090200400300966 /* YFButtonCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFButtonCategoryViewController.h; sourceTree = "<group>"; };
+		18CCA1852090221400300966 /* NSMutableString+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Safe.h"; sourceTree = "<group>"; };
+		18CCA1862090221400300966 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		18CCA1872090221400300966 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		18CCA1882090221400300966 /* SafeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeObject.h; sourceTree = "<group>"; };
+		18CCA1892090221400300966 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		18CCA18A2090221400300966 /* NSObject+ImpChangeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ImpChangeTool.h"; sourceTree = "<group>"; };
+		18CCA18B2090221400300966 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		18CCA18C2090221400300966 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		18CCA18D2090221400300966 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		18CCA18E2090221400300966 /* NSMutableString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Safe.m"; sourceTree = "<group>"; };
+		18CCA18F2090221400300966 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		18CCA1902090221400300966 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		18CCA1912090221400300966 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		18CCA1922090221400300966 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		18CCA1932090221400300966 /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
+		18CCA19B2090222C00300966 /* YFSafeObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFSafeObjectViewController.h; sourceTree = "<group>"; };
+		18CCA19C2090222C00300966 /* YFSafeObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFSafeObjectViewController.m; sourceTree = "<group>"; };
 		18E51D981F443EED00514693 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		18E51D991F443EED00514693 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		18E51D9A1F443EED00514693 /* YFAllRoundButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAllRoundButtonVC.h; sourceTree = "<group>"; };
@@ -2117,6 +2142,38 @@
 				18CCA1682090200400300966 /* YFButtonCategoryViewController.h */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		18CCA1832090221400300966 /* SafeTool */ = {
+			isa = PBXGroup;
+			children = (
+				18CCA1842090221400300966 /* SafeObject */,
+				18CCA19B2090222C00300966 /* YFSafeObjectViewController.h */,
+				18CCA19C2090222C00300966 /* YFSafeObjectViewController.m */,
+			);
+			path = SafeTool;
+			sourceTree = "<group>";
+		};
+		18CCA1842090221400300966 /* SafeObject */ = {
+			isa = PBXGroup;
+			children = (
+				18CCA1852090221400300966 /* NSMutableString+Safe.h */,
+				18CCA1862090221400300966 /* NSMutableArray+Safe.m */,
+				18CCA1872090221400300966 /* NSDictionary+Safe.h */,
+				18CCA1882090221400300966 /* SafeObject.h */,
+				18CCA1892090221400300966 /* NSMutableDictionary+Safe.m */,
+				18CCA18A2090221400300966 /* NSObject+ImpChangeTool.h */,
+				18CCA18B2090221400300966 /* NSArray+Safe.h */,
+				18CCA18C2090221400300966 /* NSObject+Swizzling.h */,
+				18CCA18D2090221400300966 /* NSMutableArray+Safe.h */,
+				18CCA18E2090221400300966 /* NSMutableString+Safe.m */,
+				18CCA18F2090221400300966 /* NSMutableDictionary+Safe.h */,
+				18CCA1902090221400300966 /* NSDictionary+Safe.m */,
+				18CCA1912090221400300966 /* NSObject+Swizzling.m */,
+				18CCA1922090221400300966 /* NSArray+Safe.m */,
+				18CCA1932090221400300966 /* NSObject+ImpChangeTool.m */,
+			);
+			path = SafeObject;
 			sourceTree = "<group>";
 		};
 		18E51D951F443EED00514693 /* Classes */ = {
@@ -4764,6 +4821,7 @@
 		18E522251F443EEE00514693 /* 11 - Tools(常用工具) */ = {
 			isa = PBXGroup;
 			children = (
+				18CCA1832090221400300966 /* SafeTool */,
 				18CCA1632090200400300966 /* UIButton */,
 				18E522261F443EEE00514693 /* Color */,
 				18E5222C1F443EEE00514693 /* EmptyDataSet */,
@@ -5745,6 +5803,7 @@
 				18E523E41F443EEF00514693 /* RZVerticalSwipeInteractionController.m in Sources */,
 				18E525351F443EF100514693 /* YFApeExamViewController.m in Sources */,
 				18E523721F443EEF00514693 /* UIImage+Extend.m in Sources */,
+				18CCA19D2090222C00300966 /* YFSafeObjectViewController.m in Sources */,
 				18E525591F443EF100514693 /* MyDataSourceViewController2.m in Sources */,
 				18E523F11F443EEF00514693 /* RZSimpleCollectionViewController.m in Sources */,
 				18E523791F443EEF00514693 /* YFRatingBarViewController.m in Sources */,
@@ -5786,6 +5845,7 @@
 				18E524BA1F443EF000514693 /* CoreAnimationViewController.m in Sources */,
 				18E5246D1F443EF000514693 /* UPStackMenu.m in Sources */,
 				18E524371F443EEF00514693 /* QRCodeGenerateViewController.m in Sources */,
+				18CCA1952090221400300966 /* NSMutableDictionary+Safe.m in Sources */,
 				18E5250F1F443EF100514693 /* YFTableViewDelAllCell.m in Sources */,
 				18E525421F443EF100514693 /* HttpUtils.m in Sources */,
 				18E5254A1F443EF100514693 /* PasswordValidator.m in Sources */,
@@ -5841,6 +5901,7 @@
 				18E525291F443EF100514693 /* JLSubjectDataController.m in Sources */,
 				18E523641F443EEF00514693 /* SKTag.m in Sources */,
 				18E5241B1F443EEF00514693 /* Case8DataEntity.m in Sources */,
+				18CCA1962090221400300966 /* NSMutableString+Safe.m in Sources */,
 				18E525C61F443EF200514693 /* MASViewAttribute.m in Sources */,
 				1868EE8C2065FBCF00EEE713 /* JS_UIWebView_URLViewController.m in Sources */,
 				18E526031F4442EC00514693 /* JLRoutes.m in Sources */,
@@ -6015,6 +6076,7 @@
 				18E523F81F443EEF00514693 /* GCDDispatchGroupViewController.m in Sources */,
 				18E524411F443EF000514693 /* YFCategoryAttributeViewController.m in Sources */,
 				18E525881F443EF200514693 /* DataListController.m in Sources */,
+				18CCA1942090221400300966 /* NSMutableArray+Safe.m in Sources */,
 				18E523861F443EEF00514693 /* AWCollectionViewDialLayout.m in Sources */,
 				18E5254F1F443EF100514693 /* YiTableViewDataSource.m in Sources */,
 				18E524121F443EEF00514693 /* Case3ViewController.m in Sources */,
@@ -6093,6 +6155,7 @@
 				18E523571F443EEF00514693 /* APRoundedButton.m in Sources */,
 				18E524741F443EF000514693 /* YFPopOutMenu.m in Sources */,
 				18E5257B1F443EF100514693 /* JKDBViewController.m in Sources */,
+				18CCA19A2090221400300966 /* NSObject+ImpChangeTool.m in Sources */,
 				18E5254D1F443EF100514693 /* YiTableViewController.m in Sources */,
 				18E523D21F443EEF00514693 /* HHHorizontalPagingView.m in Sources */,
 				18E5253E1F443EF100514693 /* HttpClient.m in Sources */,
@@ -6166,6 +6229,7 @@
 				18E525791F443EF100514693 /* JKDBHelper.m in Sources */,
 				18E523DC1F443EEF00514693 /* YFSlidingViewController.m in Sources */,
 				18E524481F443EF000514693 /* YFDictToModelViewController.m in Sources */,
+				18CCA1992090221400300966 /* NSArray+Safe.m in Sources */,
 				18E524751F443EF000514693 /* YFAnimationVC06.m in Sources */,
 				18E525201F443EF100514693 /* YFWeChatShakeViewController.m in Sources */,
 				18E525171F443EF100514693 /* YFSearchController.m in Sources */,
@@ -6192,6 +6256,7 @@
 				18E523BD1F443EEF00514693 /* CardView.m in Sources */,
 				18E525071F443EF100514693 /* MyItem.m in Sources */,
 				18E524CD1F443EF100514693 /* SYTabButton.m in Sources */,
+				18CCA1982090221400300966 /* NSObject+Swizzling.m in Sources */,
 				18E525A51F443EF200514693 /* YFAuthorBlogViewController.m in Sources */,
 				18E524211F443EEF00514693 /* MultipleCategory.m in Sources */,
 				18E524C31F443EF000514693 /* SpinerLayer.m in Sources */,
@@ -6214,6 +6279,7 @@
 				18E524341F443EEF00514693 /* YFNotificationCenter2VC.m in Sources */,
 				18E526061F4442EC00514693 /* JLRRouteResponse.m in Sources */,
 				18E525D31F443EF200514693 /* MJTypeEncoding.m in Sources */,
+				18CCA1972090221400300966 /* NSDictionary+Safe.m in Sources */,
 				18E523781F443EEF00514693 /* YFRatingBar.m in Sources */,
 				18E525DE1F443EF200514693 /* UIView+Extension.m in Sources */,
 				18E523CF1F443EEF00514693 /* HHContentTableView.m in Sources */,
