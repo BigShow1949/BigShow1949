@@ -20,7 +20,7 @@
         SEL selB = @selector(mySendAction:to:forEvent:); // B是自己定义的方法
         Method methodA = class_getInstanceMethod(self, selA);
         Method methodB = class_getInstanceMethod(self, selB);
-       BOOL isAdd = class_addMethod(self, selA, method_getImplementation(methodB), method_getTypeEncoding(methodB));
+        BOOL isAdd = class_addMethod(self, selA, method_getImplementation(methodB), method_getTypeEncoding(methodB));
         if (isAdd) {
             class_replaceMethod(self, selB, method_getImplementation(methodA), method_getTypeEncoding(methodA));
         }else{
@@ -35,7 +35,6 @@
 - (void)setTimeInterval:(NSTimeInterval)timeInterval
 {
     objc_setAssociatedObject(self, @selector(timeInterval), @(timeInterval), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
 }
 - (void)mySendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
 {

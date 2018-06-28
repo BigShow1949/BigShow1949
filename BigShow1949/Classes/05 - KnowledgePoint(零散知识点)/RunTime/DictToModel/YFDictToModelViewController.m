@@ -40,8 +40,6 @@
     }
 
     NSLog(@"dataArr = %@", self.dataArr);
-    //
-
 
     [self KVCtoModel];
     
@@ -56,7 +54,6 @@
                            @"age" : @"12"};
     YFPerson *person = [YFPerson personWithDict:dict];
     NSLog(@"name = %@, age = %@", person.name, person.age);
-    
 }
 
 // 打印字典属性

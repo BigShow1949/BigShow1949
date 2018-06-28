@@ -151,6 +151,7 @@
 {
     NSURL *URL = request.URL;
     NSString *scheme = [URL scheme];
+    NSLog(@"URL = %@", URL);
     if ([scheme isEqualToString:@"haleyaction"]) {
         [self handleCustomAction:URL];
         return NO;

@@ -13,7 +13,7 @@
 
 @implementation Person_Msg
 /**
- *  首先，该方法在调用时，系统会查看这个对象能否接收这个消息（查看这个类有没有这个方法，或者有没有实现这个方法。），如果不能并且只在不能的情况下，就会调用下面这几个方法，给你“补救”的机会，你可以先理解为几套防止程序crash的备选方案，我们就是利用这几个方案进行消息转发，注意一点，前一套方案实现后一套方法就不会执行。如果这几套方案你都没有做处理，那么程序就会报错crash。
+ *  首先，该方法在调用时，系统会查看这个对象能否接收这个消息（查看这个类有没有这个方法，或者有没有实现这个方法。），如果不能并且只在不能的情况下，就会调用下面这几个方法，给你“补救”的机会，你可以先理解为几套防止程序crash的备选方案，我们就是利用这几个方案进行消息转发，注意一点，前一套方案实现了,后一套方法就不会执行。如果这几套方案你都没有做处理，那么程序就会报错crash。
  
  方案一：
  
@@ -43,13 +43,13 @@ void run (id self, SEL _cmd)
  *   动态方法解析(Dynamic Method Resolution或Lazy method resolution):向当前类(Class)发送resolveInstanceMethod:(对于类方法则为resolveClassMethod:)消息，如果返回YES,则系统认为请求的方法已经加入到了，则会重新发送消息。
  *   为Person类动态增加了run方法的实现, 由于没有实现run对应的方法, 那么系统会调用resolveInstanceMethod让你去做一些其他操作
  */
-//+ (BOOL)resolveInstanceMethod:(SEL)sel
-//{
+//+ (BOOL)resolveInstanceMethod:(SEL)sel {
 //
-//        if(sel == @selector(run)) {
-//            class_addMethod([self class], sel, (IMP)run, "v@:");
-//            return YES;
-//        }
+//    if(sel == @selector(run)) {
+//        NSLog(@"调用了======方案1");
+//        class_addMethod([self class], sel, (IMP)run, "v@:");
+//        return YES;
+//    }
 //    return [super respondsToSelector:sel];
 //}
 
@@ -57,9 +57,9 @@ void run (id self, SEL _cmd)
  *  快速转发路径(Fast forwarding path):若果当前target实现了forwardingTargetForSelector:方法,则调用此方法。如果此方法返回除nil和self的其他对象，则向返回对象重新发送消息。
  *  现在不对方案一做任何的处理, 直接调用父类的方法, 系统会走到forwardingTargetForSelector方法
  */
-//- (id)forwardingTargetForSelector:(SEL)aSelector
-//{
-//    return [[Car alloc] init];
+//- (id)forwardingTargetForSelector:(SEL)aSelector {
+//    NSLog(@"调用了======方案2");
+//    return [[Car_Msg alloc] init];
 //}
 
 

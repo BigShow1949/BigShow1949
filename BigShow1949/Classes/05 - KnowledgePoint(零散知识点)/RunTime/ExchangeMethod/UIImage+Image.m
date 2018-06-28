@@ -57,7 +57,7 @@
 //    return image;
 //}
 
-// 场景2:所有图片的名称都拼接_os7的话,当旧项目需要更改一套图片时,可以避免一个个更改
+// 场景2: iOS7之后使用另外一套图片, 那么可以在所有图片的名称都拼接_os7,当旧项目需要更改一套图片时,可以避免一个个更改
 //    NSString *newName = [name stringByAppendingString:@"_os7"];
 + (instancetype)imageWithName:(NSString *)name
 {

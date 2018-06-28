@@ -22,11 +22,13 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 例子1
+    // 例子1 分类添加属性
     YFPerson *person = [[YFPerson alloc] init];
     person.name = @"大卫";
     person.addr = @"中关村大厦";
     NSLog(@"成功给分类添加属性 addr = %@", person.addr);
+    
+    [person run];
     
     // 例子2
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
