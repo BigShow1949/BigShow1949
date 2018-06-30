@@ -19,7 +19,9 @@
     
     [self setupDataArr:@[@[@"颜色转换",@"YFColorViewController_UIStoryboard"],
                          @[@"图片",@"YFImageCategoryViewController"],
-                         @[@"无数据界面提示",@"YFEmptyDataSetViewController_UIStoryboard"],]];
+                         @[@"无数据界面提示",@"YFEmptyDataSetViewController_UIStoryboard"],
+                         @[@"按钮",@"YFButtonCategoryViewController"],
+                         @[@"崩溃过滤",@"YFSafeObjectViewController"],]];
 
 }
 
