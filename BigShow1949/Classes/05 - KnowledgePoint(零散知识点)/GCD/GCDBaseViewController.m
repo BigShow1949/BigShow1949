@@ -7,7 +7,42 @@
 //
 
 #import "GCDBaseViewController.h"
-
+/*
+ 
+ 基础概念：
+ 线程:线程是进程中一个独立的执行路径(控制单元);一个进程中至少包含一条线程，即主线程
+ 
+ 队列：是来管理线程的，线程里面放着很多的任务，来管理这些任务什么时候在哪些线程里去执行。
+ 串行队列：队列中的任务只会顺序执行(类似跑步)
+ 　　　　dispatch_queue_t q = dispatch_queue_create(“....”, DISPATCH_QUEUE_SERIAL);
+ 并行队列：队列中的任务通常会并发执行(类似赛跑)
+ 　　　　dispatch_queue_t q = dispatch_queue_create("......", DISPATCH_QUEUE_CONCURRENT);
+ 全局队列：是系统的，直接拿过来（GET）用就可以；与并行队列类似，但调试时，无法确认操作所在队列
+ dispatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+ 主队列：每一个应用程序对应唯一一个主队列，直接GET即可；在多线程开发中，使用主队列更新UI
+ dispatch_queue_t q = dispatch_get_main_queue();
+ 
+ 
+ 操作
+ 　　dispatch_async 异步操作，会并发执行，无法确定任务的执行顺序；
+ dispatch_sync 同步操作，会依次顺序执行，能够决定任务的执行顺序；
+ 区别：
+ 同步任务优先级高，在线程中有执行顺序，不会开启新的线程。
+ 异步任务优先级低，在线程中执行没有顺序，看cpu闲不闲。在主队列中不会开启新的线程，其他队列会开启新的线程。
+ 
+ 串行队列同步：操作顺序执行；都在主线程，不会开启新线程
+ 串行队列异步：操作需要一个子线程，会新建线程、线程的创建和回收不需要程序员参与，操作顺序执行，“最安全的选择”
+ 
+ 并行队列同步：操作顺序执行；都在主线程，不会开启新线程
+ 并行队列异步：操作会新建多个线程（有多少任务，就开N个线程执行）、操作无序执行；队列前如果有其他任务，会等待前面的任务完成之后再执行；场景：既不影响主线程，又不需要顺序执行的操作！
+ 
+ 全局队列异步：操作会新建多个线程、操作无序执行，队列前如果有其他任务，会等待前面的任务完成之后再执行
+ 全局队列同步：操作不会新建线程、操作顺序执行
+ 
+ 主队列异步：它没有阻塞主线程，因为异步任务的优先级低，不会抢占主线程的执行资源，只有cpu出现空闲时才会去执行它。操作都应该在主线程上顺序执行的，不存在异步的概念
+ 主队列同步：因为在主队列开启同步任务时，主队列是串行队列，里面的线程是有顺序的，先执行完一个线程才执行下一个线程。而主队列始终就只有一个主线程，主线程还是无限循环的，是不会执行完毕的，除非关闭应用程序。因此在主线程开启一个同步任务，同步任务会想抢占执行的资源，而主线程任务一直在执行某些操作，不肯放手。两个的优先级都很高，最终导致死锁，阻塞线程了。
+ 
+ */
 @interface GCDBaseViewController ()
 
 @end
@@ -22,9 +57,10 @@
     label.text = @"具体内容直接看代码";
     [self.view addSubview:label];
     
-    [self demo6];
+    [self demo8];
 }
 
+#pragma mark - 队列&同异步
 - (void)demo1 { // 主队列同步：会死锁
     dispatch_queue_t queue = dispatch_get_main_queue();
     dispatch_sync(queue, ^{
@@ -138,42 +174,68 @@
      */
 }
 
-/*
- 
-基础概念：
-线程:线程是进程中一个独立的执行路径(控制单元);一个进程中至少包含一条线程，即主线程
- 
-队列：是来管理线程的，线程里面放着很多的任务，来管理这些任务什么时候在哪些线程里去执行。
-串行队列：队列中的任务只会顺序执行(类似跑步)
- 　　　　dispatch_queue_t q = dispatch_queue_create(“....”, DISPATCH_QUEUE_SERIAL);
-并行队列：队列中的任务通常会并发执行(类似赛跑)
- 　　　　dispatch_queue_t q = dispatch_queue_create("......", DISPATCH_QUEUE_CONCURRENT);
-全局队列：是系统的，直接拿过来（GET）用就可以；与并行队列类似，但调试时，无法确认操作所在队列
-        dispatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-主队列：每一个应用程序对应唯一一个主队列，直接GET即可；在多线程开发中，使用主队列更新UI
-        dispatch_queue_t q = dispatch_get_main_queue();
- 
- 
-操作
- 　　dispatch_async 异步操作，会并发执行，无法确定任务的执行顺序；
-    dispatch_sync 同步操作，会依次顺序执行，能够决定任务的执行顺序；
-区别：
-    同步任务优先级高，在线程中有执行顺序，不会开启新的线程。
-    异步任务优先级低，在线程中执行没有顺序，看cpu闲不闲。在主队列中不会开启新的线程，其他队列会开启新的线程。
- 
-串行队列同步：操作顺序执行；都在主线程，不会开启新线程
-串行队列异步：操作需要一个子线程，会新建线程、线程的创建和回收不需要程序员参与，操作顺序执行，“最安全的选择”
- 
-并行队列同步：操作顺序执行；都在主线程，不会开启新线程
-并行队列异步：操作会新建多个线程（有多少任务，就开N个线程执行）、操作无序执行；队列前如果有其他任务，会等待前面的任务完成之后再执行；场景：既不影响主线程，又不需要顺序执行的操作！
- 
-全局队列异步：操作会新建多个线程、操作无序执行，队列前如果有其他任务，会等待前面的任务完成之后再执行
-全局队列同步：操作不会新建线程、操作顺序执行
- 
-主队列异步：它没有阻塞主线程，因为异步任务的优先级低，不会抢占主线程的执行资源，只有cpu出现空闲时才会去执行它。操作都应该在主线程上顺序执行的，不存在异步的概念
-主队列同步：因为在主队列开启同步任务时，主队列是串行队列，里面的线程是有顺序的，先执行完一个线程才执行下一个线程。而主队列始终就只有一个主线程，主线程还是无限循环的，是不会执行完毕的，除非关闭应用程序。因此在主线程开启一个同步任务，同步任务会想抢占执行的资源，而主线程任务一直在执行某些操作，不肯放手。两个的优先级都很高，最终导致死锁，阻塞线程了。
- 
- */
+#pragma mark - 场景应用
+- (void)demo7 { // 场景：子线程处理耗时操作，然后主线程刷新
+    dispatch_async(dispatch_get_global_queue(0,0),^{
+        
+        NSLog(@"Start task 1");
+        
+        [NSThread sleepForTimeInterval:3];
+        
+        dispatch_async(dispatch_get_main_queue(),^{
+            //回到主线程刷新UI
+            NSLog(@"刷新UI");
+        });
+        
+    });
+}
+
+- (void)demo8 {  // 系统分配子线程应用
+    /*
+     #define DISPATCH_QUEUE_PRIORITY_HIGH 2
+     #define DISPATCH_QUEUE_PRIORITY_DEFAULT 0
+     #define DISPATCH_QUEUE_PRIORITY_LOW (-2)
+     #define DISPATCH_QUEUE_PRIORITY_BACKGROUND INT16_MIN
+     */
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"start task 1");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 1");
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSLog(@"start task 2");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 2");
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSLog(@"start task 3");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 3");
+    });
+    /*
+ 2018-07-24 23:57:58.425683+0700 BigShow[65432:5588174] start task 3
+ 2018-07-24 23:57:58.425649+0700 BigShow[65432:5587757] start task 1
+ 2018-07-24 23:57:58.425686+0700 BigShow[65432:5588184] start task 2
+ 2018-07-24 23:58:00.425994+0700 BigShow[65432:5588184] end task 2
+ 2018-07-24 23:58:00.426004+0700 BigShow[65432:5587757] end task 1
+ 2018-07-24 23:58:00.426005+0700 BigShow[65432:5588174] end task 3
+     
+     2018-07-24 23:58:36.530524+0700 BigShow[65531:5589495] start task 3
+     2018-07-24 23:58:36.530524+0700 BigShow[65531:5589459] start task 1
+     2018-07-24 23:58:36.530536+0700 BigShow[65531:5589476] start task 2
+     2018-07-24 23:58:38.535998+0700 BigShow[65531:5589459] end task 1
+     2018-07-24 23:58:38.536031+0700 BigShow[65531:5589476] end task 2
+     2018-07-24 23:58:38.606652+0700 BigShow[65531:5589495] end task 3
+     
+     2018-07-25 00:03:31.901008+0700 BigShow[65531:5595700] start task 1
+     2018-07-25 00:03:31.901045+0700 BigShow[65531:5595731] start task 2
+     2018-07-25 00:03:31.900987+0700 BigShow[65531:5589458] start task 3
+     2018-07-25 00:03:33.901304+0700 BigShow[65531:5595700] end task 1
+     2018-07-25 00:03:33.901315+0700 BigShow[65531:5595731] end task 2
+     2018-07-25 00:03:34.000112+0700 BigShow[65531:5589458] end task 3
+     */
+}
 
 /*
  参考链接：
