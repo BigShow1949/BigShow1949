@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupDataArr:@[@[@"同步若干异步",@"GCDDispatchGroupViewController"],]];
+    [self setupDataArr:@[@[@"GCD基础知识",@"GCDBaseViewController"],
+                         @[@"同步若干异步",@"GCDDispatchGroupViewController"]]];
     
 }
 

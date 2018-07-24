@@ -719,6 +719,9 @@
 		B83EA9661CC0DDCB00807828 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B83EA9621CC0D06E00807828 /* libsqlite3.0.tbd */; };
 		B848CCEF1CB3BD1A005F5DA0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */; };
 		B84C03291CE2E04700E62D75 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B84C03281CE2E04700E62D75 /* 1.mp4 */; };
+		F8177DCA21077322005E5109 /* GCDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8177DC921077322005E5109 /* GCDBaseViewController.m */; };
+		F8177DCC2107781E005E5109 /* 队列&同步.png in Resources */ = {isa = PBXBuildFile; fileRef = F8177DCB2107781E005E5109 /* 队列&同步.png */; };
+		F8177DCE21078573005E5109 /* 终端命令.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8177DCD21078573005E5109 /* 终端命令.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2024,6 +2027,10 @@
 		B848CCEE1CB3BD1A005F5DA0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B84C03281CE2E04700E62D75 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		B8B98549B8B6FFEEC088A839 /* Pods-BigShow1949.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigShow1949.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigShow1949/Pods-BigShow1949.debug.xcconfig"; sourceTree = "<group>"; };
+		F8177DC821077322005E5109 /* GCDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDBaseViewController.h; sourceTree = "<group>"; };
+		F8177DC921077322005E5109 /* GCDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBaseViewController.m; sourceTree = "<group>"; };
+		F8177DCB2107781E005E5109 /* 队列&同步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "队列&同步.png"; sourceTree = "<group>"; };
+		F8177DCD21078573005E5109 /* 终端命令.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "终端命令.rtf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2930,6 +2937,9 @@
 			children = (
 				18E51EE81F443EED00514693 /* GCDDispatchGroupViewController.h */,
 				18E51EE91F443EED00514693 /* GCDDispatchGroupViewController.m */,
+				F8177DC821077322005E5109 /* GCDBaseViewController.h */,
+				F8177DC921077322005E5109 /* GCDBaseViewController.m */,
+				F8177DCB2107781E005E5109 /* 队列&同步.png */,
 				18E51EEA1F443EED00514693 /* GCDViewController.h */,
 				18E51EEB1F443EED00514693 /* GCDViewController.m */,
 			);
@@ -5410,6 +5420,7 @@
 		8B0B9AB21B9572000084590D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8177DCD21078573005E5109 /* 终端命令.rtf */,
 				182399691F0350AE005B58A0 /* Test.html */,
 				1873D77A1D8021AE008C2D1D /* img1.jpg */,
 				B84C03281CE2E04700E62D75 /* 1.mp4 */,
@@ -5574,6 +5585,7 @@
 				18E524F11F443EF100514693 /* RAViewController.storyboard in Resources */,
 				18E523921F443EEF00514693 /* paul_george.png in Resources */,
 				18E523B41F443EEF00514693 /* YFShopCell.xib in Resources */,
+				F8177DCE21078573005E5109 /* 终端命令.rtf in Resources */,
 				18E523C21F443EEF00514693 /* photo_sample_05.png in Resources */,
 				18E5251E1F443EF100514693 /* dance.mp3 in Resources */,
 				18E523A31F443EEF00514693 /* i3.jpg in Resources */,
@@ -5643,6 +5655,7 @@
 				18E524DE1F443EF100514693 /* 14.jpg in Resources */,
 				18E523871F443EEF00514693 /* awcollectionviewdiallayout_1.jpg in Resources */,
 				18E524DD1F443EF100514693 /* 13.jpg in Resources */,
+				F8177DCC2107781E005E5109 /* 队列&同步.png in Resources */,
 				18E524921F443EF000514693 /* home_top_bg@2x.png in Resources */,
 				18E523A91F443EEF00514693 /* RGCardLayoutViewController.storyboard in Resources */,
 				18E5238D1F443EEF00514693 /* iphone_settings_view.xib in Resources */,
@@ -5945,6 +5958,7 @@
 				18E5245E1F443EF000514693 /* YFLabel.m in Sources */,
 				18E523E91F443EEF00514693 /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
 				18E524F51F443EF100514693 /* YFDynamicItemViewController.m in Sources */,
+				F8177DCA21077322005E5109 /* GCDBaseViewController.m in Sources */,
 				18E523D41F443EEF00514693 /* ITRAirSideMenu.m in Sources */,
 				18E5242B1F443EEF00514693 /* Doctor_MMF.m in Sources */,
 				18E524FE1F443EF100514693 /* YFFlexViewController.m in Sources */,
