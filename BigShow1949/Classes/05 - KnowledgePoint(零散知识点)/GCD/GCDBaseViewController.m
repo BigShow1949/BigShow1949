@@ -53,11 +53,32 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 200, 400)];
-    label.text = @"具体内容直接看代码";
-    [self.view addSubview:label];
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 200, 400)];
+//    label.text = @"具体内容直接看代码";
+//    [self.view addSubview:label];
+//
+//    [self demo14];
     
-    [self demo8];
+    
+    
+    CGFloat maxY = 100;
+    for (int i = 1; i < 15; i++) {
+        NSString *mySelStr = [NSString stringWithFormat:@"demo%d", i];
+        SEL mySEL = NSSelectorFromString(mySelStr);
+        CGFloat btnY = maxY;
+        UIButton *redBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, btnY, 80, 44)];
+        [redBtn setTitle:mySelStr forState:UIControlStateNormal];
+        [redBtn addTarget:self action:mySEL forControlEvents:UIControlEventTouchUpInside];
+        redBtn.titleLabel.textColor = [UIColor blackColor];
+        redBtn.backgroundColor = [UIColor blueColor];
+        [self.view addSubview:redBtn];
+        
+        maxY = CGRectGetMaxY(redBtn.frame);
+    }
+    
+    
+    
+
 }
 
 #pragma mark - 队列&同异步
@@ -199,17 +220,20 @@
      */
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"start task 1");
+        NSLog(@"我是第一个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
         [NSThread sleepForTimeInterval:2];
         NSLog(@"end task 1");
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSLog(@"start task 2");
+        NSLog(@"我是第二个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
         [NSThread sleepForTimeInterval:2];
         NSLog(@"end task 2");
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSLog(@"start task 3");
+        NSLog(@"我是第三个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
         [NSThread sleepForTimeInterval:2];
         NSLog(@"end task 3");
     });
@@ -237,6 +261,230 @@
      */
 }
 
+- (void)demo9 { // 自行创建子线程
+    dispatch_queue_t queue = dispatch_queue_create("com.test.gcg.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        NSLog(@"start task 1");
+        NSLog(@"我是第一个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 1");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"start task 2");
+        NSLog(@"我是第二个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 2");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"start task 3");
+        NSLog(@"我是第三个任务, 当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 3");
+    });
+}
+
+- (void)demo10 {  // 多个网络请求完，执行下一步（一般做法异步是实现不了的）
+    NSString *str = @"https://www.jianshu.com/";
+    NSURL *url = [NSURL URLWithString:str];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+
+    for (int i=0; i<10; i++) {
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSLog(@"%d---%d",i,i);
+        }];
+        [task resume];
+    }
+    NSLog(@"end");
+    
+//    dispatch_queue_t queue1 = dispatch_queue_create("com.test.gcg.group", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_group_t group = dispatch_group_create();
+//    dispatch_group_async(group, queue1, ^{
+//        NSLog(@"start task 1");
+//        [NSThread sleepForTimeInterval:2];
+//        NSLog(@"end task 1");
+//    });
+//    dispatch_group_async(group, queue1, ^{
+//        NSLog(@"start task 2");
+//        [NSThread sleepForTimeInterval:2];
+//        NSLog(@"end task 2");
+//    });
+//    dispatch_group_async(group, queue1, ^{
+//        NSLog(@"start task 3");
+//        [NSThread sleepForTimeInterval:2];
+//        NSLog(@"end task 3");
+//    });
+//
+//    NSLog(@"====end");
+}
+
+- (void)demo11 { // 多个网络请求完，执行下一步 dispatch_group_t实现
+    /*
+     线程组:
+         dispatch_group_notify；
+         dispatch_group_enter(group);
+         dispatch_group_leave(group);
+     注意事项：使用线程组的方法来创建任务是没有同步任务的，
+     */
+    dispatch_queue_t queue1 = dispatch_queue_create("com.test.gcg.group", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+
+    dispatch_group_enter(group);
+    [self sendRequest1:^{
+        NSLog(@"request1 done");
+        dispatch_group_leave(group);
+    }];
+    
+    dispatch_group_enter(group);
+    [self sendRequest2:^{
+        NSLog(@"request2 done");
+        dispatch_group_leave(group);
+    }];
+    
+    dispatch_group_notify(group, queue1, ^{
+        NSLog(@"All tasks over");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"回到主线程刷新UI");
+        });
+    });
+}
+
+-(void)sendRequest1:(void(^)())block{
+    
+    dispatch_async(dispatch_get_global_queue(0,0),^{
+        
+        NSLog(@"start task 1");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 1");
+        dispatch_async(dispatch_get_main_queue(),^{
+            if(block){
+                block();
+            }
+        });
+    });
+    
+}
+-(void)sendRequest2:(void(^)())block{
+    
+    dispatch_async(dispatch_get_global_queue(0,0),^{
+        
+        NSLog(@"start task 2");
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"end task 2");
+        dispatch_async(dispatch_get_main_queue(),^{
+            if(block){
+                block();
+            }
+        });
+    });
+}
+- (void)demo12 { // 多个网络请求完，执行下一步 GCD的信号量 dispatch_semaphore_t实现
+    NSString *str = @"https://www.jianshu.com";
+    NSURL *url = [NSURL URLWithString:str];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    // 如果semaphore计数大于等于1，计数-1，返回，程序继续运行。如果计数为0，则等待。
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    __block NSInteger count = 0;
+    for (int i=0; i<10; i++) {
+        
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSLog(@"%d---%d",i,i);
+            count++;
+            if (count==10) {
+                dispatch_semaphore_signal(sem); // 回调10次之后再发信号量，使后面程序继续运行
+                count = 0;
+            }
+        }];
+        [task resume];
+    }
+    // 如果计数为0，则等待
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER); // 等待时间DISPATCH_TIME_FOREVER 等到永远
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"end");
+    });
+    
+    /*
+     2018-07-25 14:37:56.508104+0700 BigShow[70482:5837307] 0---0
+     2018-07-25 14:37:56.570436+0700 BigShow[70482:5837307] 3---3
+     2018-07-25 14:37:56.644082+0700 BigShow[70482:5837308] 1---1
+     2018-07-25 14:37:56.700738+0700 BigShow[70482:5837307] 2---2
+     2018-07-25 14:37:56.722227+0700 BigShow[70482:5837308] 4---4
+     2018-07-25 14:37:56.810692+0700 BigShow[70482:5837307] 5---5
+     2018-07-25 14:37:56.871034+0700 BigShow[70482:5837321] 6---6
+     2018-07-25 14:37:56.929290+0700 BigShow[70482:5837494] 7---7
+     2018-07-25 14:37:57.013721+0700 BigShow[70482:5837308] 9---9
+     2018-07-25 14:37:57.133674+0700 BigShow[70482:5837321] 8---8
+     2018-07-25 14:37:57.148330+0700 BigShow[70482:5837246] end
+     */
+}
+
+- (void)demo13 { // 在上面的基础上，要10个网络请求顺序回调（end先执行了，看demo14解决）
+    NSString *str = @"http://www.jianshu.com/p/6930f335adba";
+    NSURL *url = [NSURL URLWithString:str];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    NSMutableArray *operationArr = [[NSMutableArray alloc]init];
+    for (int i=0; i<10; i++) {
+        NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+            NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                    NSLog(@"%d---%d",i,i);
+                }];
+            [task resume];
+            //非网络请求
+            NSLog(@"noRequest-%d",i);
+        }];
+        
+        [operationArr addObject:operation];
+        if (i>0) {
+            NSBlockOperation *operation1 = operationArr[i-1];
+            NSBlockOperation *operation2 = operationArr[i];
+            [operation2 addDependency:operation1];
+        }
+    }
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    [queue addOperations:operationArr waitUntilFinished:NO];  //YES会阻塞当前线程
+#warning - 绝对不要在应用主线程中等待一个Operation,只能在第二或次要线程中等待。阻塞主线程将导致应用无法响应用户事件,应用也将表现为无响应。
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"end");
+    });
+}
+
+- (void)demo14 { // 解决demo13的问题：用信号量semaphore解决
+    NSString *str = @"http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%9B%BE%E7%89%87&hs=0&pn=3&spn=0&di=28292004620&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=2506796592%2C812786931&os=769236739%2C175852528&simid=0%2C0&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c60259ac0f91a801211d25904e1f.jpg%401280w_1l_2o_100sh.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bzv55s_z%26e3Bv54_z%26e3BvgAzdH3Fo56hAzdH3FZM3MnMTIyM3A%3D_z%26e3Bip4s%3FfotpviPw2j%3D5g&gsm=0&islist=&querylist=";
+    
+//    NSString *str = @"http://www.jianshu.com/p/6930f335adba";
+    NSURL *url = [NSURL URLWithString:str];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    for (int i=0; i<10; i++) {
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            NSLog(@"%d---%d",i,i);
+            dispatch_semaphore_signal(sem);
+        }];
+        [task resume];
+        dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+        // 这行代码，它是会阻塞线程的，我们如果需要在网络请求完成后修改UI，那这种方式会影响我们的界面交互
+    }
+    /*
+     逻辑：
+     遍历—>发起任务—>等待—>任务完成信号量加1—>等待结束,开始下一个任务
+     发起任务—>等待—>任务完成信号量加1—>等待结束,开始下一个任务
+     发起任务—>等待—>任务完成信号量加1—>等待结束,开始下一个任务
+     */
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"end");
+    });
+}
 /*
  参考链接：
  https://www.jianshu.com/p/a285361a2085
