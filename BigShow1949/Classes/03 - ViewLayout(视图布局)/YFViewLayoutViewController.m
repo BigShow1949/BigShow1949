@@ -23,7 +23,8 @@
                          @[@"半圆布局",@"YFHalfCircleLayoutViewController_UIStoryboard"],
                          @[@"滑动标题",@"YFSlideTitlesViewController"],
                          @[@"网易滑动标题",@"YFNeteaseHomeViewController"],
-                         @[@"抽卡效果",@"YFStackedPageVC_UIStoryboard"],]];
+                         @[@"抽卡效果",@"YFStackedPageVC_UIStoryboard"],
+                         @[@"YNPageView",@"YNPageViewDemoController"]]];
 }
 
 

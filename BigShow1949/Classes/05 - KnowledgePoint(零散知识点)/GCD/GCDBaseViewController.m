@@ -57,23 +57,31 @@
 //    label.text = @"具体内容直接看代码";
 //    [self.view addSubview:label];
 //
-//    [self demo14];
+    [self demo16];
     
     
     
     CGFloat maxY = 100;
-    for (int i = 1; i < 15; i++) {
+    for (int i = 1; i < 17; i++) {
+        NSLog(@"i = %d", i);
         NSString *mySelStr = [NSString stringWithFormat:@"demo%d", i];
         SEL mySEL = NSSelectorFromString(mySelStr);
         CGFloat btnY = maxY;
-        UIButton *redBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, btnY, 80, 44)];
+        CGFloat btnX = 100;
+        if (i%2 == 0) {
+            btnX = 100 + 80 + 10;
+        }
+        UIButton *redBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnX, btnY, 80, 44)];
         [redBtn setTitle:mySelStr forState:UIControlStateNormal];
         [redBtn addTarget:self action:mySEL forControlEvents:UIControlEventTouchUpInside];
         redBtn.titleLabel.textColor = [UIColor blackColor];
         redBtn.backgroundColor = [UIColor blueColor];
         [self.view addSubview:redBtn];
         
-        maxY = CGRectGetMaxY(redBtn.frame);
+        if (i%2 == 0) {
+            maxY = CGRectGetMaxY(redBtn.frame);
+        }
+        
     }
     
     
@@ -322,6 +330,8 @@
 }
 
 - (void)demo11 { // 多个网络请求完，执行下一步 dispatch_group_t实现
+    NSLog(@"============================ demo11");
+
     /*
      线程组:
          dispatch_group_notify；
@@ -382,6 +392,8 @@
     });
 }
 - (void)demo12 { // 多个网络请求完，执行下一步 GCD的信号量 dispatch_semaphore_t实现
+    NSLog(@"============================ demo12");
+
     NSString *str = @"https://www.jianshu.com";
     NSURL *url = [NSURL URLWithString:str];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -424,7 +436,10 @@
      */
 }
 
+// Q：移到项目中后，不是顺序执行了？也是在主线程中执行，WHY？看到此问题的各路大神，求解答！！3q！
 - (void)demo13 { // 在上面的基础上，要10个网络请求顺序回调（end先执行了，看demo14解决）
+    NSLog(@"当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+    NSLog(@"============================ demo13");
     NSString *str = @"http://www.jianshu.com/p/6930f335adba";
     NSURL *url = [NSURL URLWithString:str];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -433,6 +448,8 @@
     NSMutableArray *operationArr = [[NSMutableArray alloc]init];
     for (int i=0; i<10; i++) {
         NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+            NSLog(@"当前线程:%@ ,是否主线程%d",[NSThread currentThread],[NSThread isMainThread]);
+
             NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                     NSLog(@"%d---%d",i,i);
                 }];
@@ -450,6 +467,7 @@
     }
     
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    queue.maxConcurrentOperationCount = 10;
     [queue addOperations:operationArr waitUntilFinished:NO];  //YES会阻塞当前线程
 #warning - 绝对不要在应用主线程中等待一个Operation,只能在第二或次要线程中等待。阻塞主线程将导致应用无法响应用户事件,应用也将表现为无响应。
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -458,6 +476,8 @@
 }
 
 - (void)demo14 { // 解决demo13的问题：用信号量semaphore解决
+    NSLog(@"============================ demo14");
+
     NSString *str = @"http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%9B%BE%E7%89%87&hs=0&pn=3&spn=0&di=28292004620&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=2506796592%2C812786931&os=769236739%2C175852528&simid=0%2C0&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c60259ac0f91a801211d25904e1f.jpg%401280w_1l_2o_100sh.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bzv55s_z%26e3Bv54_z%26e3BvgAzdH3Fo56hAzdH3FZM3MnMTIyM3A%3D_z%26e3Bip4s%3FfotpviPw2j%3D5g&gsm=0&islist=&querylist=";
     
 //    NSString *str = @"http://www.jianshu.com/p/6930f335adba";
@@ -484,6 +504,98 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"end");
     });
+}
+
+- (void)demo15 {
+    /**
+     假设有A、B、C三个操作，要求：
+     1. 3个操作都异步执行
+     2. 操作C依赖于操作B
+     3. 操作B依赖于操作A
+     */
+    //创建一个队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    //可开辟线程的最大数量
+    queue.maxConcurrentOperationCount = 3;
+
+    //创建三个任务
+    NSBlockOperation *operationA = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"A任务当前线程为：%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *operationB = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"B任务当前线程为：%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *operationC = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"C任务当前线程为：%@", [NSThread currentThread]);
+    }];
+    
+    NSLog(@"===== end");
+    
+    //设置三个任务相互依赖
+    // operationB 任务依赖于 operationA
+    [operationA addDependency:operationB];
+    // operationC 任务依赖于 operationB
+    [operationB addDependency:operationC];
+    
+    
+    //添加操作到队列中（自动异步执行任务，并发）
+    [queue addOperation:operationA];
+    [queue addOperation:operationB];
+    [queue addOperation:operationC];
+}
+
+- (void)demo16 {
+    //创建分组
+    dispatch_group_t group =dispatch_group_create();
+    //创建队列
+    dispatch_queue_t queue =dispatch_queue_create("queue",DISPATCH_QUEUE_CONCURRENT);
+        //往分组中添加任务
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        void (^task)(void) = ^{
+            [NSThread sleepForTimeInterval:2];//模拟耗时操作
+            NSLog(@"11111 %@", [NSThread currentThread]);
+            dispatch_group_leave(group);
+        };
+        dispatch_async(dispatch_get_global_queue(0,0), task);
+        NSLog(@"11111---- %@", [NSThread currentThread]);
+    });
+    
+    //往分组中添加任务
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        void (^task)(void) = ^ {
+            [NSThread sleepForTimeInterval:1];//模拟耗时操作
+            NSLog(@"2222 %@", [NSThread currentThread]);
+            dispatch_group_leave(group);
+        };
+        dispatch_async(dispatch_get_global_queue(0,0), task);
+        NSLog(@"2222------- %@", [NSThread currentThread]);
+    });
+    
+    //分组中任务完成以后通知该block执行
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"完成 %@", [NSThread currentThread]);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"通知主线程刷新UI %@", [NSThread currentThread]);
+        });
+    });
+    
+    NSLog(@"================ 程序执行到这里");
+    
+    /*
+     执行结果如下：
+     2017-10-24 11:48:05.641 iOSTest[35128:902591] 11111---- {number = 3, name = (null)}
+     2017-10-2411:48:05.641 iOSTest[35128:902608] 2222------- {number = 4, name = (null)}
+     2017-10-24 11:48:06.644iOSTest[35128:902609] 2222 0x60000006cb00>{number = 5, name = (null)}
+     2017-10-24 11:48:07.644iOSTest[35128:902593] 11111 0x6080000721c0>{number = 6, name = (null)}
+     2017-10-24 11:48:07.644iOSTest[35128:902593] 完成 0x6080000721c0>{number = 6, name = (null)}
+     2017-10-24 11:48:07.645iOSTest[35128:902524] 通知主线程刷新UI 0x61000006e280>{number = 1, name = main}
+     这样我们想要的得到的结果就实现了。
+
+     */
 }
 /*
  参考链接：
