@@ -25,7 +25,6 @@
                          @[@"LTSlidingTransitions",@"YFSlidingViewController_UIStoryboard"],
                          @[@"折卡效果",@"YFFlipPageViewController"],
                          @[@"卡牌拖动翻页",@"YFDraggableCardViewController"],
-                         @[@"滚动悬浮视图",@"YFHorizontalPagingViewController"],
                          @[@"侧滑形变效果",@"YFITRAirSideViewController"],]];
     
 }

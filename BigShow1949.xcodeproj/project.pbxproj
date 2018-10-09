@@ -164,13 +164,6 @@
 		18E523CA1F443EEF00514693 /* JCFlipViewAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E7D1F443EED00514693 /* JCFlipViewAnimationHelper.m */; };
 		18E523CB1F443EEF00514693 /* SBGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E801F443EED00514693 /* SBGradientOverlayLayer.m */; };
 		18E523CC1F443EEF00514693 /* YFFlipPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E821F443EED00514693 /* YFFlipPageViewController.m */; };
-		18E523CD1F443EEF00514693 /* HHContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E851F443EED00514693 /* HHContentCollectionView.m */; };
-		18E523CE1F443EEF00514693 /* HHContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E871F443EED00514693 /* HHContentScrollView.m */; };
-		18E523CF1F443EEF00514693 /* HHContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E891F443EED00514693 /* HHContentTableView.m */; };
-		18E523D01F443EEF00514693 /* HHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E8B1F443EED00514693 /* HHHeaderView.m */; };
-		18E523D11F443EEF00514693 /* HHHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E51E8C1F443EED00514693 /* HHHeaderView.xib */; };
-		18E523D21F443EEF00514693 /* HHHorizontalPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E8E1F443EED00514693 /* HHHorizontalPagingView.m */; };
-		18E523D31F443EEF00514693 /* YFHorizontalPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E901F443EED00514693 /* YFHorizontalPagingViewController.m */; };
 		18E523D41F443EEF00514693 /* ITRAirSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E931F443EED00514693 /* ITRAirSideMenu.m */; };
 		18E523D51F443EEF00514693 /* ITRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E951F443EED00514693 /* ITRFirstViewController.m */; };
 		18E523D61F443EEF00514693 /* ITRLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E51E971F443EED00514693 /* ITRLeftMenuController.m */; };
@@ -752,6 +745,22 @@
 		F83F2152216BB8C400DFA548 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F213B216BB8C400DFA548 /* MJRefreshBackFooter.m */; };
 		F83F2153216BB8C400DFA548 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F213C216BB8C400DFA548 /* MJRefreshAutoFooter.m */; };
 		F83F2154216BB8C400DFA548 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F213E216BB8C400DFA548 /* MJRefreshComponent.m */; };
+		F83F2158216C585600DFA548 /* ArtPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2157216C585600DFA548 /* ArtPageViewController.m */; };
+		F83F217A216C58C300DFA548 /* HHHorizontalPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F216D216C58C300DFA548 /* HHHorizontalPagingView.m */; };
+		F83F217B216C58C300DFA548 /* UIView+WhenTappedBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F216F216C58C300DFA548 /* UIView+WhenTappedBlocks.m */; };
+		F83F217C216C58C300DFA548 /* UIScrollView+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2171216C58C300DFA548 /* UIScrollView+Dragging.m */; };
+		F83F217D216C58C300DFA548 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2178216C58C300DFA548 /* JYSegmentView.m */; };
+		F83F217E216C58C300DFA548 /* DynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2179216C58C300DFA548 /* DynamicItem.m */; };
+		F83F218B216C595600DFA548 /* ArtTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F217F216C595400DFA548 /* ArtTableViewController.m */; };
+		F83F218C216C595600DFA548 /* ArtWholePullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2180216C595400DFA548 /* ArtWholePullViewController.m */; };
+		F83F218D216C595600DFA548 /* ArtScrollHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2182216C595500DFA548 /* ArtScrollHeaderViewController.m */; };
+		F83F218E216C595600DFA548 /* ArtDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2183216C595500DFA548 /* ArtDefaultViewController.m */; };
+		F83F218F216C595600DFA548 /* ArtChangeNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2185216C595500DFA548 /* ArtChangeNavViewController.m */; };
+		F83F2190216C595600DFA548 /* ArtPullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2189216C595500DFA548 /* ArtPullViewController.m */; };
+		F83F2197216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2193216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.m */; };
+		F83F2198216C59E100DFA548 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F2194216C59E100DFA548 /* UIScrollView+SVPullToRefresh.m */; };
+		F83F21A5216C5A8C00DFA548 /* SDTimeLineRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F21A1216C5A8B00DFA548 /* SDTimeLineRefreshHeader.m */; };
+		F83F21A6216C5A8C00DFA548 /* SDBaseRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F21A4216C5A8B00DFA548 /* SDBaseRefreshView.m */; };
 		F84A4DBD215804610025D4EB /* UIViewController+YNPageExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4DA8215804610025D4EB /* UIViewController+YNPageExtend.m */; };
 		F84A4DBE215804610025D4EB /* UIView+YNPageExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4DA9215804610025D4EB /* UIView+YNPageExtend.m */; };
 		F84A4DBF215804610025D4EB /* UIScrollView+YNPageExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4DAD215804610025D4EB /* UIScrollView+YNPageExtend.m */; };
@@ -1051,19 +1060,6 @@
 		18E51E801F443EED00514693 /* SBGradientOverlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGradientOverlayLayer.m; sourceTree = "<group>"; };
 		18E51E811F443EED00514693 /* YFFlipPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFlipPageViewController.h; sourceTree = "<group>"; };
 		18E51E821F443EED00514693 /* YFFlipPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFlipPageViewController.m; sourceTree = "<group>"; };
-		18E51E841F443EED00514693 /* HHContentCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHContentCollectionView.h; sourceTree = "<group>"; };
-		18E51E851F443EED00514693 /* HHContentCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHContentCollectionView.m; sourceTree = "<group>"; };
-		18E51E861F443EED00514693 /* HHContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHContentScrollView.h; sourceTree = "<group>"; };
-		18E51E871F443EED00514693 /* HHContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHContentScrollView.m; sourceTree = "<group>"; };
-		18E51E881F443EED00514693 /* HHContentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHContentTableView.h; sourceTree = "<group>"; };
-		18E51E891F443EED00514693 /* HHContentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHContentTableView.m; sourceTree = "<group>"; };
-		18E51E8A1F443EED00514693 /* HHHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHHeaderView.h; sourceTree = "<group>"; };
-		18E51E8B1F443EED00514693 /* HHHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHeaderView.m; sourceTree = "<group>"; };
-		18E51E8C1F443EED00514693 /* HHHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHHeaderView.xib; sourceTree = "<group>"; };
-		18E51E8D1F443EED00514693 /* HHHorizontalPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHHorizontalPagingView.h; sourceTree = "<group>"; };
-		18E51E8E1F443EED00514693 /* HHHorizontalPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHorizontalPagingView.m; sourceTree = "<group>"; };
-		18E51E8F1F443EED00514693 /* YFHorizontalPagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHorizontalPagingViewController.h; sourceTree = "<group>"; };
-		18E51E901F443EED00514693 /* YFHorizontalPagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHorizontalPagingViewController.m; sourceTree = "<group>"; };
 		18E51E921F443EED00514693 /* ITRAirSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRAirSideMenu.h; sourceTree = "<group>"; };
 		18E51E931F443EED00514693 /* ITRAirSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRAirSideMenu.m; sourceTree = "<group>"; };
 		18E51E941F443EED00514693 /* ITRFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRFirstViewController.h; sourceTree = "<group>"; };
@@ -2153,6 +2149,41 @@
 		F83F213E216BB8C400DFA548 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		F83F213F216BB8C400DFA548 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		F83F2140216BB8C400DFA548 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		F83F2156216C585600DFA548 /* ArtPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtPageViewController.h; sourceTree = "<group>"; };
+		F83F2157216C585600DFA548 /* ArtPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtPageViewController.m; sourceTree = "<group>"; };
+		F83F216D216C58C300DFA548 /* HHHorizontalPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHorizontalPagingView.m; sourceTree = "<group>"; };
+		F83F216E216C58C300DFA548 /* DynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicItem.h; sourceTree = "<group>"; };
+		F83F216F216C58C300DFA548 /* UIView+WhenTappedBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WhenTappedBlocks.m"; sourceTree = "<group>"; };
+		F83F2170216C58C300DFA548 /* JYPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPagingView.h; sourceTree = "<group>"; };
+		F83F2171216C58C300DFA548 /* UIScrollView+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Dragging.m"; sourceTree = "<group>"; };
+		F83F2172216C58C300DFA548 /* HHHorizontalPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHHorizontalPagingView.h; sourceTree = "<group>"; };
+		F83F2173216C58C300DFA548 /* JYSegmentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSegmentViewProtocol.h; sourceTree = "<group>"; };
+		F83F2174216C58C300DFA548 /* UIScrollView+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Dragging.h"; sourceTree = "<group>"; };
+		F83F2175216C58C300DFA548 /* UIView+WhenTappedBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WhenTappedBlocks.h"; sourceTree = "<group>"; };
+		F83F2177216C58C300DFA548 /* JYSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSegmentView.h; sourceTree = "<group>"; };
+		F83F2178216C58C300DFA548 /* JYSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSegmentView.m; sourceTree = "<group>"; };
+		F83F2179216C58C300DFA548 /* DynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicItem.m; sourceTree = "<group>"; };
+		F83F217F216C595400DFA548 /* ArtTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtTableViewController.m; sourceTree = "<group>"; };
+		F83F2180216C595400DFA548 /* ArtWholePullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWholePullViewController.m; sourceTree = "<group>"; };
+		F83F2181216C595400DFA548 /* ArtChangeNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtChangeNavViewController.h; sourceTree = "<group>"; };
+		F83F2182216C595500DFA548 /* ArtScrollHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtScrollHeaderViewController.m; sourceTree = "<group>"; };
+		F83F2183216C595500DFA548 /* ArtDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtDefaultViewController.m; sourceTree = "<group>"; };
+		F83F2184216C595500DFA548 /* ArtDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtDefaultViewController.h; sourceTree = "<group>"; };
+		F83F2185216C595500DFA548 /* ArtChangeNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtChangeNavViewController.m; sourceTree = "<group>"; };
+		F83F2186216C595500DFA548 /* ArtWholePullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWholePullViewController.h; sourceTree = "<group>"; };
+		F83F2187216C595500DFA548 /* ArtScrollHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtScrollHeaderViewController.h; sourceTree = "<group>"; };
+		F83F2188216C595500DFA548 /* ArtTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtTableViewController.h; sourceTree = "<group>"; };
+		F83F2189216C595500DFA548 /* ArtPullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtPullViewController.m; sourceTree = "<group>"; };
+		F83F218A216C595600DFA548 /* ArtPullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtPullViewController.h; sourceTree = "<group>"; };
+		F83F2192216C59E100DFA548 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		F83F2193216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		F83F2194216C59E100DFA548 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		F83F2195216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		F83F2196216C59E100DFA548 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		F83F21A1216C5A8B00DFA548 /* SDTimeLineRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimeLineRefreshHeader.m; sourceTree = "<group>"; };
+		F83F21A2216C5A8B00DFA548 /* SDBaseRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseRefreshView.h; sourceTree = "<group>"; };
+		F83F21A3216C5A8B00DFA548 /* SDTimeLineRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTimeLineRefreshHeader.h; sourceTree = "<group>"; };
+		F83F21A4216C5A8B00DFA548 /* SDBaseRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBaseRefreshView.m; sourceTree = "<group>"; };
 		F84A4DA8215804610025D4EB /* UIViewController+YNPageExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YNPageExtend.m"; sourceTree = "<group>"; };
 		F84A4DA9215804610025D4EB /* UIView+YNPageExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YNPageExtend.m"; sourceTree = "<group>"; };
 		F84A4DAA215804610025D4EB /* UIScrollView+YNPageExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YNPageExtend.h"; sourceTree = "<group>"; };
@@ -2656,6 +2687,7 @@
 		18E51E081F443EED00514693 /* 03 - ViewLayout(视图布局) */ = {
 			isa = PBXGroup;
 			children = (
+				F83F2155216C581400DFA548 /* ArtPageView */,
 				F84A4DC7215804760025D4EB /* YNPageView */,
 				18E51E091F443EED00514693 /* HalfCircleViewLayout */,
 				18E51E1C1F443EED00514693 /* HorizontalScroll */,
@@ -2830,7 +2862,6 @@
 				18E51E601F443EED00514693 /* BaiduViewTransition */,
 				18E51E651F443EED00514693 /* DraggableCard */,
 				18E51E761F443EED00514693 /* FlipPageView */,
-				18E51E831F443EED00514693 /* HorizontalPagingView */,
 				18E51E911F443EED00514693 /* ITRAirSideMenu */,
 				18E51E9C1F443EED00514693 /* LTSlidingViewController */,
 				18E51EA61F443EED00514693 /* RZTransitions */,
@@ -2912,26 +2943,6 @@
 				18E51E801F443EED00514693 /* SBGradientOverlayLayer.m */,
 			);
 			path = SBGradientOverlayLayer;
-			sourceTree = "<group>";
-		};
-		18E51E831F443EED00514693 /* HorizontalPagingView */ = {
-			isa = PBXGroup;
-			children = (
-				18E51E841F443EED00514693 /* HHContentCollectionView.h */,
-				18E51E851F443EED00514693 /* HHContentCollectionView.m */,
-				18E51E861F443EED00514693 /* HHContentScrollView.h */,
-				18E51E871F443EED00514693 /* HHContentScrollView.m */,
-				18E51E881F443EED00514693 /* HHContentTableView.h */,
-				18E51E891F443EED00514693 /* HHContentTableView.m */,
-				18E51E8A1F443EED00514693 /* HHHeaderView.h */,
-				18E51E8B1F443EED00514693 /* HHHeaderView.m */,
-				18E51E8C1F443EED00514693 /* HHHeaderView.xib */,
-				18E51E8D1F443EED00514693 /* HHHorizontalPagingView.h */,
-				18E51E8E1F443EED00514693 /* HHHorizontalPagingView.m */,
-				18E51E8F1F443EED00514693 /* YFHorizontalPagingViewController.h */,
-				18E51E901F443EED00514693 /* YFHorizontalPagingViewController.m */,
-			);
-			path = HorizontalPagingView;
 			sourceTree = "<group>";
 		};
 		18E51E911F443EED00514693 /* ITRAirSideMenu */ = {
@@ -5633,6 +5644,7 @@
 		F83F20D0216BAFD400DFA548 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F83F20FC216BAFD400DFA548 /* DemosListVC.h */,
 				F83F20E5216BAFD400DFA548 /* DemosListVC.m */,
 				F83F20D1216BAFD400DFA548 /* SuspendTopPageVC */,
 				F83F20D6216BAFD400DFA548 /* LoadPageVC */,
@@ -5644,7 +5656,6 @@
 				F83F20F1216BAFD400DFA548 /* SuspendCenterPageVC */,
 				F83F20F4216BAFD400DFA548 /* TopPageVC */,
 				F83F20F7216BAFD400DFA548 /* TestPageVC */,
-				F83F20FC216BAFD400DFA548 /* DemosListVC.h */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -5853,6 +5864,80 @@
 				F83F2140216BB8C400DFA548 /* MJRefreshBackFooter.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F83F2155216C581400DFA548 /* ArtPageView */ = {
+			isa = PBXGroup;
+			children = (
+				F83F216C216C58C300DFA548 /* HHHorizontalPagingView */,
+				F83F21A0216C5A8B00DFA548 /* SDRefresh */,
+				F83F2191216C59E100DFA548 /* SVPullToRefresh */,
+				F83F2181216C595400DFA548 /* ArtChangeNavViewController.h */,
+				F83F2185216C595500DFA548 /* ArtChangeNavViewController.m */,
+				F83F2184216C595500DFA548 /* ArtDefaultViewController.h */,
+				F83F2183216C595500DFA548 /* ArtDefaultViewController.m */,
+				F83F218A216C595600DFA548 /* ArtPullViewController.h */,
+				F83F2189216C595500DFA548 /* ArtPullViewController.m */,
+				F83F2187216C595500DFA548 /* ArtScrollHeaderViewController.h */,
+				F83F2182216C595500DFA548 /* ArtScrollHeaderViewController.m */,
+				F83F2188216C595500DFA548 /* ArtTableViewController.h */,
+				F83F217F216C595400DFA548 /* ArtTableViewController.m */,
+				F83F2186216C595500DFA548 /* ArtWholePullViewController.h */,
+				F83F2180216C595400DFA548 /* ArtWholePullViewController.m */,
+				F83F2156216C585600DFA548 /* ArtPageViewController.h */,
+				F83F2157216C585600DFA548 /* ArtPageViewController.m */,
+			);
+			path = ArtPageView;
+			sourceTree = "<group>";
+		};
+		F83F216C216C58C300DFA548 /* HHHorizontalPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				F83F2176216C58C300DFA548 /* SegmentView */,
+				F83F2172216C58C300DFA548 /* HHHorizontalPagingView.h */,
+				F83F216D216C58C300DFA548 /* HHHorizontalPagingView.m */,
+				F83F216E216C58C300DFA548 /* DynamicItem.h */,
+				F83F2179216C58C300DFA548 /* DynamicItem.m */,
+				F83F2175216C58C300DFA548 /* UIView+WhenTappedBlocks.h */,
+				F83F216F216C58C300DFA548 /* UIView+WhenTappedBlocks.m */,
+				F83F2170216C58C300DFA548 /* JYPagingView.h */,
+				F83F2174216C58C300DFA548 /* UIScrollView+Dragging.h */,
+				F83F2171216C58C300DFA548 /* UIScrollView+Dragging.m */,
+				F83F2173216C58C300DFA548 /* JYSegmentViewProtocol.h */,
+			);
+			path = HHHorizontalPagingView;
+			sourceTree = "<group>";
+		};
+		F83F2176216C58C300DFA548 /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				F83F2177216C58C300DFA548 /* JYSegmentView.h */,
+				F83F2178216C58C300DFA548 /* JYSegmentView.m */,
+			);
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		F83F2191216C59E100DFA548 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F83F2192216C59E100DFA548 /* SVPullToRefresh.h */,
+				F83F2193216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.m */,
+				F83F2194216C59E100DFA548 /* UIScrollView+SVPullToRefresh.m */,
+				F83F2195216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.h */,
+				F83F2196216C59E100DFA548 /* UIScrollView+SVPullToRefresh.h */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		F83F21A0216C5A8B00DFA548 /* SDRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F83F21A3216C5A8B00DFA548 /* SDTimeLineRefreshHeader.h */,
+				F83F21A1216C5A8B00DFA548 /* SDTimeLineRefreshHeader.m */,
+				F83F21A2216C5A8B00DFA548 /* SDBaseRefreshView.h */,
+				F83F21A4216C5A8B00DFA548 /* SDBaseRefreshView.m */,
+			);
+			path = SDRefresh;
 			sourceTree = "<group>";
 		};
 		F84A4DA6215804610025D4EB /* YNPageViewController */ = {
@@ -6181,7 +6266,6 @@
 				18E524A11F443EF000514693 /* YFGradientViewController.png in Resources */,
 				18E523A71F443EEF00514693 /* trophy-50.png in Resources */,
 				18E523B61F443EEF00514693 /* 2.plist in Resources */,
-				18E523D11F443EEF00514693 /* HHHeaderView.xib in Resources */,
 				18E524781F443EF000514693 /* editButton@3x.png in Resources */,
 				18E524BF1F443EF000514693 /* Home.png in Resources */,
 				18E524951F443EF000514693 /* Shader.fsh in Resources */,
@@ -6340,9 +6424,12 @@
 				18E523B31F443EEF00514693 /* YFShopCell.m in Sources */,
 				18E525891F443EF200514693 /* DataUpdateView.m in Sources */,
 				18E523771F443EEF00514693 /* ZTypewriteEffectLabel.m in Sources */,
+				F83F218B216C595600DFA548 /* ArtTableViewController.m in Sources */,
+				F83F217C216C58C300DFA548 /* UIScrollView+Dragging.m in Sources */,
 				18E5253F1F443EF100514693 /* HttpPresenter.m in Sources */,
 				18E524641F443EF000514693 /* YFLittleProjectViewController.m in Sources */,
 				F83F2149216BB8C400DFA548 /* MJRefreshBackNormalFooter.m in Sources */,
+				F83F21A5216C5A8C00DFA548 /* SDTimeLineRefreshHeader.m in Sources */,
 				18E524281F443EEF00514693 /* MultipleDelegate.m in Sources */,
 				18E5248B1F443EF000514693 /* BMWaveButton.m in Sources */,
 				18E523EA1F443EEF00514693 /* RZShrinkZoomAnimationController.m in Sources */,
@@ -6375,6 +6462,7 @@
 				18E524BA1F443EF000514693 /* CoreAnimationViewController.m in Sources */,
 				F83F2104216BAFD400DFA548 /* YNSuspendCustomNavOrSuspendPositionVC.m in Sources */,
 				18E5246D1F443EF000514693 /* UPStackMenu.m in Sources */,
+				F83F217D216C58C300DFA548 /* JYSegmentView.m in Sources */,
 				18E524371F443EEF00514693 /* QRCodeGenerateViewController.m in Sources */,
 				18CCA1952090221400300966 /* NSMutableDictionary+Safe.m in Sources */,
 				18E5250F1F443EF100514693 /* YFTableViewDelAllCell.m in Sources */,
@@ -6411,6 +6499,7 @@
 				18E525481F443EF100514693 /* MVPLogin2ViewController.m in Sources */,
 				18E524D81F443EF100514693 /* YFKnowledgeVC02.m in Sources */,
 				F84A4DBE215804610025D4EB /* UIView+YNPageExtend.m in Sources */,
+				F83F21A6216C5A8C00DFA548 /* SDBaseRefreshView.m in Sources */,
 				18E523741F443EEF00514693 /* YFMarqueeViewController.m in Sources */,
 				18E525331F443EF100514693 /* YFNode.m in Sources */,
 				18E5243E1F443EF000514693 /* YFResponderChainViewController.m in Sources */,
@@ -6426,6 +6515,7 @@
 				18E526021F4442EC00514693 /* JLROptionalRouteParser.m in Sources */,
 				18E525EF1F443EF200514693 /* AppDelegate.m in Sources */,
 				18E523BA1F443EEF00514693 /* YFViewLayoutViewController.m in Sources */,
+				F83F2158216C585600DFA548 /* ArtPageViewController.m in Sources */,
 				18E524381F443EEF00514693 /* QRCodeView.m in Sources */,
 				F84A4E0F2158CEC30025D4EB /* UIView+WebCacheOperation.m in Sources */,
 				18E524A61F443EF000514693 /* YFCircleLoader.m in Sources */,
@@ -6433,10 +6523,12 @@
 				18E525701F443EF100514693 /* UITableView+Gzw.m in Sources */,
 				18E523FA1F443EEF00514693 /* YFKeepViewController.m in Sources */,
 				18E525C01F443EF200514693 /* FMResultSet.m in Sources */,
+				F83F218D216C595600DFA548 /* ArtScrollHeaderViewController.m in Sources */,
 				18E525711F443EF100514693 /* YFEmptyDataSetViewController.m in Sources */,
 				18E524B51F443EF000514693 /* CABasicAnimationViewController.m in Sources */,
 				F83F2147216BB8C400DFA548 /* MJRefreshBackGifFooter.m in Sources */,
 				18E525291F443EF100514693 /* JLSubjectDataController.m in Sources */,
+				F83F2190216C595600DFA548 /* ArtPullViewController.m in Sources */,
 				18E523641F443EEF00514693 /* SKTag.m in Sources */,
 				18E5241B1F443EEF00514693 /* Case8DataEntity.m in Sources */,
 				18CCA1962090221400300966 /* NSMutableString+Safe.m in Sources */,
@@ -6509,11 +6601,11 @@
 				18E524401F443EF000514693 /* UILabel+Associate.m in Sources */,
 				18E5237A1F443EEF00514693 /* YFStar.m in Sources */,
 				18E523E51F443EEF00514693 /* RZTransitionsManager.m in Sources */,
-				18E523CD1F443EEF00514693 /* HHContentCollectionView.m in Sources */,
 				F84A4E082158CEC30025D4EB /* UIImage+MultiFormat.m in Sources */,
 				18E5250E1F443EF100514693 /* YFTableViewDelAll.m in Sources */,
 				18E525611F443EF100514693 /* ModuleBRootViewController.m in Sources */,
 				18E524CB1F443EF100514693 /* SYTabBarViewController.m in Sources */,
+				F83F218C216C595600DFA548 /* ArtWholePullViewController.m in Sources */,
 				18E524321F443EEF00514693 /* MultipleProtocol.m in Sources */,
 				18E5255A1F443EF100514693 /* OneTableViewCell.m in Sources */,
 				18E525F11F443EF200514693 /* YFAuthorViewController.m in Sources */,
@@ -6521,11 +6613,9 @@
 				18E5240E1F443EEF00514693 /* BViewController.m in Sources */,
 				18E524A21F443EF000514693 /* YFBezierViewController.m in Sources */,
 				18E523E01F443EEF00514693 /* RZBaseSwipeInteractionController.m in Sources */,
-				18E523D31F443EEF00514693 /* YFHorizontalPagingViewController.m in Sources */,
 				18E524C51F443EF000514693 /* YFLoginTransitionViewController.m in Sources */,
 				18E525C91F443EF200514693 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				18E525CC1F443EF200514693 /* MJArgument.m in Sources */,
-				18E523D01F443EEF00514693 /* HHHeaderView.m in Sources */,
 				18E525B21F443EF200514693 /* AFURLResponseSerialization.m in Sources */,
 				18E524A31F443EF000514693 /* UILabel+BezierAnimation.m in Sources */,
 				18E524F31F443EF100514693 /* YFNormalCollectionViewController.m in Sources */,
@@ -6589,6 +6679,7 @@
 				18E5239D1F443EEF00514693 /* YFNeteaseHomeViewController.m in Sources */,
 				18E5243D1F443EF000514693 /* UIViewB.m in Sources */,
 				18E5255E1F443EF100514693 /* EcoMainViewController.m in Sources */,
+				F83F2198216C59E100DFA548 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				18E525B11F443EF200514693 /* AFURLRequestSerialization.m in Sources */,
 				18E524991F443EF000514693 /* RippleModel2.m in Sources */,
 				1868EE9120661E9D00EEE713 /* JS_WKWebView_URLViewController.m in Sources */,
@@ -6714,7 +6805,6 @@
 				F83F2148216BB8C400DFA548 /* MJRefreshBackStateFooter.m in Sources */,
 				18E523CC1F443EEF00514693 /* YFFlipPageViewController.m in Sources */,
 				18E525B61F443EF200514693 /* UIAlertView+AFNetworking.m in Sources */,
-				18E523CE1F443EEF00514693 /* HHContentScrollView.m in Sources */,
 				F83F2144216BB8C400DFA548 /* UIScrollView+MJExtension.m in Sources */,
 				18E524CC1F443EF100514693 /* SYTabBar.m in Sources */,
 				18E524F01F443EF100514693 /* RAViewController.m in Sources */,
@@ -6735,7 +6825,6 @@
 				18E5257B1F443EF100514693 /* JKDBViewController.m in Sources */,
 				18CCA19A2090221400300966 /* NSObject+ImpChangeTool.m in Sources */,
 				18E5254D1F443EF100514693 /* YiTableViewController.m in Sources */,
-				18E523D21F443EEF00514693 /* HHHorizontalPagingView.m in Sources */,
 				18E5253E1F443EF100514693 /* HttpClient.m in Sources */,
 				F83F2107216BAFD400DFA548 /* YNScrollMenuStyleVC.m in Sources */,
 				18E525C51F443EF200514693 /* MASLayoutConstraint.m in Sources */,
@@ -6745,6 +6834,7 @@
 				18E524191F443EEF00514693 /* Case7ViewController.m in Sources */,
 				1868EEA02066349000EEE713 /* JS_JavaScriptCoreViewController.m in Sources */,
 				F83F2102216BAFD400DFA548 /* BaseViewController.m in Sources */,
+				F83F218E216C595600DFA548 /* ArtDefaultViewController.m in Sources */,
 				18E525001F443EF100514693 /* YFPushBehaviorViewController.m in Sources */,
 				18E524271F443EEF00514693 /* Business.m in Sources */,
 				18E524B11F443EF000514693 /* YFPushTransitionViewController.m in Sources */,
@@ -6772,6 +6862,7 @@
 				F83F2105216BAFD400DFA548 /* DemosListVC.m in Sources */,
 				18E525371F443EF100514693 /* YFAliViewController.m in Sources */,
 				18E524C41F443EF000514693 /* YFLoginSecondViewController.m in Sources */,
+				F83F217B216C58C300DFA548 /* UIView+WhenTappedBlocks.m in Sources */,
 				F84A4DC5215804610025D4EB /* YNPageCollectionView.m in Sources */,
 				18E523E11F443EEF00514693 /* RZHorizontalInteractionController.m in Sources */,
 				18E524CA1F443EF100514693 /* SYMineViewController.m in Sources */,
@@ -6809,6 +6900,7 @@
 				18E5241A1F443EEF00514693 /* Case8Cell.m in Sources */,
 				18E525541F443EF100514693 /* DataSource2.m in Sources */,
 				18E524151F443EEF00514693 /* Case4ViewController.m in Sources */,
+				F83F217A216C58C300DFA548 /* HHHorizontalPagingView.m in Sources */,
 				18E5248F1F443EF000514693 /* LXHTwoWaterWaveView.m in Sources */,
 				18E524581F443EF000514693 /* SYEmotionTool.m in Sources */,
 				18E525791F443EF100514693 /* JKDBHelper.m in Sources */,
@@ -6835,6 +6927,7 @@
 				18CCA16B2090200400300966 /* UIButton+TitlePosition.m in Sources */,
 				18E5236C1F443EEF00514693 /* LazyFadeInLayer.m in Sources */,
 				18E523831F443EEF00514693 /* YFTagsCloudViewController.m in Sources */,
+				F83F2197216C59E100DFA548 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				18E525041F443EF100514693 /* MenuData.m in Sources */,
 				F84A4DE12158CDD00025D4EB /* TADotView.m in Sources */,
 				18E525521F443EF100514693 /* YiTableViewModel.m in Sources */,
@@ -6858,7 +6951,9 @@
 				18E523EF1F443EEF00514693 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				18E524631F443EF000514693 /* YFJigsawViewController.m in Sources */,
 				18E5248D1F443EF000514693 /* YFRipple2ViewController.m in Sources */,
+				F83F217E216C58C300DFA548 /* DynamicItem.m in Sources */,
 				18E525451F443EF100514693 /* MVPLoginViewController.m in Sources */,
+				F83F218F216C595600DFA548 /* ArtChangeNavViewController.m in Sources */,
 				18E5236D1F443EEF00514693 /* LazyFadeInView.m in Sources */,
 				18E523621F443EEF00514693 /* YFMultipleClicksViewController.m in Sources */,
 				18E524A71F443EF000514693 /* YFCircleLoaderViewController.m in Sources */,
@@ -6869,7 +6964,6 @@
 				18E525D31F443EF200514693 /* MJTypeEncoding.m in Sources */,
 				18CCA1972090221400300966 /* NSDictionary+Safe.m in Sources */,
 				18E523781F443EEF00514693 /* YFRatingBar.m in Sources */,
-				18E523CF1F443EEF00514693 /* HHContentTableView.m in Sources */,
 				18E525271F443EF100514693 /* JLBaseDataController.m in Sources */,
 				18E5245B1F443EF000514693 /* SYEmotionKeyboard.m in Sources */,
 				18E5244C1F443EF000514693 /* MsgForwardingViewController.m in Sources */,

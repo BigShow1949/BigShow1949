@@ -24,7 +24,8 @@
                          @[@"滑动标题",@"YFSlideTitlesViewController"],
                          @[@"网易滑动标题",@"YFNeteaseHomeViewController"],
                          @[@"抽卡效果",@"YFStackedPageVC_UIStoryboard"],
-                         @[@"YNPageView",@"YNPageViewDemoController"]]];
+                         @[@"YNPageView",@"YNPageViewDemoController"],
+                         @[@"ArtPageView",@"ArtPageViewController"]]];
 }
 
 
