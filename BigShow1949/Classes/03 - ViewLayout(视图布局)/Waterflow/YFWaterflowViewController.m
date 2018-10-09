@@ -57,8 +57,9 @@ static NSString * const CellId = @"shop";
     //    [self.collectionView addFooterWithCallback:^{
     //        NSLog(@"进入shang拉刷新状态");
     //    }];
-    [self.collectionView addHeaderWithTarget:self action:@selector(loadNewShops)];
-    [self.collectionView addFooterWithTarget:self action:@selector(loadMoreShops)];
+    
+    self.collectionView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewShops)];
+    self.collectionView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreShops)];
 }
 
 - (void)loadNewShops
@@ -69,7 +70,8 @@ static NSString * const CellId = @"shop";
         [self.collectionView reloadData];
         
         // stop refresh
-        [self.collectionView headerEndRefreshing];
+//        [self.collectionView headerEndRefreshing];
+        [self.collectionView.mj_header endRefreshing];
     });
 }
 
@@ -81,7 +83,7 @@ static NSString * const CellId = @"shop";
         [self.collectionView reloadData];
         
         // stop refresh
-        [self.collectionView footerEndRefreshing];
+        [self.collectionView.mj_footer endRefreshing];
     });
 }
 

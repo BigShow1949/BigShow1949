@@ -1,203 +1,163 @@
-//
+//  代码地址: https://github.com/CoderMJLee/MJRefresh
+//  代码地址: http://code4app.com/ios/%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E4%B8%8B%E6%8B%89%E4%B8%8A%E6%8B%89%E5%88%B7%E6%96%B0/52326ce26803fabc46000000
 //  UIScrollView+MJRefresh.m
 //  MJRefreshExample
 //
-//  Created by MJ Lee on 14-5-28.
-//  Copyright (c) 2014年 itcast. All rights reserved.
+//  Created by MJ Lee on 15/3/4.
+//  Copyright (c) 2015年 小码哥. All rights reserved.
 //
 
 #import "UIScrollView+MJRefresh.h"
-#import "MJRefreshHeaderView.h"
-#import "MJRefreshFooterView.h"
+#import "MJRefreshHeader.h"
+#import "MJRefreshFooter.h"
 #import <objc/runtime.h>
 
-@interface UIScrollView()
-@property (weak, nonatomic) MJRefreshHeaderView *header;
-@property (weak, nonatomic) MJRefreshFooterView *footer;
-@end
+@implementation NSObject (MJRefresh)
 
++ (void)exchangeInstanceMethod1:(SEL)method1 method2:(SEL)method2
+{
+    method_exchangeImplementations(class_getInstanceMethod(self, method1), class_getInstanceMethod(self, method2));
+}
+
++ (void)exchangeClassMethod1:(SEL)method1 method2:(SEL)method2
+{
+    method_exchangeImplementations(class_getClassMethod(self, method1), class_getClassMethod(self, method2));
+}
+
+@end
 
 @implementation UIScrollView (MJRefresh)
 
-#pragma mark - 运行时相关
-static char MJRefreshHeaderViewKey;
-static char MJRefreshFooterViewKey;
-
-- (void)setHeader:(MJRefreshHeaderView *)header {
-    [self willChangeValueForKey:@"MJRefreshHeaderViewKey"];
-    objc_setAssociatedObject(self, &MJRefreshHeaderViewKey,
-                             header,
-                             OBJC_ASSOCIATION_ASSIGN);
-    [self didChangeValueForKey:@"MJRefreshHeaderViewKey"];
-}
-
-- (MJRefreshHeaderView *)header {
-    return objc_getAssociatedObject(self, &MJRefreshHeaderViewKey);
-}
-
-- (void)setFooter:(MJRefreshFooterView *)footer {
-    [self willChangeValueForKey:@"MJRefreshFooterViewKey"];
-    objc_setAssociatedObject(self, &MJRefreshFooterViewKey,
-                             footer,
-                             OBJC_ASSOCIATION_ASSIGN);
-    [self didChangeValueForKey:@"MJRefreshFooterViewKey"];
-}
-
-- (MJRefreshFooterView *)footer {
-    return objc_getAssociatedObject(self, &MJRefreshFooterViewKey);
-}
-
-#pragma mark - 下拉刷新
-/**
- *  添加一个下拉刷新头部控件
- *
- *  @param callback 回调
- */
-- (void)addHeaderWithCallback:(void (^)())callback
+#pragma mark - header
+static const char MJRefreshHeaderKey = '\0';
+- (void)setMj_header:(MJRefreshHeader *)mj_header
 {
-    // 1.创建新的header
-    if (!self.header) {
-        MJRefreshHeaderView *header = [MJRefreshHeaderView header];
-        [self addSubview:header];
-        self.header = header;
+    if (mj_header != self.mj_header) {
+        // 删除旧的，添加新的
+        [self.mj_header removeFromSuperview];
+        [self insertSubview:mj_header atIndex:0];
+        
+        // 存储新的
+        [self willChangeValueForKey:@"mj_header"]; // KVO
+        objc_setAssociatedObject(self, &MJRefreshHeaderKey,
+                                 mj_header, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"mj_header"]; // KVO
     }
-    
-    // 2.设置block回调
-    self.header.beginRefreshingCallback = callback;
 }
 
-/**
- *  添加一个下拉刷新头部控件
- *
- *  @param target 目标
- *  @param action 回调方法
- */
-- (void)addHeaderWithTarget:(id)target action:(SEL)action
+- (MJRefreshHeader *)mj_header
 {
-    // 1.创建新的header
-    if (!self.header) {
-        MJRefreshHeaderView *header = [MJRefreshHeaderView header];
-        [self addSubview:header];
-        self.header = header;
+    return objc_getAssociatedObject(self, &MJRefreshHeaderKey);
+}
+
+#pragma mark - footer
+static const char MJRefreshFooterKey = '\0';
+- (void)setMj_footer:(MJRefreshFooter *)mj_footer
+{
+    if (mj_footer != self.mj_footer) {
+        // 删除旧的，添加新的
+        [self.mj_footer removeFromSuperview];
+        [self insertSubview:mj_footer atIndex:0];
+        
+        // 存储新的
+        [self willChangeValueForKey:@"mj_footer"]; // KVO
+        objc_setAssociatedObject(self, &MJRefreshFooterKey,
+                                 mj_footer, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"mj_footer"]; // KVO
     }
-    
-    // 2.设置目标和回调方法
-    self.header.beginRefreshingTaget = target;
-    self.header.beginRefreshingAction = action;
 }
 
-/**
- *  移除下拉刷新头部控件
- */
-- (void)removeHeader
+- (MJRefreshFooter *)mj_footer
 {
-    [self.header removeFromSuperview];
-    self.header = nil;
+    return objc_getAssociatedObject(self, &MJRefreshFooterKey);
 }
 
-/**
- *  主动让下拉刷新头部控件进入刷新状态
- */
-- (void)headerBeginRefreshing
+#pragma mark - 过期
+- (void)setFooter:(MJRefreshFooter *)footer
 {
-    [self.header beginRefreshing];
+    self.mj_footer = footer;
 }
 
-/**
- *  让下拉刷新头部控件停止刷新状态
- */
-- (void)headerEndRefreshing
+- (MJRefreshFooter *)footer
 {
-    [self.header endRefreshing];
+    return self.mj_footer;
 }
 
-/**
- *  下拉刷新头部控件的可见性
- */
-- (void)setHeaderHidden:(BOOL)hidden
+- (void)setHeader:(MJRefreshHeader *)header
 {
-    self.header.hidden = hidden;
+    self.mj_header = header;
 }
 
-- (BOOL)isHeaderHidden
+- (MJRefreshHeader *)header
 {
-    return self.header.isHidden;
+    return self.mj_header;
 }
 
-#pragma mark - 上拉刷新
-/**
- *  添加一个上拉刷新尾部控件
- *
- *  @param callback 回调
- */
-- (void)addFooterWithCallback:(void (^)())callback
+#pragma mark - other
+- (NSInteger)mj_totalDataCount
 {
-    // 1.创建新的footer
-    if (!self.footer) {
-        MJRefreshFooterView *footer = [MJRefreshFooterView footer];
-        [self addSubview:footer];
-        self.footer = footer;
+    NSInteger totalCount = 0;
+    if ([self isKindOfClass:[UITableView class]]) {
+        UITableView *tableView = (UITableView *)self;
+        
+        for (NSInteger section = 0; section<tableView.numberOfSections; section++) {
+            totalCount += [tableView numberOfRowsInSection:section];
+        }
+    } else if ([self isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *collectionView = (UICollectionView *)self;
+        
+        for (NSInteger section = 0; section<collectionView.numberOfSections; section++) {
+            totalCount += [collectionView numberOfItemsInSection:section];
+        }
     }
+    return totalCount;
+}
+
+static const char MJRefreshReloadDataBlockKey = '\0';
+- (void)setMj_reloadDataBlock:(void (^)(NSInteger))mj_reloadDataBlock
+{
+    [self willChangeValueForKey:@"mj_reloadDataBlock"]; // KVO
+    objc_setAssociatedObject(self, &MJRefreshReloadDataBlockKey, mj_reloadDataBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self didChangeValueForKey:@"mj_reloadDataBlock"]; // KVO
+}
+
+- (void (^)(NSInteger))mj_reloadDataBlock
+{
+    return objc_getAssociatedObject(self, &MJRefreshReloadDataBlockKey);
+}
+
+- (void)executeReloadDataBlock
+{
+    !self.mj_reloadDataBlock ? : self.mj_reloadDataBlock(self.mj_totalDataCount);
+}
+@end
+
+@implementation UITableView (MJRefresh)
+
++ (void)load
+{
+    [self exchangeInstanceMethod1:@selector(reloadData) method2:@selector(mj_reloadData)];
+}
+
+- (void)mj_reloadData
+{
+    [self mj_reloadData];
     
-    // 2.设置block回调
-    self.footer.beginRefreshingCallback = callback;
+    [self executeReloadDataBlock];
+}
+@end
+
+@implementation UICollectionView (MJRefresh)
+
++ (void)load
+{
+    [self exchangeInstanceMethod1:@selector(reloadData) method2:@selector(mj_reloadData)];
 }
 
-/**
- *  添加一个上拉刷新尾部控件
- *
- *  @param target 目标
- *  @param action 回调方法
- */
-- (void)addFooterWithTarget:(id)target action:(SEL)action
+- (void)mj_reloadData
 {
-    // 1.创建新的footer
-    if (!self.footer) {
-        MJRefreshFooterView *footer = [MJRefreshFooterView footer];
-        [self addSubview:footer];
-        self.footer = footer;
-    }
+    [self mj_reloadData];
     
-    // 2.设置目标和回调方法
-    self.footer.beginRefreshingTaget = target;
-    self.footer.beginRefreshingAction = action;
-}
-
-/**
- *  移除上拉刷新尾部控件
- */
-- (void)removeFooter
-{
-    [self.footer removeFromSuperview];
-    self.footer = nil;
-}
-
-/**
- *  主动让上拉刷新尾部控件进入刷新状态
- */
-- (void)footerBeginRefreshing
-{
-    [self.footer beginRefreshing];
-}
-
-/**
- *  让上拉刷新尾部控件停止刷新状态
- */
-- (void)footerEndRefreshing
-{
-    [self.footer endRefreshing];
-}
-
-/**
- *  下拉刷新头部控件的可见性
- */
-- (void)setFooterHidden:(BOOL)hidden
-{
-    self.footer.hidden = hidden;
-}
-
-- (BOOL)isFooterHidden
-{
-    return self.footer.isHidden;
+    [self executeReloadDataBlock];
 }
 @end

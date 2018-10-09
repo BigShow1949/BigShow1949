@@ -8,6 +8,16 @@
 
 #import "YNPageViewDemoController.h"
 
+#import "YNSuspendTopPageVC.h"
+#import "YNSuspendCenterPageVC.h"
+#import "YNSuspendTopPausePageVC.h"
+#import "YNSuspendCustomNavOrSuspendPositionVC.h"
+#import "YNTopPageVC.h"
+#import "YNNavPageVC.h"
+#import "YNLoadPageVC.h"
+#import "YNScrollMenuStyleVC.h"
+#import "YNTestPageVC.h"
+
 @interface YNPageViewDemoController ()
 
 @end
@@ -18,13 +28,58 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self setupDataArr:@[@[@"测试例子",@"YFPageViewOneViewController"],
+    [self setupDataArr:@[@[@"悬浮样式--下拉刷新在中间",@"YNVCTypeSuspendCenterPageVC"], // 数据显示不出来
+                         @[@"悬浮样式--下拉刷新在顶部",@"YNVCTypeSuspendTopPageVC"],
+                         @[@"悬浮样式--下拉刷新在顶部(QQ联系人样式)",@"YNVCTypeSuspendTopPausePageVC"],
+                         @[@"悬浮样式--自定义导航条或自定义悬浮位置",@"YNVCTypeSuspendCustomNavOrSuspendPosition"],// 需要加个返回按钮
+                         @[@"加载数据后显示页面(隐藏导航条)",@"YNVCTypeLoadPageVC"],
+                         @[@"顶部样式",@"YNVCTypeTopPageVC"],
+                         @[@"导航条样式",@"YNVCTypeNavPageVC"],// 需要加个返回按钮
+                         @[@"菜单栏样式",@"YNVCTypeScrollMenuStyleVC"],
+                         @[@"测试专用",@"YNVCTypeYNTestPageVC"],
                          ]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = nil;
+    switch (indexPath.row) {
+        case 0:
+            vc = [YNSuspendTopPageVC suspendTopPageVC];
+            break;
+        case 1:
+            vc = [YNSuspendCenterPageVC suspendCenterPageVC];
+            break;
+        case 2:
+            vc = [YNSuspendTopPausePageVC suspendTopPausePageVC];
+            break;
+        case 3:
+            vc = [YNSuspendCustomNavOrSuspendPositionVC new];
+            break;
+        case 4:
+            vc = [YNTopPageVC topPageVC];
+            break;
+        case 5:
+            vc = [YNNavPageVC navPageVC];
+            break;
+        case 6:
+            vc = [YNLoadPageVC new];
+            break;
+        case 7:
+            vc = [YNScrollMenuStyleVC new];
+            break;
+        case 8:
+            vc = [YNTestPageVC testPageVC];
+            break;
+        case 9:
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
