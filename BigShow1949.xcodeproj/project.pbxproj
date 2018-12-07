@@ -793,6 +793,11 @@
 		F84A4E0E2158CEC30025D4EB /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4DFA2158CEC20025D4EB /* UIImageView+WebCache.m */; };
 		F84A4E0F2158CEC30025D4EB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4DFD2158CEC20025D4EB /* UIView+WebCacheOperation.m */; };
 		F84A4E102158CEC30025D4EB /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A4E012158CEC20025D4EB /* UIButton+WebCache.m */; };
+		F8ABD46F21BA7F9E0015DAF1 /* YFVIPERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABD46E21BA7F9E0015DAF1 /* YFVIPERViewController.m */; };
+		F8ABD47A21BA7FA20015DAF1 /* YFCounterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ABD47221BA7FA20015DAF1 /* YFCounterViewController.storyboard */; };
+		F8ABD47B21BA7FA20015DAF1 /* YFCounterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABD47421BA7FA20015DAF1 /* YFCounterPresenter.m */; };
+		F8ABD47C21BA7FA20015DAF1 /* YFCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABD47621BA7FA20015DAF1 /* YFCounterViewController.m */; };
+		F8ABD47D21BA7FA20015DAF1 /* YFCounterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABD47721BA7FA20015DAF1 /* YFCounterInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2249,6 +2254,17 @@
 		F84A4E002158CEC20025D4EB /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		F84A4E012158CEC20025D4EB /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		F84A4E022158CEC20025D4EB /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		F8ABD46D21BA7F9D0015DAF1 /* YFVIPERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFVIPERViewController.h; sourceTree = "<group>"; };
+		F8ABD46E21BA7F9E0015DAF1 /* YFVIPERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFVIPERViewController.m; sourceTree = "<group>"; };
+		F8ABD47121BA7FA20015DAF1 /* YFCounterInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterInteractor.h; sourceTree = "<group>"; };
+		F8ABD47221BA7FA20015DAF1 /* YFCounterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFCounterViewController.storyboard; sourceTree = "<group>"; };
+		F8ABD47321BA7FA20015DAF1 /* YFCounterInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterInteractorIO.h; sourceTree = "<group>"; };
+		F8ABD47421BA7FA20015DAF1 /* YFCounterPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCounterPresenter.m; sourceTree = "<group>"; };
+		F8ABD47521BA7FA20015DAF1 /* YFCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterView.h; sourceTree = "<group>"; };
+		F8ABD47621BA7FA20015DAF1 /* YFCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCounterViewController.m; sourceTree = "<group>"; };
+		F8ABD47721BA7FA20015DAF1 /* YFCounterInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCounterInteractor.m; sourceTree = "<group>"; };
+		F8ABD47821BA7FA20015DAF1 /* YFCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterViewController.h; sourceTree = "<group>"; };
+		F8ABD47921BA7FA20015DAF1 /* YFCounterPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterPresenter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4733,6 +4749,7 @@
 		18E521A41F443EEE00514693 /* 10 - DesignPattern(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F8ABD46C21BA7F870015DAF1 /* Viper */,
 				18E522051F443EEE00514693 /* Router */,
 				18E521A51F443EEE00514693 /* MVP_Counter */,
 				18E521AF1F443EEE00514693 /* MVP_Home */,
@@ -6058,6 +6075,32 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		F8ABD46C21BA7F870015DAF1 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				F8ABD47021BA7FA20015DAF1 /* Counter */,
+				F8ABD46D21BA7F9D0015DAF1 /* YFVIPERViewController.h */,
+				F8ABD46E21BA7F9E0015DAF1 /* YFVIPERViewController.m */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		F8ABD47021BA7FA20015DAF1 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				F8ABD47121BA7FA20015DAF1 /* YFCounterInteractor.h */,
+				F8ABD47221BA7FA20015DAF1 /* YFCounterViewController.storyboard */,
+				F8ABD47321BA7FA20015DAF1 /* YFCounterInteractorIO.h */,
+				F8ABD47421BA7FA20015DAF1 /* YFCounterPresenter.m */,
+				F8ABD47521BA7FA20015DAF1 /* YFCounterView.h */,
+				F8ABD47621BA7FA20015DAF1 /* YFCounterViewController.m */,
+				F8ABD47721BA7FA20015DAF1 /* YFCounterInteractor.m */,
+				F8ABD47821BA7FA20015DAF1 /* YFCounterViewController.h */,
+				F8ABD47921BA7FA20015DAF1 /* YFCounterPresenter.h */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -6111,7 +6154,7 @@
 				TargetAttributes = {
 					8B0B9AAE1B9572000084590D = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 3JJP29A3NU;
+						DevelopmentTeam = Q2Y3T7TV3N;
 						LastSwiftMigration = 0800;
 					};
 					8B0B9AC71B9572000084590D = {
@@ -6153,6 +6196,7 @@
 				18E525A81F443EF200514693 /* AMap.bundle in Resources */,
 				18E524E61F443EF100514693 /* 3.jpg in Resources */,
 				18E523C41F443EEF00514693 /* photo_sample_07.png in Resources */,
+				F8ABD47A21BA7FA20015DAF1 /* YFCounterViewController.storyboard in Resources */,
 				18E524D11F443EF100514693 /* TabBar_Discovery_selected_new@2x.png in Resources */,
 				18E523B51F443EEF00514693 /* 1.plist in Resources */,
 				18E523C11F443EEF00514693 /* photo_sample_04.png in Resources */,
@@ -6557,6 +6601,7 @@
 				18E523631F443EEF00514693 /* YFButtonViewController.m in Sources */,
 				18E524001F443EEF00514693 /* JSViewController.m in Sources */,
 				18E5257D1F443EF100514693 /* Depart.m in Sources */,
+				F8ABD46F21BA7F9E0015DAF1 /* YFVIPERViewController.m in Sources */,
 				18E525AC1F443EF200514693 /* AFHTTPRequestOperationManager.m in Sources */,
 				18E525861F443EF100514693 /* DataEditView.m in Sources */,
 				18E525221F443EF100514693 /* YFAnswerNaviBar.m in Sources */,
@@ -6739,6 +6784,7 @@
 				18E523DF1F443EEF00514693 /* RZUniqueTransition.m in Sources */,
 				18E523EE1F443EEF00514693 /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
 				18E526191F4442F600514693 /* ThreeViewController.m in Sources */,
+				F8ABD47D21BA7FA20015DAF1 /* YFCounterInteractor.m in Sources */,
 				18E525411F443EF100514693 /* Presenter.m in Sources */,
 				18E525971F443EF200514693 /* YFEightQueensVC.m in Sources */,
 				F83F214A216BB8C400DFA548 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -6754,6 +6800,7 @@
 				18E525BD1F443EF200514693 /* FMDatabaseAdditions.m in Sources */,
 				F84A4DBD215804610025D4EB /* UIViewController+YNPageExtend.m in Sources */,
 				18E524531F443EF000514693 /* SYComposeViewController.m in Sources */,
+				F8ABD47C21BA7FA20015DAF1 /* YFCounterViewController.m in Sources */,
 				18E524B01F443EF000514693 /* KYPushTransition.m in Sources */,
 				18E524721F443EF000514693 /* YFAnimationVC05.m in Sources */,
 				18E524101F443EEF00514693 /* Case1ViewController.m in Sources */,
@@ -6875,6 +6922,7 @@
 				18E5254C1F443EF100514693 /* YiRefreshHeader.m in Sources */,
 				18E5246B1F443EF000514693 /* YFRotateCircleMenuVC.m in Sources */,
 				F84A4DE02158CDD00025D4EB /* SDCollectionViewCell.m in Sources */,
+				F8ABD47B21BA7FA20015DAF1 /* YFCounterPresenter.m in Sources */,
 				18E5255D1F443EF100514693 /* EcoBaseViewController.m in Sources */,
 				18E523A81F443EEF00514693 /* RGCardLayoutViewController.m in Sources */,
 				18E523601F443EEF00514693 /* YFBubbleMenuButtonViewController.m in Sources */,
@@ -7100,7 +7148,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				DEVELOPMENT_TEAM = Q2Y3T7TV3N;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7115,6 +7163,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneNews.oc;
 				PRODUCT_MODULE_NAME = BigShow;
 				PRODUCT_NAME = BigShow;
 				SWIFT_OBJC_BRIDGING_HEADER = "BigShow1949/Classes/16 - Swift专栏/BigShow1949-Bridging-Header.h";
@@ -7134,7 +7183,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				DEVELOPMENT_TEAM = Q2Y3T7TV3N;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7149,6 +7198,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneNews.oc;
 				PRODUCT_MODULE_NAME = BigShow;
 				PRODUCT_NAME = BigShow;
 				SWIFT_OBJC_BRIDGING_HEADER = "BigShow1949/Classes/16 - Swift专栏/BigShow1949-Bridging-Header.h";

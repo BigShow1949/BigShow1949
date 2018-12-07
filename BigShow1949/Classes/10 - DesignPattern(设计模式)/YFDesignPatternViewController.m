@@ -16,15 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [self setupDataArr:@[@[@"MVVM_coderyi",@"YiTableViewController"],
                          @[@"DataSource分离",@"MyDataSourceViewController"],
                          @[@"MVP登录",@"MVPLoginViewController"],
                          @[@"MVP登录2",@"MVPLogin2ViewController_UIStoryboard"],
                          @[@"MVP计数器",@"MVPCounterViewController"],
                          @[@"MVP Home",@"MVPHomeViewController"],
-                         @[@"Router跳转",@"YFRouterViewController"]]];
-
+                         @[@"Router跳转",@"YFRouterViewController"],
+                         @[@"VIPER",@"YFVIPERViewController"]]]; // 先写在这里，以后再分
+    
 }
 
 
