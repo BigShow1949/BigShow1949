@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupDataArr:@[@[@"Counter计数器",@"YFCounterViewController_UIStoryboard"],
-                         @[@"ToDo",@"YFToDoBaseViewController"],]];
-    // @[@"Login",@"YFNoteListViperViewController"]
+                         @[@"ToDo",@"YFToDoBaseViewController"],
+                         @[@"TableList",@"YFViperTableListViewController"],]];
+    // @[@"TableList",@"YFViperTableListViewController"]
 }
 
 /*

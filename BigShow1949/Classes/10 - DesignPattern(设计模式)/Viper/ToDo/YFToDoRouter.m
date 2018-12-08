@@ -20,7 +20,7 @@
     YFToDoRouter *router = [[YFToDoRouter alloc] init];
     YFToDoPresenter *presenter = [[YFToDoPresenter alloc] initWithInterface:viewController interactor:interactor router:router];
     viewController.presenter = presenter;
-    router.viewController = viewController;
+    router.viewController = viewController; // R直接跟V交互？
     return viewController;
 }
 @end
