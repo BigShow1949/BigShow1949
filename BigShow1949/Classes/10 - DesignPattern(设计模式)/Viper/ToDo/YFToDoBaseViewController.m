@@ -7,10 +7,15 @@
 //
 
 #import "YFToDoBaseViewController.h"
-#import "YFToDoRouter.h"
+// List
+#import "YFToDoWireframe.h"
+#import "YFToDoInteractor.h"
+#import "YFToDoPresenter.h"
 #import "YFToDoViewController.h"
 
 @interface YFToDoBaseViewController ()
+@property (nonatomic, strong) YFToDoWireframe *wireframe;
+@property (nonatomic, strong) YFToDoViewController *viewController;
 
 @end
 
@@ -18,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self configureDependencies];
     
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -30,10 +37,26 @@
 }
 
 - (void)buttonClick {
-    YFToDoViewController *vc = [YFToDoRouter createModule];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.wireframe pushViewController:self.viewController fromViewController:self];
 }
 
+- (void)configureDependencies {
+    
+    YFToDoViewController *viewController = [[YFToDoViewController alloc] init];
+    YFToDoPresenter *presenter = [YFToDoPresenter new];
+    YFToDoWireframe *wireframe = [YFToDoWireframe new];
+    YFToDoInteractor *interactor = [YFToDoInteractor new];
+    presenter.wireframe = wireframe;
+    presenter.interactor = interactor; // 这里没有强指针指向 interactor，所以 presenter.interactor是强指针，地下的output是肉指针，不会循环引用
+    presenter.viewController = viewController;
+    
+    interactor.output = presenter;
+    wireframe.presenter = presenter;
+    viewController.presenter = presenter;
+    
+    self.wireframe = wireframe;
+    self.viewController = viewController;
+}
 /*
 #pragma mark - Navigation
 

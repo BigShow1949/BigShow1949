@@ -24,8 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self configureDependencies];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *redBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 80, 44)];
     [redBtn setTitle:@"Button" forState:UIControlStateNormal];
@@ -33,21 +31,6 @@
     redBtn.titleLabel.textColor = [UIColor blackColor];
     redBtn.backgroundColor = [UIColor blueColor];
     [self.view addSubview:redBtn];
-}
-
-
-- (void)configureDependencies {
-    /*
-     //    CBCategoryTableViewController *categoryController = [CBCategoryTableViewController new];
-     CBCategoryTablePresenter *categoryPresenter = [CBCategoryTablePresenter new];
-     CBCategoryTableWireframe *categoryWireframe = [CBCategoryTableWireframe new];
-     CBCategoryTableInteractor *categoryInteractor = [CBCategoryTableInteractor new];
-     //    categoryController.presenter = categoryPresenter;
-     categoryPresenter.wireframe = categoryWireframe;
-     categoryWireframe.presenter = categoryPresenter;
-     categoryPresenter.interactor = categoryInteractor;
-     self.categoryWireframe = categoryWireframe;
-     */
 }
 
 - (void)buttonClick {
@@ -64,4 +47,7 @@
     [wireframe pushViewController:viewController fromViewController:self];
 }
 
+- (void)dealloc {
+    NSLog(@"YFViperTableListViewController----dealloc");
+}
 @end
