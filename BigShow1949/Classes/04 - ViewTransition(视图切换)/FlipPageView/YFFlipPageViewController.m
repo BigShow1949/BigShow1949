@@ -65,7 +65,7 @@
         page.backgroundColor = [UIColor redColor];
     }else{}
     
-    page.tempContentLabel.text = [NSString stringWithFormat:@"%d", index];
+    page.tempContentLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)index];
     
     return page;
 }

@@ -19,8 +19,8 @@
     [self setupDataArr:@[@[@"Counter计数器",@"YFCounterViewController_UIStoryboard"],
                          @[@"TableList",@"YFViperTableListViewController"],
                          @[@"ToDo",@"YFToDoBaseViewController"],
+                         @[@"Note",@"YFNoteListViperViewController"] // 待完成
                          ]];
-    // @[@"TableList",@"YFViperTableListViewController"]
 }
 
 /*

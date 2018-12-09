@@ -90,7 +90,7 @@
     cell.backgroundColor = randomColor;
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     label.textColor = [UIColor redColor];
-    label.text = [NSString stringWithFormat:@"%d",indexPath.row];
+    label.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     //移除cell
     for (id subView in cell.contentView.subviews) {
         [subView removeFromSuperview];

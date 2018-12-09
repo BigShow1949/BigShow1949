@@ -17,7 +17,7 @@
 
 @interface WKWebViewJavascriptBridge : NSObject<WKNavigationDelegate, WebViewJavascriptBridgeBaseDelegate>
 
-+ (instancetype)bridgeForWebView:(WKWebView*)webView;
++ (instancetype)bridgeForWebView:(WKWebView*)webView API_AVAILABLE(ios(8.0));
 + (void)enableLogging;
 
 - (void)registerHandler:(NSString*)handlerName handler:(WVJBHandler)handler;

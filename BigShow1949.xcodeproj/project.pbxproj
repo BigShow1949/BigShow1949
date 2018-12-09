@@ -812,6 +812,15 @@
 		F874C0C721BBD11800ECFA59 /* YFToDoSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F874C0C621BBD11800ECFA59 /* YFToDoSection.m */; };
 		F874C0CA21BBD12300ECFA59 /* YFToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F874C0C921BBD12300ECFA59 /* YFToDoItem.m */; };
 		F8ABD46F21BA7F9E0015DAF1 /* YFVIPERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABD46E21BA7F9E0015DAF1 /* YFVIPERViewController.m */; };
+		F8C41D3221BCC2460031CDFA /* YFNoteListViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D1221BCC2450031CDFA /* YFNoteListViewPresenter.m */; };
+		F8C41D3321BCC2460031CDFA /* YFNoteListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D1521BCC2450031CDFA /* YFNoteListWireframe.m */; };
+		F8C41D3621BCC2460031CDFA /* YFTNoteListModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D1E21BCC2450031CDFA /* YFTNoteListModuleBuilder.m */; };
+		F8C41D3721BCC2460031CDFA /* YFNoteListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D2121BCC2450031CDFA /* YFNoteListInteractor.m */; };
+		F8C41D3821BCC2460031CDFA /* YFNoteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D2421BCC2460031CDFA /* YFNoteDataManager.m */; };
+		F8C41D3921BCC2460031CDFA /* YFRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D2821BCC2460031CDFA /* YFRouter.m */; };
+		F8C41D3B21BCC2460031CDFA /* YFNoteListViperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D3121BCC2460031CDFA /* YFNoteListViperViewController.m */; };
+		F8C41D4D21BCC39F0031CDFA /* YFNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C41D4A21BCC39F0031CDFA /* YFNoteListViewController.m */; };
+		F8C41D4E21BCC39F0031CDFA /* YFNoteListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C41D4B21BCC39F0031CDFA /* YFNoteListViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2311,6 +2320,39 @@
 		F874C0C921BBD12300ECFA59 /* YFToDoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFToDoItem.m; sourceTree = "<group>"; };
 		F8ABD46D21BA7F9D0015DAF1 /* YFVIPERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFVIPERViewController.h; sourceTree = "<group>"; };
 		F8ABD46E21BA7F9E0015DAF1 /* YFVIPERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFVIPERViewController.m; sourceTree = "<group>"; };
+		F8C41D1121BCC2450031CDFA /* YFNoteListViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViewPresenter.h; sourceTree = "<group>"; };
+		F8C41D1221BCC2450031CDFA /* YFNoteListViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteListViewPresenter.m; sourceTree = "<group>"; };
+		F8C41D1421BCC2450031CDFA /* YFNoteListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListWireframe.h; sourceTree = "<group>"; };
+		F8C41D1521BCC2450031CDFA /* YFNoteListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteListWireframe.m; sourceTree = "<group>"; };
+		F8C41D1E21BCC2450031CDFA /* YFTNoteListModuleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTNoteListModuleBuilder.m; sourceTree = "<group>"; };
+		F8C41D1F21BCC2450031CDFA /* YFTNoteListModuleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTNoteListModuleBuilder.h; sourceTree = "<group>"; };
+		F8C41D2121BCC2450031CDFA /* YFNoteListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteListInteractor.m; sourceTree = "<group>"; };
+		F8C41D2221BCC2450031CDFA /* YFNoteListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListInteractor.h; sourceTree = "<group>"; };
+		F8C41D2421BCC2460031CDFA /* YFNoteDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteDataManager.m; sourceTree = "<group>"; };
+		F8C41D2521BCC2460031CDFA /* YFNoteDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteDataManager.h; sourceTree = "<group>"; };
+		F8C41D2721BCC2460031CDFA /* YFRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRouter.h; sourceTree = "<group>"; };
+		F8C41D2821BCC2460031CDFA /* YFRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRouter.m; sourceTree = "<group>"; };
+		F8C41D2A21BCC2460031CDFA /* YFNoteListViperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViperViewController.h; sourceTree = "<group>"; };
+		F8C41D3121BCC2460031CDFA /* YFNoteListViperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteListViperViewController.m; sourceTree = "<group>"; };
+		F8C41D3C21BCC2FF0031CDFA /* YFViperWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperWireframe.h; sourceTree = "<group>"; };
+		F8C41D3D21BCC2FF0031CDFA /* YFViperRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperRouter.h; sourceTree = "<group>"; };
+		F8C41D3E21BCC2FF0031CDFA /* YFViperWireframePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperWireframePrivate.h; sourceTree = "<group>"; };
+		F8C41D3F21BCC2FF0031CDFA /* YFViperPresenterPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperPresenterPrivate.h; sourceTree = "<group>"; };
+		F8C41D4021BCC3000031CDFA /* YFViperInteractorPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperInteractorPrivate.h; sourceTree = "<group>"; };
+		F8C41D4121BCC3000031CDFA /* YFViperViewPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperViewPrivate.h; sourceTree = "<group>"; };
+		F8C41D4221BCC3000031CDFA /* YFViperInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperInteractor.h; sourceTree = "<group>"; };
+		F8C41D4321BCC3000031CDFA /* YFViperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperView.h; sourceTree = "<group>"; };
+		F8C41D4421BCC3000031CDFA /* YFViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViper.h; sourceTree = "<group>"; };
+		F8C41D4521BCC3000031CDFA /* YFViperPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperPresenter.h; sourceTree = "<group>"; };
+		F8C41D4621BCC3000031CDFA /* YFViperViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFViperViewEventHandler.h; sourceTree = "<group>"; };
+		F8C41D4721BCC39E0031CDFA /* YFNoteListViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViewDataSource.h; sourceTree = "<group>"; };
+		F8C41D4821BCC39F0031CDFA /* YFNoteListViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViewEventHandler.h; sourceTree = "<group>"; };
+		F8C41D4921BCC39F0031CDFA /* YFNoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViewController.h; sourceTree = "<group>"; };
+		F8C41D4A21BCC39F0031CDFA /* YFNoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNoteListViewController.m; sourceTree = "<group>"; };
+		F8C41D4B21BCC39F0031CDFA /* YFNoteListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YFNoteListViewController.storyboard; sourceTree = "<group>"; };
+		F8C41D4C21BCC39F0031CDFA /* YFNoteListViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListViewProtocol.h; sourceTree = "<group>"; };
+		F8C41D4F21BCC8F70031CDFA /* YFNoteListRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFNoteListRouter.h; sourceTree = "<group>"; };
+		F8C41D5021BCCADD0031CDFA /* YFNoteListWireframeInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFNoteListWireframeInput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -6223,9 +6265,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F874C0CC21BBF3D900ECFA59 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D0921BCC2450031CDFA /* LoginModule */,
+				F8C41D0F21BCC2450031CDFA /* NoteListModule */,
+				F8C41D2B21BCC2460031CDFA /* NoteModule */,
+				F8C41D2321BCC2460031CDFA /* NoteService */,
+				F8C41CFD21BCC2450031CDFA /* Protocol */,
+				F8C41D2621BCC2460031CDFA /* Router */,
+				F8C41D2A21BCC2460031CDFA /* YFNoteListViperViewController.h */,
+				F8C41D3121BCC2460031CDFA /* YFNoteListViperViewController.m */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
 		F8ABD46C21BA7F870015DAF1 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				F874C0CC21BBF3D900ECFA59 /* Note */,
 				F874C09421BB82FE00ECFA59 /* TableList */,
 				F874C06721BAA9E600ECFA59 /* ToDo */,
 				F8ABD47021BA7FA20015DAF1 /* Counter */,
@@ -6249,6 +6307,199 @@
 				F874C06C21BAAA2B00ECFA59 /* YFCounterViewController.storyboard */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		F8C41CFD21BCC2450031CDFA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D4421BCC3000031CDFA /* YFViper.h */,
+				F8C41D4221BCC3000031CDFA /* YFViperInteractor.h */,
+				F8C41D4021BCC3000031CDFA /* YFViperInteractorPrivate.h */,
+				F8C41D4521BCC3000031CDFA /* YFViperPresenter.h */,
+				F8C41D3F21BCC2FF0031CDFA /* YFViperPresenterPrivate.h */,
+				F8C41D3D21BCC2FF0031CDFA /* YFViperRouter.h */,
+				F8C41D4321BCC3000031CDFA /* YFViperView.h */,
+				F8C41D4621BCC3000031CDFA /* YFViperViewEventHandler.h */,
+				F8C41D4121BCC3000031CDFA /* YFViperViewPrivate.h */,
+				F8C41D3C21BCC2FF0031CDFA /* YFViperWireframe.h */,
+				F8C41D3E21BCC2FF0031CDFA /* YFViperWireframePrivate.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F8C41D0921BCC2450031CDFA /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D0A21BCC2450031CDFA /* Presenter */,
+				F8C41D0B21BCC2450031CDFA /* Wireframe */,
+				F8C41D0C21BCC2450031CDFA /* View */,
+				F8C41D0D21BCC2450031CDFA /* Builder */,
+				F8C41D0E21BCC2450031CDFA /* Interactor */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		F8C41D0A21BCC2450031CDFA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8C41D0B21BCC2450031CDFA /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F8C41D0C21BCC2450031CDFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8C41D0D21BCC2450031CDFA /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		F8C41D0E21BCC2450031CDFA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F8C41D0F21BCC2450031CDFA /* NoteListModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D1021BCC2450031CDFA /* Presenter */,
+				F8C41D1321BCC2450031CDFA /* Wireframe */,
+				F8C41D1621BCC2450031CDFA /* View */,
+				F8C41D1D21BCC2450031CDFA /* Builder */,
+				F8C41D2021BCC2450031CDFA /* Interactor */,
+			);
+			path = NoteListModule;
+			sourceTree = "<group>";
+		};
+		F8C41D1021BCC2450031CDFA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D1121BCC2450031CDFA /* YFNoteListViewPresenter.h */,
+				F8C41D1221BCC2450031CDFA /* YFNoteListViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8C41D1321BCC2450031CDFA /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D4F21BCC8F70031CDFA /* YFNoteListRouter.h */,
+				F8C41D5021BCCADD0031CDFA /* YFNoteListWireframeInput.h */,
+				F8C41D1421BCC2450031CDFA /* YFNoteListWireframe.h */,
+				F8C41D1521BCC2450031CDFA /* YFNoteListWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F8C41D1621BCC2450031CDFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D4921BCC39F0031CDFA /* YFNoteListViewController.h */,
+				F8C41D4A21BCC39F0031CDFA /* YFNoteListViewController.m */,
+				F8C41D4B21BCC39F0031CDFA /* YFNoteListViewController.storyboard */,
+				F8C41D4721BCC39E0031CDFA /* YFNoteListViewDataSource.h */,
+				F8C41D4821BCC39F0031CDFA /* YFNoteListViewEventHandler.h */,
+				F8C41D4C21BCC39F0031CDFA /* YFNoteListViewProtocol.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8C41D1D21BCC2450031CDFA /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D1F21BCC2450031CDFA /* YFTNoteListModuleBuilder.h */,
+				F8C41D1E21BCC2450031CDFA /* YFTNoteListModuleBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		F8C41D2021BCC2450031CDFA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D2221BCC2450031CDFA /* YFNoteListInteractor.h */,
+				F8C41D2121BCC2450031CDFA /* YFNoteListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F8C41D2321BCC2460031CDFA /* NoteService */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D2521BCC2460031CDFA /* YFNoteDataManager.h */,
+				F8C41D2421BCC2460031CDFA /* YFNoteDataManager.m */,
+			);
+			path = NoteService;
+			sourceTree = "<group>";
+		};
+		F8C41D2621BCC2460031CDFA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D2721BCC2460031CDFA /* YFRouter.h */,
+				F8C41D2821BCC2460031CDFA /* YFRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F8C41D2B21BCC2460031CDFA /* NoteModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8C41D2C21BCC2460031CDFA /* Presenter */,
+				F8C41D2D21BCC2460031CDFA /* Wireframe */,
+				F8C41D2E21BCC2460031CDFA /* View */,
+				F8C41D2F21BCC2460031CDFA /* Builder */,
+				F8C41D3021BCC2460031CDFA /* Interactor */,
+			);
+			path = NoteModule;
+			sourceTree = "<group>";
+		};
+		F8C41D2C21BCC2460031CDFA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8C41D2D21BCC2460031CDFA /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F8C41D2E21BCC2460031CDFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8C41D2F21BCC2460031CDFA /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		F8C41D3021BCC2460031CDFA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -6298,7 +6549,7 @@
 		8B0B9AA71B9572000084590D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = YFToDo;
+				CLASSPREFIX = YF;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = BigShowCompany;
 				TargetAttributes = {
@@ -6438,6 +6689,7 @@
 				18E523891F443EEF00514693 /* carmelo_anthony.png in Resources */,
 				18E524661F443EF000514693 /* ContextMenuCell.xib in Resources */,
 				18E524DC1F443EF100514693 /* 12.jpg in Resources */,
+				F8C41D4E21BCC39F0031CDFA /* YFNoteListViewController.storyboard in Resources */,
 				18E524D21F443EF100514693 /* TabBar_History_new@2x.png in Resources */,
 				18E524851F443EF000514693 /* snow.png in Resources */,
 				18E523981F443EEF00514693 /* HWCollectionViewCell.xib in Resources */,
@@ -6694,6 +6946,7 @@
 				18E525191F443EF100514693 /* YFImitateAppViewController.m in Sources */,
 				18E523C51F443EEF00514693 /* YFDraggableCardViewController.m in Sources */,
 				18E525D51F443EF200514693 /* NSObject+MJKeyValue.m in Sources */,
+				F8C41D3B21BCC2460031CDFA /* YFNoteListViperViewController.m in Sources */,
 				18E525871F443EF200514693 /* DataInsertView.m in Sources */,
 				18E525481F443EF100514693 /* MVPLogin2ViewController.m in Sources */,
 				18E524D81F443EF100514693 /* YFKnowledgeVC02.m in Sources */,
@@ -6711,6 +6964,7 @@
 				18E5253B1F443EF100514693 /* HomeModel.m in Sources */,
 				18E525211F443EF100514693 /* YFAnswerBox.m in Sources */,
 				F83F214E216BB8C400DFA548 /* MJRefreshStateHeader.m in Sources */,
+				F8C41D3721BCC2460031CDFA /* YFNoteListInteractor.m in Sources */,
 				18E526021F4442EC00514693 /* JLROptionalRouteParser.m in Sources */,
 				18E525EF1F443EF200514693 /* AppDelegate.m in Sources */,
 				18E523BA1F443EEF00514693 /* YFViewLayoutViewController.m in Sources */,
@@ -6795,6 +7049,7 @@
 				18E524F91F443EF100514693 /* UINTSpringAnimation.m in Sources */,
 				18E524C61F443EF000514693 /* SYArenaViewController.m in Sources */,
 				18E5236E1F443EEF00514693 /* YFLazyInViewController.m in Sources */,
+				F8C41D3221BCC2460031CDFA /* YFNoteListViewPresenter.m in Sources */,
 				18E525F01F443EF200514693 /* main.m in Sources */,
 				18E523DA1F443EEF00514693 /* LTSlidingViewCoverflowTransition.m in Sources */,
 				F83F214C216BB8C400DFA548 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -6912,6 +7167,7 @@
 				18E5253D1F443EF100514693 /* MVPHomeViewController.m in Sources */,
 				F83F210C216BAFD400DFA548 /* YNTestBaseVC.m in Sources */,
 				18E525B01F443EF200514693 /* AFURLConnectionOperation.m in Sources */,
+				F8C41D4D21BCC39F0031CDFA /* YFNoteListViewController.m in Sources */,
 				18E524431F443EF000514693 /* YFPerson.m in Sources */,
 				18E5237D1F443EEF00514693 /* DBSphereView.m in Sources */,
 				18E525C31F443EF200514693 /* MASConstraint.m in Sources */,
@@ -6997,6 +7253,7 @@
 				18E5244E1F443EF000514693 /* YFRunTimeViewController.m in Sources */,
 				18E525161F443EF100514693 /* SearchResultsViewController.m in Sources */,
 				18E523AC1F443EEF00514693 /* WSFSlideTitlesView.m in Sources */,
+				F8C41D3921BCC2460031CDFA /* YFRouter.m in Sources */,
 				18E524871F443EF000514693 /* YFSnowViewController.m in Sources */,
 				18E523D61F443EEF00514693 /* ITRLeftMenuController.m in Sources */,
 				18E524701F443EF000514693 /* YFAnimationVC04.m in Sources */,
@@ -7036,10 +7293,12 @@
 				18E5254D1F443EF100514693 /* YiTableViewController.m in Sources */,
 				18E5253E1F443EF100514693 /* HttpClient.m in Sources */,
 				F83F2107216BAFD400DFA548 /* YNScrollMenuStyleVC.m in Sources */,
+				F8C41D3321BCC2460031CDFA /* YFNoteListWireframe.m in Sources */,
 				18E525C51F443EF200514693 /* MASLayoutConstraint.m in Sources */,
 				18E524711F443EF000514693 /* YFRadialMenu.m in Sources */,
 				18E5243B1F443EF000514693 /* YFQuartz2DViewController.m in Sources */,
 				18E524611F443EF000514693 /* YFCard.m in Sources */,
+				F8C41D3621BCC2460031CDFA /* YFTNoteListModuleBuilder.m in Sources */,
 				18E524191F443EEF00514693 /* Case7ViewController.m in Sources */,
 				1868EEA02066349000EEE713 /* JS_JavaScriptCoreViewController.m in Sources */,
 				F83F2102216BAFD400DFA548 /* BaseViewController.m in Sources */,
@@ -7176,6 +7435,7 @@
 				18E525D31F443EF200514693 /* MJTypeEncoding.m in Sources */,
 				18CCA1972090221400300966 /* NSDictionary+Safe.m in Sources */,
 				18E523781F443EEF00514693 /* YFRatingBar.m in Sources */,
+				F8C41D3821BCC2460031CDFA /* YFNoteDataManager.m in Sources */,
 				18E525271F443EF100514693 /* JLBaseDataController.m in Sources */,
 				18E5245B1F443EF000514693 /* SYEmotionKeyboard.m in Sources */,
 				18E5244C1F443EF000514693 /* MsgForwardingViewController.m in Sources */,

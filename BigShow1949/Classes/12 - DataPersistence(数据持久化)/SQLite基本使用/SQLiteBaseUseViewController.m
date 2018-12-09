@@ -47,7 +47,6 @@
             //2.执行SQL语句
             char *errmsg=NULL;
             int result = sqlite3_exec(_db, insertSql.UTF8String, NULL, NULL, &errmsg);
-            NSLog(@"result = %zd", result);
             
             if (result == SQLITE_OK) {
                 NSLog(@"插入数据成功--%s", errmsg);
@@ -92,7 +91,7 @@
         //2.执行SQL语句
         char *errmsg=NULL;
         int result = sqlite3_exec(db, insertSql.UTF8String, NULL, NULL, &errmsg);
-        NSLog(@"result = %zd", result);
+        NSLog(@"result = %d", result);
         
         if (result == SQLITE_OK) {
             NSLog(@"插入数据成功--%s", errmsg);
@@ -120,7 +119,6 @@
      */
     //进行查询前的准备工作
     int result = sqlite3_prepare_v2(_db, sql, -1, &stmt, NULL);
-    NSLog(@"result = %zd", result);
     if (result == SQLITE_OK) {//SQL语句没有问题
         NSLog(@"查询语句没有问题");
         

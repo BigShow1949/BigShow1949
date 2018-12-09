@@ -149,7 +149,7 @@
             cell = [[LccDataCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"dataCell"];
         }
         else{
-            NSArray *tempArray = _allDataArray[indexPath.row];
+//            NSArray *tempArray = _allDataArray[indexPath.row];
             cell = [[LccDataCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"dataCell" data:_allDataArray[indexPath.row]];
         }
 //        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

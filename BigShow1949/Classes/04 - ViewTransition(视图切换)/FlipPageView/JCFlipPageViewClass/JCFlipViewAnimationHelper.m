@@ -158,7 +158,7 @@
                         default:
                             break;
                     }
-                    progress = fabsf(progress);
+                    progress = fabs(progress);
                     
                     // 从第一页向前翻或者最后一页向后翻，都认为是要翻到背景页。
                     // 只能翻起一部分，以表示不能再继续翻页了。

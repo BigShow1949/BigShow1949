@@ -55,7 +55,7 @@
 }
 - (void)setIsIgnoreEvent:(BOOL)isIgnoreEvent{
     
-    NSLog(@"isIgnoreEvent = %zd", isIgnoreEvent);
+    NSLog(@"isIgnoreEvent = %d", isIgnoreEvent);
     objc_setAssociatedObject(self, @selector(isIgnoreEvent), @(isIgnoreEvent), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (BOOL)isIgnoreEvent{

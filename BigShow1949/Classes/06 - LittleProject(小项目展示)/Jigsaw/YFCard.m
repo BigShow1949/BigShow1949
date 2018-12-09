@@ -56,6 +56,6 @@
 
 - (NSString *)description {
     
-    return [NSString stringWithFormat:@"x:%zd, y:%zd", self.position.X, self.position.Y];
+    return [NSString stringWithFormat:@"x:%d, y:%zd", self.position.X, self.position.Y];
 }
 @end

@@ -225,11 +225,11 @@
         }
         
         YFLabel *nextLabel = [self getLabelInArrar:self.chesses row:label.row line:label.line + 1];
-        YFLabel *nextTempLabel = [self getLabelInArrar:self.tempChesses row:label.row line:label.line + 1];
+//        YFLabel *nextTempLabel = [self getLabelInArrar:self.tempChesses row:label.row line:label.line + 1];
         
         NSLog(@"下一个有数字");
         
-        NSLog(@"label.number --- %zd, row:%zd, line:%d", label.number, label.row, label.line);  // 8
+        NSLog(@"label.number --- %d, row:%d, line:%d", label.number, label.row, label.line);  // 8
         NSLog(@"nextTempLabel.number --- %d, row:%d, line:%d", nextLabel.number, nextLabel.row, nextLabel.line);
         
         NSLog(@"self.chesses:%p, self.tempChesses:%p", self.chesses, self.tempChesses);
@@ -251,10 +251,7 @@
             NSMutableArray *myTempChesses = [NSMutableArray arrayWithArray:self.tempChesses];
             for (YFLabel *tempLabel in myTempChesses) {
                 if (tempLabel.row == label.row && tempLabel.line == label.line) {
-                    
-                    NSLog(@"即将删除的数字:%zd, row:%zd, line:%zd", tempLabel.number, tempLabel.row, tempLabel.line);
                     [self.tempChesses removeObject:tempLabel];
-                    
                 }
             }
             
@@ -315,11 +312,6 @@
         
         NSLog(@"下一个有数字");
         
-        NSLog(@"label.number --- %zd, row:%zd, line:%d", label.number, label.row, label.line);  // 8
-        NSLog(@"nextTempLabel.number --- %d, row:%d, line:%d", nextLabel.number, nextLabel.row, nextLabel.line);
-        
-        NSLog(@"self.chesses:%p, self.tempChesses:%p", self.chesses, self.tempChesses);
-        
         // 判断当前的数字(self.chesses)跟右边的数字(self.chesses)是否相等
         if ((label.number == nextLabel.number) && label.canAdd && nextLabel.canAdd) {
             
@@ -337,7 +329,7 @@
             for (YFLabel *tempLabel in myTempChesses) {
                 if (tempLabel.row == label.row && tempLabel.line == label.line) {
                     
-                    NSLog(@"即将删除的数字:%zd, row:%zd, line:%zd", tempLabel.number, tempLabel.row, tempLabel.line);
+                    NSLog(@"即将删除的数字:%zd, row:%zd, line:%d", tempLabel.number, tempLabel.row, tempLabel.line);
                     [self.tempChesses removeObject:tempLabel];
                     
                 }
@@ -347,7 +339,7 @@
             [self printArray:self.tempChesses];
             //  这个时候的tempChesses又相加了又删除了, 而self.chesses没有删除只相加了
             
-            // 这两个是否多余, 不多余, 来模拟删除,上面isHereHaveNumWithRow会用到
+            // 这两个是否多余, 不多余, 来%d拟删除,上面isHereHaveNumWithRow会用到
             [label removeFromSuperview];
             label.row = 0;
             label.line = 0;

@@ -115,7 +115,7 @@
    
 //    NSLog(@"first = %d, second = %d", first, second);
     int result = first * 16 + second;
-    return [NSString stringWithFormat:@"%zd", result];
+    return [NSString stringWithFormat:@"%d", result];
 }
 
 

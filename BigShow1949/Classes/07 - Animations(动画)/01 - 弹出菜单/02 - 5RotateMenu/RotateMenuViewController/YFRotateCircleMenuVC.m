@@ -74,18 +74,15 @@ CATransform3D rotationTransform1[PHOTONUM];
 #pragma mark - YFItemViewDelegate
 - (void)didTapped:(NSInteger)tag {
     
-    NSLog(@"index === %d", tag);
     if (self.currentTag  == tag) {
         NSLog(@"自定义处理事件");
         return;
     }
     // 逆时针起第多少个
     NSInteger t = [self getItemViewTag:tag];
-    NSLog(@"t = %d", t); // t=4 点击"化学"
     
     for (NSInteger i = 0; i < PHOTONUM; i++ ) {
         
-        NSLog(@"i=%d, TAGSTART+i=%d, t=%d, tag=%d", i, TAGSTART+i, t, tag);
         UIView *view = [self.view viewWithTag:TAGSTART+i];
         [view.layer addAnimation:[self moveanimation:TAGSTART+i number:t] forKey:@"position"];
         [view.layer addAnimation:[self setscale:TAGSTART+i clicktag:tag] forKey:@"transform"];
@@ -130,7 +127,6 @@ CATransform3D rotationTransform1[PHOTONUM];
     CGPathMoveToPoint(path, NULL,view.layer.position.x,view.layer.position.y);
     
     NSInteger p = [self getItemViewTag:tag];
-    NSLog(@"p = %d, tag = %d", p, tag);
     CGFloat f = 2.0*M_PI  - 2.0*M_PI *p/PHOTONUM;
     CGFloat h = f + 2.0*M_PI *num/PHOTONUM;
     CGFloat centery = self.view.center.y - 50;
