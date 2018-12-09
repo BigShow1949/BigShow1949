@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@protocol YFViperInteractorPrivate
-
+@protocol YFViperInteractorPrivate<YFViperInteractor>
+- (void)setEventHandler:(id)eventHandler;
+- (void)setDataSource:(id)dataSource;
 @end

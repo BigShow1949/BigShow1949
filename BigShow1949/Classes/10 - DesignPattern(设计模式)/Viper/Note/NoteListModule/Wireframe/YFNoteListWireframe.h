@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "YFViperWireframe.h"
 
-//@import YFViper.YFViperWireframe;
+// 需要在这里写YFNoteListWireframeInput 这个协议吗？YFNoteListWireframeInput
+@protocol YFEditorDelegate;// 这里会报错
 @interface YFNoteListWireframe : NSObject <YFViperWireframe>
+- (void)presentEditorForCreatingNewNoteWithDelegate:(id<YFEditorDelegate>)delegate completion:(void (^ __nullable)(void))completion;
 
 @end

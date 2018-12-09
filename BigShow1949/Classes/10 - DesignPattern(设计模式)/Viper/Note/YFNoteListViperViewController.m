@@ -11,6 +11,8 @@
 #import "YFNoteListViewController.h"
 #import "YFNoteDataManager.h"
 #import "YFRouter.h"
+#import "YFNoteListRouter.h"
+
 @interface YFNoteListViperViewController ()
 
 @end
@@ -36,8 +38,8 @@
 }
 
 - (void)buttonClick {
-    YFNoteListViewController *noteListVC = [[YFNoteListViewController alloc] init];
-    YFRouter *router = [[YFRouter alloc] init];
+    YFNoteListViewController<YFViperViewPrivate> *noteListVC = [[YFNoteListViewController alloc] init];
+    id<YFNoteListRouter>router = (id)[[YFRouter alloc] init];
     [YFTNoteListModuleBuilder buildView:noteListVC noteListDataService:[YFNoteDataManager sharedInsatnce] router:router];
     [self.navigationController pushViewController:noteListVC animated:YES];
 }

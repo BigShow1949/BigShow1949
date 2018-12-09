@@ -11,7 +11,12 @@
 
 #import "YFViperRouter.h"
 
+@protocol YFEditorDelegate;
 @protocol YFNoteListRouter<YFViperRouter>
+
+//+ (UIViewController *)loginViewWithMessage:(NSString *)message delegate:(id<ZIKTLoginViewDelegate>)delegate;
+//+ (UIViewController *)viewForCreatingNoteWithDelegate:(id<YFEditorDelegate>)delegate;
+//+ (UIViewController *)viewForEditingNoteWithUUID:(NSString *)uuid title:(NSString *)title content:(NSString *)content delegate:(id<ZIKTEditorDelegate>)delegate;
 
 @end
 

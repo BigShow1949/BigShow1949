@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface YFNoteListInteractor : NSObject
+#import "YFViperInteractor.h"
+#import "YFNoteListInteractorInput.h"
+@protocol YFNoteListDataService;
+@interface YFNoteListInteractor : NSObject<YFViperInteractor,YFNoteListInteractorInput>
 @property (nonatomic, weak) id dataSource;
 @property (nonatomic, weak) id eventHandler;
-- (instancetype)initWithNoteListDataService:(id)service;
+- (instancetype)initWithNoteListDataService:(id<YFNoteListDataService>)service;
 @end

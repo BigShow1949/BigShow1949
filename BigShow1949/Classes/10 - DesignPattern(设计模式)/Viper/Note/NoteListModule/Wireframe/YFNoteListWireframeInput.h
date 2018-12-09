@@ -9,8 +9,9 @@
 #ifndef YFNoteListWireframeInput_h
 #define YFNoteListWireframeInput_h
 
+@protocol YFEditorDelegate;
 @protocol YFNoteListWireframeInput
-
+- (void)presentEditorForCreatingNewNoteWithDelegate:(id<YFEditorDelegate>)delegate completion:(void (^ __nullable)(void))completion;
 @end
 
 #endif /* YFNoteListWireframeInput_h */

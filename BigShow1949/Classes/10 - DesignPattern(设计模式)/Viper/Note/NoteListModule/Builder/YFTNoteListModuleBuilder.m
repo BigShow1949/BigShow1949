@@ -33,13 +33,16 @@
     interactor.dataSource = presenter;
     
     id<YFViperWireframePrivate>wireframe = (id)[[YFNoteListWireframe alloc] init];
+    // view是weak，router是strong
     wireframe.view = view;
     wireframe.router = router;
     
+    // view是weak，wireframe跟interactor是strong
     [(id<YFViperPresenterPrivate>)presenter setView:view];
     [(id<YFViperPresenterPrivate>)presenter setWireframe:wireframe];
     [(id<YFViperPresenterPrivate>)presenter setInteractor:interactor];
     
+    // 这里强指针指向presenter，以免被释放
     view.eventHandler = presenter;
     view.viewDataSource = presenter;
     

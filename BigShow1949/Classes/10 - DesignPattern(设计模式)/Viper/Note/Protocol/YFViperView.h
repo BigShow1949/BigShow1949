@@ -9,4 +9,6 @@
 #import <Foundation/Foundation.h>
 @protocol YFViperView <NSObject>
 
+- (nullable UIViewController *)routeSource;
+
 @end

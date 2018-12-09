@@ -24,6 +24,11 @@
 
     self.title = @"NoteList";
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setupNav];
+}
+
+- (UIViewController *)routeSource {
+    return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -91,4 +96,15 @@
     cell.detailTextLabel.text = detailText;
     return cell;
 }
+
+#pragma mark - Private
+- (void)setupNav {
+    UIBarButtonItem *addNoteItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self.eventHandler action:@selector(didTouchNavigationBarAddButton)];
+    self.navigationItem.rightBarButtonItem = addNoteItem;
+    
+    if ([self.eventHandler respondsToSelector:@selector(handleViewReady)]) {
+        [self.eventHandler handleViewReady];
+    }
+}
+
 @end
