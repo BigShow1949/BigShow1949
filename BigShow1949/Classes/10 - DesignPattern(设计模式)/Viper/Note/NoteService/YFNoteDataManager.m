@@ -50,15 +50,46 @@
         [self.notes addObjectsFromArray:notes];
         noteList = notes;
     }
+
     if (completion) {
         completion(noteList);
     }
 }
 
-- (void)storeNote:(YFNoteModel *)note {}
+- (void)storeNote:(YFNoteModel *)note {
+    NSString *filePath = [YFNoteDataManager _o_pathForLocalStoredNoteWithUUID:note.uuid];
+    BOOL success = [NSKeyedArchiver archiveRootObject:note toFile:filePath];
+    NSAssert(success == YES, nil);
+    if (success) {
+        if (![self.noteUUIDs containsObject:note.uuid]) {
+            [self.noteUUIDs addObject:note.uuid];
+            [self.notes addObject:note];
+            [self storeNoteListUUIDs];
+        } else {
+            NSUInteger idx;
+            for (idx = 0; idx < self.notes.count; idx++) {
+                YFNoteModel *noteTemp = [self.notes objectAtIndex:idx];
+                if ([noteTemp.uuid isEqualToString:note.uuid]) {
+                    NSLog(@"idx = %lu", (unsigned long)idx);
+                    break;
+                }
+            }
+            // 没有找到，这里的idx就是0了
+            [self.notes replaceObjectAtIndex:idx withObject:note];
+        }
+    }
+    
+}
 - (void)deleteNote:(YFNoteModel *)noteToDelete {}
 
 #pragma mark - Private
+- (void)storeNoteListUUIDs {
+    NSAssert([NSThread isMainThread], @"main thread only, otherwise use lock to make thread safety.");
+    NSString *filePath = [YFNoteDataManager _o_pathForNoteListUUIDsFile];
+    BOOL success = [NSKeyedArchiver archiveRootObject:self.noteUUIDs toFile:filePath];
+    NSAssert(success == YES, nil);
+}
+
 - (YFNoteModel *)localStoredNoteWithUUID:(NSString *)uuid {
     NSParameterAssert(uuid);
     NSAssert([NSThread isMainThread], @"main thread only, otherwise use lock to make thread safety.");

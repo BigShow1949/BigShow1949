@@ -83,6 +83,12 @@
     return UITableViewCellEditingStyleDelete;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.eventHandler handleDidSelectRowAtIndexPath:indexPath];
+}
+
 #pragma mark - YFNoteListViewProtocol
 //- (UITableView *)noteListTableView {}
 - (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath

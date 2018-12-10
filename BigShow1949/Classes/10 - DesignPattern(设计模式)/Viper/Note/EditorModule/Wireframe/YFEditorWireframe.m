@@ -8,6 +8,14 @@
 
 #import "YFEditorWireframe.h"
 
+#import "YFViperView.h"
+#import "YFViperRouter.h"
+
+@interface YFEditorWireframe()
+@property (nonatomic, weak) id<YFViperView> view;
+@property (nonatomic, strong) id<YFViperRouter> router;
+@end
+
 @implementation YFEditorWireframe
 
 @end

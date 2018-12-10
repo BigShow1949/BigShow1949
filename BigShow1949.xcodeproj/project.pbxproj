@@ -6437,7 +6437,6 @@
 			isa = PBXGroup;
 			children = (
 				F8623F3521BD253500C4E530 /* YFNoteListRouter.h */,
-				F8C41D6221BD0F220031CDFA /* YFEditorWireframe.h */,
 				F8623F3621BD253500C4E530 /* YFNoteListWireframe.h */,
 				F8623F3721BD253600C4E530 /* YFNoteListWireframe.m */,
 				F8623F3821BD253600C4E530 /* YFNoteListWireframeInput.h */,
@@ -6522,6 +6521,7 @@
 		F8C41D2D21BCC2460031CDFA /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				F8C41D6221BD0F220031CDFA /* YFEditorWireframe.h */,
 				F8C41D6321BD0F220031CDFA /* YFEditorWireframe.m */,
 				F8623F3421BD24C100C4E530 /* YFEditorWireframeInput.h */,
 			);

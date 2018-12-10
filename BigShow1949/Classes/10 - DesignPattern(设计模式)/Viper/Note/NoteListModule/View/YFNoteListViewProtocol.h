@@ -13,7 +13,7 @@
 
 //#define _ZIKTNoteListViewProtocol_ (Protocol<ZIKTRoutableViewDynamicGetter> *)@protocol(ZIKTNoteListViewProtocol)
 @protocol YFNoteListViewProtocol <NSObject>
-- (UITableView *)noteListTableView;
+- (UITableView *)tableView;
 - (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath
                                       text:(NSString *)text
                                 detailText:(NSString *)detailText;

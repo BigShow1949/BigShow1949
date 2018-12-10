@@ -12,9 +12,10 @@
 #import "YFViperInteractor.h"
 #import "YFNoteListInteractorInput.h"
 //#import "YFNoteListInteractor.h"
-
-@interface YFNoteListViewPresenter ()
-@property (nonatomic, weak) id<YFViperView>view;
+#import "YFNoteListViewProtocol.h"
+#import "YFEditorDelegate.h"
+@interface YFNoteListViewPresenter ()<YFEditorDelegate>
+@property (nonatomic, weak) id<YFViperView,YFNoteListViewProtocol>view;
 // 外面是遵守YFViperWireframePrivate协议，里面用wireframe，遵守的是 YFNoteListWireframeInput
 @property (nonatomic, strong) id<YFNoteListWireframeInput> wireframe;
 @property (nonatomic, strong) id<YFViperInteractor,YFNoteListInteractorInput> interactor;
@@ -34,7 +35,14 @@
 
 - (BOOL)canEditRowAtIndexPath:(NSIndexPath *)indexPath {return YES;}
 - (void)handleDeleteCellForRowAtIndexPath:(NSIndexPath *)indexPath{}
-- (void)handleDidSelectRowAtIndexPath:(NSIndexPath *)indexPath {}
+- (void)handleDidSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *uuid = [self.interactor noteUUIDAtIndex:indexPath.row];
+    NSString *title = [self.interactor noteTitleAtIndex:indexPath.row];
+    NSString *content = [self.interactor noteContentAtIndex:indexPath.row];
+    NSLog(@"uuid = %@, title = %@, contet = %@", uuid, title, content);
+    [self.wireframe pushEditorViewForEditingNoteWithUUID:uuid title:title content:content delegate:self];
+}
 
 #pragma mark - YFViperViewEventHandler
 - (void)handleViewReady {
@@ -46,6 +54,12 @@
 - (void)handleViewDidAppear:(BOOL)animated {}
 - (void)handleViewWillDisappear:(BOOL)animated {}
 - (void)handleViewDidDisappear:(BOOL)animated {}
+
+#pragma mark - YFEditorDelegate
+- (void)editor:(UIViewController *)editor didFinishEditNote:(YFNoteModel *)note {
+    [self.wireframe quitEditorViewWithAnimated:YES];
+    [self.view.tableView reloadData];
+}
 
 #pragma mark - YFNoteListViewDataSource
 - (NSInteger)numberOfRowsInSection:(NSInteger)section {

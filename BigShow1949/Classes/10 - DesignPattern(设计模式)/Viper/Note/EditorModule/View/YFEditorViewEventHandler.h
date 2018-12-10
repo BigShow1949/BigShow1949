@@ -8,9 +8,9 @@
 
 #ifndef YFEditorViewEventHandler_h
 #define YFEditorViewEventHandler_h
-
+#import "YFViperViewEventHandler.h"
 @protocol YFViperRouter;
-@protocol YFEditorViewEventHandler
+@protocol YFEditorViewEventHandler<YFViperViewEventHandler>
 - (void)didTouchNavigationBarDoneButton;
 - (id<YFViperRouter>)router;
 @end

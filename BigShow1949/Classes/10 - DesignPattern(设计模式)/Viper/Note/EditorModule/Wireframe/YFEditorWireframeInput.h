@@ -9,5 +9,9 @@
 #ifndef YFEditorWireframeInput_h
 #define YFEditorWireframeInput_h
 
+@protocol YFViperRouter;
+@protocol YFEditorWireframeInput <NSObject>
+- (id<YFViperRouter>)router;
+@end
 
 #endif /* YFEditorWireframeInput_h */

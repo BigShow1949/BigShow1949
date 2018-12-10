@@ -8,8 +8,11 @@
 
 #ifndef YFEditorDelegate_h
 #define YFEditorDelegate_h
-@protocol YFEditorDelegate
 
+@class YFNoteModel;
+@protocol YFEditorDelegate <NSObject>
+- (void)editor:(UIViewController *)editor didFinishEditNote:(YFNoteModel *)note;
 @end
+
 
 #endif /* YFEditorDelegate_h */

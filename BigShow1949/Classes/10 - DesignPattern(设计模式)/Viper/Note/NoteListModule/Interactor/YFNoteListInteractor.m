@@ -36,7 +36,8 @@
 
 - (void)loadAllNotes {
     [self.noteListDataService fetchAllNotesWithCompletion:^(NSArray *notes) {
-        
+        NSLog(@"count = %d", self.noteList.count);
+
     }];
 }
 

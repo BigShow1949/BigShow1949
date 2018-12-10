@@ -8,6 +8,12 @@
 
 #ifndef YFEditorInteractorInput_h
 #define YFEditorInteractorInput_h
+@class YFNoteModel;
+@protocol YFEditorInteractorInput <NSObject>
+- (nullable YFNoteModel *)currentEditingNote;
+- (void)storeCurrentEditingNote;
 
-
+- (nullable NSString *)currentEditingNoteTitle;
+- (nullable NSString *)currentEditingNoteContent;
+@end
 #endif /* YFEditorInteractorInput_h */

@@ -12,5 +12,6 @@
 @protocol YFEditorDelegate;
 @interface YFEditorViewController : UIViewController<YFViperView,YFEditorViewProtocol>
 @property (nonatomic, weak) id<YFEditorDelegate> delegate;
+@property (nonatomic, assign) YFEditorMode editMode;
 
 @end

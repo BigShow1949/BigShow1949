@@ -12,6 +12,9 @@
 @protocol YFEditorDelegate;
 @protocol YFNoteListWireframeInput
 - (void)presentEditorForCreatingNewNoteWithDelegate:(id<YFEditorDelegate>)delegate completion:(void (^ __nullable)(void))completion;
+- (void)quitEditorViewWithAnimated:(BOOL)animated;
+- (void)pushEditorViewForEditingNoteWithUUID:(NSString *)uuid title:(NSString *)title content:(NSString *)content delegate:(id<YFEditorDelegate>)delegate;
+
 @end
 
 #endif /* YFNoteListWireframeInput_h */

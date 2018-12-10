@@ -9,5 +9,9 @@
 #ifndef YFEditorInteractorDataSource_h
 #define YFEditorInteractorDataSource_h
 
+@protocol YFEditorInteractorDataSource <NSObject>
+- (nullable NSString *)currentEditingNoteTitle;
+- (nullable NSString *)currentEditingNoteContent;
+@end
 
 #endif /* YFEditorInteractorDataSource_h */

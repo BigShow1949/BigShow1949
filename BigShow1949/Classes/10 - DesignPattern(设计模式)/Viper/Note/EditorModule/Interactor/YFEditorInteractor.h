@@ -8,8 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "YFViperInteractor.h"
+#import "YFEditorInteractorInput.h"
 
 @class YFNoteModel;
-@interface YFEditorInteractor : NSObject<YFViperInteractor>
+@protocol YFEditorInteractorDataSource;
+@protocol YFEditorInteractorEventHandler;
+
+@interface YFEditorInteractor : NSObject<YFViperInteractor,YFEditorInteractorInput>
+@property (nonatomic, weak) id<YFEditorInteractorDataSource> dataSource;
+@property (nonatomic, weak) id<YFEditorInteractorEventHandler> eventHandler;
+
 - (instancetype)initWithEditingNote:(nullable YFNoteModel *)note;
 @end
