@@ -81,7 +81,14 @@
     }
     return self.noteList[idx].content;
 }
-- (void)deleteNoteAtIndex:(NSUInteger)idx {}
+- (void)deleteNoteAtIndex:(NSUInteger)idx {
+    if (self.noteList.count - 1 < idx) {
+        return;
+    }
+    YFNoteModel *note = [self noteAtIndex:idx];
+    NSLog(@"title = %@, uuid = %@", note.title ,note.uuid);
+    [self.noteListDataService deleteNote:note];
+}
 
 
 

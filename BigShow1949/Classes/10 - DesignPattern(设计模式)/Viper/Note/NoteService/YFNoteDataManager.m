@@ -80,7 +80,29 @@
     }
     
 }
-- (void)deleteNote:(YFNoteModel *)noteToDelete {}
+- (void)deleteNote:(YFNoteModel *)noteToDelete {
+    NSParameterAssert(noteToDelete.uuid);
+    
+    if (![self.noteUUIDs containsObject:noteToDelete.uuid]) {
+        NSAssert(NO, @"note to delete not exists");
+        return;
+    }
+    [self.noteUUIDs removeObject:noteToDelete.uuid];
+    [self storeNoteListUUIDs];
+    YFNoteModel *noteToDeleteInArray;
+    for (YFNoteModel *note in self.notes) {
+        if ([note.uuid isEqualToString:noteToDelete.uuid]) {
+            noteToDeleteInArray = note;
+            break;
+        }
+    }
+    NSAssert(noteToDeleteInArray != nil, @"didn't find note to delete in notes array");
+    [self.notes removeObject:noteToDeleteInArray];
+    NSString *filePath = [YFNoteDataManager _o_pathForLocalStoredNoteWithUUID:noteToDelete.uuid];
+    NSError *error;
+    [[NSFileManager defaultManager] removeItemAtPath:filePath error:&error];
+    NSAssert(error == nil, nil);
+}
 
 #pragma mark - Private
 - (void)storeNoteListUUIDs {

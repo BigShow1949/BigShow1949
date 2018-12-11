@@ -34,7 +34,9 @@
 }
 
 - (BOOL)canEditRowAtIndexPath:(NSIndexPath *)indexPath {return YES;}
-- (void)handleDeleteCellForRowAtIndexPath:(NSIndexPath *)indexPath{}
+- (void)handleDeleteCellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.interactor deleteNoteAtIndex:indexPath.row];
+}
 - (void)handleDidSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *uuid = [self.interactor noteUUIDAtIndex:indexPath.row];
