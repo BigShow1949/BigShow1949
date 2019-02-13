@@ -10,7 +10,7 @@
 #import "YFViperWireframe.h"
 
 // 需要在这里写YFNoteListWireframeInput 这个协议吗？YFNoteListWireframeInput
-@protocol YFEditorDelegate;// 这里会报错
+@protocol YFEditorDelegate,YFLoginViewDelegate;// 这里会报错
 @interface YFNoteListWireframe : NSObject <YFViperWireframe>
 - (void)presentEditorForCreatingNewNoteWithDelegate:(id<YFEditorDelegate>)delegate completion:(void (^ __nullable)(void))completion;
 

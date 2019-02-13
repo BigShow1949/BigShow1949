@@ -14,6 +14,7 @@
 #import "YFRouter.h"
 #import "YFViperWireframePrivate.h"
 #import "YFRouter+YFEditor.h"
+#import "YFRouter+YFLogin.h"
 
 // YFViperWireframePrivate 遵守这个协议有啥用，提示view跟router赋值？
 @interface YFNoteListWireframe()<YFViperWireframePrivate>
@@ -59,6 +60,12 @@
     [self resetState];
     self.editor = editorViewController;
     self.pushedEditor = YES;
+}
+
+- (void)presentLoginViewWithMessage:(NSString *)message delegate:(id<YFLoginViewDelegate>)delegate completion:(void (^ __nullable)(void))completion {
+    UIViewController *loginViewController = [[self.router class] loginViewWithMessage:message delegate:delegate];
+    NSLog(@"routeSource = %@", self.view.routeSource);
+    [[self.router class] presentViewController:loginViewController fromViewController:self.view.routeSource animated:YES completion:completion];
 }
 
 - (void)resetState {

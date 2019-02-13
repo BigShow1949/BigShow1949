@@ -49,23 +49,23 @@
     id<YFViperWireframePrivate> wireframe = (id)[[YFEditorWireframe alloc] init];
     
     // 不调用这个方法了，里面各种报错
-//    [self assembleViperForView:view
-//                     presenter:(id<YFViperPresenterPrivate>)presenter
-//                    interactor:(id<YFViperInteractorPrivate>)interactor
-//                     wireframe:(id<YFViperWireframePrivate>)wireframe
-//                        router:(id<YFViperRouter>)router];
+    [self assembleViperForView:view
+                     presenter:(id<YFViperPresenterPrivate>)presenter
+                    interactor:(id<YFViperInteractorPrivate>)interactor
+                     wireframe:(id<YFViperWireframePrivate>)wireframe
+                        router:(id<YFViperRouter>)router];
     
-    interactor.eventHandler = presenter;
-    interactor.dataSource = presenter;
-    
-    wireframe.view = view;
-    wireframe.router = router;
-    
-    [presenter setInteractor:interactor];
-    [presenter setView:view];
-    [presenter setWireframe:wireframe];
-    
-    view.eventHandler = presenter;
+//    interactor.eventHandler = presenter;
+//    interactor.dataSource = presenter;
+//
+//    wireframe.view = view;
+//    wireframe.router = router;
+//
+//    [presenter setInteractor:interactor];
+//    [presenter setView:view];
+//    [presenter setWireframe:wireframe];
+//
+//    view.eventHandler = presenter;
 }
 
 

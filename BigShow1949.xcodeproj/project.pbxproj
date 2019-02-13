@@ -707,6 +707,11 @@
 		F8177DCA21077322005E5109 /* GCDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8177DC921077322005E5109 /* GCDBaseViewController.m */; };
 		F8177DCC2107781E005E5109 /* 队列&同步.png in Resources */ = {isa = PBXBuildFile; fileRef = F8177DCB2107781E005E5109 /* 队列&同步.png */; };
 		F8177DCE21078573005E5109 /* 终端命令.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8177DCD21078573005E5109 /* 终端命令.rtf */; };
+		F82A048E21BFA18C00DED356 /* YFLoginBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A048D21BFA18C00DED356 /* YFLoginBuilder.m */; };
+		F82A049121BFA1A300DED356 /* YFLoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A049021BFA1A300DED356 /* YFLoginInteractor.m */; };
+		F82A049421BFA1CC00DED356 /* YFLoginViewWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A049321BFA1CC00DED356 /* YFLoginViewWireframe.m */; };
+		F82A049721BFA1E200DED356 /* YFLoginViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A049621BFA1E200DED356 /* YFLoginViewPresenter.m */; };
+		F82A049A21BFA22400DED356 /* YFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A049921BFA22400DED356 /* YFLoginViewController.m */; };
 		F83F20FD216BAFD400DFA548 /* YNSuspendTopPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F20D2216BAFD400DFA548 /* YNSuspendTopPageVC.m */; };
 		F83F20FE216BAFD400DFA548 /* YNSuspendTopBaseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F20D3216BAFD400DFA548 /* YNSuspendTopBaseTableViewVC.m */; };
 		F83F20FF216BAFD400DFA548 /* YNLoadPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F20D8216BAFD400DFA548 /* YNLoadPageVC.m */; };
@@ -796,6 +801,7 @@
 		F8623F3921BD253700C4E530 /* YFNoteListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F8623F3721BD253600C4E530 /* YFNoteListWireframe.m */; };
 		F8623F3A21BD254A00C4E530 /* YFNoteListWireframeInput.h in Sources */ = {isa = PBXBuildFile; fileRef = F8623F3821BD253600C4E530 /* YFNoteListWireframeInput.h */; };
 		F8623F3D21BD53FC00C4E530 /* NSObject+YFViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F8623F3C21BD53FC00C4E530 /* NSObject+YFViperAssembly.m */; };
+		F8623F4121BF98C700C4E530 /* YFRouter+YFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F8623F4021BF98C700C4E530 /* YFRouter+YFLogin.m */; };
 		F874C07121BAAA2C00ECFA59 /* YFCounterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F874C06821BAAA2B00ECFA59 /* YFCounterInteractor.m */; };
 		F874C07221BAAA2C00ECFA59 /* YFCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F874C06B21BAAA2B00ECFA59 /* YFCounterViewController.m */; };
 		F874C07321BAAA2C00ECFA59 /* YFCounterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F874C06C21BAAA2B00ECFA59 /* YFCounterViewController.storyboard */; };
@@ -2110,6 +2116,19 @@
 		F8177DC921077322005E5109 /* GCDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBaseViewController.m; sourceTree = "<group>"; };
 		F8177DCB2107781E005E5109 /* 队列&同步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "队列&同步.png"; sourceTree = "<group>"; };
 		F8177DCD21078573005E5109 /* 终端命令.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "终端命令.rtf"; sourceTree = "<group>"; };
+		F82A048B21BF9E4F00DED356 /* YFLoginViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewDelegate.h; sourceTree = "<group>"; };
+		F82A048C21BFA18C00DED356 /* YFLoginBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginBuilder.h; sourceTree = "<group>"; };
+		F82A048D21BFA18C00DED356 /* YFLoginBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLoginBuilder.m; sourceTree = "<group>"; };
+		F82A048F21BFA1A300DED356 /* YFLoginInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginInteractor.h; sourceTree = "<group>"; };
+		F82A049021BFA1A300DED356 /* YFLoginInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLoginInteractor.m; sourceTree = "<group>"; };
+		F82A049221BFA1CC00DED356 /* YFLoginViewWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewWireframe.h; sourceTree = "<group>"; };
+		F82A049321BFA1CC00DED356 /* YFLoginViewWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLoginViewWireframe.m; sourceTree = "<group>"; };
+		F82A049521BFA1E200DED356 /* YFLoginViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewPresenter.h; sourceTree = "<group>"; };
+		F82A049621BFA1E200DED356 /* YFLoginViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLoginViewPresenter.m; sourceTree = "<group>"; };
+		F82A049821BFA22400DED356 /* YFLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewController.h; sourceTree = "<group>"; };
+		F82A049921BFA22400DED356 /* YFLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLoginViewController.m; sourceTree = "<group>"; };
+		F82A049B21BFA23D00DED356 /* YFLoginViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewProtocol.h; sourceTree = "<group>"; };
+		F82A049D21BFA29700DED356 /* YFLoginViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLoginViewEventHandler.h; sourceTree = "<group>"; };
 		F83F20D2216BAFD400DFA548 /* YNSuspendTopPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNSuspendTopPageVC.m; sourceTree = "<group>"; };
 		F83F20D3216BAFD400DFA548 /* YNSuspendTopBaseTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNSuspendTopBaseTableViewVC.m; sourceTree = "<group>"; };
 		F83F20D4216BAFD400DFA548 /* YNSuspendTopPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNSuspendTopPageVC.h; sourceTree = "<group>"; };
@@ -2299,6 +2318,8 @@
 		F8623F3821BD253600C4E530 /* YFNoteListWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNoteListWireframeInput.h; sourceTree = "<group>"; };
 		F8623F3B21BD53FC00C4E530 /* NSObject+YFViperAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YFViperAssembly.h"; sourceTree = "<group>"; };
 		F8623F3C21BD53FC00C4E530 /* NSObject+YFViperAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YFViperAssembly.m"; sourceTree = "<group>"; };
+		F8623F3F21BF98C700C4E530 /* YFRouter+YFLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YFRouter+YFLogin.h"; sourceTree = "<group>"; };
+		F8623F4021BF98C700C4E530 /* YFRouter+YFLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YFRouter+YFLogin.m"; sourceTree = "<group>"; };
 		F874C06821BAAA2B00ECFA59 /* YFCounterInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCounterInteractor.m; sourceTree = "<group>"; };
 		F874C06921BAAA2B00ECFA59 /* YFCounterInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterInteractor.h; sourceTree = "<group>"; };
 		F874C06A21BAAA2B00ECFA59 /* YFCounterInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCounterInteractorIO.h; sourceTree = "<group>"; };
@@ -6379,6 +6400,8 @@
 		F8C41D0A21BCC2450031CDFA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F82A049521BFA1E200DED356 /* YFLoginViewPresenter.h */,
+				F82A049621BFA1E200DED356 /* YFLoginViewPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -6386,6 +6409,8 @@
 		F8C41D0B21BCC2450031CDFA /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				F82A049221BFA1CC00DED356 /* YFLoginViewWireframe.h */,
+				F82A049321BFA1CC00DED356 /* YFLoginViewWireframe.m */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -6393,6 +6418,11 @@
 		F8C41D0C21BCC2450031CDFA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F82A049D21BFA29700DED356 /* YFLoginViewEventHandler.h */,
+				F82A049B21BFA23D00DED356 /* YFLoginViewProtocol.h */,
+				F82A048B21BF9E4F00DED356 /* YFLoginViewDelegate.h */,
+				F82A049821BFA22400DED356 /* YFLoginViewController.h */,
+				F82A049921BFA22400DED356 /* YFLoginViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6400,6 +6430,8 @@
 		F8C41D0D21BCC2450031CDFA /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				F82A048C21BFA18C00DED356 /* YFLoginBuilder.h */,
+				F82A048D21BFA18C00DED356 /* YFLoginBuilder.m */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -6407,6 +6439,8 @@
 		F8C41D0E21BCC2450031CDFA /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				F82A048F21BFA1A300DED356 /* YFLoginInteractor.h */,
+				F82A049021BFA1A300DED356 /* YFLoginInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -6493,6 +6527,8 @@
 				F8C41D2821BCC2460031CDFA /* YFRouter.m */,
 				F8C41D6921BD14AD0031CDFA /* YFRouter+YFEditor.h */,
 				F8C41D6A21BD14AD0031CDFA /* YFRouter+YFEditor.m */,
+				F8623F3F21BF98C700C4E530 /* YFRouter+YFLogin.h */,
+				F8623F4021BF98C700C4E530 /* YFRouter+YFLogin.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -6624,7 +6660,7 @@
 				TargetAttributes = {
 					8B0B9AAE1B9572000084590D = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = Q2Y3T7TV3N;
+						DevelopmentTeam = U4Z65PWXRC;
 						LastSwiftMigration = 0800;
 					};
 					8B0B9AC71B9572000084590D = {
@@ -7025,6 +7061,7 @@
 				F83F21A6216C5A8C00DFA548 /* SDBaseRefreshView.m in Sources */,
 				18E523741F443EEF00514693 /* YFMarqueeViewController.m in Sources */,
 				18E525331F443EF100514693 /* YFNode.m in Sources */,
+				F82A049A21BFA22400DED356 /* YFLoginViewController.m in Sources */,
 				18E5243E1F443EF000514693 /* YFResponderChainViewController.m in Sources */,
 				F8623F3921BD253700C4E530 /* YFNoteListWireframe.m in Sources */,
 				18E525431F443EF100514693 /* LoginModel.m in Sources */,
@@ -7048,6 +7085,7 @@
 				18E525701F443EF100514693 /* UITableView+Gzw.m in Sources */,
 				18E523FA1F443EEF00514693 /* YFKeepViewController.m in Sources */,
 				18E525C01F443EF200514693 /* FMResultSet.m in Sources */,
+				F82A049121BFA1A300DED356 /* YFLoginInteractor.m in Sources */,
 				F83F218D216C595600DFA548 /* ArtScrollHeaderViewController.m in Sources */,
 				18E525711F443EF100514693 /* YFEmptyDataSetViewController.m in Sources */,
 				18E524B51F443EF000514693 /* CABasicAnimationViewController.m in Sources */,
@@ -7236,6 +7274,7 @@
 				18E525261F443EF100514693 /* YFResizableView.m in Sources */,
 				18E5241E1F443EEF00514693 /* YFMasonryDemoViewController.m in Sources */,
 				18E523F01F443EEF00514693 /* UIColor+Random.m in Sources */,
+				F8623F4121BF98C700C4E530 /* YFRouter+YFLogin.m in Sources */,
 				18E525051F443EF100514693 /* MenuItemCell.m in Sources */,
 				18E5241D1F443EEF00514693 /* Case9ViewController.m in Sources */,
 				18E523661F443EEF00514693 /* SKTagView.m in Sources */,
@@ -7424,6 +7463,7 @@
 				18E5255D1F443EF100514693 /* EcoBaseViewController.m in Sources */,
 				18E523A81F443EEF00514693 /* RGCardLayoutViewController.m in Sources */,
 				18E523601F443EEF00514693 /* YFBubbleMenuButtonViewController.m in Sources */,
+				F82A049421BFA1CC00DED356 /* YFLoginViewWireframe.m in Sources */,
 				F874C0BE21BBBD6E00ECFA59 /* YFToDoPresenter.m in Sources */,
 				18E524C81F443EF000514693 /* SYHallViewController.m in Sources */,
 				18E524901F443EF000514693 /* YFTwoWaterWaveViewController.m in Sources */,
@@ -7447,6 +7487,7 @@
 				18E523711F443EEF00514693 /* GZView.m in Sources */,
 				18E5241A1F443EEF00514693 /* Case8Cell.m in Sources */,
 				18E525541F443EF100514693 /* DataSource2.m in Sources */,
+				F82A049721BFA1E200DED356 /* YFLoginViewPresenter.m in Sources */,
 				18E524151F443EEF00514693 /* Case4ViewController.m in Sources */,
 				F83F217A216C58C300DFA548 /* HHHorizontalPagingView.m in Sources */,
 				18E5248F1F443EF000514693 /* LXHTwoWaterWaveView.m in Sources */,
@@ -7467,6 +7508,7 @@
 				18E525B41F443EF200514693 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F83F2142216BB8C400DFA548 /* MJRefreshConst.m in Sources */,
 				F874C0B521BBB9DD00ECFA59 /* YFToDoViewController.m in Sources */,
+				F82A048E21BFA18C00DED356 /* YFLoginBuilder.m in Sources */,
 				18E524981F443EF000514693 /* GLIRViewController.m in Sources */,
 				18E524821F443EF000514693 /* YFPublicParticleCell.m in Sources */,
 				18E524EF1F443EF100514693 /* RACollectionViewTripletLayout.m in Sources */,
@@ -7650,7 +7692,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Q2Y3T7TV3N;
+				DEVELOPMENT_TEAM = U4Z65PWXRC;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7685,7 +7727,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Q2Y3T7TV3N;
+				DEVELOPMENT_TEAM = U4Z65PWXRC;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

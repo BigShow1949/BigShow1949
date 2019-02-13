@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @protocol YFViperInteractorPrivate<YFViperInteractor>
 - (void)setEventHandler:(id)eventHandler;
 - (void)setDataSource:(id)dataSource;

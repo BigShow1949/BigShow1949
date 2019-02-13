@@ -41,7 +41,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if ([self.eventHandler respondsToSelector:@selector(viewDidAppear:)]) {
+    if ([self.eventHandler respondsToSelector:@selector(handleViewDidAppear:)]) {
         [self.eventHandler handleViewDidAppear:animated];
     }
 }

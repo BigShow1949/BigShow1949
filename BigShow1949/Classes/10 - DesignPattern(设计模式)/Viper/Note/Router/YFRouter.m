@@ -30,4 +30,8 @@
     NSParameterAssert(viewController);
     [viewController dismissViewControllerAnimated:animated completion:completion];
 }
+
++ (UIViewController *)loginViewWithMessage:(NSString *)message delegate:(id<YFLoginViewDelegate>)delegate  {
+    return nil;
+}
 @end

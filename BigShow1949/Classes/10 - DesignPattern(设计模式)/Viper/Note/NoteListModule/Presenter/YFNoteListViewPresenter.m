@@ -14,11 +14,14 @@
 //#import "YFNoteListInteractor.h"
 #import "YFNoteListViewProtocol.h"
 #import "YFEditorDelegate.h"
-@interface YFNoteListViewPresenter ()<YFEditorDelegate>
+#import "YFLoginViewDelegate.h"
+@interface YFNoteListViewPresenter ()<YFEditorDelegate,YFLoginViewDelegate>
 @property (nonatomic, weak) id<YFViperView,YFNoteListViewProtocol>view;
 // 外面是遵守YFViperWireframePrivate协议，里面用wireframe，遵守的是 YFNoteListWireframeInput
 @property (nonatomic, strong) id<YFNoteListWireframeInput> wireframe;
 @property (nonatomic, strong) id<YFViperInteractor,YFNoteListInteractorInput> interactor;
+
+@property (nonatomic, assign) BOOL logined;
 
 @end
 
@@ -53,7 +56,11 @@
 }
 - (void)handleViewRemoved {}
 - (void)handleViewWillAppear:(BOOL)animated {}
-- (void)handleViewDidAppear:(BOOL)animated {}
+- (void)handleViewDidAppear:(BOOL)animated {
+    if (!self.logined) {
+        [self.wireframe presentLoginViewWithMessage:@"login with message" delegate:self completion:nil];
+    }
+}
 - (void)handleViewWillDisappear:(BOOL)animated {}
 - (void)handleViewDidDisappear:(BOOL)animated {}
 

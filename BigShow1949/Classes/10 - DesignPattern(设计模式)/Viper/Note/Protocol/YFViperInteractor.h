@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@protocol YFViperInteractor
+@protocol YFViperInteractor<NSObject>
 @property (nonatomic, readonly, weak) id dataSource;
 @property (nonatomic, readonly, weak) id eventHandler;
 @end

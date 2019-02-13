@@ -86,7 +86,6 @@
         return;
     }
     YFNoteModel *note = [self noteAtIndex:idx];
-    NSLog(@"title = %@, uuid = %@", note.title ,note.uuid);
     [self.noteListDataService deleteNote:note];
 }
 

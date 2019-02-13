@@ -9,8 +9,10 @@
 #ifndef YFNoteListWireframeInput_h
 #define YFNoteListWireframeInput_h
 
-@protocol YFEditorDelegate;
+@protocol YFEditorDelegate,YFLoginViewDelegate;
 @protocol YFNoteListWireframeInput
+- (void)presentLoginViewWithMessage:(NSString *)message delegate:(id<YFLoginViewDelegate>)delegate completion:(void (^ __nullable)(void))completion;
+
 - (void)presentEditorForCreatingNewNoteWithDelegate:(id<YFEditorDelegate>)delegate completion:(void (^ __nullable)(void))completion;
 - (void)quitEditorViewWithAnimated:(BOOL)animated;
 - (void)pushEditorViewForEditingNoteWithUUID:(NSString *)uuid title:(NSString *)title content:(NSString *)content delegate:(id<YFEditorDelegate>)delegate;
