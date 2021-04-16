@@ -1,23 +1,31 @@
 PODS:
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - WebViewJavascriptBridge (6.0.3)
-  - XLPhotoBrowser (1.0.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - SDCycleScrollView (~> 1.66)
   - SDWebImage (~> 4.0.0)
   - WebViewJavascriptBridge (~> 6.0.3)
-  - XLPhotoBrowser (~> 1.0.2)
   - YYModel
 
+SPEC REPOS:
+  trunk:
+    - SDCycleScrollView
+    - SDWebImage
+    - WebViewJavascriptBridge
+    - YYModel
+
 SPEC CHECKSUMS:
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
-  XLPhotoBrowser: ec30940437ac76ca27a88ecc4fac6f52b327bcc7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 98d2359f01aa3c7b273bf8ef6d197605910dd9a6
+PODFILE CHECKSUM: 0623578268c8e826e1e8d8a38da0883d1ca73adb
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.10.1

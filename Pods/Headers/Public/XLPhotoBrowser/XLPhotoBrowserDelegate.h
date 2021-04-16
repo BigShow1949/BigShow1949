@@ -1,1 +1,0 @@
-../../../XLPhotoBrowser/XLPhotoBrowser/XLPhotoBrowserDelegate.h

@@ -41,9 +41,9 @@ class SpreadViewController_swift: UIViewController,UITableViewDataSource,UITable
         tableview.dataSource = self
         tableview.backgroundColor = UIColor.white
         tableview.tableFooterView = UIView.init()
-        tableview.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableview.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableview.estimatedRowHeight = 200
-        tableview.rowHeight = UITableViewAutomaticDimension
+        tableview.rowHeight = UITableView.automaticDimension
         self.view.addSubview(tableview)
     }
     
@@ -81,7 +81,7 @@ class SpreadViewController_swift: UIViewController,UITableViewDataSource,UITable
             }else {
                 self.flagArray[ration] = true
             }
-            self.tableview.reloadSections(IndexSet.init(integer: index - 2000), with: UITableViewRowAnimation.automatic)
+            self.tableview.reloadSections(IndexSet.init(integer: index - 2000), with: UITableView.RowAnimation.automatic)
         }
         view.titleLabel.text = sentionTitles[section]
         return view
@@ -104,10 +104,10 @@ class SpreadViewController_swift: UIViewController,UITableViewDataSource,UITable
         //设置行间距（同样这里可以设置行号，间距，对齐方式）
         paraghStyle.lineSpacing = cell.cellTitle.font.lineHeight
         //添加属性，设置行间距
-        attributesString.addAttributes([NSParagraphStyleAttributeName : paraghStyle], range: NSMakeRange(0, content.characters.count))
+        attributesString.addAttributes([NSAttributedString.Key.paragraphStyle : paraghStyle], range: NSMakeRange(0, content.count))
         cell.cellTitle.attributedText = attributesString
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     
