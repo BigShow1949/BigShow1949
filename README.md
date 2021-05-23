@@ -1,10 +1,5 @@
 # BigShow1949
 
-##### 各类知识点总结成Demo,主要分成17大类, 每周都会更新
-
-
-##### 有任何问题欢迎一起讨论,我的QQ:1029883589
-
 #### 最近更新 08-VIPER:
 ###### 08-VIPER --->01 - Counter计数器
 ###### 08-VIPER --->01 - TableList
@@ -28,5 +23,6 @@
 <img src="http://images2015.cnblogs.com/blog/805854/201605/805854-20160505172702029-553363367.png" width="200" height="355">
 
 
-// 已经停止更新了
-#### 我的博客:http://www.cnblogs.com/bigshow1949/  
+
+#### 作者其他作品
+YFDropdownMenu： https://github.com/BigShow1949/YFDropdownMenu
